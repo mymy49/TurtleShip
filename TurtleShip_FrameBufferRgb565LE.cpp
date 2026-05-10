@@ -7,17 +7,12 @@
 
 #include <config.h>
 
- #if USE_GUI
-
-#include <gui/FrameBufferRgb565LE.h>
-#include <gui/ColorRgb565LE.h>
-#include <gui/Size.h>
-#include <cmsis/cmsis_compiler.h>
+#include "FrameBufferRgb565LE.h"
+#include "ColorRgb565LE.h"
+#include "Size.h"
 #include <std_ext/malloc.h>
 #include <std_ext/string.h>
 #include <__debug_stdio.h>
-#include <gui/BitmapDrawingCalculator.h>
-#include <stdlib.h>
 
 FrameBufferRgb565LE::FrameBufferRgb565LE(void)
 {
@@ -88,6 +83,4 @@ Color FrameBufferRgb565LE::getBackgroundColor(void)
 {
 	return mBgColor;
 }
-
-#endif
 

@@ -10,6 +10,7 @@
 
 #include "Rectangular.h"
 #include "Size.h"
+#include "FrameBufferRgb565LE.h"
 
 //#include "gui/FrameBuffer.h"
 //#include "gui/FrameBufferRgb888.h"

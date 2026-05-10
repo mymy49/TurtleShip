@@ -7,16 +7,11 @@
 
 #include <config.h>
 
-#if USE_GUI
-
-#include <gui/FrameBufferRgb565.h>
-#include <gui/ColorRgb565BE.h>
-#include <gui/Size.h>
-#include <cmsis/cmsis_compiler.h>
+#include "FrameBufferRgb565.h"
+#include "Size.h"
 #include <std_ext/malloc.h>
 #include <std_ext/string.h>
-#include <stdlib.h>
-#include <gui/BitmapDrawingCalculator.h>
+#include "BitmapDrawingCalculator.h"
 
 FrameBufferRgb565::FrameBufferRgb565(void)
 {
@@ -155,6 +150,4 @@ bitmap_t FrameBufferRgb565::getBitmap(void)
 
 	return bitmap;
 }
-
-#endif
 
