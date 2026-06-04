@@ -11,8 +11,9 @@
 #include <stdint.h>
 #include "Size.h"
 #include "TurtleShipTypes.h"
+#include "Brush.h"
 
-class FrameBuffer
+class FrameBuffer : public Brush
 {
 public:
 	FrameBuffer(void);

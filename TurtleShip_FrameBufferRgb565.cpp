@@ -54,7 +54,7 @@ Size FrameBufferRgb565::getCanvasSize(void)
 	return mSize;
 }
 
-void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Rectangular canvasRect, Position bitmapPos, const bitmap_t bitmap)
+void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Area canvasRect, Position bitmapPos, const bitmap_t bitmap)
 {
 	switch(bitmap.type)
 	{
@@ -71,12 +71,17 @@ void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Rectangular canvasRect, 
 	}
 }
 
-void FrameBufferRgb565::drawBitmapRgb565(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
+void FrameBufferRgb565::drawBitmapBase(Position pos, const bitmap_t bitmap)
+{
+
+}
+
+void FrameBufferRgb565::drawBitmapRgb565(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
 {
 	if(bitmap.type != BITMAP_TYPE_RGB565)
 		return;
 
-	Rectangular bitmapArea = {bitmapPos, {bitmap.width, bitmap.height}};
+	Area bitmapArea = {bitmapPos, {bitmap.width, bitmap.height}};
 	BitmapDrawingCalculator bdc(canvasSize, canvasDesArea, bitmapArea);
 	
 	if(bdc.calculate() == false)
@@ -96,12 +101,12 @@ void FrameBufferRgb565::drawBitmapRgb565(Size canvasSize, Rectangular canvasDesA
 	}
 }
 
-void FrameBufferRgb565::drawBitmapArgb1555(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
+void FrameBufferRgb565::drawBitmapArgb1555(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
 {
 	if(bitmap.type != BITMAP_TYPE_ARGB1555)
 		return;
 	
-	Rectangular bitmapArea = {bitmapPos, {bitmap.width, bitmap.height}};
+	Area bitmapArea = {bitmapPos, {bitmap.width, bitmap.height}};
 	BitmapDrawingCalculator bdc(canvasSize, canvasDesArea, bitmapArea);
 	
 	if(bdc.calculate() == false)

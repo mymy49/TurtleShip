@@ -16,17 +16,17 @@ class FrameBufferRgb565LE : public FrameBufferRgb565
 public :
 	FrameBufferRgb565LE(void);
 
-	virtual ~FrameBufferRgb565LE(void);
+	~FrameBufferRgb565LE(void) override;
 
-	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha);
+	void blendDot(int16_t x, int16_t y, uint8_t alpha) override;
 	
-	virtual void setBrushColor(Color color);
+	void setBrushColor(Color color) override;
 
-	virtual Color getBrushColor(void);
+	Color getBrushColor(void) override;
 
-	virtual void setBackgroundColor(Color color);
+	void setBackgroundColor(Color color) override;
 
-	virtual Color getBackgroundColor(void);
+	Color getBackgroundColor(void) override;
 
 protected :
 

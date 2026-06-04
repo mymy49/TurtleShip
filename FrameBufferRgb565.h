@@ -9,34 +9,35 @@
 #define YSS_GUI_FRAME_BUFFER_RGB565__H_
 
 #include "FrameBuffer.h"
-#include "Brush.h"
 
-class FrameBufferRgb565 : public FrameBuffer, public Brush
+class FrameBufferRgb565 : public FrameBuffer
 {
 public :
 	FrameBufferRgb565(void);
 
-	virtual ~FrameBufferRgb565(void);
+	~FrameBufferRgb565(void) override;
 
-	virtual uint8_t getPixelCapacity(void);
+	uint8_t getPixelCapacity(void) override;
 
-	virtual void drawDot(int16_t x, int16_t y);
+	void drawDot(int16_t x, int16_t y) override;
 
-	virtual bitmap_t getBitmap(void);
+	bitmap_t getBitmap(void) override;
 
 protected :
 	uint16_t mBrushColorCode;
 
-	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color);
+	void fillDotArray(uint32_t offset, uint32_t count, Color color) override;
 
-	virtual void drawBitmapBase(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmapBase(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap) override;
 
-	virtual Size getCanvasSize(void);
+	void drawBitmapBase(Position pos, const bitmap_t bitmap) override;
+
+	Size getCanvasSize(void) override;
 
 private :
-	void drawBitmapRgb565(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmapRgb565(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
 
-	void drawBitmapArgb1555(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmapArgb1555(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
 };
 
 #endif

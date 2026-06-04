@@ -34,7 +34,7 @@ void Brush::fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, 
 	}
 }
 
-void Brush::fillRectangular(Rectangular rect)
+void Brush::fillRectangular(Area rect)
 {
 	Position pos = rect.getPosition();
 	Size size = rect.getSize();
@@ -42,7 +42,7 @@ void Brush::fillRectangular(Rectangular rect)
 	fillRectBase(pos.getX(), pos.getY(), size.getWidth(), size.getHeight(), getBrushColor());
 }
 
-void Brush::clearRectangular(Rectangular rect)
+void Brush::clearRectangular(Area rect)
 {
 	Position pos = rect.getPosition();
 	Size size = rect.getSize();
@@ -50,14 +50,14 @@ void Brush::clearRectangular(Rectangular rect)
 	fillRectBase(pos.getX(), pos.getY(), size.getWidth(), size.getHeight(), getBackgroundColor());
 }
 
-void Brush::fill(void)
+void Brush::fill()
 {
 	Size size = getCanvasSize();
 
 	fillRectBase(0, 0, size.getWidth(), size.getHeight(), getBrushColor());
 }
 
-void Brush::clear(void)
+void Brush::clear()
 {
 	Size size = getCanvasSize();
 
@@ -271,7 +271,7 @@ void Brush::drawTriangle(Position p1, Position p2, Position p3)
 	drawLine(p3, p1);
 }
 
-void Brush::drawRectangular(Rectangular rect)
+void Brush::drawRectangular(Area rect)
 {
 	Position p1, p2;
 	Size size = rect.getSize();
@@ -614,7 +614,7 @@ void Brush::setFont(Font &font)
 	mFont = &font;
 }
 
-Font* Brush::getFont(void)
+Font* Brush::getFont()
 {
 	return mFont;
 }
@@ -676,16 +676,15 @@ Position Brush::drawString(align_t align, const char *str)
 
 void Brush::drawBitmap(Position pos, const bitmap_t bitmap)
 {
-	Size size = getCanvasSize();
-	drawBitmapBase(size, {pos, size}, pos, bitmap);
+	drawBitmapBase( pos, bitmap);
 }
 
-void Brush::drawBitmap(Rectangular rect, Position bitmapPos, const bitmap_t bitmap)
+void Brush::drawBitmap(Area rect, Position bitmapPos, const bitmap_t bitmap)
 {
 	drawBitmapBase(getCanvasSize(), rect, bitmapPos, bitmap);
 }
 
-bool Brush::calculate2BytesPixelDrawingInfo(Rectangular &des, Rectangular &src, uint16_t **frameBuffer)
+bool Brush::calculate2BytesPixelDrawingInfo(Area &des, Area &src, uint16_t **frameBuffer)
 {
 	int16_t sx = src.getPosition().getX(), sy = src.getPosition().getY();
 	int16_t dx = des.getPosition().getX(), dy = des.getPosition().getY();
@@ -744,7 +743,7 @@ bool Brush::calculate2BytesPixelDrawingInfo(Rectangular &des, Rectangular &src, 
 }
 
 
-bool Brush::checkDrawingAble(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+bool Brush::checkDrawingAble(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
 	int16_t cax = canvasDesArea.getPosition().getX();
 	int16_t cay = canvasDesArea.getPosition().getY();
@@ -769,7 +768,7 @@ bool Brush::checkDrawingAble(Size &canvasSize, Rectangular &canvasDesArea, Recta
 	return true;
 }
 
-uint32_t Brush::calculateSrcFrameBufferOffset(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+uint32_t Brush::calculateSrcFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
 	int16_t cax = canvasDesArea.getPosition().getX();
 	int16_t cay = canvasDesArea.getPosition().getY();
@@ -786,7 +785,7 @@ uint32_t Brush::calculateSrcFrameBufferOffset(Size &canvasSize, Rectangular &can
 	return offset;
 }
 
-uint16_t Brush::calculateSrcWidth(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+uint16_t Brush::calculateSrcWidth(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
 	int16_t cax = canvasDesArea.getPosition().getX();
 	uint16_t caw = canvasDesArea.getSize().getWidth();
@@ -803,7 +802,7 @@ uint16_t Brush::calculateSrcWidth(Size &canvasSize, Rectangular &canvasDesArea, 
 	return bwidth;	
 }
 
-uint32_t Brush::calculateDesFrameBufferOffset(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+uint32_t Brush::calculateDesFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
 	int16_t by = bitmapArea.getPosition().getY();
 	int16_t bx = bitmapArea.getPosition().getX();
@@ -817,7 +816,7 @@ uint32_t Brush::calculateDesFrameBufferOffset(Size &canvasSize, Rectangular &can
 	return canvasSize.getWidth() * by + bx;
 }
 
-uint16_t Brush::calculateSrcHeight(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+uint16_t Brush::calculateSrcHeight(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
 	int16_t by = bitmapArea.getPosition().getY();
 	uint16_t bah = bitmapArea.getSize().getHeight();
@@ -835,9 +834,72 @@ uint16_t Brush::calculateSrcHeight(Size &canvasSize, Rectangular &canvasDesArea,
 	return bah;
 }
 
-uint32_t calculateSrcLineOffset(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea)
+void Brush::setCalculatorSource(Area src)
 {
+	Position pos = src.getPosition();
+	Size size = src.getSize();
 
+	mSrcX = pos.getX();
+	mSrcY = pos.getY();
+	mSrcWidth = size.getWidth();
+	mSrcHeight = size.getHeight();
+	mSrcOffset = 0;
+	
+	size = getCanvasSize();
+	mCanvasWidth = size.getWidth();
+	mCanvasHeight = size.getHeight();
 }
 
+Area Brush::calculateValidArea()
+{
+	Area validArea(mSrcX, mSrcY, mSrcWidth, mSrcHeight);
+	int32_t buf;
+
+	if(mSrcX < 0)
+	{
+		buf = 0 - mSrcX;
+		validArea.setX(0);
+		validArea.subWidth(buf);
+		mSrcOffset += buf;
+	}
+
+	if(mSrcY < 0)
+	{
+		buf = 0 - mSrcY;
+		validArea.setY(0);
+		validArea.subHeight(buf);
+		mSrcOffset += mSrcWidth * buf;
+	}
+	
+	buf = mSrcX + mSrcWidth;
+	if(buf > mCanvasWidth)
+	{
+		validArea.subWidth(buf - mCanvasWidth);
+	}
+
+	buf = mSrcY + mSrcHeight;
+	if(buf > mCanvasHeight)
+	{
+		validArea.subHeight(buf - mCanvasHeight);
+	}
+
+	return validArea;
+}
+
+bool Brush::isOutsideCanvas()
+{
+	if(mSrcX < 0)
+		return true;
+	
+	if(mSrcY < 0)
+		return true;
+	
+	if(mSrcX + mSrcWidth > mCanvasWidth)
+		return true;
+	
+	if(mSrcY + mSrcHeight > mCanvasHeight)
+		return true;
+
+	return false;
+}
 

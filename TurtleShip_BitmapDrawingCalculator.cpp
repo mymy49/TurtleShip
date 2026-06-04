@@ -11,7 +11,7 @@ BitmapDrawingCalculator::BitmapDrawingCalculator(void)
 {
 }
 
-BitmapDrawingCalculator::BitmapDrawingCalculator(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapSrcArea)
+BitmapDrawingCalculator::BitmapDrawingCalculator(Size &canvasSize, Area &canvasDesArea, Area &bitmapSrcArea)
 {
 	mCanvasSize = canvasSize;
 	mCanvasDesArea = canvasDesArea;
@@ -167,7 +167,7 @@ uint16_t BitmapDrawingCalculator::getTrimedBitmapHeight(void)
 	return mTrimedBitmapSrcArea.getSize().getHeight();
 }
 
-Rectangular &BitmapDrawingCalculator::getTrimedCanvasDesArea(void)
+Area &BitmapDrawingCalculator::getTrimedCanvasDesArea(void)
 {
 	return mTrimedCanvasDesArea;
 }
@@ -177,7 +177,7 @@ uint32_t BitmapDrawingCalculator::getTrimedCanvasDesAreaValue(void)
 	return mTrimedCanvasDesArea.getSize().getWidth() * mTrimedCanvasDesArea.getSize().getHeight();
 }
 
-Rectangular &BitmapDrawingCalculator::getTrimedBitmapSrcArea(void)
+Area &BitmapDrawingCalculator::getTrimedBitmapSrcArea(void)
 {
 	return mTrimedBitmapSrcArea;
 }

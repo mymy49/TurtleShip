@@ -9,7 +9,7 @@
 #define YSS_GUI_OBJSYS__H_
 
 #include "TurtleShipTypes.h"
-#include "Rectangular.h"
+#include "Area.h"
 #include "config.h"
 #include "FrameBufferRgb565LE.h"
 
@@ -38,7 +38,7 @@ public:
 
 	virtual Size getSize(void) = 0;
 
-	Rectangular getRectangular(void);
+	Area getRectangular(void);
 
 	Position getPosition(void);
 
@@ -75,9 +75,9 @@ protected:
 
 	virtual void eventSizeChanged(Size size);
 
-	virtual void update(Rectangular rect);
+	virtual void update(Area rect);
 
-	virtual void update(Rectangular before , Rectangular current);
+	virtual void update(Area before , Area current);
 
 	virtual void update(void);
 

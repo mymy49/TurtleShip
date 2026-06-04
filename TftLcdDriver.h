@@ -13,7 +13,7 @@
 #include <yss/Mutex.h>
 #include "TurtleShipTypes.h"
 
-class Rectangular;
+class Area;
 class Position;
 class Size;
 
@@ -24,7 +24,7 @@ class TftLcdDriver : public Mutex
 public:
 	virtual Size getLcdSize(void) = 0;
 
-	virtual void drawBitmapBase(Size canvasSize, Rectangular canvasRect, Position bitmapPos, const bitmap_t bitmap) = 0;
+	virtual void drawBitmapBase(Size canvasSize, Area canvasRect, Position bitmapPos, const bitmap_t bitmap) = 0;
 };
 
 #endif

@@ -10,14 +10,14 @@
 
 #include <stdint.h>
 
-#include "Rectangular.h"
+#include "Area.h"
 
 class BitmapDrawingCalculator
 {
 public:
 	BitmapDrawingCalculator(void);
 
-	BitmapDrawingCalculator(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapSrcArea);
+	BitmapDrawingCalculator(Size &canvasSize, Area &canvasDesArea, Area &bitmapSrcArea);
 	
 	bool calculate(void);
 
@@ -29,17 +29,17 @@ public:
 
 	uint16_t getTrimedBitmapHeight(void);
 
-	Rectangular &getTrimedCanvasDesArea(void);
+	Area &getTrimedCanvasDesArea(void);
 
 	uint32_t getTrimedCanvasDesAreaValue(void);
 
-	Rectangular &getTrimedBitmapSrcArea(void);
+	Area &getTrimedBitmapSrcArea(void);
 
 private :
 	Size mCanvasSize;
-	Rectangular mCanvasDesArea, mBitmapSrcArea;
+	Area mCanvasDesArea, mBitmapSrcArea;
 
-	Rectangular mTrimedCanvasDesArea, mTrimedBitmapSrcArea;
+	Area mTrimedCanvasDesArea, mTrimedBitmapSrcArea;
 	uint32_t mSrcFrameBufferOffset, mDesFrameBufferOffset;
 };
 

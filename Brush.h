@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include "Color.h"
 #include "Position.h"
-#include "Rectangular.h"
+#include "Area.h"
 #include "Size.h"
 #include "TurtleShipTypes.h"
 
@@ -37,82 +37,92 @@ public:
 
 	Brush(void);
 
-	virtual void drawDot(int16_t x, int16_t y) = 0;
+	virtual void drawDot(int16_t x, int16_t y) __attribute__((optimize("-O1"))) = 0;
 
-	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha) = 0;
+	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha) __attribute__((optimize("-O1"))) = 0;
 	
-	virtual void setBrushColor(Color color) = 0;
+	virtual void setBrushColor(Color color) __attribute__((optimize("-O1"))) = 0;
 
-	virtual Color getBrushColor(void) = 0;
+	virtual Color getBrushColor() __attribute__((optimize("-O1"))) = 0;
 
-	virtual void setBackgroundColor(Color color) = 0;
+	virtual void setBackgroundColor(Color color) __attribute__((optimize("-O1"))) = 0;
 
-	virtual Color getBackgroundColor(void) = 0;
+	virtual Color getBackgroundColor() __attribute__((optimize("-O1"))) = 0;
 
-	void drawLine(Position p1, Position p2);
+	void drawLine(Position p1, Position p2) __attribute__((optimize("-O1")));
 
-	void drawCircle(Position pos, uint16_t r);
+	void drawCircle(Position pos, uint16_t r) __attribute__((optimize("-O1")));
 
-	void fillCircle(Position p1, uint16_t r);
+	void fillCircle(Position p1, uint16_t r) __attribute__((optimize("-O1")));
 
-	void drawTriangle(Position p1, Position p2, Position p3);
+	void drawTriangle(Position p1, Position p2, Position p3) __attribute__((optimize("-O1")));
 
-	void fillTriangle(Position p1, Position p2, Position p3);
+	void fillTriangle(Position p1, Position p2, Position p3) __attribute__((optimize("-O1")));
 
-	void drawRectangular(Rectangular rect);
+	void drawRectangular(Area rect) __attribute__((optimize("-O1")));
 
-	void fillRectangular(Rectangular rect);
+	void fillRectangular(Area rect) __attribute__((optimize("-O1")));
 
-	void fillQuadrangle(Position p1, Position p2, Position p3, Position p4);
+	void fillQuadrangle(Position p1, Position p2, Position p3, Position p4) __attribute__((optimize("-O1")));
 
-	void clearRectangular(Rectangular rect);
+	void clearRectangular(Area rect) __attribute__((optimize("-O1")));
 
-	void fill(void);
+	void fill() __attribute__((optimize("-O1")));
 
-	void clear(void);
+	void clear() __attribute__((optimize("-O1")));
 
-	void setFont(Font &font);
+	void setFont(Font &font) __attribute__((optimize("-O1")));
 
-	Font* getFont(void);
+	Font* getFont() __attribute__((optimize("-O1")));
 
-	uint8_t drawChar(Position pos, uint32_t utf8);
+	uint8_t drawChar(Position pos, uint32_t utf8) __attribute__((optimize("-O1")));
 
-	Position drawString(Position pos, const char *str);
+	Position drawString(Position pos, const char *str) __attribute__((optimize("-O1")));
 
-	Position drawString(align_t align, const char *str);
+	Position drawString(align_t align, const char *str) __attribute__((optimize("-O1")));
 
-	Size calculateStringArea(const char *str);
+	Size calculateStringArea(const char *str) __attribute__((optimize("-O1")));
 
-	void drawBitmap(Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmap(Position pos, const bitmap_t bitmap) __attribute__((optimize("-O1")));
 
-	void drawBitmap(Rectangular canvasRect, Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmap(Area canvasRect, Position bitmapPos, const bitmap_t bitmap) __attribute__((optimize("-O1")));
 
-	void drawBitmap(Size canvasSize, Rectangular canvasRect, Position bitmapPos, const bitmap_t bitmap);
+	void drawBitmap(Size canvasSize, Area canvasRect, Position bitmapPos, const bitmap_t bitmap) __attribute__((optimize("-O1")));
+
+	Area calculateValidArea() __attribute__((optimize("-O1")));
+
+	bool isOutsideCanvas() __attribute__((optimize("-O1")));
+
+	void setCalculatorSource(Area src) __attribute__((optimize("-O1")));
 
 protected:
 	Font *mFont;
+
+	int32_t mSrcWidth, mSrcHeight, mSrcX, mSrcY, mSrcOffset, mCanvasWidth, mCanvasHeight;
 	
-	bool checkDrawingAble(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea);
+	bool checkDrawingAble(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea);
 
-	uint32_t calculateSrcFrameBufferOffset(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea);
+	uint32_t calculateSrcFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea);
 
-	uint16_t calculateSrcWidth(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea);
+	uint16_t calculateSrcWidth(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea);
 
-	uint16_t calculateSrcHeight(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea);
+	uint16_t calculateSrcHeight(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea);
 
-	uint32_t calculateDesFrameBufferOffset(Size &canvasSize, Rectangular &canvasDesArea, Rectangular &bitmapArea);
+	uint32_t calculateDesFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea);
 
-	bool calculate2BytesPixelDrawingInfo(Rectangular &des, Rectangular &src, uint16_t **frameBuffer);
+	bool calculate2BytesPixelDrawingInfo(Area &des, Area &src, uint16_t **frameBuffer);
 
-	virtual void fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, Color color);
+	virtual void fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, Color color) __attribute__((optimize("-O1")));
 
-	virtual void drawBitmapBase(Size canvasSize, Rectangular canvasDesArea, Position bitmapDrawingPos, const bitmap_t bitmap) = 0;
+	virtual void drawBitmapBase(Size canvasSize, Area canvasDesArea, Position bitmapDrawingPos, const bitmap_t bitmap) __attribute__((optimize("-O1"))) = 0;
 
-	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color) = 0;
+	virtual void drawBitmapBase(Position pos, const bitmap_t bitmap) __attribute__((optimize("-O1"))) = 0;
 
-	virtual uint8_t getPixelCapacity(void) = 0;
+	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color) __attribute__((optimize("-O1"))) = 0;
 
-	virtual Size getCanvasSize(void) = 0;
+	virtual uint8_t getPixelCapacity() __attribute__((optimize("-O1"))) = 0;
+
+	virtual Size getCanvasSize() __attribute__((optimize("-O1"))) = 0;
 };
 
 #endif

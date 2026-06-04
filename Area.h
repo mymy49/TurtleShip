@@ -11,14 +11,14 @@
 #include "Position.h"
 #include "Size.h"
 
-class Rectangular
+class Area
 {
 public:
-	Rectangular(void);
+	Area(void);
 
-	Rectangular(Position pos, Size size);
+	Area(Position pos, Size size);
 
-	Rectangular(int16_t x, int16_t y, uint16_t width, uint16_t height);
+	Area(int16_t x, int16_t y, uint16_t width, uint16_t height);
 
 	void operator+=(Position obj);
 	

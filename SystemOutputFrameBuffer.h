@@ -13,7 +13,7 @@
 #if USE_GUI && YSS_L_HEAP_USE
 
 #include "FrameBufferRgb565LE.h"
-#include "Rectangular.h"
+#include "Area.h"
 
 typedef YSS_SYSTEM_COUTPUT_FRAME_BUFFER SystemOutputFrameBuffer;
 

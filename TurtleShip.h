@@ -8,9 +8,10 @@
 #ifndef YSS_GUI__H_
 #define YSS_GUI__H_
 
-#include "Rectangular.h"
+#include "Area.h"
 #include "Size.h"
 #include "FrameBufferRgb565LE.h"
+#include "CodeFont.h"
 
 //#include "gui/FrameBuffer.h"
 //#include "gui/FrameBufferRgb888.h"
@@ -19,7 +20,6 @@
 //#include "gui/Argb1555.h"
 //#include "gui/Object.h"
 //#include "gui/Frame.h"
-//#include "gui/Font.h"
 //#include "gui/Panel.h"
 //#include "gui/Container.h"
 //#include "gui/OutputFrameBuffer.h"
