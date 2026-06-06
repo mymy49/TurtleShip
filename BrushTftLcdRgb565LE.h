@@ -21,13 +21,13 @@ public :
 
 	void setFrameBuffer(FrameBufferRgb565LE &obj);
 
-	virtual void setBrushColor(Color color);
+	void setBrushColor(Color color) override;
 
-	virtual Color getBrushColor(void);
+	Color getBrushColor(void) override;
 
-	virtual void setBackgroundColor(Color color);
+	void setBackgroundColor(Color color) override;
 
-	virtual Color getBackgroundColor(void);
+	Color getBackgroundColor(void) override;
 
 protected :
 	ColorRgb565LE mBrushColor, mBgColor, mFontColor;
