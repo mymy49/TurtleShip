@@ -9,7 +9,7 @@
 
 #include "FrameBufferRgb565.h"
 #include "Size.h"
-#include <std_ext/malloc.h>
+#include <yss/hmalloc.h>
 #include <std_ext/string.h>
 #include "BitmapDrawingCalculator.h"
 

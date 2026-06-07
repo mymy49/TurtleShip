@@ -8,7 +8,7 @@
 #include "FrameBuffer.h"
 #include "Size.h"
 #include <config.h>
-#include <std_ext/malloc.h>
+#include <yss/hmalloc.h>
 
 FrameBuffer::FrameBuffer(void)
 {

@@ -8,7 +8,7 @@
 #include "BrushTftLcdRgb565LE.h"
 #include "ColorRgb565LE.h"
 #include <config.h>
-#include <std_ext/malloc.h>
+#include <yss/hmalloc.h>
 #include <std_ext/string.h>
 
 BrushTftLcdRgb565LE::BrushTftLcdRgb565LE(void)
