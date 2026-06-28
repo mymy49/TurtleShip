@@ -134,3 +134,13 @@ void Area::setHeight(uint16_t height)
 	mSize.setHeight(height);
 }
 
+int16_t Area::getRightBound()
+{
+	return mPos.getX() + mSize.getWidth();
+}
+
+int16_t Area::getBotBound()
+{
+	return mPos.getY() + mSize.getHeight();
+}
+

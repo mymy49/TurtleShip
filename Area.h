@@ -36,9 +36,9 @@ public:
 
 	void setRectanglar(int16_t x, int16_t y, uint16_t width, uint16_t height);
 
-	Size &getSize(void);
+	Size &getSize();
 
-	Position &getPosition(void);
+	Position &getPosition();
 
 	void addX(int16_t x);
 
@@ -63,6 +63,10 @@ public:
 	void setWidth(uint16_t width);
 
 	void setHeight(uint16_t height);
+
+	int16_t getRightBound();
+
+	int16_t getBotBound();
 
 private :
 	Position mPos;

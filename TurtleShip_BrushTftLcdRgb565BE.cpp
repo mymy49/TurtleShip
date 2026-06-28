@@ -8,7 +8,6 @@
 #include "BrushTftLcdRgb565BE.h"
 #include "ColorRgb565BE.h"
 #include <config.h>
-#include <std_ext/malloc.h>
 #include <std_ext/string.h>
 
 BrushTftLcdRgb565BE::BrushTftLcdRgb565BE(void)

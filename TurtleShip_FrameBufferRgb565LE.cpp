@@ -10,9 +10,10 @@
 #include "FrameBufferRgb565LE.h"
 #include "ColorRgb565LE.h"
 #include "Size.h"
-#include <std_ext/malloc.h>
 #include <std_ext/string.h>
 #include <__debug_stdio.h>
+#include <yss/lmalloc.h>
+#include <yss/hmalloc.h>
 
 FrameBufferRgb565LE::FrameBufferRgb565LE(void)
 {
