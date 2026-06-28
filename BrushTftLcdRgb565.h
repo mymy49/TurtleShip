@@ -11,7 +11,6 @@
 class Size;
 
 #include "Brush.h"
-#include "ColorRgb565LE.h"
 
 class BrushTftLcdRgb565 : public Brush
 {
@@ -23,11 +22,11 @@ public :
 protected :
 	uint16_t mBrushColorCode;
 
-	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color);
+	void fillDotArray(uint32_t offset, uint32_t count, Color color) override;
 
-	virtual Size getCanvasSize(void);
+	Size getCanvasSize(void) override;
 
-	virtual uint8_t getPixelCapacity(void);
+	uint8_t getPixelCapacity(void) override;
 };
 
 #endif
