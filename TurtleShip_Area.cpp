@@ -7,8 +7,14 @@
 
 #include "Area.h"
 
-Area::Area(void)
+Area::Area()
 {
+}
+
+Area::Area(Area &area)
+{
+	mPos = area.getPosition();
+	mSize = area.getSize();
 }
 
 Area::Area(Position pos, Size size)
@@ -139,8 +145,38 @@ int16_t Area::getRightBound()
 	return mPos.getX() + mSize.getWidth();
 }
 
+int16_t Area::getLeftBound()
+{
+	return mPos.getX();
+}
+
+int16_t Area::getTopBound()
+{
+	return mPos.getY();
+}
+
 int16_t Area::getBotBound()
 {
 	return mPos.getY() + mSize.getHeight();
+}
+
+int16_t Area::getX()
+{
+	return mPos.getX();
+}
+
+int16_t Area::getY()
+{
+	return mPos.getY();
+}
+
+uint16_t Area::getWidth()
+{
+	return mSize.getWidth();
+}
+
+uint16_t Area::getHeight()
+{
+	return mSize.getHeight();
 }
 

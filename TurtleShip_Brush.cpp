@@ -448,7 +448,7 @@ void Brush::fillQuadrangle(Position p1, Position p2, Position p3, Position p4)
 	fillTriangle(p2, p3, p4);
 }
 
-Size Brush::calculateStringArea(const char *str)
+Size Brush::calculateStringSize(const char *str)
 {
 	Size size;
 
@@ -633,7 +633,7 @@ Position Brush::drawString(Position pos, const char *str)
 Position Brush::drawString(align_t align, const char *str)
 {
 	Position pos;
-	Size size = calculateStringArea(str), csize = getCanvasSize();
+	Size size = calculateStringSize(str), csize = getCanvasSize();
 
 	if(size.getWidth() == 0)
 		return pos;
@@ -642,6 +642,7 @@ Position Brush::drawString(align_t align, const char *str)
 	{
 	default :
 	case 0x01 : // LEFT
+		pos.setX(2);
 		break;
 	
 	case 0x02 : // CENTER
@@ -649,7 +650,7 @@ Position Brush::drawString(align_t align, const char *str)
 		break;
 	
 	case 0x04 : // RIGHT
-		pos.setX((int32_t)csize.getWidth() - (int32_t)size.getWidth());
+		pos.setX((int32_t)csize.getWidth() - (int32_t)size.getWidth() - 2);
 		break;
 	}
 
@@ -657,6 +658,7 @@ Position Brush::drawString(align_t align, const char *str)
 	{
 	default :
 	case 0x01 : // TOP
+		pos.setY(2);
 		break;
 	
 	case 0x02 : // MID
@@ -664,7 +666,7 @@ Position Brush::drawString(align_t align, const char *str)
 		break;
 	
 	case 0x04 : // BOT
-		pos.setY((int32_t)csize.getHeight() - (int32_t)size.getHeight());
+		pos.setY((int32_t)csize.getHeight() - (int32_t)size.getHeight() - 2);
 		break;
 	}
 

@@ -14,7 +14,9 @@
 class Area
 {
 public:
-	Area(void);
+	Area();
+
+	Area(Area &area);
 
 	Area(Position pos, Size size);
 
@@ -66,7 +68,19 @@ public:
 
 	int16_t getRightBound();
 
+	int16_t getLeftBound();
+
+	int16_t getTopBound();
+
 	int16_t getBotBound();
+
+	int16_t getX();
+
+	int16_t getY();
+
+	uint16_t getWidth();
+
+	uint16_t getHeight();
 
 private :
 	Position mPos;

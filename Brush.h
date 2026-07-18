@@ -81,7 +81,7 @@ public:
 
 	Position drawString(align_t align, const char *str) __attribute__((optimize("-O1")));
 
-	Size calculateStringArea(const char *str) __attribute__((optimize("-O1")));
+	Size calculateStringSize(const char *str) __attribute__((optimize("-O1")));
 
 	void drawBitmap(Position pos, const bitmap_t bitmap) __attribute__((optimize("-O1")));
 
