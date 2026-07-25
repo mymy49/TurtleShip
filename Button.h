@@ -36,11 +36,11 @@ public:
 
 	void setFontColor(Color color);
 
-	virtual void paint(void);
+	virtual void paint(void) override;
 
-	virtual Object *handlerPush(Position pos);
+	virtual Object *handlerPush(Position pos) override;
 
-	virtual Object *handlerUp(void);
+	virtual Object *handlerUp(void) override;
 
 private :
 	void (*mPushHandler)(void);

@@ -18,20 +18,20 @@ public :
 
 	virtual ~FrameBufferArgb1555(void);
 
-	virtual uint8_t getPixelCapacity(void);
+	virtual uint8_t getPixelCapacity(void) override;
 
-	virtual void drawDot(int16_t x, int16_t y);
+	virtual void drawDot(int16_t x, int16_t y) override;
 
-	virtual bitmap_t getBitmap(void);
+	virtual bitmap_t getBitmap(void) override;
 
 protected :
 	uint16_t mBrushColorCode;
 
-	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color);
+	virtual void fillDotArray(uint32_t offset, uint32_t count, Color color) override;
 
 	virtual void drawBitmapBase(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap);
 
-	virtual Size getCanvasSize(void);
+	virtual Size getCanvasSize(void) override;
 
 private :
 	void drawBitmapRgb565(Size canvasSize, Rectangular canvasDesArea, Position bitmapPos, const bitmap_t bitmap);

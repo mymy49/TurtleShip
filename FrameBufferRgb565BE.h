@@ -18,15 +18,15 @@ public :
 
 	virtual ~FrameBufferRgb565BE(void);
 
-	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha);
+	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha) override;
 	
-	virtual void setBrushColor(Color color);
+	virtual void setBrushColor(Color color) override;
 
-	virtual Color getBrushColor(void);
+	virtual Color getBrushColor(void) override;
 
-	virtual void setBackgroundColor(Color color);
+	virtual void setBackgroundColor(Color color) override;
 
-	virtual Color getBackgroundColor(void);
+	virtual Color getBackgroundColor(void) override;
 
 protected :
 

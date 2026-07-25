@@ -25,7 +25,7 @@ public :
 	
 	CodeFont(const codeFontInfo_t *info);
 
-	fontInfo_t* getFontInfo(uint32_t ch) override;
+	virtual fontInfo_t* getFontInfo(uint32_t ch) override;
 
 private :
 	const codeFontInfo_t *mInfo;
