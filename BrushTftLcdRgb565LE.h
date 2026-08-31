@@ -15,19 +15,23 @@
 class BrushTftLcdRgb565LE : public BrushTftLcdRgb565
 {
 public :
-	BrushTftLcdRgb565LE(void);
+	BrushTftLcdRgb565LE(void) __attribute__((optimize("-O1")));
 
-	virtual ~BrushTftLcdRgb565LE(void);
+	virtual ~BrushTftLcdRgb565LE(void) __attribute__((optimize("-O1")));
 
-	void setFrameBuffer(FrameBufferRgb565LE &obj);
+	void setFrameBuffer(FrameBufferRgb565LE &obj) __attribute__((optimize("-O1")));
 
-	void setBrushColor(Color color) override;
+	void setBrushColor(Color color) override __attribute__((optimize("-O1")));
 
-	Color getBrushColor(void) override;
+	void setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
-	void setBackgroundColor(Color color) override;
+	Color getBrushColor(void) override __attribute__((optimize("-O1")));
 
-	Color getBackgroundColor(void) override;
+	void setBackgroundColor(Color color) override __attribute__((optimize("-O1")));
+
+	void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
+
+	Color getBackgroundColor(void) override __attribute__((optimize("-O1")));
 
 protected :
 	ColorRgb565LE mBrushColor, mBgColor, mFontColor;

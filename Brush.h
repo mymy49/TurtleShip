@@ -43,9 +43,13 @@ public:
 	
 	virtual void setBrushColor(Color color) __attribute__((optimize("-O1"))) = 0;
 
+	virtual void setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) __attribute__((optimize("-O1"))) = 0;
+
 	virtual Color getBrushColor() __attribute__((optimize("-O1"))) = 0;
 
 	virtual void setBackgroundColor(Color color) __attribute__((optimize("-O1"))) = 0;
+
+	virtual void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) __attribute__((optimize("-O1"))) = 0;
 
 	virtual Color getBackgroundColor() __attribute__((optimize("-O1"))) = 0;
 
@@ -81,7 +85,7 @@ public:
 
 	Position drawString(align_t align, const char *str) __attribute__((optimize("-O1")));
 
-	Size calculateStringSize(const char *str) __attribute__((optimize("-O1")));
+	Size calculateStringArea(const char *str) __attribute__((optimize("-O1")));
 
 	void drawBitmap(Position pos, const bitmap_t bitmap) __attribute__((optimize("-O1")));
 

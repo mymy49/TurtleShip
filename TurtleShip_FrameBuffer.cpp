@@ -54,6 +54,11 @@ bool FrameBuffer::setSize(uint16_t width, uint16_t height)
 	}
 }
 
+bool FrameBuffer::setSize(Area area)
+{
+	return setSize(area.getSize());
+}
+
 void FrameBuffer::malloc(uint32_t maxPixelPoints)
 {
 	uint32_t size = getPixelCapacity();

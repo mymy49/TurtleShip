@@ -448,7 +448,7 @@ void Brush::fillQuadrangle(Position p1, Position p2, Position p3, Position p4)
 	fillTriangle(p2, p3, p4);
 }
 
-Size Brush::calculateStringSize(const char *str)
+Size Brush::calculateStringArea(const char *str)
 {
 	Size size;
 
@@ -633,7 +633,7 @@ Position Brush::drawString(Position pos, const char *str)
 Position Brush::drawString(align_t align, const char *str)
 {
 	Position pos;
-	Size size = calculateStringSize(str), csize = getCanvasSize();
+	Size size = calculateStringArea(str), csize = getCanvasSize();
 
 	if(size.getWidth() == 0)
 		return pos;

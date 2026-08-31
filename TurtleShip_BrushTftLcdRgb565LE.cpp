@@ -32,6 +32,12 @@ void BrushTftLcdRgb565LE::setBrushColor(Color color)
 	mBrushColorCode = mBrushColor.getCode();
 }
 
+void BrushTftLcdRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
+{
+	mBrushColor.Color::setColor(red, green, blue, alpha);
+	mBrushColorCode = mBrushColor.getCode();
+}
+
 Color BrushTftLcdRgb565LE::getBrushColor(void)
 {
 	return mBrushColor;
@@ -40,6 +46,11 @@ Color BrushTftLcdRgb565LE::getBrushColor(void)
 void BrushTftLcdRgb565LE::setBackgroundColor(Color color)
 {
 	mBgColor.Color::setColor(color);
+}
+
+void BrushTftLcdRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
+{
+	mBgColor.Color::setColor(red, green, blue, alpha);
 }
 
 Color BrushTftLcdRgb565LE::getBackgroundColor(void)

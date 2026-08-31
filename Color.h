@@ -27,7 +27,7 @@ public:
 
 		
 protected:
-	uint8_t mRed, mGreen, mBlue, mAlapha;
+	uint8_t mRed, mGreen, mBlue, mAlpha;
 
 	uint32_t mCode;
 

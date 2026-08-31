@@ -9,9 +9,11 @@
 #define YSS_GUI_FRAME_BUFFER__H_
 
 #include <stdint.h>
-#include "Size.h"
 #include "TurtleShipTypes.h"
 #include "Brush.h"
+
+class Size;
+class Area;
 
 class FrameBuffer : public Brush
 {
@@ -27,6 +29,8 @@ public:
 	bool setSize(Size size);
 
 	bool setSize(uint16_t width, uint16_t height);
+
+	bool setSize(Area area);
 
 	Size getSize(void);
 

@@ -70,6 +70,12 @@ void FrameBufferRgb565LE::setBrushColor(Color color)
 	mBrushColorCode = mBrushColor.getCode();
 }
 
+void FrameBufferRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
+{
+	mBrushColor.Color::setColor(red, green, blue, alpha);
+	mBrushColorCode = mBrushColor.getCode();
+}
+
 Color FrameBufferRgb565LE::getBrushColor(void)
 {
 	return mBrushColor;
@@ -78,6 +84,11 @@ Color FrameBufferRgb565LE::getBrushColor(void)
 void FrameBufferRgb565LE::setBackgroundColor(Color color)
 {
 	mBgColor.Color::setColor(color);
+}
+
+void FrameBufferRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
+{
+	mBgColor.Color::setColor(red, green, blue, alpha);
 }
 
 Color FrameBufferRgb565LE::getBackgroundColor(void)

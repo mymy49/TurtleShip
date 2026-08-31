@@ -19,7 +19,7 @@ void  ColorRgb565BE::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint
 	mRed = red;
 	mGreen = green;
 	mBlue = blue;
-	mAlapha = alpha;
+	mAlpha = alpha;
 
 	code [1] = (mGreen & 0xFC) << 3;
 	code [1] |= mRed >> 3;

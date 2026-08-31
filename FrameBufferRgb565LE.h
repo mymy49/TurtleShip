@@ -14,19 +14,23 @@
 class FrameBufferRgb565LE : public FrameBufferRgb565
 {
 public :
-	FrameBufferRgb565LE(void);
+	FrameBufferRgb565LE(void) __attribute__((optimize("-O1")));
 
-	~FrameBufferRgb565LE(void) override;
+	~FrameBufferRgb565LE(void) override __attribute__((optimize("-O1")));
 
-	void blendDot(int16_t x, int16_t y, uint8_t alpha) override;
+	void blendDot(int16_t x, int16_t y, uint8_t alpha) override __attribute__((optimize("-O1")));
 	
-	void setBrushColor(Color color) override;
+	void setBrushColor(Color color) override __attribute__((optimize("-O1")));
 
-	Color getBrushColor(void) override;
+	void setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
-	void setBackgroundColor(Color color) override;
+	Color getBrushColor(void) override __attribute__((optimize("-O1")));
 
-	Color getBackgroundColor(void) override;
+	void setBackgroundColor(Color color) override __attribute__((optimize("-O1")));
+
+	void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
+
+	Color getBackgroundColor(void) override __attribute__((optimize("-O1")));
 
 protected :
 
