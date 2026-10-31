@@ -9,7 +9,7 @@
 #define YSS_GUI_OBJSYS__H_
 
 #include "TurtleShipTypes.h"
-#include "Area.h"
+#include <yss/Area.h>
 #include "config.h"
 #include "FrameBufferRgb565LE.h"
 

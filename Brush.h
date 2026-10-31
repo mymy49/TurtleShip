@@ -10,8 +10,8 @@
 
 #include <stdint.h>
 #include "Color.h"
-#include "Position.h"
-#include "Area.h"
+#include <yss/Position.h>
+#include <yss/Area.h>
 #include "Size.h"
 #include "TurtleShipTypes.h"
 

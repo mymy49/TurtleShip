@@ -9,8 +9,7 @@
 #define YSS_GUI_BITMAP_DRAWING_CALCULATOR__H_
 
 #include <stdint.h>
-
-#include "Area.h"
+#include <yss/Area.h>
 
 class BitmapDrawingCalculator
 {

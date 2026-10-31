@@ -8,7 +8,7 @@
 #ifndef YSS_GUI__H_
 #define YSS_GUI__H_
 
-#include "Area.h"
+#include <yss/Area.h>
 #include "Size.h"
 #include "FrameBufferRgb565LE.h"
 #include "CodeFont.h"
