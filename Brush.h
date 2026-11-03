@@ -12,7 +12,7 @@
 #include "Color.h"
 #include <yss/Position.h>
 #include <yss/Area.h>
-#include "Size.h"
+#include <yss/Size.h>
 #include "TurtleShipTypes.h"
 
 class Font;

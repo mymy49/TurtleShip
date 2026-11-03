@@ -6,7 +6,7 @@
  */
 
 #include "FrameBuffer.h"
-#include "Size.h"
+#include <yss/Size.h>
 #include <config.h>
 #include <yss/lmalloc.h>
 #include <yss/hmalloc.h>

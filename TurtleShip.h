@@ -9,7 +9,7 @@
 #define YSS_GUI__H_
 
 #include <yss/Area.h>
-#include "Size.h"
+#include <yss/Size.h>
 #include "FrameBufferRgb565LE.h"
 #include "CodeFont.h"
 

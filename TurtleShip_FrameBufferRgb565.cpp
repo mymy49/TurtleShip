@@ -8,7 +8,7 @@
 #include <config.h>
 
 #include "FrameBufferRgb565.h"
-#include "Size.h"
+#include <yss/Size.h>
 #include <std_ext/string.h>
 #include "BitmapDrawingCalculator.h"
 #include <yss/lmalloc.h>

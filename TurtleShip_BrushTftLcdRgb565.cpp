@@ -6,7 +6,7 @@
  */
 
 #include "BrushTftLcdRgb565.h"
-#include "Size.h"
+#include <yss/Size.h>
 #include <config.h>
 #include <yss/hmalloc.h>
 #include <std_ext/string.h>
