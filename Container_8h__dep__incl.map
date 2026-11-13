@@ -1,0 +1,5 @@
+<map id="Container.h" name="Container.h">
+<area shape="rect" id="Node000001" title="Composite GUI widget class (Container) that manages and renders child Object instances." alt="" coords="5,5,101,33"/>
+<area shape="rect" id="Node000002" href="$Frame_8h.html" title="Top&#45;level full&#45;screen window container (Frame) of the TurtleShip GUI library." alt="" coords="16,81,90,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,47,56,81,50,80,51,51"/>
+</map>

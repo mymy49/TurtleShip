@@ -1,0 +1,9 @@
+<map id="TurtleShip_ColorRgb888.cpp" name="TurtleShip_ColorRgb888.cpp">
+<area shape="rect" id="Node000001" title="Implementation file for the ColorRgb888 class (currently inactive; base Color provides ARGB8888)." alt="" coords="5,5,208,33"/>
+<area shape="rect" id="Node000002" href="$ColorRgb888_8h.html" title="24/32&#45;bit RGB888 color encoding class of the TurtleShip GUI library." alt="" coords="48,81,165,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,31,109,66,104,65,106,36"/>
+<area shape="rect" id="Node000003" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="73,157,140,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,107,109,142,104,140,105,112"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="71,232,142,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,183,109,218,104,216,105,187"/>
+</map>

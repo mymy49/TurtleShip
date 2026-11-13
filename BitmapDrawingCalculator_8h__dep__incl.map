@@ -1,0 +1,7 @@
+<map id="BitmapDrawingCalculator.h" name="BitmapDrawingCalculator.h">
+<area shape="rect" id="Node000001" title="Clipping and buffer offset calculator for blitting bitmaps onto a target canvas region." alt="" coords="125,5,324,33"/>
+<area shape="rect" id="Node000002" href="$TurtleShip__BitmapDrawingCalculator_8cpp.html" title="Implementation of the BitmapDrawingCalculator class for 2D bitmap clipping and offset calculation." alt="" coords="5,81,199,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,41,136,83,133,78,190,43"/>
+<area shape="rect" id="Node000003" href="$TurtleShip__FrameBufferRgb565_8cpp.html" title="Implementation of the FrameBufferRgb565 class for 16&#45;bit RGB565 frame buffers." alt="" coords="223,90,472,117"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,39,330,89,325,89,256,44"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Label" name="Label">
+<area shape="rect" id="Node000001" title="GUI widget that renders a centered single&#45;line UTF&#45;8 text string on a solid background." alt="" coords="9,81,65,109"/>
+<area shape="rect" id="Node000002" href="$classObject.html" title="Abstract base class representing a positionable, sizable, and touch&#45;interactive GUI widget." alt="" coords="5,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,47,40,81,34,80,35,51"/>
+</map>

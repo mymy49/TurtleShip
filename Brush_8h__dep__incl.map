@@ -1,0 +1,55 @@
+<map id="Brush.h" name="Brush.h">
+<area shape="rect" id="Node000001" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="666,5,736,33"/>
+<area shape="rect" id="Node000002" href="$BrushTftLcdRgb565_8h.html" title="Intermediate Brush base class for 16&#45;bit RGB565 TFT LCD drivers." alt="" coords="262,81,420,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="649,32,406,83,404,78,653,29"/>
+<area shape="rect" id="Node000008" href="$FrameBuffer_8h.html" title="Abstract base class for heap&#45;allocated off&#45;screen drawing canvases." alt="" coords="691,81,804,109"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="718,44,742,81,736,80,716,49"/>
+<area shape="rect" id="Node000009" href="$FrameBufferArgb1555_8h.html" title="Base 16&#45;bit ARGB1555 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="566,157,742,184"/>
+<area shape="poly" id="edge26_Node000001_Node000009" title=" " alt="" coords="692,46,682,82,660,158,655,155,677,80,689,50"/>
+<area shape="rect" id="Node000026" href="$TurtleShip__Brush_8cpp.html" title="Implementation of the device&#45;independent 2D drawing algorithms of the Brush class." alt="" coords="828,81,984,109"/>
+<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="751,36,872,80,867,81,751,41"/>
+<area shape="rect" id="Node000003" href="$BrushTftLcdRgb565BE_8h.html" title="Big&#45;Endian RGB565 TFT LCD brush class of the TurtleShip GUI library." alt="" coords="37,157,212,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,116,165,158,162,154,290,112"/>
+<area shape="rect" id="Node000005" href="$BrushTftLcdRgb565LE_8h.html" title="Little&#45;Endian RGB565 TFT LCD brush class of the TurtleShip GUI library." alt="" coords="245,334,418,361"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="311,121,300,138,288,158,282,182,281,207,291,257,308,300,326,334,321,333,304,303,286,258,276,207,277,181,284,156,295,135,314,117"/>
+<area shape="rect" id="Node000007" href="$TurtleShip__BrushTftLcdRgb565_8cpp.html" title="Implementation of the BrushTftLcdRgb565 base class methods." alt="" coords="298,157,543,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="366,117,409,156,404,157,366,122"/>
+<area shape="rect" id="Node000004" href="$TurtleShip__BrushTftLcdRgb565BE_8cpp.html" title="Implementation of the BrushTftLcdRgb565BE class for Big&#45;Endian RGB565 TFT LCD brushes." alt="" coords="5,232,223,277"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,197,119,232,114,231,120,202"/>
+<area shape="rect" id="Node000006" href="$TurtleShip__BrushTftLcdRgb565LE_8cpp.html" title="Implementation of the BrushTftLcdRgb565LE class for Little&#45;Endian RGB565 TFT LCD brushes." alt="" coords="223,418,440,462"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="333,374,334,418,329,416,330,379"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="721,117,672,158,669,154,717,120"/>
+<area shape="rect" id="Node000010" href="$FrameBufferRgb565_8h.html" title="Base 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="766,157,928,184"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="778,115,832,156,827,156,777,121"/>
+<area shape="rect" id="Node000025" href="$TurtleShip__FrameBuffer_8cpp.html" title="Implementation of the FrameBuffer base class for heap&#45;managed off&#45;screen pixel buffers." alt="" coords="952,157,1150,184"/>
+<area shape="poly" id="edge25_Node000008_Node000025" title=" " alt="" coords="817,110,999,155,994,157,817,116"/>
+<area shape="rect" id="Node000011" href="$FrameBufferArgb1555LE_8h.html" title="Little&#45;Endian 16&#45;bit ARGB1555 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="340,241,530,268"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="764,189,502,243,501,238,769,187"/>
+<area shape="rect" id="Node000012" href="$FrameBufferRgb565BE_8h.html" title="Big&#45;Endian 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="555,241,734,268"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="798,192,678,243,676,238,803,190"/>
+<area shape="rect" id="Node000013" href="$FrameBufferRgb565LE_8h.html" title="Little&#45;Endian 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="759,241,936,268"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="849,198,850,242,845,239,846,202"/>
+<area shape="rect" id="Node000024" href="$TurtleShip__FrameBufferRgb565_8cpp.html" title="Implementation of the FrameBufferRgb565 class for 16&#45;bit RGB565 frame buffers." alt="" coords="960,241,1209,268"/>
+<area shape="poly" id="edge24_Node000010_Node000024" title=" " alt="" coords="900,187,1049,240,1044,240,900,193"/>
+<area shape="poly" id="edge13_Node000013_Node000005" title=" " alt="" coords="768,273,746,280,417,335,416,330,746,274,773,271"/>
+<area shape="rect" id="Node000014" href="$Object_8h.html" title="Abstract base class (Object) for all hierarchical GUI widgets in the TurtleShip library." alt="" coords="626,334,701,361"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="809,275,691,335,689,330,804,277"/>
+<area shape="rect" id="Node000021" href="$SystemOutputFrameBuffer_8h.html" title="System output frame buffer bridge (OutputFrameBuffer) for the TurtleShip GUI library." alt="" coords="725,334,930,361"/>
+<area shape="poly" id="edge21_Node000013_Node000021" title=" " alt="" coords="843,282,832,335,828,331,839,286"/>
+<area shape="rect" id="Node000022" href="$TurtleShip_8h.html" title="Top&#45;level convenience header for the TurtleShip GUI library." alt="" coords="955,334,1052,361"/>
+<area shape="poly" id="edge22_Node000013_Node000022" title=" " alt="" coords="884,274,983,333,978,333,883,279"/>
+<area shape="rect" id="Node000023" href="$TurtleShip__FrameBufferRgb565LE_8cpp.html" title="Implementation of the FrameBufferRgb565LE class for Little&#45;Endian 16&#45;bit RGB565 frame buffers." alt="" coords="1077,325,1298,370"/>
+<area shape="poly" id="edge23_Node000013_Node000023" title=" " alt="" coords="912,270,1108,324,1103,325,911,276"/>
+<area shape="rect" id="Node000015" href="$Button_8h.html" title="Interactive 3D beveled push&#45;button widget class (Button) of the TurtleShip GUI library." alt="" coords="500,426,576,454"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="636,369,558,428,555,423,631,371"/>
+<area shape="rect" id="Node000017" href="$Container_8h.html" title="Composite GUI widget class (Container) that manages and renders child Object instances." alt="" coords="616,426,711,454"/>
+<area shape="poly" id="edge17_Node000014_Node000017" title=" " alt="" coords="665,374,665,427,661,424,662,378"/>
+<area shape="rect" id="Node000019" href="$Label_8h.html" title="Static text label widget class (Label) of the TurtleShip GUI library." alt="" coords="752,426,820,454"/>
+<area shape="poly" id="edge19_Node000014_Node000019" title=" " alt="" coords="694,368,771,426,765,425,692,373"/>
+<area shape="rect" id="Node000016" href="$TurtleShip__Button_8cpp.html" title="Implementation of the Button widget class." alt="" coords="440,510,602,538"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="534,468,525,512,522,508,530,471"/>
+<area shape="rect" id="Node000018" href="$Frame_8h.html" title="Top&#45;level full&#45;screen window container (Frame) of the TurtleShip GUI library." alt="" coords="626,510,700,538"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="665,468,665,512,661,508,661,472"/>
+<area shape="rect" id="Node000020" href="$TurtleShip__Label_8cpp.html" title="Implementation of the Label widget class." alt="" coords="725,510,879,538"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="793,467,802,512,797,508,790,471"/>
+</map>

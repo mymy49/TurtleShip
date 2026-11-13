@@ -1,0 +1,7 @@
+<map id="Container" name="Container">
+<area shape="rect" id="Node000001" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid..." alt="" coords="5,81,90,109"/>
+<area shape="rect" id="Node000003" href="$classFrame.html" title="Root full&#45;screen GUI window that composites child Object widgets and flushes updates to the system di..." alt="" coords="16,157,79,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="49,123,50,157,45,156,46,126"/>
+<area shape="rect" id="Node000002" href="$classObject.html" title="Abstract base class representing a positionable, sizable, and touch&#45;interactive GUI widget." alt="" coords="16,5,79,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,46,50,81,45,80,47,51"/>
+</map>

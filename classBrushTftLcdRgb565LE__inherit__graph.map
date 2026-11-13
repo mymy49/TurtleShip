@@ -1,0 +1,7 @@
+<map id="BrushTftLcdRgb565LE" name="BrushTftLcdRgb565LE">
+<area shape="rect" id="Node000001" title="BrushTftLcdRgb565 specialization using Little&#45;Endian 16&#45;bit RGB565 colors (ColorRgb565LE)." alt="" coords="5,157,167,184"/>
+<area shape="rect" id="Node000002" href="$classBrushTftLcdRgb565.html" title="Base Brush adapter for TFT LCD drivers operating in 16&#45;bit RGB565 pixel format." alt="" coords="13,81,159,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,123,88,157,84,155,84,126"/>
+<area shape="rect" id="Node000003" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="57,5,115,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,46,89,81,83,80,85,51"/>
+</map>

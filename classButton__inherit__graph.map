@@ -1,0 +1,5 @@
+<map id="Button" name="Button">
+<area shape="rect" id="Node000001" title="Interactive push&#45;button widget with pre&#45;rendered 3D beveled pushed/pulled states and event callbacks." alt="" coords="5,81,70,109"/>
+<area shape="rect" id="Node000002" href="$classObject.html" title="Abstract base class representing a positionable, sizable, and touch&#45;interactive GUI widget." alt="" coords="6,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,47,40,81,35,80,36,51"/>
+</map>

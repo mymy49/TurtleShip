@@ -1,0 +1,13 @@
+<map id="BrushTftLcdRgb565.h" name="BrushTftLcdRgb565.h">
+<area shape="rect" id="Node000001" title="Intermediate Brush base class for 16&#45;bit RGB565 TFT LCD drivers." alt="" coords="266,5,424,33"/>
+<area shape="rect" id="Node000002" href="$BrushTftLcdRgb565BE_8h.html" title="Big&#45;Endian RGB565 TFT LCD brush class of the TurtleShip GUI library." alt="" coords="48,81,223,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,40,174,83,172,78,295,37"/>
+<area shape="rect" id="Node000004" href="$BrushTftLcdRgb565LE_8h.html" title="Little&#45;Endian RGB565 TFT LCD brush class of the TurtleShip GUI library." alt="" coords="258,81,431,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="346,47,347,82,342,79,343,51"/>
+<area shape="rect" id="Node000006" href="$TurtleShip__BrushTftLcdRgb565_8cpp.html" title="Implementation of the BrushTftLcdRgb565 base class methods." alt="" coords="456,81,700,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="401,35,539,80,534,81,400,41"/>
+<area shape="rect" id="Node000003" href="$TurtleShip__BrushTftLcdRgb565BE_8cpp.html" title="Implementation of the BrushTftLcdRgb565BE class for Big&#45;Endian RGB565 TFT LCD brushes." alt="" coords="5,157,223,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,122,122,157,117,155,126,126"/>
+<area shape="rect" id="Node000005" href="$TurtleShip__BrushTftLcdRgb565LE_8cpp.html" title="Implementation of the BrushTftLcdRgb565LE class for Little&#45;Endian RGB565 TFT LCD brushes." alt="" coords="247,157,464,201"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="350,122,355,157,350,155,347,126"/>
+</map>

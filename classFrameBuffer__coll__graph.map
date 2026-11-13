@@ -1,0 +1,7 @@
+<map id="FrameBuffer" name="FrameBuffer">
+<area shape="rect" id="Node000001" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="5,183,107,211"/>
+<area shape="rect" id="Node000002" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="27,106,85,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,147,59,183,53,182,54,151"/>
+<area shape="rect" id="Node000003" href="$classFont.html" title="Abstract base class providing UTF&#45;8 character decoding, glyph metric lookup, and text width/height ca..." alt="" coords="31,5,81,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,46,59,106,53,105,55,51"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FrameBufferArgb1555LE" name="FrameBufferArgb1555LE">
+<area shape="rect" id="Node000001" title="Off&#45;screen frame buffer class for Little&#45;Endian 16&#45;bit ARGB1555 pixels." alt="" coords="5,337,184,365"/>
+<area shape="rect" id="Node000002" href="$classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16&#45;bit RGB565 pixel operations and bitmap blitting..." alt="" coords="19,260,170,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,301,97,338,92,336,93,305"/>
+<area shape="rect" id="Node000003" href="$classFrameBuffer.html" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="44,183,145,211"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,224,97,260,92,259,93,228"/>
+<area shape="rect" id="Node000004" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="65,106,124,134"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,147,97,183,92,182,94,152"/>
+<area shape="rect" id="Node000005" href="$classFont.html" title="Abstract base class providing UTF&#45;8 character decoding, glyph metric lookup, and text width/height ca..." alt="" coords="70,5,119,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,46,97,106,92,105,94,51"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Button" name="Button">
+<area shape="rect" id="Node000001" title="Interactive push&#45;button widget with pre&#45;rendered 3D beveled pushed/pulled states and event callbacks." alt="" coords="5,460,70,488"/>
+<area shape="rect" id="Node000002" href="$classObject.html" title="Abstract base class representing a positionable, sizable, and touch&#45;interactive GUI widget." alt="" coords="62,337,125,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,378,59,390,45,427,41,461,36,459,40,426,54,387,67,373"/>
+<area shape="rect" id="Node000003" href="$classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid..." alt="" coords="151,460,236,488"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="86,377,84,408,86,422,92,434,104,447,118,456,154,469,148,469,116,461,100,451,87,438,81,424,78,408,83,382"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="94,378,100,408,113,434,130,450,154,463,148,462,128,454,108,438,95,410,92,383"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,446,220,435,228,411,227,401,221,390,201,373,176,362,150,356,126,354,125,349,151,351,178,357,204,368,225,387,232,400,233,411,225,437,218,450"/>
+<area shape="rect" id="Node000004" href="$classFrameBufferRgb565LE.html" title="Concrete 16&#45;bit RGB565 FrameBuffer storing pixels in Little&#45;Endian byte order." alt="" coords="263,337,428,365"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="338,377,323,410,299,438,269,456,237,467,235,462,267,451,296,434,318,407,334,380"/>
+<area shape="rect" id="Node000005" href="$classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16&#45;bit RGB565 pixel operations and bitmap blitting..." alt="" coords="270,260,421,288"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="347,301,348,338,343,335,344,305"/>
+<area shape="rect" id="Node000006" href="$classFrameBuffer.html" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="295,183,396,211"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="347,224,348,261,343,259,344,228"/>
+<area shape="rect" id="Node000007" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="316,106,375,134"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="347,147,348,184,343,182,344,151"/>
+<area shape="rect" id="Node000008" href="$classFont.html" title="Abstract base class providing UTF&#45;8 character decoding, glyph metric lookup, and text width/height ca..." alt="" coords="321,5,370,33"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="347,46,348,106,343,105,344,51"/>
+</map>

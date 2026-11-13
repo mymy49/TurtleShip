@@ -1,0 +1,5 @@
+<map id="ColorRgb565LE" name="ColorRgb565LE">
+<area shape="rect" id="Node000001" title="Derived Color class that encodes RGBA values into a 16&#45;bit Little&#45;Endian RGB565 color code." alt="" coords="5,81,125,109"/>
+<area shape="rect" id="Node000002" href="$classColor.html" title="RGBA color container with a cached pixel&#45;format&#45;specific hardware color code." alt="" coords="37,5,93,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,47,68,81,62,80,63,51"/>
+</map>

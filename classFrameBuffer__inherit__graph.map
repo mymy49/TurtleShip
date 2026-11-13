@@ -1,0 +1,15 @@
+<map id="FrameBuffer" name="FrameBuffer">
+<area shape="rect" id="Node000001" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="150,81,252,109"/>
+<area shape="rect" id="Node000003" href="$classFrameBufferArgb1555.html" title="Off&#45;screen frame buffer class for 16&#45;bit ARGB1555 (1&#45;bit Alpha, 5&#45;bit Red, 5&#45;bit Green,..." alt="" coords="29,157,192,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,121,128,158,125,154,175,117"/>
+<area shape="rect" id="Node000004" href="$classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16&#45;bit RGB565 pixel operations and bitmap blitting..." alt="" coords="217,157,367,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,116,278,156,273,156,229,121"/>
+<area shape="rect" id="Node000002" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="172,5,230,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,46,204,81,199,80,200,51"/>
+<area shape="rect" id="Node000005" href="$classFrameBufferArgb1555LE.html" title="Off&#45;screen frame buffer class for Little&#45;Endian 16&#45;bit ARGB1555 pixels." alt="" coords="5,232,184,260"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="245,191,130,234,129,229,240,189"/>
+<area shape="rect" id="Node000006" href="$classFrameBufferRgb565BE.html" title="Concrete 16&#45;bit RGB565 FrameBuffer storing pixels in Big&#45;Endian byte order." alt="" coords="208,232,376,260"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="294,198,294,233,290,230,290,202"/>
+<area shape="rect" id="Node000007" href="$classFrameBufferRgb565LE.html" title="Concrete 16&#45;bit RGB565 FrameBuffer storing pixels in Little&#45;Endian byte order." alt="" coords="400,232,565,260"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="341,188,451,232,446,232,340,193"/>
+</map>

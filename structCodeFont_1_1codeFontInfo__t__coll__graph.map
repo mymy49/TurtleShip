@@ -1,0 +1,5 @@
+<map id="CodeFont::codeFontInfo_t" name="CodeFont::codeFontInfo_t">
+<area shape="rect" id="Node000001" title="Packed master header for a Flash&#45;resident CodeFont asset." alt="" coords="5,106,192,134"/>
+<area shape="rect" id="Node000002" href="$structFont_1_1fontInfo__t.html" title="Packed glyph descriptor holding UTF&#45;8 code, bounding metrics, and 4&#45;bit alpha bitmap pointer." alt="" coords="38,5,159,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,101,106,96,105,96,50"/>
+</map>

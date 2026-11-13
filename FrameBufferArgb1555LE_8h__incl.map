@@ -1,0 +1,28 @@
+<map id="FrameBufferArgb1555LE.h" name="FrameBufferArgb1555LE.h">
+<area shape="rect" id="Node000001" title="Little&#45;Endian 16&#45;bit ARGB1555 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="189,5,380,33"/>
+<area shape="rect" id="Node000002" href="$FrameBufferRgb565_8h.html" title="Base 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="145,81,307,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,36,248,70,244,67,276,31"/>
+<area shape="rect" id="Node000011" href="$ColorRgb565LE_8h.html" title="16&#45;bit RGB565 Little&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="323,157,454,184"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="294,31,374,144,368,144,293,36"/>
+<area shape="rect" id="Node000003" href="$FrameBuffer_8h.html" title="Abstract base class for heap&#45;allocated off&#45;screen drawing canvases." alt="" coords="156,157,269,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,107,220,142,215,140,222,112"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="105,384,176,411"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="172,187,134,205,88,231,45,266,27,286,12,309,8,322,10,333,17,344,27,354,57,370,93,383,88,386,55,375,24,358,12,347,5,335,3,322,8,307,23,283,42,262,85,227,131,201,176,183"/>
+<area shape="rect" id="Node000005" href="$TurtleShipTypes_8h.html" title="Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library." alt="" coords="21,308,156,336"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="204,183,111,298,107,294,200,186"/>
+<area shape="rect" id="Node000006" href="$Brush_8h.html" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="251,232,321,260"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="226,182,265,221,260,221,225,188"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="99,334,125,371,120,371,97,339"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="273,259,220,310,162,374,159,370,216,306,268,262"/>
+<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="249,263,139,305,137,300,253,259"/>
+<area shape="rect" id="Node000007" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="589,308,655,336"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="322,251,576,306,572,309,321,257"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="230,308,342,336"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="288,258,288,294,284,291,284,263"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="365,308,455,336"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="309,258,377,300,372,300,308,263"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="479,308,565,336"/>
+<area shape="poly" id="edge12_Node000006_Node000010" title=" " alt="" coords="322,256,468,302,463,304,321,261"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="591,332,577,338,470,358,363,374,191,394,191,389,362,368,469,353,576,333,586,333"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="410,182,592,299,586,300,408,187"/>
+</map>

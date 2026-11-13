@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classColor.html" title="RGBA color container with a cached pixel&#45;format&#45;specific hardware color code." alt="" coords="5,109,61,137"/>
+<area shape="rect" id="Node000001" href="$classColorBgr565BE.html" title="Derived Color class that encodes RGBA values into a 16&#45;bit BGR565 Big&#45;Endian color code." alt="" coords="110,5,228,33"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="52,96,77,69,107,44,132,31,129,35,110,48,81,73,57,99"/>
+<area shape="rect" id="Node000002" href="$classColorBgr565LE.html" title="Derived Color class that encodes RGBA values into a 16&#45;bit BGR565 Little&#45;Endian color code." alt="" coords="111,57,228,85"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="73,105,133,83,129,88,76,110"/>
+<area shape="rect" id="Node000003" href="$classColorRgb565BE.html" title="Derived Color class that encodes RGBA values into a 16&#45;bit Big&#45;Endian 5&#45;6&#45;5 color code." alt="" coords="109,109,230,137"/>
+<area shape="poly" id="edge13_Node000000_Node000003" title=" " alt="" coords="75,121,111,122,106,125,77,126"/>
+<area shape="rect" id="Node000004" href="$classColorRgb565LE.html" title="Derived Color class that encodes RGBA values into a 16&#45;bit Little&#45;Endian RGB565 color code." alt="" coords="110,161,229,189"/>
+<area shape="poly" id="edge14_Node000000_Node000004" title=" " alt="" coords="75,136,133,159,129,162,75,142"/>
+<area shape="rect" id="Node000005" href="$classColorRgb888.html" title="Derived Color class representing 24&#45;bit RGB888 / 32&#45;bit ARGB8888 colors." alt="" coords="117,213,222,241"/>
+<area shape="poly" id="edge15_Node000000_Node000005" title=" " alt="" coords="55,146,81,173,110,198,133,213,128,213,107,203,77,177,54,151"/>
+</map>

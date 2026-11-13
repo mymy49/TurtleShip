@@ -1,0 +1,22 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="5,109,64,137"/>
+<area shape="rect" id="Node000001" href="$classBrushTftLcdRgb565.html" title="Base Brush adapter for TFT LCD drivers operating in 16&#45;bit RGB565 pixel format." alt="" coords="112,57,258,85"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="77,106,144,83,141,88,80,111"/>
+<area shape="rect" id="Node000004" href="$classFrameBuffer.html" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="134,160,236,188"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="79,135,144,158,139,161,79,141"/>
+<area shape="rect" id="Node000005" href="$classFrameBufferArgb1555.html" title="Off&#45;screen frame buffer class for 16&#45;bit ARGB1555 (1&#45;bit Alpha, 5&#45;bit Red, 5&#45;bit Green,..." alt="" coords="306,109,469,137"/>
+<area shape="poly" id="edge10_Node000000_Node000005" title=" " alt="" coords="79,121,306,121,305,126,79,126"/>
+<area shape="rect" id="Node000002" href="$classBrushTftLcdRgb565BE.html" title="BrushTftLcdRgb565 specialization using Big&#45;Endian 16&#45;bit RGB565 colors (ColorRgb565BE)." alt="" coords="306,5,469,33"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="256,50,333,32,328,35,258,55"/>
+<area shape="rect" id="Node000003" href="$classBrushTftLcdRgb565LE.html" title="BrushTftLcdRgb565 specialization using Little&#45;Endian 16&#45;bit RGB565 colors (ColorRgb565LE)." alt="" coords="307,57,468,85"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="273,69,309,70,304,72,274,74"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="250,155,332,137,327,138,252,160"/>
+<area shape="rect" id="Node000006" href="$classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16&#45;bit RGB565 pixel operations and bitmap blitting..." alt="" coords="312,161,463,189"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="251,172,315,174,309,175,251,177"/>
+<area shape="rect" id="Node000007" href="$classFrameBufferArgb1555LE.html" title="Off&#45;screen frame buffer class for Little&#45;Endian 16&#45;bit ARGB1555 pixels." alt="" coords="517,109,696,137"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="463,155,542,138,548,137,465,160"/>
+<area shape="rect" id="Node000008" href="$classFrameBufferRgb565BE.html" title="Concrete 16&#45;bit RGB565 FrameBuffer storing pixels in Big&#45;Endian byte order." alt="" coords="523,161,690,189"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="478,173,525,175,520,175,479,178"/>
+<area shape="rect" id="Node000009" href="$classFrameBufferRgb565LE.html" title="Concrete 16&#45;bit RGB565 FrameBuffer storing pixels in Little&#45;Endian byte order." alt="" coords="524,213,689,241"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="464,191,548,213,542,213,464,196"/>
+</map>

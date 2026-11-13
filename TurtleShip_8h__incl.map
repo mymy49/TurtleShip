@@ -1,0 +1,38 @@
+<map id="TurtleShip.h" name="TurtleShip.h">
+<area shape="rect" id="Node000001" title="Top&#45;level convenience header for the TurtleShip GUI library." alt="" coords="174,5,271,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="142,384,231,411"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,31,208,92,200,169,200,248,192,369,187,367,195,247,195,169,203,91,218,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="256,384,342,411"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,31,248,91,256,130,259,169,259,247,262,281,269,313,289,370,283,369,264,315,256,281,253,248,253,169,250,130,243,92,227,36"/>
+<area shape="rect" id="Node000004" href="$FrameBufferRgb565LE_8h.html" title="Little&#45;Endian 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="310,81,487,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="254,31,356,74,351,76,255,36"/>
+<area shape="rect" id="Node000013" href="$CodeFont_8h.html" title="ROM/Flash&#45;resident bitmap font class (CodeFont) of the TurtleShip GUI library." alt="" coords="57,308,151,336"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="210,36,197,57,181,82,156,139,137,198,112,294,107,292,132,196,151,137,176,80,192,54,213,31"/>
+<area shape="rect" id="Node000005" href="$FrameBufferRgb565_8h.html" title="Base 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="500,157,662,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="431,107,537,150,532,151,431,112"/>
+<area shape="rect" id="Node000012" href="$ColorRgb565LE_8h.html" title="16&#45;bit RGB565 Little&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="333,232,464,260"/>
+<area shape="poly" id="edge17_Node000004_Node000012" title=" " alt="" coords="400,107,401,217,396,216,397,111"/>
+<area shape="rect" id="Node000006" href="$FrameBuffer_8h.html" title="Abstract base class for heap&#45;allocated off&#45;screen drawing canvases." alt="" coords="558,232,671,260"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="588,182,605,219,600,217,586,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="466,459,536,487"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="649,258,706,284,763,320,785,341,799,364,802,388,790,413,774,426,750,437,687,454,616,465,552,471,552,466,616,460,686,449,748,432,771,422,786,410,797,388,794,366,781,345,760,324,703,289,648,263"/>
+<area shape="rect" id="Node000008" href="$TurtleShipTypes_8h.html" title="Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library." alt="" coords="642,384,776,411"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="624,258,696,371,690,370,621,263"/>
+<area shape="rect" id="Node000009" href="$Brush_8h.html" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="477,308,547,336"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="599,259,544,301,541,296,594,262"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="675,411,552,457,551,452,670,412"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="475,333,247,385,246,380,478,329"/>
+<area shape="poly" id="edge15_Node000009_Node000003" title=" " alt="" coords="479,335,352,381,350,376,474,336"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="535,333,556,348,574,367,585,389,586,401,582,413,565,435,543,453,541,448,562,432,578,410,581,400,580,390,570,370,552,353,534,339"/>
+<area shape="poly" id="edge16_Node000009_Node000008" title=" " alt="" coords="548,334,663,378,657,378,547,339"/>
+<area shape="rect" id="Node000010" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="366,384,432,411"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="494,335,433,378,430,373,489,337"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="456,384,568,411"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="514,334,514,370,510,366,510,338"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="418,409,473,450,468,450,416,414"/>
+<area shape="poly" id="edge18_Node000012_Node000010" title=" " alt="" coords="401,258,401,369,396,367,397,262"/>
+<area shape="poly" id="edge20_Node000013_Node000007" title=" " alt="" coords="105,334,112,373,120,393,132,409,155,423,189,435,275,452,370,462,454,470,448,470,369,468,274,457,187,440,153,428,129,413,115,396,107,375,103,339"/>
+<area shape="rect" id="Node000014" href="$Font_8h.html" title="Abstract base class for bitmap font decoding, glyph lookup, and string metric calculation." alt="" coords="5,384,67,411"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="91,339,60,374,56,371,93,334"/>
+<area shape="poly" id="edge22_Node000014_Node000007" title=" " alt="" coords="67,405,86,409,288,442,453,466,448,467,287,448,85,414,68,410"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FrameBufferRgb565" name="FrameBufferRgb565">
+<area shape="rect" id="Node000001" title="Intermediate FrameBuffer class implementing common 16&#45;bit RGB565 pixel operations and bitmap blitting..." alt="" coords="5,260,156,288"/>
+<area shape="rect" id="Node000002" href="$classFrameBuffer.html" title="Heap&#45;allocated off&#45;screen pixel buffer that can be drawn onto through the Brush interface." alt="" coords="30,183,131,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,224,83,261,78,259,79,228"/>
+<area shape="rect" id="Node000003" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="51,106,110,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,147,83,183,78,182,79,152"/>
+<area shape="rect" id="Node000004" href="$classFont.html" title="Abstract base class providing UTF&#45;8 character decoding, glyph metric lookup, and text width/height ca..." alt="" coords="56,5,105,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,46,83,106,78,105,80,51"/>
+</map>

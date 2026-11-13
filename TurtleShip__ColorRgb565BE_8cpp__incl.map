@@ -1,0 +1,9 @@
+<map id="TurtleShip_ColorRgb565BE.cpp" name="TurtleShip_ColorRgb565BE.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the ColorRgb565BE class for 16&#45;bit Big&#45;Endian 5&#45;6&#45;5 color encoding." alt="" coords="5,5,225,33"/>
+<area shape="rect" id="Node000002" href="$ColorRgb565BE_8h.html" title="16&#45;bit RGB565 Big&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="48,81,182,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,31,118,66,112,65,114,36"/>
+<area shape="rect" id="Node000003" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="82,157,148,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,107,118,142,112,140,114,112"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="80,232,150,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,183,117,218,113,216,113,187"/>
+</map>

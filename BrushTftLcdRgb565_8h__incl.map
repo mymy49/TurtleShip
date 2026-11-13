@@ -1,0 +1,19 @@
+<map id="BrushTftLcdRgb565.h" name="BrushTftLcdRgb565.h">
+<area shape="rect" id="Node000001" title="Intermediate Brush base class for 16&#45;bit RGB565 TFT LCD drivers." alt="" coords="152,5,311,33"/>
+<area shape="rect" id="Node000002" href="$Brush_8h.html" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="196,81,267,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,31,234,66,229,64,230,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="22,232,92,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,103,91,123,43,139,25,148,14,158,8,173,11,189,21,205,33,221,28,222,16,208,6,191,3,172,9,155,22,144,41,134,90,118,197,99"/>
+<area shape="rect" id="Node000004" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="24,157,90,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,111,103,153,100,148,202,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,157,226,184"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="223,108,192,147,189,143,218,111"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="249,157,339,184"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="243,107,276,145,271,145,242,112"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="363,157,449,184"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="263,107,364,150,359,151,262,112"/>
+<area shape="rect" id="Node000008" href="$TurtleShipTypes_8h.html" title="Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library." alt="" coords="474,157,608,184"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="267,102,473,151,468,154,267,107"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="58,183,59,217,54,216,55,187"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="471,183,461,187,108,240,107,235,460,182,476,182"/>
+</map>

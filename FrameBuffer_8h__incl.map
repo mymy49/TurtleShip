@@ -1,0 +1,21 @@
+<map id="FrameBuffer.h" name="FrameBuffer.h">
+<area shape="rect" id="Node000001" title="Abstract base class for heap&#45;allocated off&#45;screen drawing canvases." alt="" coords="38,5,150,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="111,232,181,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,36,53,63,25,101,15,122,9,143,9,163,17,183,33,201,52,215,98,234,93,237,50,219,29,205,13,186,4,164,4,142,10,120,20,98,49,60,80,31"/>
+<area shape="rect" id="Node000003" href="$TurtleShipTypes_8h.html" title="Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library." alt="" coords="27,157,161,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,31,96,141,91,140,92,35"/>
+<area shape="rect" id="Node000004" href="$Brush_8h.html" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="233,81,304,109"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="125,31,226,73,221,76,125,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="104,182,130,220,125,220,102,187"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="261,109,168,222,164,218,255,109"/>
+<area shape="poly" id="edge11_Node000004_Node000003" title=" " alt="" coords="235,111,140,153,137,148,239,107"/>
+<area shape="rect" id="Node000005" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="235,157,302,184"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="270,107,271,142,266,140,267,111"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="326,157,437,184"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="289,107,352,148,346,148,288,112"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="461,157,550,184"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="304,104,451,151,446,152,304,110"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="575,157,661,184"/>
+<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="304,101,562,154,557,157,304,106"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="249,184,182,227,179,222,244,186"/>
+</map>

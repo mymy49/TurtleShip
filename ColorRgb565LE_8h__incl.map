@@ -1,0 +1,7 @@
+<map id="ColorRgb565LE.h" name="ColorRgb565LE.h">
+<area shape="rect" id="Node000001" title="16&#45;bit RGB565 Little&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="5,5,137,33"/>
+<area shape="rect" id="Node000002" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="38,81,104,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,31,74,66,68,65,70,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="36,157,106,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,107,74,142,68,140,69,111"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ColorRgb565BE.h" name="ColorRgb565BE.h">
+<area shape="rect" id="Node000001" title="16&#45;bit RGB565 Big&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="214,5,348,33"/>
+<area shape="rect" id="Node000002" href="$BrushTftLcdRgb565BE_8h.html" title="Big&#45;Endian RGB565 TFT LCD brush class of the TurtleShip GUI library." alt="" coords="5,81,181,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,41,128,83,125,78,235,37"/>
+<area shape="rect" id="Node000003" href="$TurtleShip__BrushTftLcdRgb565BE_8cpp.html" title="Implementation of the BrushTftLcdRgb565BE class for Big&#45;Endian RGB565 TFT LCD brushes." alt="" coords="47,157,264,201"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="264,45,175,158,171,154,259,45"/>
+<area shape="rect" id="Node000004" href="$FrameBufferRgb565BE_8h.html" title="Big&#45;Endian 16&#45;bit RGB565 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="255,81,435,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,42,336,81,331,80,302,48"/>
+<area shape="rect" id="Node000005" href="$TurtleShip__ColorRgb565BE_8cpp.html" title="Implementation of the ColorRgb565BE class for 16&#45;bit Big&#45;Endian 5&#45;6&#45;5 color encoding." alt="" coords="459,81,679,109"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="347,35,520,80,515,81,347,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,119,142,156,136,156,111,124"/>
+</map>

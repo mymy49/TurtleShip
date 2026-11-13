@@ -1,0 +1,9 @@
+<map id="TurtleShip_ColorBgr565LE.cpp" name="TurtleShip_ColorBgr565LE.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the ColorBgr565LE class for 16&#45;bit Little&#45;Endian BGR565 color encoding." alt="" coords="5,5,220,33"/>
+<area shape="rect" id="Node000002" href="$ColorBgr565LE_8h.html" title="16&#45;bit BGR565 Little&#45;Endian color encoding class of the TurtleShip GUI library." alt="" coords="48,81,177,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,31,115,66,110,65,112,36"/>
+<area shape="rect" id="Node000003" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="79,157,146,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,107,115,142,110,140,111,112"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="77,232,148,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,183,115,218,110,216,111,187"/>
+</map>

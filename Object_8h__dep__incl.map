@@ -1,0 +1,15 @@
+<map id="Object.h" name="Object.h">
+<area shape="rect" id="Node000001" title="Abstract base class (Object) for all hierarchical GUI widgets in the TurtleShip library." alt="" coords="192,5,267,33"/>
+<area shape="rect" id="Node000002" href="$Button_8h.html" title="Interactive 3D beveled push&#45;button widget class (Button) of the TurtleShip GUI library." alt="" coords="66,81,142,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,43,127,83,125,78,196,39"/>
+<area shape="rect" id="Node000004" href="$Container_8h.html" title="Composite GUI widget class (Container) that manages and renders child Object instances." alt="" coords="182,81,277,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,47,232,82,227,79,228,51"/>
+<area shape="rect" id="Node000006" href="$Label_8h.html" title="Static text label widget class (Label) of the TurtleShip GUI library." alt="" coords="316,81,385,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="264,39,332,80,326,81,263,44"/>
+<area shape="rect" id="Node000003" href="$TurtleShip__Button_8cpp.html" title="Implementation of the Button widget class." alt="" coords="5,157,168,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,123,92,158,87,155,95,126"/>
+<area shape="rect" id="Node000005" href="$Frame_8h.html" title="Top&#45;level full&#45;screen window container (Frame) of the TurtleShip GUI library." alt="" coords="192,157,266,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="231,123,231,158,227,155,227,126"/>
+<area shape="rect" id="Node000007" href="$TurtleShip__Label_8cpp.html" title="Implementation of the Label widget class." alt="" coords="291,157,445,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="359,122,367,158,362,155,355,126"/>
+</map>

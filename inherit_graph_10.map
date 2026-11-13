@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classObject.html" title="Abstract base class representing a positionable, sizable, and touch&#45;interactive GUI widget." alt="" coords="5,57,69,85"/>
+<area shape="rect" id="Node000001" href="$classButton.html" title="Interactive push&#45;button widget with pre&#45;rendered 3D beveled pushed/pulled states and event callbacks." alt="" coords="127,5,191,33"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="82,49,128,31,124,35,84,54"/>
+<area shape="rect" id="Node000002" href="$classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid..." alt="" coords="117,57,201,85"/>
+<area shape="poly" id="edge19_Node000000_Node000002" title=" " alt="" coords="84,69,119,70,114,72,85,74"/>
+<area shape="rect" id="Node000004" href="$classLabel.html" title="GUI widget that renders a centered single&#45;line UTF&#45;8 text string on a solid background." alt="" coords="131,109,187,137"/>
+<area shape="poly" id="edge21_Node000000_Node000004" title=" " alt="" coords="84,88,133,110,128,112,83,93"/>
+<area shape="rect" id="Node000003" href="$classFrame.html" title="Root full&#45;screen GUI window that composites child Object widgets and flushes updates to the system di..." alt="" coords="249,57,311,85"/>
+<area shape="poly" id="edge20_Node000002_Node000003" title=" " alt="" coords="216,69,251,71,246,72,216,74"/>
+</map>

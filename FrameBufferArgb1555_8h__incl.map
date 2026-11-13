@@ -1,0 +1,24 @@
+<map id="FrameBufferArgb1555.h" name="FrameBufferArgb1555.h">
+<area shape="rect" id="Node000001" title="Base 16&#45;bit ARGB1555 off&#45;screen frame buffer class of the TurtleShip GUI library." alt="" coords="59,5,235,33"/>
+<area shape="rect" id="Node000002" href="$FrameBuffer_8h.html" title="Abstract base class for heap&#45;allocated off&#45;screen drawing canvases." alt="" coords="44,81,156,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,36,119,69,114,67,140,31"/>
+<area shape="rect" id="Node000005" href="$Brush_8h.html" title="Abstract 2D drawing interface (dots, lines, shapes, text, and bitmaps) of the TurtleShip GUI library." alt="" coords="197,157,267,184"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="155,31,220,143,215,143,153,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="110,308,181,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,111,57,139,26,176,15,197,9,218,9,239,17,259,33,277,52,290,97,310,93,313,50,295,29,280,13,261,4,240,4,217,11,195,22,173,53,135,85,107"/>
+<area shape="rect" id="Node000004" href="$TurtleShipTypes_8h.html" title="Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library." alt="" coords="26,232,161,260"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="101,107,97,217,92,216,98,111"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="124,107,198,148,193,150,124,112"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="104,258,130,295,125,295,102,263"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="227,184,163,296,159,293,222,185"/>
+<area shape="poly" id="edge12_Node000005_Node000004" title=" " alt="" coords="205,187,133,227,130,223,209,183"/>
+<area shape="rect" id="Node000006" href="$Color_8h.html" title="Generic RGBA color class of the TurtleShip GUI library." alt="" coords="235,232,301,260"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="240,182,258,219,252,218,238,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="326,232,437,260"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="259,182,344,225,339,226,259,188"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="461,232,550,260"/>
+<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="268,179,448,228,443,230,268,184"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="574,232,661,260"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="268,175,561,230,557,233,268,181"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="249,260,181,302,179,297,244,261"/>
+</map>

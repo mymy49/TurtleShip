@@ -1,0 +1,7 @@
+<map id="BrushTftLcdRgb565" name="BrushTftLcdRgb565">
+<area shape="rect" id="Node000001" title="Base Brush adapter for TFT LCD drivers operating in 16&#45;bit RGB565 pixel format." alt="" coords="5,183,152,211"/>
+<area shape="rect" id="Node000002" href="$classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas." alt="" coords="49,106,108,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,147,81,184,76,182,77,151"/>
+<area shape="rect" id="Node000003" href="$classFont.html" title="Abstract base class providing UTF&#45;8 character decoding, glyph metric lookup, and text width/height ca..." alt="" coords="54,5,103,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,46,81,106,76,105,77,51"/>
+</map>
