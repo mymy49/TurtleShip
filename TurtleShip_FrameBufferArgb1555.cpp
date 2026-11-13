@@ -5,6 +5,11 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_FrameBufferArgb1555.cpp
+ * @brief Legacy implementation of the FrameBufferArgb1555 class (currently disabled via comment block).
+ */
+
 #include <config.h>
 
 #if USE_GUI
@@ -157,4 +162,3 @@ bitmap_t FrameBufferArgb1555::getBitmap(void)
 }
 */
 #endif
-

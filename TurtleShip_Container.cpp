@@ -5,6 +5,11 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_Container.cpp
+ * @brief Implementation of the Container class for managing composite child widgets.
+ */
+
 #include <config.h>
 
 #if USE_GUI && YSS_L_HEAP_USE
@@ -14,6 +19,12 @@
 #include <yss/gui.h>
 #include <std_ext/malloc.h>
 
+/**
+ * @details Allocates a new `FrameBufferRgb565LE` for the container, initializes child tracking counters
+ * (`mObjArr = 0`, `mMaxObj = 0`, `mNumOfObj = 0`, `mLastEventObj = 0`, `mValidFlag = true`), and calls
+ * `increaseObjArr()` to allocate the initial child pointer array.
+ * @see Container::increaseObjArr()
+ */
 Container::Container()
 {
 	mFrameBuffer = new FrameBufferRgb565LE();
@@ -26,6 +37,10 @@ Container::Container()
 	increaseObjArr();
 }
 
+/**
+ * @details Iterates through all `mNumOfObj` registered children and `delete`s each child object,
+ * frees the `mObjArr` pointer array from the L-heap (`lfree()`), and marks `mValidFlag = false`.
+ */
 Container::~Container()
 {
 	for(int32_t  i=0;i<mNumOfObj;i++)
@@ -39,6 +54,10 @@ Container::~Container()
 	mValidFlag = false;
 }
 
+/**
+ * @details Loops through all `mNumOfObj` child objects in registration order and blits each visible
+ * child's bitmap (`obj->getFrameBuffer()->getBitmap()`) at `obj->getPosition()` onto `mFrameBuffer`.
+ */
 void Container::paint(void)
 {
 	uint16_t i;
@@ -55,11 +74,17 @@ void Container::paint(void)
 	}
 }
 
+/**
+ * @details Appends `obj` to `mObjArr` (growing the array via `increaseObjArr()` if full), sets `this`
+ * as the parent of `obj` (`obj.setParent(this)`), and triggers a partial `update()` for the child's area.
+ * Returns immediately if `mValidFlag` is `false`.
+ * @see Container::increaseObjArr(), Container::update(Rectangular)
+ */
 void Container::add(Object &obj)
 {
 	if(!mValidFlag)
 	{
-		// Container가 이미 제거된 상태에서 add를 시도할 경우 빠져나감
+		// Return early if add() is called after the Container has already been destroyed
 		return;
 	}
 
@@ -74,11 +99,20 @@ void Container::add(Object &obj)
 	update({obj.getPosition(), obj.getSize()});
 }
 
+/**
+ * @details Dereferences `obj` and forwards to `add(Object &)`.
+ * @see Container::add(Object &)
+ */
 void Container::add(Object *obj)
 {
 	add(*obj);
 }
 
+/**
+ * @details Allocates a new `Object*` array with `mMaxObj + 512` entries from the L-heap (`lmalloc()`),
+ * copies existing child pointers from `mObjArr`, frees the old array via `lfree()`, and updates
+ * `mMaxObj` and `mObjArr`.
+ */
 void Container::increaseObjArr(void)
 {
 	uint16_t i;
@@ -98,17 +132,29 @@ void Container::increaseObjArr(void)
 	mObjArr = temp;
 }
 
+/**
+ * @details Repaints the entire container rectangle `{mPos, mFrameBuffer->getSize()}` by delegating
+ * to `update(Rectangular)`.
+ * @see Container::update(Rectangular)
+ */
 void Container::update(void)
 {
 	update({mPos, mFrameBuffer->getSize()});
 }
 
+/**
+ * @details Clears `rect` in `mFrameBuffer` with the background color, repaints any child whose
+ * `isModified()` flag is set, blits all visible children clipped to `rect`, and—if `mParent` is set—
+ * translates `rect` by `mPos` and propagates `mParent->update(rect)`.
+ */
 void Container::update(Rectangular rect)
 {
 	Object *obj;
 
+	// Clear the dirty region with the container's background color
 	mFrameBuffer->clearRectangular(rect);
 
+	// Repaint dirty children and composite visible children clipped to rect
 	for (uint16_t i = 0; i < mNumOfObj; i++)
 	{
 		obj = mObjArr[i];
@@ -123,6 +169,7 @@ void Container::update(Rectangular rect)
 			mFrameBuffer->drawBitmap(rect, obj->getPosition(), obj->getFrameBuffer()->getBitmap());
 	}
 
+	// Propagate dirty region to parent container in parent-local coordinates
 	if (mParent)
 	{
 		rect += mPos;
@@ -130,6 +177,11 @@ void Container::update(Rectangular rect)
 	}
 }
 
+/**
+ * @details Clears both `before` and `current` rectangles in `mFrameBuffer`, repaints any modified
+ * children, blits all visible children clipped to `before` and `current`, and propagates the
+ * translated rectangles to `mParent->update(before, current)`.
+ */
 void Container::update(Rectangular before, Rectangular current)
 {
 	Object *obj;
@@ -162,6 +214,11 @@ void Container::update(Rectangular before, Rectangular current)
 	}
 }
 
+/**
+ * @details Scans `mObjArr` in reverse order (`mNumOfObj - 1` down to `0`) so top-most children are
+ * tested first. When a visible child whose bounding box contains `pos` is found, subtracts `objPos`
+ * from `pos` and invokes `mObjArr[i]->handlerPush(calculatedPos)`. Returns `nullptr` if no child is hit.
+ */
 Object *Container::handlerPush(Position pos)
 {
 	Position objPos;
@@ -192,6 +249,11 @@ Object *Container::handlerPush(Position pos)
 	return nullptr;
 }
 
+/**
+ * @details Scans `mObjArr` in reverse order (`mNumOfObj - 1` down to `0`) and forwards the drag
+ * event (in child-local coordinates) to the first visible child whose bounding box contains `pos`.
+ * Returns `nullptr` if no child is hit.
+ */
 Object *Container::handlerDrag(Position pos)
 {
 	Position objPos;
@@ -221,11 +283,17 @@ Object *Container::handlerDrag(Position pos)
 	return nullptr;
 }
 
+/**
+ * @details Returns `nullptr` on touch-up at the container level.
+ */
 Object *Container::handlerUp(void)
 {
 	return nullptr;
 }
 
+/**
+ * @details Sets the background color on the container's `mFrameBuffer`.
+ */
 void Container::setBackgroundColor(Color color)
 {
 	mFrameBuffer->setBackgroundColor(color);

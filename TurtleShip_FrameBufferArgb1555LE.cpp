@@ -5,6 +5,11 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_FrameBufferArgb1555LE.cpp
+ * @brief Legacy implementation of the FrameBufferArgb1555LE class (currently disabled via comment block).
+ */
+
 #include <config.h>
 
  #if USE_GUI
@@ -90,4 +95,3 @@ Color FrameBufferArgb1555LE::getBackgroundColor(void)
 }
 */
 #endif
-

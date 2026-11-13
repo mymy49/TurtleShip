@@ -5,6 +5,11 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_Button.cpp
+ * @brief Implementation of the Button widget class.
+ */
+
 #include <yss/instance.h>
 #include <config.h>
 #include <string.h>
@@ -12,6 +17,11 @@
 #include "Button.h"
 #include "Font.h"
 
+/**
+ * @details Allocates `mFrameBuffer`, `mPushedFb`, and `mPulledFb`, initializes event handler pointers
+ * and state flags to `nullptr` / `false`, sets the default font color to white (`0xFF, 0xFF, 0xFF`),
+ * and sets the default button face background color to medium gray (`0x80, 0x80, 0x80`).
+ */
 Button::Button(void)
 {
 	mFrameBuffer = new FrameBufferRgb565LE();
@@ -31,6 +41,9 @@ Button::Button(void)
 	mPulledFb->setBackgroundColor({0x80, 0x80, 0x80});
 }
 
+/**
+ * @details Frees the heap-allocated `mPushedFb` and `mPulledFb` instances.
+ */
 Button::~Button(void)
 {
 	if(mPushedFb != nullptr)
@@ -40,6 +53,16 @@ Button::~Button(void)
 		delete mPulledFb;
 }
 
+/**
+ * @details Pre-renders the visual appearance of both the pressed (`mPushedFb`) and released
+ * (`mPulledFb`) button states:
+ * -# Clears `mPushedFb` and draws a 3-pixel sunken bevel (dark gray `{20,20,20}`, `{70,70,70}`,
+ *    `{100,100,100}` on top/left; light gray `{160,160,160}`, `{192,192,192}`, `{224,224,224}` on bottom/right).
+ * -# Clears `mPulledFb` and draws a 3-pixel raised bevel (light gray on top/left; dark gray on bottom/right).
+ * -# If both `mText` and a `Font` are configured, centers `mText` on `mPulledFb` and draws it shifted
+ *    by `(+2, +2)` pixels on `mPushedFb` to simulate physical button depression.
+ * @see Button::paint()
+ */
 void Button::makeButtonImage(void)
 {
 	Size size = mFrameBuffer->getSize();
@@ -51,6 +74,7 @@ void Button::makeButtonImage(void)
 	uint16_t width = mFrameBuffer->getSize().getWidth(), height = mFrameBuffer->getSize().getHeight();
 	uint16_t fwidth, fheight;
 
+	// Render sunken 3D bevel into mPushedFb (pressed state)
 	mPushedFb->clear();
 	mPushedFb->setBrushColor({20, 20, 20});
 	mPushedFb->drawLine({0, 0}, {(int16_t)(width - 1), 0});
@@ -74,6 +98,7 @@ void Button::makeButtonImage(void)
 	mPushedFb->drawLine({(int16_t)(width - 1), (int16_t)(height - 1)}, {(int16_t)(width - 1), 0});
 	mPushedFb->drawLine({0, (int16_t)(height - 1)}, {(int16_t)(width - 1), (int16_t)(height - 1)});
 
+	// Render raised 3D bevel into mPulledFb (released state)
 	mPulledFb->clear();
 	mPulledFb->setBrushColor({224, 224, 224});
 	mPulledFb->drawLine({0, 0}, {(int16_t)(width - 1), 0});
@@ -97,6 +122,7 @@ void Button::makeButtonImage(void)
 	mPulledFb->drawLine({(int16_t)(width - 1), (int16_t)(height - 1)}, {(int16_t)(width - 1), 0});
 	mPulledFb->drawLine({0, (int16_t)(height - 1)}, {(int16_t)(width - 1), (int16_t)(height - 1)});
 
+	// Draw centered label text on both states (with +2px offset when pushed)
 	if (mText && font)
 	{
 		fwidth = font->getStringWidth((char*)mText);
@@ -108,6 +134,12 @@ void Button::makeButtonImage(void)
 	}
 }
 
+/**
+ * @details Rebuilds the cached button bitmaps via `makeButtonImage()` if `mButtonModifiedFlag` is set,
+ * then copies either `mPushedFb` (when `mState == true`) or `mPulledFb` (when `mState == false`)
+ * onto `mFrameBuffer`.
+ * @see Button::makeButtonImage()
+ */
 void Button::paint(void)
 {
 	if(mButtonModifiedFlag)
@@ -122,16 +154,26 @@ void Button::paint(void)
 		mFrameBuffer->drawBitmap({0, 0}, mPulledFb->getBitmap());
 }
 
+/**
+ * @details Stores the push callback function pointer in `mPushHandler`.
+ */
 void Button::setPushEventHandler(void (*handler)(void))
 {
 	mPushHandler = handler;
 }
 
+/**
+ * @details Stores the release callback function pointer in `mUpHandler`.
+ */
 void Button::setUpEventHandler(void (*handler)(void))
 {
 	mUpHandler = handler;
 }
 
+/**
+ * @details Updates `mText`, sets `mButtonModifiedFlag = true`, and calls `touch()` so the button
+ * image is regenerated on the next paint cycle.
+ */
 void Button::setText(const char *text)
 {
 	mText = text;
@@ -139,6 +181,11 @@ void Button::setText(const char *text)
 	touch();
 }
 
+/**
+ * @details If `mResizeAble` is `true`, reallocates and resizes `mFrameBuffer`, `mPushedFb`, and
+ * `mPulledFb` for `size.getWidth() * size.getHeight()` pixels, calls `eventSizeChanged(size)`,
+ * and marks the button modified (`mButtonModifiedFlag = true`, `touch()`).
+ */
 void Button::setSize(Size size)
 {
 	uint32_t pixels = size.getHeight() * size.getWidth();
@@ -157,11 +204,19 @@ void Button::setSize(Size size)
 	}
 }
 
+/**
+ * @details Wraps `width` and `height` into a `Size` and delegates to `setSize(Size)`.
+ * @see Button::setSize(Size)
+ */
 void Button::setSize(uint16_t width, uint16_t height)
 {
 	setSize({width, height});
 }
 
+/**
+ * @details Sets `mState = true`, repaints and updates the button on screen, and invokes
+ * `mPushHandler()` if registered.
+ */
 Object *Button::handlerPush(Position pos)
 {
 	(void)pos;
@@ -174,6 +229,10 @@ Object *Button::handlerPush(Position pos)
 	return this;
 }
 
+/**
+ * @details Sets `mState = false`, repaints and updates the button on screen, and invokes
+ * `mUpHandler()` if registered.
+ */
 Object *Button::handlerUp(void)
 {
 	mState = false;
@@ -184,6 +243,9 @@ Object *Button::handlerUp(void)
 	return this;
 }
 
+/**
+ * @details Attaches `font` to `mFrameBuffer`, `mPushedFb`, and `mPulledFb`.
+ */
 void Button::setFont(Font &font)
 {
 	mFrameBuffer->setFont(font);
@@ -191,6 +253,10 @@ void Button::setFont(Font &font)
 	mPulledFb->setFont(font);
 }
 
+/**
+ * @details Sets the background color on `mFrameBuffer`, `mPushedFb`, and `mPulledFb`, marks
+ * `mButtonModifiedFlag = true`, and calls `touch()`.
+ */
 void Button::setColor(Color color)
 {
 	mFrameBuffer->setBackgroundColor(color);
@@ -200,10 +266,12 @@ void Button::setColor(Color color)
 	touch();
 }
 
+/**
+ * @details Updates `mFontColor`, marks `mButtonModifiedFlag = true`, and calls `touch()`.
+ */
 void Button::setFontColor(Color color)
 {
 	mFontColor = color;
 	mButtonModifiedFlag = true;
 	touch();
 }
-

@@ -5,6 +5,11 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_ColorRgb888.cpp
+ * @brief Implementation file for the ColorRgb888 class (currently inactive; base Color provides ARGB8888).
+ */
+
 #include "ColorRgb888.h"
 
 /*

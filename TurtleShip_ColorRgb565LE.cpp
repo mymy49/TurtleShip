@@ -5,13 +5,30 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_ColorRgb565LE.cpp
+ * @brief Implementation of the ColorRgb565LE class for 16-bit Little-Endian RGB565 color encoding.
+ */
+
 #include "ColorRgb565LE.h"
 
+/**
+ * @details Default constructor. Base class `Color::Color()` initializes the RGBA fields.
+ */
 ColorRgb565LE::ColorRgb565LE(void)
 {
 
 }
 
+/**
+ * @details Stores the 8-bit `red`, `green`, `blue`, and `alpha` values and packs the top 5 bits of red,
+ * top 6 bits of green, and top 5 bits of blue into a 2-byte array `code[2]` in Little-Endian byte order:
+ * - `code[0]` (bits `[7:0]`) holds `((mGreen & 0xFC) << 3) | (mBlue >> 3)`
+ * - `code[1]` (bits `[15:8]`) holds `(mRed & 0xF8) | (mGreen >> 5)`
+ *
+ * The resulting 16-bit RGB565 word is stored in `mCode`.
+ * @see Color::getCode()
+ */
 void  ColorRgb565LE::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
 	uint8_t code[2];
@@ -21,8 +38,10 @@ void  ColorRgb565LE::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint
 	mBlue = blue;
 	mAlpha = alpha;
 
+	// Pack low byte (green[4:2] and blue[7:3]) into byte index 0 for little-endian RGB565 layout
 	code [0] = (mGreen & 0xFC) << 3;
 	code [0] |= mBlue >> 3;
+	// Pack high byte (red[7:3] and green[7:5]) into byte index 1 for little-endian RGB565 layout
 	code [1] = mRed & 0xF8;
 	code [1] |= mGreen >> 5;
 

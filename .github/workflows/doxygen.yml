@@ -1,0 +1,40 @@
+name: Doxygen API Docs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Grant write permissions for GitHub Pages deployment
+permissions:
+  contents: write
+
+# Prevent concurrent deployments to the gh-pages branch
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Install Doxygen and Graphviz
+      - name: Install Doxygen & Graphviz
+        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      # 3. Generate documentation using Doxyfile
+      - name: Run Doxygen
+        run: doxygen Doxyfile
+
+      # 4. Deploy generated HTML to gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./html

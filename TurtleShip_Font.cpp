@@ -5,10 +5,18 @@
  * See the file "LICENSE" in the main directory of this archive for more details.
  */
 
+/**
+ * @file TurtleShip_Font.cpp
+ * @brief Implementation of the Font base class for UTF-8 decoding and string width calculation.
+ */
+
 #include <config.h>
 
 #include "Font.h"
 
+/**
+ * @details Initializes all font metric fields (`mSpaceWidth`, `mCharWidth`, `mDotWidth`, `mSize`) to `0`.
+ */
 Font::Font(void)
 {
 	mSpaceWidth = 0;
@@ -17,40 +25,67 @@ Font::Font(void)
 	mSize = 0;
 }
 
+/**
+ * @details Returns the custom space advance width (`mSpaceWidth`).
+ */
 uint8_t Font::getSpaceWidth(void)
 {
 	return mSpaceWidth;
 }
 
+/**
+ * @details Updates `mSpaceWidth` with the specified pixel width for space characters (`' '`).
+ */
 void Font::setSpaceWidth(uint8_t width)
 {
 	mSpaceWidth = width;
 }
 
+/**
+ * @details Returns the configured minimum character advance width (`mCharWidth`).
+ */
 uint8_t Font::getCharWidth(void)
 {
 	return mCharWidth;
 }
 
+/**
+ * @details Updates `mCharWidth` with the specified minimum pixel advance width for characters.
+ */
 void Font::setCharWidth(uint8_t width)
 {
 	mCharWidth = width;
 }
 
+/**
+ * @details Returns the configured period/dot advance width (`mDotWidth`).
+ */
 uint8_t Font::getDotWidth(void)
 {
 	return mDotWidth;
 }
 
+/**
+ * @details Updates `mDotWidth` with the specified pixel advance width for the period character (`'.'`).
+ */
 void Font::setDotWidth(uint8_t width)
 {
 	mDotWidth = width;
 }
 
+/**
+ * @details Inspects the leading byte at `*(*src)` to determine the UTF-8 sequence length and packs
+ * the raw UTF-8 bytes into a 32-bit unsigned integer:
+ * - **3-byte sequence (`>= 0xE0`)**: Packs 3 consecutive bytes into bits `[23:16]`, `[15:8]`, and `[7:0]`.
+ * - **2-byte sequence (`>= 0xC0`)**: Packs 2 consecutive bytes into bits `[15:8]` and `[7:0]`.
+ * - **1-byte ASCII (`< 0x80`)**: Returns the single byte in bits `[7:0]`.
+ * - **Continuation/invalid byte (`0x80` ~ `0xBF`)**: Advances `*src` by 1 byte and returns `0`.
+ */
 uint32_t Font::getUtf8(const char **src)
 {
 	uint32_t utf8;
 
+	// 3-byte UTF-8 sequence (e.g. Korean Hangul syllables and CJK characters)
 	if (*(*src) >= 0xe0)
 	{
 		utf8 = (uint32_t)*(*src)++ << 16;
@@ -58,21 +93,35 @@ uint32_t Font::getUtf8(const char **src)
 		utf8 |= *(*src)++;
 		return utf8; 
 	}
+	// 2-byte UTF-8 sequence
 	else if (*(*src) >= 0xc0)
 	{
 		utf8 = (uint32_t)*((*src)++) << 8;
 		utf8 |= *(*src)++;
 		return utf8; 
 	}
+	// 1-byte standard ASCII character (0x00 ~ 0x7F)
 	else if (*(*src) < 0x80)
 	{
 		return *(*src)++;
 	}
 
+	// Unexpected continuation byte; skip and return 0
 	(*src)++;
 	return 0;
 }
 
+/**
+ * @details Decodes every UTF-8 character in `str` via `getUtf8()` and sums the horizontal advance
+ * widths of all characters.
+ *
+ * - When `mCharWidth` is non-zero, each character advances by at least `mCharWidth` pixels (or its
+ *   actual glyph width if wider).
+ * - When `mCharWidth` is zero, proportional glyph widths (`fontInfo->width + (int8_t)fontInfo->xpos`,
+ *   plus 1 pixel if `xpos == 0`) are summed, using `mSpaceWidth` (or 4) for spaces and `mDotWidth`
+ *   (or 4) for periods.
+ * @see Font::getUtf8(), Font::getFontInfo()
+ */
 uint16_t Font::getStringWidth(const char *str)
 {
 	uint16_t width = 0, buf = 0;
@@ -81,6 +130,7 @@ uint16_t Font::getStringWidth(const char *str)
 
 	if(mCharWidth)
 	{
+		// Fixed minimum character width mode
 		while (*str)
 		{
 			utf8 = getUtf8(&str);
@@ -108,6 +158,7 @@ uint16_t Font::getStringWidth(const char *str)
 	}
 	else
 	{
+		// Proportional character width mode
 		while (*str)
 		{
 			utf8 = getUtf8(&str);
@@ -136,8 +187,10 @@ uint16_t Font::getStringWidth(const char *str)
 	return width;
 }
 
+/**
+ * @details Returns the nominal font size (`mSize`) in pixels.
+ */
 uint16_t Font::getStringHeight(void)
 {
 	return mSize;
 }
-
