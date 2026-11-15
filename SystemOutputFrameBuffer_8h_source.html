@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -43,12 +46,26 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('SystemOutputFrameBuffer_8h_source.html','',''); });
+</script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -127,17 +144,21 @@ $(function() {
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aFrameBufferRgb565LE_8h_html"><div class="ttname"><a href="FrameBufferRgb565LE_8h.html">FrameBufferRgb565LE.h</a></div><div class="ttdoc">Little-Endian 16-bit RGB565 off-screen frame buffer class of the TurtleShip GUI library.</div></div>
 <div class="ttc" id="aSystemOutputFrameBuffer_8h_html_a610d8b24de4616353defba40c8514635"><div class="ttname"><a href="SystemOutputFrameBuffer_8h.html#a610d8b24de4616353defba40c8514635">SystemOutputFrameBuffer</a></div><div class="ttdeci">YSS_SYSTEM_COUTPUT_FRAME_BUFFER SystemOutputFrameBuffer</div><div class="ttdoc">Type alias for the system-configured output frame buffer type.</div><div class="ttdef"><b>Definition</b> SystemOutputFrameBuffer.h:27</div></div>
-<div class="ttc" id="aclassFrame_html"><div class="ttname"><a href="classFrame.html">Frame</a></div><div class="ttdoc">Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...</div><div class="ttdef"><b>Definition</b> Frame.h:39</div></div>
+<div class="ttc" id="aclassFrame_html"><div class="ttname"><a href="classFrame.html">Frame</a></div><div class="ttdoc">Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...</div><div class="ttdef"><b>Definition</b> Frame.h:43</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html_a19ad3129384e246b17188ac2a4bcdb80"><div class="ttname"><a href="classOutputFrameBuffer.html#a19ad3129384e246b17188ac2a4bcdb80">OutputFrameBuffer::update</a></div><div class="ttdeci">virtual void update(void)</div><div class="ttdoc">Updates the entire output frame buffer from mFrame.</div><div class="ttdef"><b>Definition</b> TurtleShip_SystemOutputFrameBuffer.cpp:56</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html_a28cd01066739d4cac2523d58db148d81"><div class="ttname"><a href="classOutputFrameBuffer.html#a28cd01066739d4cac2523d58db148d81">OutputFrameBuffer::OutputFrameBuffer</a></div><div class="ttdeci">OutputFrameBuffer(void)</div><div class="ttdoc">Constructs an OutputFrameBuffer instance.</div><div class="ttdef"><b>Definition</b> TurtleShip_SystemOutputFrameBuffer.cpp:22</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html_a632d3a8e10d81df984c011b78307b4bd"><div class="ttname"><a href="classOutputFrameBuffer.html#a632d3a8e10d81df984c011b78307b4bd">OutputFrameBuffer::getFrameBuffer</a></div><div class="ttdeci">uint8_t * getFrameBuffer(void)</div><div class="ttdoc">Returns a raw byte pointer to the underlying system output frame buffer memory.</div><div class="ttdef"><b>Definition</b> TurtleShip_SystemOutputFrameBuffer.cpp:72</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html_a8b48be69e18e74329736a2802c644ba7"><div class="ttname"><a href="classOutputFrameBuffer.html#a8b48be69e18e74329736a2802c644ba7">OutputFrameBuffer::setFrame</a></div><div class="ttdeci">void setFrame(Frame *frame)</div><div class="ttdoc">Binds the active top-level Frame to this output frame buffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_SystemOutputFrameBuffer.cpp:64</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html_af1795934b8ea0b275e07a98941d7d558"><div class="ttname"><a href="classOutputFrameBuffer.html#af1795934b8ea0b275e07a98941d7d558">OutputFrameBuffer::~OutputFrameBuffer</a></div><div class="ttdeci">~OutputFrameBuffer(void)</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> TurtleShip_SystemOutputFrameBuffer.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="SystemOutputFrameBuffer_8h.html">SystemOutputFrameBuffer.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

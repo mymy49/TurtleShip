@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,11 +53,27 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classObject.html','','classObject-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,14 +95,7 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classObject-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Object Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
@@ -96,12 +108,12 @@ $(function() {
 Inheritance diagram for Object:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classObject__inherit__graph.svg" width="264" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Object:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classObject__coll__graph.svg" width="360" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -182,7 +194,8 @@ Protected Attributes</h2></td></tr>
 <li>Touch/pointer event callbacks (<span class="tt"><a class="el" href="#a2bafc74f429bdb43037577d83988c1e4" title="Handles a touch-down (push) event at the given widget-local coordinate.">handlerPush()</a></span>, <span class="tt"><a class="el" href="#ae39f5c39470286e22a821f94b041ddd8" title="Handles a touch-drag event at the given widget-local coordinate.">handlerDrag()</a></span>, <span class="tt"><a class="el" href="#acced2508e3da19d3a5c999483d49a2f1" title="Handles a touch-up (release) event on this widget.">handlerUp()</a></span>),</li>
 <li>Partial invalidation propagation (<span class="tt"><a class="el" href="#aaebc03cbdb97e50033af501661cf8efc" title="Requests the parent container to repaint this widget&#39;s entire bounding rectangle.">update()</a></span>) up the parent container hierarchy.</li>
 </ul>
-<p>Derived widgets implement <span class="tt"><a class="el" href="#a8aad4ed09bba8997657c081ff8283ec7" title="Renders the widget&#39;s visual appearance into its internal FrameBuffer.">paint()</a></span> to draw their visual representation into their internal <span class="tt"><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a></span> and call <span class="tt"><a class="el" href="#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span> whenever their visual properties change so the parent <span class="tt"><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a></span> repaints them on the next <span class="tt"><a class="el" href="#aaebc03cbdb97e50033af501661cf8efc" title="Requests the parent container to repaint this widget&#39;s entire bounding rectangle.">update()</a></span>. </p>
+<p>Derived widgets implement <span class="tt"><a class="el" href="#a8aad4ed09bba8997657c081ff8283ec7" title="Renders the widget&#39;s visual appearance into its internal FrameBuffer.">paint()</a></span> to draw their visual representation into their internal <span class="tt"><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a></span> and call <span class="tt"><a class="el" href="#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span> whenever their visual properties change so the parent <span class="tt"><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a></span> repaints them on the next <span class="tt"><a class="el" href="#aaebc03cbdb97e50033af501661cf8efc" title="Requests the parent container to repaint this widget&#39;s entire bounding rectangle.">update()</a></span>.</p>
+<dl class="section note"><dt>Note</dt><dd>Pending future update: Recent architectural updates (such as migrating dirty-region types from legacy <span class="tt">Rectangular</span> to <span class="tt">Area</span>) are declared in this interface, while downstream implementations and derived classes (<a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a>, <a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a>) currently retain legacy signatures. Synchronization is planned for upcoming revisions. </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a99247dee536d27f43ee7b3f7d8587a3c" name="a99247dee536d27f43ee7b3f7d8587a3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99247dee536d27f43ee7b3f7d8587a3c">&#9670;&#160;</a></span>Object()</h2>
@@ -375,7 +388,9 @@ Protected Attributes</h2></td></tr>
 <p>Returns the bounding <span class="tt">Area</span> (position and size) of the widget within its parent container. </p>
 <dl class="section return"><dt>Returns</dt><dd>Bounding <span class="tt">Area</span> of the widget. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Constructs and returns the bounding rectangle <span class="tt">{<a class="el" href="#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;<a class="el" href="#a11bfdfad5853d5d843d1a389f4d47740" title="Returns the current dimensions of the widget.">getSize()</a>}</span> of the widget. </p>
+<p>Constructs and returns the bounding rectangle <span class="tt">{<a class="el" href="#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;<a class="el" href="#a11bfdfad5853d5d843d1a389f4d47740" title="Returns the current dimensions of the widget.">getSize()</a>}</span> of the widget. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aaebc03cbdb97e50033af501661cf8efc" title="Requests the parent container to repaint this widget&#39;s entire bounding rectangle.">Object::update()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo</a></b></dt><dd>Update return type from legacy <span class="tt">Rectangular</span> to <span class="tt">Area</span> in upcoming revision. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000016">Bug</a></b></dt><dd>Legacy <span class="tt">Rectangular</span> type used pending future update. </dd></dl>
 
 </div>
 </div>
@@ -856,6 +871,12 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Implementation signature in <a class="el" href="TurtleShip__Object_8cpp.html" title="Implementation of the Object base class for GUI widgets.">TurtleShip_Object.cpp</a> currently uses legacy Rectangular type. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Refactoring to Area across all derived classes is pending in a future update. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Widget should be added to a parent <a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Parent container marks both regions as dirty. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -890,6 +911,12 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Implementation signature in <a class="el" href="TurtleShip__Object_8cpp.html" title="Implementation of the Object base class for GUI widgets.">TurtleShip_Object.cpp</a> currently uses legacy Rectangular type. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Refactoring to Area across all derived classes is pending in a future update. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Widget should be added to a parent <a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Parent container marks the region as dirty. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1050,10 +1077,21 @@ Protected Attributes</h2></td></tr>
 <li><a class="el" href="TurtleShip__Object_8cpp.html">TurtleShip_Object.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classObject.html">Object</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

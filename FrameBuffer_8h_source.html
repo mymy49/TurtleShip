@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -43,12 +46,26 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('FrameBuffer_8h_source.html','',''); });
+</script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -99,7 +116,7 @@ $(function() {
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_function" href="classFrameBuffer.html#ae8c22f1a57448836944ba90e3350ae21">FrameBuffer</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classFrameBuffer.html#a9fcaeb97288dbc347eea7c4a323b3d9d">   78</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classFrameBuffer.html#a9fcaeb97288dbc347eea7c4a323b3d9d">~FrameBuffer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classFrameBuffer.html#a978c98c570bfebd216c0339f74184dbb">~FrameBuffer</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classFrameBuffer.html#a9841f6ee11228b9e6d7f69f4884a2122">   85</a></span>    <span class="keyword">virtual</span> uint8_t <a class="code hl_function" href="classFrameBuffer.html#a9841f6ee11228b9e6d7f69f4884a2122">getPixelCapacity</a>(<span class="keywordtype">void</span>) = 0;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
@@ -135,24 +152,28 @@ $(function() {
 <div class="ttc" id="aTurtleShipTypes_8h_html"><div class="ttname"><a href="TurtleShipTypes_8h.html">TurtleShipTypes.h</a></div><div class="ttdoc">Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library.</div></div>
 <div class="ttc" id="aclassBrush_html_a2e81058b97ce19ef44e5cb3ce71f91c7"><div class="ttname"><a href="classBrush.html#a2e81058b97ce19ef44e5cb3ce71f91c7">Brush::Brush</a></div><div class="ttdeci">Brush(void)</div><div class="ttdoc">Constructs a Brush instance with no font attached (mFont = nullptr).</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:26</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_a306e36727cff7bac78be298d14638fc3"><div class="ttname"><a href="classFrameBuffer.html#a306e36727cff7bac78be298d14638fc3">FrameBuffer::getBitmap</a></div><div class="ttdeci">virtual bitmap_t getBitmap(void)=0</div><div class="ttdoc">Returns a bitmap_t descriptor referencing this frame buffer&#39;s memory and current Size.</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_a45cdb82ba2e709d2898fb42a1264aaa0"><div class="ttname"><a href="classFrameBuffer.html#a45cdb82ba2e709d2898fb42a1264aaa0">FrameBuffer::getMaxPixelCount</a></div><div class="ttdeci">uint32_t getMaxPixelCount(void)</div><div class="ttdoc">Returns the maximum number of pixels that the currently allocated buffer can hold.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:137</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_a49e94bf4d88a158c3cd46c06aaf3b2fa"><div class="ttname"><a href="classFrameBuffer.html#a49e94bf4d88a158c3cd46c06aaf3b2fa">FrameBuffer::getFrameBuffer</a></div><div class="ttdeci">uint8_t * getFrameBuffer(void)</div><div class="ttdoc">Returns the raw byte pointer to the allocated pixel buffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:129</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_a45cdb82ba2e709d2898fb42a1264aaa0"><div class="ttname"><a href="classFrameBuffer.html#a45cdb82ba2e709d2898fb42a1264aaa0">FrameBuffer::getMaxPixelCount</a></div><div class="ttdeci">uint32_t getMaxPixelCount(void)</div><div class="ttdoc">Returns the maximum number of pixels that the currently allocated buffer can hold.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:140</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_a49e94bf4d88a158c3cd46c06aaf3b2fa"><div class="ttname"><a href="classFrameBuffer.html#a49e94bf4d88a158c3cd46c06aaf3b2fa">FrameBuffer::getFrameBuffer</a></div><div class="ttdeci">uint8_t * getFrameBuffer(void)</div><div class="ttdoc">Returns the raw byte pointer to the allocated pixel buffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:132</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_a5ef04ec7305eb65984a0326fe3a909b6"><div class="ttname"><a href="classFrameBuffer.html#a5ef04ec7305eb65984a0326fe3a909b6">FrameBuffer::mSize</a></div><div class="ttdeci">Size mSize</div><div class="ttdoc">Current logical canvas dimensions in pixels.</div><div class="ttdef"><b>Definition</b> FrameBuffer.h:159</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_a7b72fdc999fd8bde82c3c4ae0d35453f"><div class="ttname"><a href="classFrameBuffer.html#a7b72fdc999fd8bde82c3c4ae0d35453f">FrameBuffer::getSize</a></div><div class="ttdeci">Size getSize(void)</div><div class="ttdoc">Returns the current logical canvas dimensions.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:145</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_a7b72fdc999fd8bde82c3c4ae0d35453f"><div class="ttname"><a href="classFrameBuffer.html#a7b72fdc999fd8bde82c3c4ae0d35453f">FrameBuffer::getSize</a></div><div class="ttdeci">Size getSize(void)</div><div class="ttdoc">Returns the current logical canvas dimensions.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:148</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_a8201ebe39b7fd325e8f10dec5d0add7c"><div class="ttname"><a href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c">FrameBuffer::mFrameBuffer</a></div><div class="ttdeci">uint8_t * mFrameBuffer</div><div class="ttdoc">Pointer to the allocated pixel memory (nullptr if not allocated).</div><div class="ttdef"><b>Definition</b> FrameBuffer.h:157</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_a978c98c570bfebd216c0339f74184dbb"><div class="ttname"><a href="classFrameBuffer.html#a978c98c570bfebd216c0339f74184dbb">FrameBuffer::~FrameBuffer</a></div><div class="ttdeci">virtual ~FrameBuffer(void)</div><div class="ttdoc">Virtual destructor. Frees mFrameBuffer if it was allocated by malloc().</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:37</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_a9841f6ee11228b9e6d7f69f4884a2122"><div class="ttname"><a href="classFrameBuffer.html#a9841f6ee11228b9e6d7f69f4884a2122">FrameBuffer::getPixelCapacity</a></div><div class="ttdeci">virtual uint8_t getPixelCapacity(void)=0</div><div class="ttdoc">Returns the number of bytes used to store a single pixel.</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_a9fcaeb97288dbc347eea7c4a323b3d9d"><div class="ttname"><a href="classFrameBuffer.html#a9fcaeb97288dbc347eea7c4a323b3d9d">FrameBuffer::~FrameBuffer</a></div><div class="ttdeci">virtual ~FrameBuffer(void)</div><div class="ttdoc">Virtual destructor. Frees mFrameBuffer if it was allocated by malloc().</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="classFrameBuffer.html#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div><div class="ttdoc">Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:97</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="classFrameBuffer.html#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div><div class="ttdoc">Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:100</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_ad264ad6ff0b1b781117229d387a4f82d"><div class="ttname"><a href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d">FrameBuffer::mMallocFlag</a></div><div class="ttdeci">bool mMallocFlag</div><div class="ttdoc">true if mFrameBuffer is owned and must be freed on destruction/reallocation.</div><div class="ttdef"><b>Definition</b> FrameBuffer.h:158</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="classFrameBuffer.html#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div><div class="ttdoc">Sets the logical canvas dimensions from a Size object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:49</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="classFrameBuffer.html#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div><div class="ttdoc">Sets the logical canvas dimensions from a Size object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:52</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_ae8c22f1a57448836944ba90e3350ae21"><div class="ttname"><a href="classFrameBuffer.html#ae8c22f1a57448836944ba90e3350ae21">FrameBuffer::FrameBuffer</a></div><div class="ttdeci">FrameBuffer(void)</div><div class="ttdoc">Constructs an empty FrameBuffer with no memory allocated (mFrameBuffer = nullptr).</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:23</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_af6548b20049882cd2d2bcafaa9bf89f4"><div class="ttname"><a href="classFrameBuffer.html#af6548b20049882cd2d2bcafaa9bf89f4">FrameBuffer::mMaxPixelCount</a></div><div class="ttdeci">uint32_t mMaxPixelCount</div><div class="ttdoc">Maximum number of pixels that fit into mFrameBuffer.</div><div class="ttdef"><b>Definition</b> FrameBuffer.h:160</div></div>
 <div class="ttc" id="astructbitmap__t_html"><div class="ttname"><a href="structbitmap__t.html">bitmap_t</a></div><div class="ttdoc">Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.</div><div class="ttdef"><b>Definition</b> TurtleShipTypes.h:96</div></div>
 </div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="FrameBuffer_8h.html">FrameBuffer.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

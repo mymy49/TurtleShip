@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,11 +53,27 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classBrushTftLcdRgb565LE.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,8 +95,6 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BrushTftLcdRgb565LE Member List</div></div>
 </div><!--header-->
@@ -115,7 +132,7 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#af6a5b2d530257363ae3b85abc68728ff">drawBitmapBase</a>(Size canvasSize, Area canvasDesArea, Position bitmapDrawingPos, const bitmap_t bitmap) __attribute__((optimize(&quot;-O1&quot;)))=0</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBrush.html#aa700c87cac8ce1619e56f8bd3b4eb6f3">drawBitmapBase</a>(Position pos, const bitmap_t bitmap) __attribute__((optimize(&quot;-O1&quot;)))=0</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#a577d7c373c68edee365a64871c93a2a6">drawChar</a>(Position pos, uint32_t utf8) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBrush.html#aa22a8e5d2647ecfedab62d25469001bd">drawCircle</a>(Position pos, uint16_t r) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBrush.html#a77a94a10e1e08156b736decd5e93ba93">drawCircle</a>(Position pos, uint16_t radius) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#a1053c06e690d320c1812d0a3f719cdcc">drawDot</a>(int16_t x, int16_t y) __attribute__((optimize(&quot;-O1&quot;)))=0</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBrush.html#a06c756243de7f586ae84ce0d8aa97a18">drawLine</a>(Position p1, Position p2) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#a878e115c0daa1fdc8e3b4b567d464faa">drawRectangular</a>(Area rect) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
@@ -123,7 +140,7 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#a327d6cd8125ad13805c9f70362cdf7e9">drawString</a>(align_t align, const char *str) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBrush.html#af94211284b57bca28e065c0bad9ad3d9">drawTriangle</a>(Position p1, Position p2, Position p3) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#a3482f9e3c6f5005e4d959c07606d5cf0">fill</a>() __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBrush.html#aa36cd7c9006f6da447a9677caf3ba327">fillCircle</a>(Position p1, uint16_t r) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBrush.html#a5a5998f0d9a90ce845b3353853528a4e">fillCircle</a>(Position pos, uint16_t radius) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrushTftLcdRgb565.html#a563f310becca45b04782059e41a171c5">fillDotArray</a>(uint32_t offset, uint32_t count, Color color) override</td><td class="entry"><a class="el" href="classBrushTftLcdRgb565.html">BrushTftLcdRgb565</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBrush.html#af9a70547e52d4b7dfc9c88de5b85348d">fillQuadrangle</a>(Position p1, Position p2, Position p3, Position p4) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrush.html#aa4269059863950d85972f8fa7a19961b">fillRectangular</a>(Area rect) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrush.html">Brush</a></td><td class="entry"></td></tr>
@@ -158,10 +175,13 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classBrushTftLcdRgb565.html#ab13730d0888283c7dabfefdd6dc370b2">~BrushTftLcdRgb565</a>(void)</td><td class="entry"><a class="el" href="classBrushTftLcdRgb565.html">BrushTftLcdRgb565</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classBrushTftLcdRgb565LE.html#a92b579d8a61f1ef46b7d8dc525150e6f">~BrushTftLcdRgb565LE</a>(void) __attribute__((optimize(&quot;-O1&quot;)))</td><td class="entry"><a class="el" href="classBrushTftLcdRgb565LE.html">BrushTftLcdRgb565LE</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

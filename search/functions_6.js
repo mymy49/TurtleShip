@@ -1,7 +1,7 @@
 var searchData=
 [
   ['fill_0',['fill',['../classBrush.html#a3482f9e3c6f5005e4d959c07606d5cf0',1,'Brush']]],
-  ['fillcircle_1',['fillCircle',['../classBrush.html#aa36cd7c9006f6da447a9677caf3ba327',1,'Brush']]],
+  ['fillcircle_1',['fillCircle',['../classBrush.html#a5a5998f0d9a90ce845b3353853528a4e',1,'Brush']]],
   ['filldotarray_2',['fillDotArray',['../classBrush.html#ad04f81b0c36c8115df540b48a38e48e3',1,'Brush::fillDotArray()'],['../classBrushTftLcdRgb565.html#a563f310becca45b04782059e41a171c5',1,'BrushTftLcdRgb565::fillDotArray()'],['../classFrameBufferArgb1555.html#a40c177fee74466f1cd6624cee06fcdd6',1,'FrameBufferArgb1555::fillDotArray()'],['../classFrameBufferRgb565.html#a707e044ef368305c6e39cff29240ad20',1,'FrameBufferRgb565::fillDotArray()']]],
   ['fillquadrangle_3',['fillQuadrangle',['../classBrush.html#af9a70547e52d4b7dfc9c88de5b85348d',1,'Brush']]],
   ['fillrectangular_4',['fillRectangular',['../classBrush.html#aa4269059863950d85972f8fa7a19961b',1,'Brush']]],

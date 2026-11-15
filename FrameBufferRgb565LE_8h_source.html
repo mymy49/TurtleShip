@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -43,12 +46,26 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('FrameBufferRgb565LE_8h_source.html','',''); });
+</script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -126,19 +143,23 @@ $(function() {
 <div class="ttc" id="aTurtleShipTypes_8h_html_ab898071398b359603a35c202e9c65f3b"><div class="ttname"><a href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a></div><div class="ttdeci">struct __attribute__((packed))</div><div class="ttdef"><b>Definition</b> TurtleShipTypes.h:107</div></div>
 <div class="ttc" id="aclassColorRgb565LE_html"><div class="ttname"><a href="classColorRgb565LE.html">ColorRgb565LE</a></div><div class="ttdoc">Derived Color class that encodes RGBA values into a 16-bit Little-Endian RGB565 color code.</div><div class="ttdef"><b>Definition</b> ColorRgb565LE.h:36</div></div>
 <div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">RGBA color container with a cached pixel-format-specific hardware color code.</div><div class="ttdef"><b>Definition</b> Color.h:50</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a0912655f281de79528ef251528e38c1b"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a0912655f281de79528ef251528e38c1b">FrameBufferRgb565LE::getBackgroundColor</a></div><div class="ttdeci">Color getBackgroundColor(void) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Gets the current background color.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:143</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a1f5e0f873380c5409598ae9b0429613c"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the background color from a Color object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:125</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a74af2d3c7e892fccc84b6e601ae0b367"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367">FrameBufferRgb565LE::blendDot</a></div><div class="ttdeci">void blendDot(int16_t x, int16_t y, uint8_t alpha) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Alpha-blends the current brush color onto the Little-Endian RGB565 pixel at (x, y).</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:55</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the foreground brush color from a Color object and caches its Little-Endian 16-bit code.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:96</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_aa21d34308e57ce79690577b4c4f5c68b"><div class="ttname"><a href="classFrameBufferRgb565LE.html#aa21d34308e57ce79690577b4c4f5c68b">FrameBufferRgb565LE::getBrushColor</a></div><div class="ttdeci">Color getBrushColor(void) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Gets the current foreground brush color.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:116</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a0912655f281de79528ef251528e38c1b"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a0912655f281de79528ef251528e38c1b">FrameBufferRgb565LE::getBackgroundColor</a></div><div class="ttdeci">Color getBackgroundColor(void) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Gets the current background color.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:145</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a1f5e0f873380c5409598ae9b0429613c"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the background color from a Color object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:127</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a74af2d3c7e892fccc84b6e601ae0b367"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367">FrameBufferRgb565LE::blendDot</a></div><div class="ttdeci">void blendDot(int16_t x, int16_t y, uint8_t alpha) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Alpha-blends the current brush color onto the Little-Endian RGB565 pixel at (x, y).</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:57</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the foreground brush color from a Color object and caches its Little-Endian 16-bit code.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:98</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_aa21d34308e57ce79690577b4c4f5c68b"><div class="ttname"><a href="classFrameBufferRgb565LE.html#aa21d34308e57ce79690577b4c4f5c68b">FrameBufferRgb565LE::getBrushColor</a></div><div class="ttdeci">Color getBrushColor(void) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Gets the current foreground brush color.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:118</div></div>
 <div class="ttc" id="aclassFrameBufferRgb565LE_html_aa4dd98c010f5c08f4b9f3c606cbfb87e"><div class="ttname"><a href="classFrameBufferRgb565LE.html#aa4dd98c010f5c08f4b9f3c606cbfb87e">FrameBufferRgb565LE::FrameBufferRgb565LE</a></div><div class="ttdeci">FrameBufferRgb565LE(void) __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Constructs a FrameBufferRgb565LE instance.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:26</div></div>
 <div class="ttc" id="aclassFrameBufferRgb565LE_html_ac6e501f46fe1cc7da801307065427527"><div class="ttname"><a href="classFrameBufferRgb565LE.html#ac6e501f46fe1cc7da801307065427527">FrameBufferRgb565LE::~FrameBufferRgb565LE</a></div><div class="ttdeci">~FrameBufferRgb565LE(void) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Destructor. Frees the pixel buffer if allocated.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:33</div></div>
 <div class="ttc" id="aclassFrameBufferRgb565_html_ab7d116658e1e96907b97f9bc3d5e7797"><div class="ttname"><a href="classFrameBufferRgb565.html#ab7d116658e1e96907b97f9bc3d5e7797">FrameBufferRgb565::FrameBufferRgb565</a></div><div class="ttdeci">FrameBufferRgb565(void)</div><div class="ttdoc">Constructs a FrameBufferRgb565 instance.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565.cpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="FrameBufferRgb565LE_8h.html">FrameBufferRgb565LE.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

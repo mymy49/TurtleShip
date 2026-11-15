@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,11 +53,27 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classBrush.html','','classBrush-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,15 +95,7 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classBrush-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Brush Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
@@ -97,12 +108,12 @@ $(function() {
 Inheritance diagram for Brush:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classBrush__inherit__graph.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Brush:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classBrush__coll__graph.svg" width="90" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -144,10 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a155aff1ad546b4c81228b7e2247b469b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current background color.  <br /></td></tr>
 <tr class="memitem:a06c756243de7f586ae84ce0d8aa97a18" id="r_a06c756243de7f586ae84ce0d8aa97a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c756243de7f586ae84ce0d8aa97a18">drawLine</a> (Position p1, Position p2) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
 <tr class="memdesc:a06c756243de7f586ae84ce0d8aa97a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a straight line between two points using the current brush color.  <br /></td></tr>
-<tr class="memitem:aa22a8e5d2647ecfedab62d25469001bd" id="r_aa22a8e5d2647ecfedab62d25469001bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa22a8e5d2647ecfedab62d25469001bd">drawCircle</a> (Position pos, uint16_t r) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
-<tr class="memdesc:aa22a8e5d2647ecfedab62d25469001bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the outline of a circle using the current brush color.  <br /></td></tr>
-<tr class="memitem:aa36cd7c9006f6da447a9677caf3ba327" id="r_aa36cd7c9006f6da447a9677caf3ba327"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa36cd7c9006f6da447a9677caf3ba327">fillCircle</a> (Position p1, uint16_t r) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
-<tr class="memdesc:aa36cd7c9006f6da447a9677caf3ba327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled circle using the current brush color.  <br /></td></tr>
+<tr class="memitem:a77a94a10e1e08156b736decd5e93ba93" id="r_a77a94a10e1e08156b736decd5e93ba93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77a94a10e1e08156b736decd5e93ba93">drawCircle</a> (Position pos, uint16_t radius) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
+<tr class="memdesc:a77a94a10e1e08156b736decd5e93ba93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the outline of a circle using the current brush color.  <br /></td></tr>
+<tr class="memitem:a5a5998f0d9a90ce845b3353853528a4e" id="r_a5a5998f0d9a90ce845b3353853528a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a5998f0d9a90ce845b3353853528a4e">fillCircle</a> (Position pos, uint16_t radius) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
+<tr class="memdesc:a5a5998f0d9a90ce845b3353853528a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled circle using the current brush color.  <br /></td></tr>
 <tr class="memitem:af94211284b57bca28e065c0bad9ad3d9" id="r_af94211284b57bca28e065c0bad9ad3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94211284b57bca28e065c0bad9ad3d9">drawTriangle</a> (Position p1, Position p2, Position p3) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
 <tr class="memdesc:af94211284b57bca28e065c0bad9ad3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the wireframe outline of a triangle connecting three vertices.  <br /></td></tr>
 <tr class="memitem:a15496c69c46980cd3d85d864d96df773" id="r_a15496c69c46980cd3d85d864d96df773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15496c69c46980cd3d85d864d96df773">fillTriangle</a> (Position p1, Position p2, Position p3) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
@@ -767,7 +778,7 @@ Example Usage in User Application</h3>
         <tr>
           <td class="memname">void Brush::drawBitmap </td>
           <td>(</td>
-          <td class="paramtype">Area</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+          <td class="paramtype">Area</td>          <td class="paramname"><span class="paramname"><em>canvasRect</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -792,7 +803,9 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Forwards the clipped bitmap drawing request to <span class="tt">drawBitmapBase(getCanvasSize(), rect, bitmapPos, bitmap)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6a5b2d530257363ae3b85abc68728ff" title="Device-specific implementation for blitting a bitmap clipped to a destination area.">Brush::drawBitmapBase()</a> </dd></dl>
+<p>Forwards the clipped bitmap drawing request to <span class="tt">drawBitmapBase(getCanvasSize(), canvasRect, bitmapPos, bitmap)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6a5b2d530257363ae3b85abc68728ff" title="Device-specific implementation for blitting a bitmap clipped to a destination area.">Brush::drawBitmapBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1008,8 +1021,8 @@ Example Usage in User Application</h3>
 
 </div>
 </div>
-<a id="aa22a8e5d2647ecfedab62d25469001bd" name="aa22a8e5d2647ecfedab62d25469001bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa22a8e5d2647ecfedab62d25469001bd">&#9670;&#160;</a></span>drawCircle()</h2>
+<a id="a77a94a10e1e08156b736decd5e93ba93" name="a77a94a10e1e08156b736decd5e93ba93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a94a10e1e08156b736decd5e93ba93">&#9670;&#160;</a></span>drawCircle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1031,14 +1044,16 @@ Example Usage in User Application</h3>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Center coordinate of the circle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>Radius of the circle in pixels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the circle in pixels. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">r</span> is less than 3 pixels.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels.</dd></dl>
 <p>Draws the perimeter of a circle centered at <span class="tt">pos</span> with the given <span class="tt">radius</span> using 8-way octant/quadrant symmetry.</p>
-<p>Iterates <span class="tt">x</span> from <span class="tt">0</span> to <span class="tt">radius - 1</span>, calculates the corresponding vertical offset $y_p = \lfloor\sqrt{r^2 - x^2} + 0.5\rfloor$, and plots 8 symmetric points around <span class="tt">(px, py)</span> using <span class="tt"><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">drawDot()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa36cd7c9006f6da447a9677caf3ba327" title="Draws a filled circle using the current brush color.">Brush::fillCircle()</a>, <a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">Brush::drawDot()</a> </dd></dl>
+<p>Iterates <span class="tt">x</span> from <span class="tt">0</span> to <span class="tt">radius - 1</span>, calculates the corresponding vertical offset \( y_p = \lfloor\sqrt{r^2 - x^2} + 0.5\rfloor \), and plots 8 symmetric points around <span class="tt">(px, py)</span> using <span class="tt"><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">drawDot()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a5a5998f0d9a90ce845b3353853528a4e" title="Draws a filled circle using the current brush color.">Brush::fillCircle()</a>, <a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">Brush::drawDot()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1111,8 +1126,10 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Draws a straight line segment from <span class="tt">p1</span> to <span class="tt">p2</span> by stepping along the major axis ($\Delta x$ or $\Delta y$) and interpolating the minor axis via floating-point slope calculation.</p>
+<p>Draws a straight line segment from <span class="tt">p1</span> to <span class="tt">p2</span> by stepping along the major axis ( \( \Delta x \) or \( \Delta y \)) and interpolating the minor axis via floating-point slope calculation.</p>
 <p>Handles degenerate single-point lines (<span class="tt">p1 == p2</span>) and all four directional quadrants (<span class="tt">p1x &lt;= p2x &amp;&amp; p1y &lt;= p2y</span>, <span class="tt">p1x &gt;= p2x &amp;&amp; p1y &lt;= p2y</span>, <span class="tt">p1x &lt;= p2x &amp;&amp; p1y &gt;= p2y</span>, and <span class="tt">p1x &gt; p2x &amp;&amp; p1y &gt; p2y</span>), calling <span class="tt"><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">drawDot()</a></span> for each interpolated pixel. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">Brush::drawDot()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1270,8 +1287,8 @@ Example Usage in User Application</h3>
 
 </div>
 </div>
-<a id="aa36cd7c9006f6da447a9677caf3ba327" name="aa36cd7c9006f6da447a9677caf3ba327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa36cd7c9006f6da447a9677caf3ba327">&#9670;&#160;</a></span>fillCircle()</h2>
+<a id="a5a5998f0d9a90ce845b3353853528a4e" name="a5a5998f0d9a90ce845b3353853528a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5998f0d9a90ce845b3353853528a4e">&#9670;&#160;</a></span>fillCircle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1292,18 +1309,20 @@ Example Usage in User Application</h3>
 <p>Draws a filled circle using the current brush color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>Center coordinate of the circle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>Radius of the circle in pixels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Center coordinate of the circle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the circle in pixels. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">r</span> is less than 3 pixels.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels.</dd></dl>
 <p>Renders a solid filled circle centered at <span class="tt">pos</span> with the given <span class="tt">radius</span> using horizontal scanline spans.</p>
 <p>For each vertical offset <span class="tt">i</span> from <span class="tt">0</span> to <span class="tt">radius - 1</span>:</p><ol type="1">
-<li>Computes the half-chord length $\sqrt{r^2 - (i + 1)^2}$ using <span class="tt">pow(..., 0.5f)</span>.</li>
+<li>Computes the half-chord length \( \sqrt{r^2 - (i + 1)^2} \) using <span class="tt">pow(..., 0.5f)</span>.</li>
 <li>Determines the left and right X bounds (<span class="tt">sx</span>, <span class="tt">ex</span>) around <span class="tt">px</span> and clamps them to <span class="tt">[0, <a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> - 1]</span>.</li>
-<li>Fills the lower scanline at <span class="tt">y = py + i + 1</span> and the upper symmetric scanline at <span class="tt">y = py - i</span> via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span> if they lie within <span class="tt">[0, <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> - 1]</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa22a8e5d2647ecfedab62d25469001bd" title="Draws the outline of a circle using the current brush color.">Brush::drawCircle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
+<li>Fills the lower scanline at <span class="tt">y = py + i + 1</span> and the upper symmetric scanline at <span class="tt">y = py - i</span> via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span> if they lie within <span class="tt">[0, <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> - 1]</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a77a94a10e1e08156b736decd5e93ba93" title="Draws the outline of a circle using the current brush color.">Brush::drawCircle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -1524,8 +1543,10 @@ Example Usage in User Application</h3>
 <p>Rasterizes a filled triangle by sorting the three vertices and scanning horizontal spans.</p>
 <ol type="1">
 <li>Sorts the vertices so that <span class="tt">p1</span> is at the top (minimum Y) and orders <span class="tt">p2</span>, <span class="tt">p3</span> horizontally.</li>
-<li>Rasterizes the upper sub-triangle from <span class="tt">p1.y</span> down to $\min(p2.y, p3.y)$ by computing the left and right edge slopes (<span class="tt">slopeL</span>, <span class="tt">slopeR</span>) and filling each scanline span via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span>.</li>
-<li>If <span class="tt">p2.y != p3.y</span>, reorders the remaining vertices so <span class="tt">p3</span> is the bottom-most vertex and rasterizes the lower sub-triangle from $\max(p1.y, p2.y)$ down to <span class="tt">p3.y</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#af94211284b57bca28e065c0bad9ad3d9" title="Draws the wireframe outline of a triangle connecting three vertices.">Brush::drawTriangle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
+<li>Rasterizes the upper sub-triangle from <span class="tt">p1.y</span> down to \( \min(p2.y, p3.y) \) by computing the left and right edge slopes (<span class="tt">slopeL</span>, <span class="tt">slopeR</span>) and filling each scanline span via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span>.</li>
+<li>If <span class="tt">p2.y != p3.y</span>, reorders the remaining vertices so <span class="tt">p3</span> is the bottom-most vertex and rasterizes the lower sub-triangle from \( \max(p1.y, p2.y) \) down to <span class="tt">p3.y</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#af94211284b57bca28e065c0bad9ad3d9" title="Draws the wireframe outline of a triangle connecting three vertices.">Brush::drawTriangle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -2126,10 +2147,21 @@ Example Usage in User Application</h3>
 <li><a class="el" href="TurtleShip__Brush_8cpp.html">TurtleShip_Brush.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classBrush.html">Brush</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

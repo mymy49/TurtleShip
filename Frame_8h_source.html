@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -43,12 +46,26 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Frame_8h_source.html','',''); });
+</script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -93,70 +110,74 @@ $(function() {
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="classOutputFrameBuffer.html">OutputFrameBuffer</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">class </span>PointerDevice;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classFrame.html">   38</a></span><span class="keyword">class </span><a class="code hl_function" href="classFrame.html#a441b7b4e4d9083faa998d438482506ef">Frame</a> : <span class="keyword">public</span> <a class="code hl_function" href="classContainer.html#a5231ead51bcdd1a9b1f497414e76b6f4">Container</a></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>public :</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="classFrame.html#a441b7b4e4d9083faa998d438482506ef">Frame</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classFrame.html#a6a4c97f1ac2233698ca94a3089b02252">~Frame</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a67f25fbfaef5ad678c14ec75fe0adb91">setPosition</a>(Position pos);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a67f25fbfaef5ad678c14ec75fe0adb91">setPosition</a>(int16_t x, int16_t y);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a914b4fb99c07ed07facfa45f233608f3">setOutputFrameBuffer</a>(<a class="code hl_class" href="classOutputFrameBuffer.html">OutputFrameBuffer</a> *outputFrameBuffer);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">add</a>(<a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> &amp;obj);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">add</a>(<a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *obj);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#a3595f882e77b9b2eb36e73f0b2d514f9">handlerPush</a>(Position pos);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#ae763492d13a795bdfbe93c233d7f6bf9">handlerDrag</a>(Position pos);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#a478363f2397a01f316ab42793f0b4615">handlerUp</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a41ed53fa1036ef5e130fe51e83b3a4fc">setAsSystemFrame</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#adaed30e9163a2c2e21dcfa80ab558402">setPointerDevice</a>(PointerDevice &amp;obj);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(Rectangular rect);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(Rectangular before , Rectangular current);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>private :</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_class" href="classOutputFrameBuffer.html">OutputFrameBuffer</a> *mOutputFrameBuffer; </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    PointerDevice *mPointerDevice;         </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>};</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classFrame.html">   42</a></span><span class="keyword">class </span><a class="code hl_function" href="classFrame.html#a441b7b4e4d9083faa998d438482506ef">Frame</a> : <span class="keyword">public</span> <a class="code hl_function" href="classContainer.html#a5231ead51bcdd1a9b1f497414e76b6f4">Container</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>public :</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="classFrame.html#a441b7b4e4d9083faa998d438482506ef">Frame</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classFrame.html#a6a4c97f1ac2233698ca94a3089b02252">~Frame</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a67f25fbfaef5ad678c14ec75fe0adb91">setPosition</a>(Position pos);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a67f25fbfaef5ad678c14ec75fe0adb91">setPosition</a>(int16_t x, int16_t y);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a914b4fb99c07ed07facfa45f233608f3">setOutputFrameBuffer</a>(<a class="code hl_class" href="classOutputFrameBuffer.html">OutputFrameBuffer</a> *outputFrameBuffer);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">add</a>(<a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> &amp;obj);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">add</a>(<a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *obj);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#a3595f882e77b9b2eb36e73f0b2d514f9">handlerPush</a>(Position pos);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#ae763492d13a795bdfbe93c233d7f6bf9">handlerDrag</a>(Position pos);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <a class="code hl_function" href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object</a> *<a class="code hl_function" href="classFrame.html#a478363f2397a01f316ab42793f0b4615">handlerUp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#a41ed53fa1036ef5e130fe51e83b3a4fc">setAsSystemFrame</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#adaed30e9163a2c2e21dcfa80ab558402">setPointerDevice</a>(PointerDevice &amp;obj);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(Rectangular rect);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">update</a>(Rectangular before , Rectangular current);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>private :</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <a class="code hl_class" href="classOutputFrameBuffer.html">OutputFrameBuffer</a> *mOutputFrameBuffer; </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    PointerDevice *mPointerDevice;         </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>};</div>
 </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aContainer_8h_html"><div class="ttname"><a href="Container_8h.html">Container.h</a></div><div class="ttdoc">Composite GUI widget class (Container) that manages and renders child Object instances.</div></div>
 <div class="ttc" id="aclassContainer_html_a5231ead51bcdd1a9b1f497414e76b6f4"><div class="ttname"><a href="classContainer.html#a5231ead51bcdd1a9b1f497414e76b6f4">Container::Container</a></div><div class="ttdeci">Container(void)</div><div class="ttdoc">Constructs an empty Container and allocates the initial child pointer array.</div><div class="ttdef"><b>Definition</b> TurtleShip_Container.cpp:28</div></div>
-<div class="ttc" id="aclassFrame_html_a3595f882e77b9b2eb36e73f0b2d514f9"><div class="ttname"><a href="classFrame.html#a3595f882e77b9b2eb36e73f0b2d514f9">Frame::handlerPush</a></div><div class="ttdeci">Object * handlerPush(Position pos)</div><div class="ttdoc">Routes a touch-down event at pos to the appropriate child widget via Container::handlerPush().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:206</div></div>
-<div class="ttc" id="aclassFrame_html_a41ed53fa1036ef5e130fe51e83b3a4fc"><div class="ttname"><a href="classFrame.html#a41ed53fa1036ef5e130fe51e83b3a4fc">Frame::setAsSystemFrame</a></div><div class="ttdeci">void setAsSystemFrame(void)</div><div class="ttdoc">Registers this Frame as the active system GUI frame via system::setSystemFrame(this).</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:232</div></div>
+<div class="ttc" id="aclassFrame_html_a3595f882e77b9b2eb36e73f0b2d514f9"><div class="ttname"><a href="classFrame.html#a3595f882e77b9b2eb36e73f0b2d514f9">Frame::handlerPush</a></div><div class="ttdeci">Object * handlerPush(Position pos)</div><div class="ttdoc">Routes a touch-down event at pos to the appropriate child widget via Container::handlerPush().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:212</div></div>
+<div class="ttc" id="aclassFrame_html_a41ed53fa1036ef5e130fe51e83b3a4fc"><div class="ttname"><a href="classFrame.html#a41ed53fa1036ef5e130fe51e83b3a4fc">Frame::setAsSystemFrame</a></div><div class="ttdeci">void setAsSystemFrame(void)</div><div class="ttdoc">Registers this Frame as the active system GUI frame via system::setSystemFrame(this).</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:238</div></div>
 <div class="ttc" id="aclassFrame_html_a441b7b4e4d9083faa998d438482506ef"><div class="ttname"><a href="classFrame.html#a441b7b4e4d9083faa998d438482506ef">Frame::Frame</a></div><div class="ttdeci">Frame(void)</div><div class="ttdoc">Constructs a Frame sized to the system TFT LCD resolution and clears its frame buffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:30</div></div>
-<div class="ttc" id="aclassFrame_html_a478363f2397a01f316ab42793f0b4615"><div class="ttname"><a href="classFrame.html#a478363f2397a01f316ab42793f0b4615">Frame::handlerUp</a></div><div class="ttdeci">Object * handlerUp(void)</div><div class="ttdoc">Routes a touch-up event via Container::handlerUp().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:224</div></div>
+<div class="ttc" id="aclassFrame_html_a478363f2397a01f316ab42793f0b4615"><div class="ttname"><a href="classFrame.html#a478363f2397a01f316ab42793f0b4615">Frame::handlerUp</a></div><div class="ttdeci">Object * handlerUp(void)</div><div class="ttdoc">Routes a touch-up event via Container::handlerUp().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:230</div></div>
 <div class="ttc" id="aclassFrame_html_a67f25fbfaef5ad678c14ec75fe0adb91"><div class="ttname"><a href="classFrame.html#a67f25fbfaef5ad678c14ec75fe0adb91">Frame::setPosition</a></div><div class="ttdeci">void setPosition(Position pos)</div><div class="ttdoc">Disabled position setter (Frame position is fixed at the screen origin).</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:54</div></div>
 <div class="ttc" id="aclassFrame_html_a6a4c97f1ac2233698ca94a3089b02252"><div class="ttname"><a href="classFrame.html#a6a4c97f1ac2233698ca94a3089b02252">Frame::~Frame</a></div><div class="ttdeci">virtual ~Frame(void)</div><div class="ttdoc">Virtual destructor. Unregisters this Frame from mPointerDevice if attached.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:44</div></div>
 <div class="ttc" id="aclassFrame_html_a914b4fb99c07ed07facfa45f233608f3"><div class="ttname"><a href="classFrame.html#a914b4fb99c07ed07facfa45f233608f3">Frame::setOutputFrameBuffer</a></div><div class="ttdeci">void setOutputFrameBuffer(OutputFrameBuffer *outputFrameBuffer)</div><div class="ttdoc">Associates an OutputFrameBuffer with this frame and triggers a full update().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:74</div></div>
 <div class="ttc" id="aclassFrame_html_ab62cfa96c6fe480ca07d67b30f13030c"><div class="ttname"><a href="classFrame.html#ab62cfa96c6fe480ca07d67b30f13030c">Frame::update</a></div><div class="ttdeci">virtual void update(void)</div><div class="ttdoc">Repaints all visible children onto mFrameBuffer and flushes the entire frame to the system display.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:86</div></div>
-<div class="ttc" id="aclassFrame_html_abbf3c01a796a6588bea5764f78b30dae"><div class="ttname"><a href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">Frame::add</a></div><div class="ttdeci">void add(Object &amp;obj)</div><div class="ttdoc">Paints obj, adds it to this frame, sets its parent to this, and updates its screen region.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:178</div></div>
-<div class="ttc" id="aclassFrame_html_adaed30e9163a2c2e21dcfa80ab558402"><div class="ttname"><a href="classFrame.html#adaed30e9163a2c2e21dcfa80ab558402">Frame::setPointerDevice</a></div><div class="ttdeci">void setPointerDevice(PointerDevice &amp;obj)</div><div class="ttdoc">Links a PointerDevice to this frame so the pointer device is reset if this frame is destroyed.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:240</div></div>
-<div class="ttc" id="aclassFrame_html_ae763492d13a795bdfbe93c233d7f6bf9"><div class="ttname"><a href="classFrame.html#ae763492d13a795bdfbe93c233d7f6bf9">Frame::handlerDrag</a></div><div class="ttdeci">Object * handlerDrag(Position pos)</div><div class="ttdoc">Routes a touch-drag event at pos to the appropriate child widget via Container::handlerDrag().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:215</div></div>
+<div class="ttc" id="aclassFrame_html_abbf3c01a796a6588bea5764f78b30dae"><div class="ttname"><a href="classFrame.html#abbf3c01a796a6588bea5764f78b30dae">Frame::add</a></div><div class="ttdeci">void add(Object &amp;obj)</div><div class="ttdoc">Paints obj, adds it to this frame, sets its parent to this, and updates its screen region.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:184</div></div>
+<div class="ttc" id="aclassFrame_html_adaed30e9163a2c2e21dcfa80ab558402"><div class="ttname"><a href="classFrame.html#adaed30e9163a2c2e21dcfa80ab558402">Frame::setPointerDevice</a></div><div class="ttdeci">void setPointerDevice(PointerDevice &amp;obj)</div><div class="ttdoc">Links a PointerDevice to this frame so the pointer device is reset if this frame is destroyed.</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:246</div></div>
+<div class="ttc" id="aclassFrame_html_ae763492d13a795bdfbe93c233d7f6bf9"><div class="ttname"><a href="classFrame.html#ae763492d13a795bdfbe93c233d7f6bf9">Frame::handlerDrag</a></div><div class="ttdeci">Object * handlerDrag(Position pos)</div><div class="ttdoc">Routes a touch-drag event at pos to the appropriate child widget via Container::handlerDrag().</div><div class="ttdef"><b>Definition</b> TurtleShip_Frame.cpp:221</div></div>
 <div class="ttc" id="aclassObject_html_a99247dee536d27f43ee7b3f7d8587a3c"><div class="ttname"><a href="classObject.html#a99247dee536d27f43ee7b3f7d8587a3c">Object::Object</a></div><div class="ttdeci">Object(void)</div><div class="ttdoc">Constructs an Object with default flags (mVisibleFlag = true, mResizeAble = true, mModifiedFlag = fal...</div><div class="ttdef"><b>Definition</b> TurtleShip_Object.cpp:24</div></div>
 <div class="ttc" id="aclassOutputFrameBuffer_html"><div class="ttname"><a href="classOutputFrameBuffer.html">OutputFrameBuffer</a></div><div class="ttdoc">Adapter class bridging a top-level Frame and the system display output frame buffer.</div><div class="ttdef"><b>Definition</b> SystemOutputFrameBuffer.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="Frame_8h.html">Frame.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

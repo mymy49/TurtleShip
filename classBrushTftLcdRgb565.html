@@ -10,6 +10,9 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,11 +53,27 @@ $(function() { codefold.init(); });
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classBrushTftLcdRgb565.html','','classBrushTftLcdRgb565-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,14 +95,7 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classBrushTftLcdRgb565-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">BrushTftLcdRgb565 Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -96,12 +108,12 @@ $(function() {
 Inheritance diagram for BrushTftLcdRgb565:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classBrushTftLcdRgb565__inherit__graph.svg" width="360" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for BrushTftLcdRgb565:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classBrushTftLcdRgb565__coll__graph.svg" width="158" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -130,10 +142,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a155aff1ad546b4c81228b7e2247b469b inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current background color.  <br /></td></tr>
 <tr class="memitem:a06c756243de7f586ae84ce0d8aa97a18 inherit pub_methods_classBrush" id="r_a06c756243de7f586ae84ce0d8aa97a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#a06c756243de7f586ae84ce0d8aa97a18">drawLine</a> (Position p1, Position p2) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
 <tr class="memdesc:a06c756243de7f586ae84ce0d8aa97a18 inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a straight line between two points using the current brush color.  <br /></td></tr>
-<tr class="memitem:aa22a8e5d2647ecfedab62d25469001bd inherit pub_methods_classBrush" id="r_aa22a8e5d2647ecfedab62d25469001bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#aa22a8e5d2647ecfedab62d25469001bd">drawCircle</a> (Position pos, uint16_t r) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
-<tr class="memdesc:aa22a8e5d2647ecfedab62d25469001bd inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the outline of a circle using the current brush color.  <br /></td></tr>
-<tr class="memitem:aa36cd7c9006f6da447a9677caf3ba327 inherit pub_methods_classBrush" id="r_aa36cd7c9006f6da447a9677caf3ba327"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#aa36cd7c9006f6da447a9677caf3ba327">fillCircle</a> (Position p1, uint16_t r) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
-<tr class="memdesc:aa36cd7c9006f6da447a9677caf3ba327 inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled circle using the current brush color.  <br /></td></tr>
+<tr class="memitem:a77a94a10e1e08156b736decd5e93ba93 inherit pub_methods_classBrush" id="r_a77a94a10e1e08156b736decd5e93ba93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#a77a94a10e1e08156b736decd5e93ba93">drawCircle</a> (Position pos, uint16_t radius) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
+<tr class="memdesc:a77a94a10e1e08156b736decd5e93ba93 inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the outline of a circle using the current brush color.  <br /></td></tr>
+<tr class="memitem:a5a5998f0d9a90ce845b3353853528a4e inherit pub_methods_classBrush" id="r_a5a5998f0d9a90ce845b3353853528a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#a5a5998f0d9a90ce845b3353853528a4e">fillCircle</a> (Position pos, uint16_t radius) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
+<tr class="memdesc:a5a5998f0d9a90ce845b3353853528a4e inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled circle using the current brush color.  <br /></td></tr>
 <tr class="memitem:af94211284b57bca28e065c0bad9ad3d9 inherit pub_methods_classBrush" id="r_af94211284b57bca28e065c0bad9ad3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#af94211284b57bca28e065c0bad9ad3d9">drawTriangle</a> (Position p1, Position p2, Position p3) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
 <tr class="memdesc:af94211284b57bca28e065c0bad9ad3d9 inherit pub_methods_classBrush"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the wireframe outline of a triangle connecting three vertices.  <br /></td></tr>
 <tr class="memitem:a15496c69c46980cd3d85d864d96df773 inherit pub_methods_classBrush" id="r_a15496c69c46980cd3d85d864d96df773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBrush.html#a15496c69c46980cd3d85d864d96df773">fillTriangle</a> (Position p1, Position p2, Position p3) <a class="el" href="TurtleShipTypes_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((optimize(&quot;-O1&quot;)))</td></tr>
@@ -436,10 +448,21 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="TurtleShip__BrushTftLcdRgb565_8cpp.html">TurtleShip_BrushTftLcdRgb565.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
-</small></address>
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classBrushTftLcdRgb565.html">BrushTftLcdRgb565</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
 </body>
 </html>

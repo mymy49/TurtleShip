@@ -6,7 +6,7 @@ var searchData=
   ['_7ebutton_3',['~Button',['../classButton.html#a7fd1423aa4dcb5740b0fdce4d3a3097f',1,'Button']]],
   ['_7econtainer_4',['~Container',['../classContainer.html#aa4c58c4fa19d790fff9a9e6c612ee66a',1,'Container']]],
   ['_7eframe_5',['~Frame',['../classFrame.html#a6a4c97f1ac2233698ca94a3089b02252',1,'Frame']]],
-  ['_7eframebuffer_6',['~FrameBuffer',['../classFrameBuffer.html#a9fcaeb97288dbc347eea7c4a323b3d9d',1,'FrameBuffer']]],
+  ['_7eframebuffer_6',['~FrameBuffer',['../classFrameBuffer.html#a978c98c570bfebd216c0339f74184dbb',1,'FrameBuffer']]],
   ['_7eframebufferargb1555_7',['~FrameBufferArgb1555',['../classFrameBufferArgb1555.html#ae3b4143fee083f36bbdfc540aa2afb1b',1,'FrameBufferArgb1555']]],
   ['_7eframebufferargb1555le_8',['~FrameBufferArgb1555LE',['../classFrameBufferArgb1555LE.html#a818076f4a77a60f4acf6eefde30e67d5',1,'FrameBufferArgb1555LE']]],
   ['_7eframebufferrgb565_9',['~FrameBufferRgb565',['../classFrameBufferRgb565.html#ad1a2feb53c7ada9d4d5655feb87491bc',1,'FrameBufferRgb565']]],
