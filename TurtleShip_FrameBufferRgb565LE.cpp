@@ -47,10 +47,12 @@ FrameBufferRgb565LE::~FrameBufferRgb565LE(void)
  * -# Reads the 16-bit pixel `blend = des[width * y + x]`.
  * -# Unpacks 5-bit Red, 6-bit Green, and 5-bit Blue from both `blend` and `mBrushColorCode` into
  *    8-bit fixed-point values and linearly interpolates each channel by `alpha`:
- *    $C_{\text{out}} = \lfloor((C_{\text{brush}} - C_{\text{des}}) \times \text{alpha}) / 256\rfloor + C_{\text{des}}$.
+ *    @f$ C_{\text{out}} = \lfloor((C_{\text{brush}} - C_{\text{des}}) \times \text{alpha}) / 256\rfloor + C_{\text{des}} @f$.
  * -# Packs the blended channels back into 16-bit RGB565 (`((r << 8) & 0xF800) | ((g << 3) & 0x07E0) | ((b >> 3) & 0x001F)`)
  *    and stores the result into `des[width * y + x]`.
  * @see Brush::drawChar()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565LE::blendDot(int16_t x, int16_t y, uint8_t alpha)
 {

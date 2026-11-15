@@ -35,6 +35,10 @@ class Font;
  * When a user presses or releases the button (`handlerPush()` / `handlerUp()`), `paint()` simply
  * blits the pre-rendered `mPushedFb` or `mPulledFb` bitmap and invokes the registered callback
  * (`mPushHandler` or `mUpHandler`).
+ *
+ * @note Pending future update: Recent framework updates for GUI widgets have not yet been applied
+ * to Button. The existing implementation is intentionally preserved without modification pending
+ * upcoming revisions.
  */
 class Button : public Object
 {

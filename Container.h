@@ -33,6 +33,10 @@
  * - **Hit Testing & Event Routing**: `handlerPush()` and `handlerDrag()` iterate through `mObjArr`
  *   in reverse Z-order (top-most child first), test whether the touch position falls inside a visible
  *   child's bounding box, translate the coordinate into child-local space, and forward the event.
+ *
+ * @note Pending future update: Recent architectural updates to Object (such as migration to Area)
+ * have not yet been synchronized into Container. Legacy Rectangular signatures are intentionally
+ * preserved pending future updates.
  */
 class Container : public Object
 {
@@ -79,6 +83,12 @@ class Container : public Object
 	 * @brief Repaints all visible children intersecting `rect` and propagates the dirty area to `mParent`.
 	 * @param[in] rect Dirty rectangular area in container-local coordinates.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Parameter currently uses legacy Rectangular type pending future update.
+	 * @note Scheduled to update to Area to align with Object::update(Area).
+	 * @pre Container must have an initialized frame buffer.
+	 * @post Intersecting modified children are repainted.
+	 * @deprecated None.
 	 */
 	void update(Rectangular rect);
 
@@ -87,6 +97,12 @@ class Container : public Object
 	 * @param[in] before  Previous dirty rectangular area in container-local coordinates.
 	 * @param[in] current Current dirty rectangular area in container-local coordinates.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Parameter currently uses legacy Rectangular type pending future update.
+	 * @note Scheduled to update to Area to align with Object::update(Area, Area).
+	 * @pre Container must have an initialized frame buffer.
+	 * @post Intersecting modified children in both areas are repainted.
+	 * @deprecated None.
 	 */
 	void update(Rectangular before, Rectangular current);
 

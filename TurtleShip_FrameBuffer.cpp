@@ -30,8 +30,11 @@ FrameBuffer::FrameBuffer(void)
 /**
  * @details Frees `mFrameBuffer` via `lfree()` (when `YSS_L_HEAP_USE` is active) or `hfree()`
  * if `mMallocFlag` is `true`.
+ * @see FrameBuffer::malloc()
+ * @todo None.
+ * @bug None.
  */
-FrameBuffer::FrameBuffer::~FrameBuffer(void)
+FrameBuffer::~FrameBuffer(void)
 {
 	if(mMallocFlag)
 #if YSS_L_HEAP_USE

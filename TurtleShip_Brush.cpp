@@ -112,11 +112,13 @@ void Brush::clear()
  * scanline spans.
  *
  * For each vertical offset `i` from `0` to `radius - 1`:
- * -# Computes the half-chord length $\sqrt{r^2 - (i + 1)^2}$ using `pow(..., 0.5f)`.
+ * -# Computes the half-chord length @f$ \sqrt{r^2 - (i + 1)^2} @f$ using `pow(..., 0.5f)`.
  * -# Determines the left and right X bounds (`sx`, `ex`) around `px` and clamps them to `[0, width - 1]`.
  * -# Fills the lower scanline at `y = py + i + 1` and the upper symmetric scanline at `y = py - i`
  *    via `fillDotArray()` if they lie within `[0, height - 1]`.
  * @see Brush::drawCircle(), Brush::fillDotArray()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fillCircle(Position pos, uint16_t radius)
 {
@@ -174,9 +176,11 @@ void Brush::fillCircle(Position pos, uint16_t radius)
  * octant/quadrant symmetry.
  *
  * Iterates `x` from `0` to `radius - 1`, calculates the corresponding vertical offset
- * $y_p = \lfloor\sqrt{r^2 - x^2} + 0.5\rfloor$, and plots 8 symmetric points around `(px, py)`
+ * @f$ y_p = \lfloor\sqrt{r^2 - x^2} + 0.5\rfloor @f$, and plots 8 symmetric points around `(px, py)`
  * using `drawDot()`.
  * @see Brush::fillCircle(), Brush::drawDot()
+ * @todo None.
+ * @bug None.
  */
 void Brush::drawCircle(Position pos, uint16_t radius)
 {
@@ -212,12 +216,14 @@ void Brush::drawCircle(Position pos, uint16_t radius)
 
 /**
  * @details Draws a straight line segment from `p1` to `p2` by stepping along the major axis
- * ($\Delta x$ or $\Delta y$) and interpolating the minor axis via floating-point slope calculation.
+ * (@f$ \Delta x @f$ or @f$ \Delta y @f$) and interpolating the minor axis via floating-point slope calculation.
  *
  * Handles degenerate single-point lines (`p1 == p2`) and all four directional quadrants
  * (`p1x <= p2x && p1y <= p2y`, `p1x >= p2x && p1y <= p2y`, `p1x <= p2x && p1y >= p2y`, and
  * `p1x > p2x && p1y > p2y`), calling `drawDot()` for each interpolated pixel.
  * @see Brush::drawDot()
+ * @todo None.
+ * @bug None.
  */
 void Brush::drawLine(Position p1, Position p2)
 {
@@ -396,11 +402,13 @@ void Brush::drawRectangular(Area rect)
  * @details Rasterizes a filled triangle by sorting the three vertices and scanning horizontal spans.
  *
  * -# Sorts the vertices so that `p1` is at the top (minimum Y) and orders `p2`, `p3` horizontally.
- * -# Rasterizes the upper sub-triangle from `p1.y` down to $\min(p2.y, p3.y)$ by computing the left
+ * -# Rasterizes the upper sub-triangle from `p1.y` down to @f$ \min(p2.y, p3.y) @f$ by computing the left
  *    and right edge slopes (`slopeL`, `slopeR`) and filling each scanline span via `fillDotArray()`.
  * -# If `p2.y != p3.y`, reorders the remaining vertices so `p3` is the bottom-most vertex and
- *    rasterizes the lower sub-triangle from $\max(p1.y, p2.y)$ down to `p3.y`.
+ *    rasterizes the lower sub-triangle from @f$ \max(p1.y, p2.y) @f$ down to `p3.y`.
  * @see Brush::drawTriangle(), Brush::fillDotArray()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fillTriangle(Position p1, Position p2, Position p3)
 {
@@ -856,12 +864,14 @@ void Brush::drawBitmap(Position pos, const bitmap_t bitmap)
 }
 
 /**
- * @details Forwards the clipped bitmap drawing request to `drawBitmapBase(getCanvasSize(), rect, bitmapPos, bitmap)`.
+ * @details Forwards the clipped bitmap drawing request to `drawBitmapBase(getCanvasSize(), canvasRect, bitmapPos, bitmap)`.
  * @see Brush::drawBitmapBase()
+ * @todo None.
+ * @bug None.
  */
-void Brush::drawBitmap(Area rect, Position bitmapPos, const bitmap_t bitmap)
+void Brush::drawBitmap(Area canvasRect, Position bitmapPos, const bitmap_t bitmap)
 {
-	drawBitmapBase(getCanvasSize(), rect, bitmapPos, bitmap);
+	drawBitmapBase(getCanvasSize(), canvasRect, bitmapPos, bitmap);
 }
 
 /**

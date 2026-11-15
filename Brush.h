@@ -181,21 +181,21 @@ public:
 
 	/**
 	 * @brief Draws the outline of a circle using the current brush color.
-	 * @param[in] pos Center coordinate of the circle.
-	 * @param[in] r   Radius of the circle in pixels.
+	 * @param[in] pos    Center coordinate of the circle.
+	 * @param[in] radius Radius of the circle in pixels.
 	 * @author Yoon-Ki Hong
-	 * @warning Nothing is drawn if the radius `r` is less than 3 pixels.
+	 * @warning Nothing is drawn if the radius `radius` is less than 3 pixels.
 	 */
-	void drawCircle(Position pos, uint16_t r) __attribute__((optimize("-O1")));
+	void drawCircle(Position pos, uint16_t radius) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Draws a filled circle using the current brush color.
-	 * @param[in] p1 Center coordinate of the circle.
-	 * @param[in] r  Radius of the circle in pixels.
+	 * @param[in] pos    Center coordinate of the circle.
+	 * @param[in] radius Radius of the circle in pixels.
 	 * @author Yoon-Ki Hong
-	 * @warning Nothing is drawn if the radius `r` is less than 3 pixels.
+	 * @warning Nothing is drawn if the radius `radius` is less than 3 pixels.
 	 */
-	void fillCircle(Position p1, uint16_t r) __attribute__((optimize("-O1")));
+	void fillCircle(Position pos, uint16_t radius) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Draws the wireframe outline of a triangle connecting three vertices.

@@ -87,17 +87,19 @@ Size FrameBufferRgb565::getCanvasSize(void)
  * @details Dispatches the clipped bitmap drawing operation to `drawBitmapRgb565()` or
  * `drawBitmapArgb1555()` according to `bitmap.type`.
  * @see FrameBufferRgb565::drawBitmapRgb565(), FrameBufferRgb565::drawBitmapArgb1555()
+ * @todo None.
+ * @bug None.
  */
-void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Area canvasRect, Position bitmapPos, const bitmap_t bitmap)
+void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
 {
 	switch(bitmap.type)
 	{
 	case BITMAP_TYPE_RGB565 :
-		drawBitmapRgb565(getCanvasSize(), canvasRect, bitmapPos, bitmap);
+		drawBitmapRgb565(getCanvasSize(), canvasDesArea, bitmapPos, bitmap);
 		break;
 	
 	case BITMAP_TYPE_ARGB1555 :
-		drawBitmapArgb1555(getCanvasSize(),canvasRect, bitmapPos, bitmap);
+		drawBitmapArgb1555(getCanvasSize(),canvasDesArea, bitmapPos, bitmap);
 		break;
 
 	default :

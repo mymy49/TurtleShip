@@ -111,6 +111,9 @@ void Frame::update(void)
  * @details Clears `rect` in `mFrameBuffer`, repaints any modified child widgets, composites all
  * visible children clipped to `rect`, and transfers the updated region to the display via
  * `system::drawBitmap(this, rect, mPos, mFrameBuffer->getBitmap())`.
+ * @see Container::update(Rectangular)
+ * @todo Update parameter type from legacy Rectangular to Area in future revision.
+ * @bug Uses legacy Rectangular type pending future update.
  */
 void Frame::update(Rectangular rect)
 {
@@ -139,6 +142,9 @@ void Frame::update(Rectangular rect)
  * @details Clears both `before` and `current` regions in `mFrameBuffer`, repaints modified children,
  * composites visible children clipped to `before` and `current`, and forwards the update if
  * `mOutputFrameBuffer` is set.
+ * @see Container::update(Rectangular, Rectangular)
+ * @todo Update parameter types from legacy Rectangular to Area in future revision.
+ * @bug Uses legacy Rectangular type pending future update.
  */
 void Frame::update(Rectangular before , Rectangular current)
 {

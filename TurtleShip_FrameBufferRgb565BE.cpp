@@ -50,9 +50,11 @@ FrameBufferRgb565BE::~FrameBufferRgb565BE(void)
  * -# Reads the 16-bit Big-Endian destination pixel and byte-swaps it to native Little-Endian order.
  * -# Extracts the 8-bit expanded Red, Green, and Blue channels of both the destination pixel and
  *    the brush color, and linearly interpolates each channel:
- *    $C_{\text{out}} = \lfloor((C_{\text{brush}} - C_{\text{des}}) \times \text{alpha}) / 256\rfloor + C_{\text{des}}$.
+ *    @f$ C_{\text{out}} = \lfloor((C_{\text{brush}} - C_{\text{des}}) \times \text{alpha}) / 256\rfloor + C_{\text{des}} @f$.
  * -# Repacks the blended channels into 16-bit RGB565, byte-swaps back to Big-Endian, and writes to `des[width * y + x]`.
  * @see Brush::drawChar()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565BE::blendDot(int16_t x, int16_t y, uint8_t alpha)
 {

@@ -1,0 +1,15 @@
+# Doxygen output directories
+html/
+latex/
+*.doxytags
+
+# Temporary & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak
+
+# Build artifacts
+*.o
+*.d

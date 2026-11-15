@@ -41,6 +41,8 @@ Object::~Object(void)
  * @details Propagates a single-region dirty update (`rect`) to `mParent->update(rect)` if a parent
  * container is attached.
  * @see Container::update(Rectangular)
+ * @todo Update parameter type from legacy `Rectangular` to `Area` to synchronize with Object.h in upcoming revision.
+ * @bug Doxygen member matching warning occurs due to signature type difference (`Rectangular` vs `Area`) pending future update.
  */
 void Object::update(Rectangular rect)
 {
@@ -56,6 +58,8 @@ void Object::update(Rectangular rect)
  * @details Propagates a dual-region dirty update (`before`, `current`) to `mParent->update(before, current)`
  * if a parent container is attached.
  * @see Container::update(Rectangular, Rectangular)
+ * @todo Update parameter types from legacy `Rectangular` to `Area` in upcoming revision.
+ * @bug Doxygen member matching warning occurs due to signature type difference (`Rectangular` vs `Area`) pending future update.
  */
 void Object::update(Rectangular before , Rectangular current)
 {
@@ -65,6 +69,9 @@ void Object::update(Rectangular before , Rectangular current)
 
 /**
  * @details Constructs and returns the bounding rectangle `{mPos, mFrameBuffer->getSize()}` of the widget.
+ * @see Object::update()
+ * @todo Update return type from legacy `Rectangular` to `Area` in upcoming revision.
+ * @bug Legacy `Rectangular` type used pending future update.
  */
 Rectangular Object::getRectangular(void)
 {

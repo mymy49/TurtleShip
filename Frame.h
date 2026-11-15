@@ -34,6 +34,10 @@ class PointerDevice;
  *   region into `mFrameBuffer` and flushes the updated bitmap to the display via `system::drawBitmap()`.
  * - It can be registered as the active system frame via `setAsSystemFrame()` and linked with a
  *   `PointerDevice` for automatic touch event routing and cleanup on destruction.
+ *
+ * @note Pending future update: Recent architectural updates (such as migration to Area) have not
+ * yet been applied to Frame. Legacy Rectangular dirty-region management is intentionally preserved
+ * pending upcoming refactoring.
  */
 class Frame : public Container
 {
@@ -135,6 +139,12 @@ protected:
 	 * @brief Composites visible children within `rect` and flushes only `rect` to the system display.
 	 * @param[in] rect Dirty rectangular region to update.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Parameter currently uses legacy Rectangular type pending future update.
+	 * @note Scheduled to update to Area in an upcoming revision.
+	 * @pre Frame buffer must be allocated.
+	 * @post Flushes dirty rectangle to system output frame buffer.
+	 * @deprecated None.
 	 */
 	virtual void update(Rectangular rect);
 
@@ -143,6 +153,12 @@ protected:
 	 * @param[in] before  Previous dirty rectangular region.
 	 * @param[in] current Current dirty rectangular region.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Parameter currently uses legacy Rectangular type pending future update.
+	 * @note Scheduled to update to Area in an upcoming revision.
+	 * @pre Frame buffer must be allocated.
+	 * @post Flushes dirty rectangles to system output frame buffer.
+	 * @deprecated None.
 	 */
 	virtual void update(Rectangular before , Rectangular current);
 

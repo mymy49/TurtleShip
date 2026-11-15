@@ -146,6 +146,9 @@ void Container::update(void)
  * @details Clears `rect` in `mFrameBuffer` with the background color, repaints any child whose
  * `isModified()` flag is set, blits all visible children clipped to `rect`, and—if `mParent` is set—
  * translates `rect` by `mPos` and propagates `mParent->update(rect)`.
+ * @see Object::update(Area)
+ * @todo Update parameter type from legacy Rectangular to Area in future revision.
+ * @bug Uses legacy Rectangular type pending future update.
  */
 void Container::update(Rectangular rect)
 {
@@ -181,6 +184,9 @@ void Container::update(Rectangular rect)
  * @details Clears both `before` and `current` rectangles in `mFrameBuffer`, repaints any modified
  * children, blits all visible children clipped to `before` and `current`, and propagates the
  * translated rectangles to `mParent->update(before, current)`.
+ * @see Object::update(Area, Area)
+ * @todo Update parameter types from legacy Rectangular to Area in future revision.
+ * @bug Uses legacy Rectangular type pending future update.
  */
 void Container::update(Rectangular before, Rectangular current)
 {

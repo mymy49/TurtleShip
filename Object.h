@@ -48,6 +48,11 @@ class Container;
  * Derived widgets implement `paint()` to draw their visual representation into their internal
  * `FrameBuffer` and call `touch()` whenever their visual properties change so the parent `Container`
  * repaints them on the next `update()`.
+ *
+ * @note Pending future update: Recent architectural updates (such as migrating dirty-region types
+ * from legacy `Rectangular` to `Area`) are declared in this interface, while downstream implementations
+ * and derived classes (Container, Frame) currently retain legacy signatures. Synchronization is planned
+ * for upcoming revisions.
  */
 class Object
 {
@@ -219,6 +224,12 @@ protected:
 	 * @brief Requests the parent container to repaint the specified dirty rectangle `rect`.
 	 * @param[in] rect Dirty `Area` in parent coordinates.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Implementation signature in TurtleShip_Object.cpp currently uses legacy Rectangular type.
+	 * @note Refactoring to Area across all derived classes is pending in a future update.
+	 * @pre Widget should be added to a parent Container.
+	 * @post Parent container marks the region as dirty.
+	 * @deprecated None.
 	 */
 	virtual void update(Area rect);
 
@@ -227,6 +238,12 @@ protected:
 	 * @param[in] before  Previous bounding `Area` before movement/resizing.
 	 * @param[in] current New bounding `Area` after movement/resizing.
 	 * @author Yoon-Ki Hong
+	 * @date 2024
+	 * @warning Implementation signature in TurtleShip_Object.cpp currently uses legacy Rectangular type.
+	 * @note Refactoring to Area across all derived classes is pending in a future update.
+	 * @pre Widget should be added to a parent Container.
+	 * @post Parent container marks both regions as dirty.
+	 * @deprecated None.
 	 */
 	virtual void update(Area before , Area current);
 
