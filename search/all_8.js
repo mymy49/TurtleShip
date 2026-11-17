@@ -1,7 +1,27 @@
 var searchData=
 [
-  ['handlerdrag_0',['handlerDrag',['../classContainer.html#add66f74022f6c412a085c5d1da2ee007',1,'Container::handlerDrag()'],['../classFrame.html#ae763492d13a795bdfbe93c233d7f6bf9',1,'Frame::handlerDrag()'],['../classObject.html#ae39f5c39470286e22a821f94b041ddd8',1,'Object::handlerDrag()']]],
-  ['handlerpush_1',['handlerPush',['../classButton.html#acf2c6748330656f3b0278d9ca77800c6',1,'Button::handlerPush()'],['../classContainer.html#a469cb8e6928f1a3bb86d50fe6d07f63f',1,'Container::handlerPush()'],['../classFrame.html#a3595f882e77b9b2eb36e73f0b2d514f9',1,'Frame::handlerPush()'],['../classObject.html#a2bafc74f429bdb43037577d83988c1e4',1,'Object::handlerPush()']]],
-  ['handlerup_2',['handlerUp',['../classButton.html#a54a160817eb8497502e7df67ce6a2d06',1,'Button::handlerUp()'],['../classContainer.html#a752d2952fa50a2dd27add1f13c9b785b',1,'Container::handlerUp()'],['../classFrame.html#a478363f2397a01f316ab42793f0b4615',1,'Frame::handlerUp()'],['../classObject.html#acced2508e3da19d3a5c999483d49a2f1',1,'Object::handlerUp()']]],
-  ['height_3',['height',['../structFont_1_1fontInfo__t.html#a3a08125e1fd52bb0b853a0f1395f6d30',1,'Font::fontInfo_t::height'],['../structSize__t.html#a5a1de72fa05295754cd4a5e42a6cb67f',1,'Size_t::height'],['../structBitmap__t.html#a2271f69cbe32334902a2e1ec684b266e',1,'Bitmap_t::height'],['../structbitmap__t.html#a4f46431fdc4b9bd03dd26f00efdea417',1,'bitmap_t::height'],['../Font_8h.html#adcf201a8aabf55cb352ec05331242594',1,'height:&#160;Font.h']]]
+  ['bitmap_5ft_0',['Bitmap_t',['../structBitmap__t.html',1,'']]],
+  ['bitmap_5ft_1',['bitmap_t',['../structbitmap__t.html',1,'']]],
+  ['bitmap_5ftype_5fargb1555_2',['BITMAP_TYPE_ARGB1555',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a9b61c4e6f446bf1fc867b189f2532d0a',1,'TurtleShipTypes.h']]],
+  ['bitmap_5ftype_5frgb565_3',['BITMAP_TYPE_RGB565',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a7ee8a522c8b87572c72523d91b09d183',1,'TurtleShipTypes.h']]],
+  ['bitmap_5ftype_5frgb888_4',['BITMAP_TYPE_RGB888',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9aab9b3d1cb9fec6c6a0530d8e8aab96fa',1,'TurtleShipTypes.h']]],
+  ['bitmapdrawingcalculator_5',['BitmapDrawingCalculator',['../classBitmapDrawingCalculator.html',1,'BitmapDrawingCalculator'],['../classBitmapDrawingCalculator.html#ae370b2f489e554c0d4b7edae337b6bf4',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(void)'],['../classBitmapDrawingCalculator.html#a690430c106467905641fe532d77a4050',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(Size &amp;canvasSize, Area &amp;canvasDesArea, Area &amp;bitmapSrcArea)']]],
+  ['bitmapdrawingcalculator_2eh_6',['BitmapDrawingCalculator.h',['../BitmapDrawingCalculator_8h.html',1,'']]],
+  ['bitmapfile_5ft_7',['BitmapFile_t',['../structBitmapFile__t.html',1,'BitmapFile_t'],['../TurtleShipTypes_8h.html#ab04a1407a9cf2296019e24c4f1f27202',1,'BitmapFile_t:&#160;TurtleShipTypes.h']]],
+  ['bitmaptype_5ft_8',['bitmapType_t',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9',1,'TurtleShipTypes.h']]],
+  ['blenddot_9',['blendDot',['../classBrush.html#adadee0f1f0b5781bda0142e28c5d5b9b',1,'Brush::blendDot()'],['../classFrameBufferArgb1555LE.html#a30223f68fb02c11a9e6a93d94d507f1a',1,'FrameBufferArgb1555LE::blendDot()'],['../classFrameBufferRgb565BE.html#a756a2619c468642ec2ea3bfc458ac824',1,'FrameBufferRgb565BE::blendDot()'],['../classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367',1,'FrameBufferRgb565LE::blendDot()']]],
+  ['blitting_10',['2. Off-Screen Rendering &amp;amp; Display Blitting',['../index.html#autotoc_md24',1,'']]],
+  ['brush_11',['Brush',['../classBrush.html',1,'Brush'],['../classBrush.html#a2e81058b97ce19ef44e5cb3ce71f91c7',1,'Brush::Brush()']]],
+  ['brush_2eh_12',['Brush.h',['../Brush_8h.html',1,'']]],
+  ['brushtftlcdrgb565_13',['BrushTftLcdRgb565',['../classBrushTftLcdRgb565.html',1,'BrushTftLcdRgb565'],['../classBrushTftLcdRgb565.html#a3118f9f653d566ac9e021582e0a494a3',1,'BrushTftLcdRgb565::BrushTftLcdRgb565()']]],
+  ['brushtftlcdrgb565_2eh_14',['BrushTftLcdRgb565.h',['../BrushTftLcdRgb565_8h.html',1,'']]],
+  ['brushtftlcdrgb565be_15',['BrushTftLcdRgb565BE',['../classBrushTftLcdRgb565BE.html',1,'BrushTftLcdRgb565BE'],['../classBrushTftLcdRgb565BE.html#a76fc58fae6ffec343802124e20bbb1f4',1,'BrushTftLcdRgb565BE::BrushTftLcdRgb565BE()']]],
+  ['brushtftlcdrgb565be_2eh_16',['BrushTftLcdRgb565BE.h',['../BrushTftLcdRgb565BE_8h.html',1,'']]],
+  ['brushtftlcdrgb565le_17',['BrushTftLcdRgb565LE',['../classBrushTftLcdRgb565LE.html',1,'BrushTftLcdRgb565LE'],['../classBrushTftLcdRgb565LE.html#a15a40878ae020f727db58d7d5c9dcf75',1,'BrushTftLcdRgb565LE::BrushTftLcdRgb565LE()']]],
+  ['brushtftlcdrgb565le_2eh_18',['BrushTftLcdRgb565LE.h',['../BrushTftLcdRgb565LE_8h.html',1,'']]],
+  ['bsp_20cpp_19',['1. FrameBuffer Allocation (&lt;span class=&quot;tt&quot;&gt;bsp.cpp&lt;/span&gt;)',['../index.html#autotoc_md23',1,'']]],
+  ['bug_20list_20',['Bug List',['../bug.html',1,'']]],
+  ['build_20and_20firmware_20flashing_21',['Build and Firmware Flashing',['../index.html#autotoc_md20',1,'']]],
+  ['button_22',['Button',['../classButton.html',1,'Button'],['../classButton.html#acf6709ac6520eba8bbaacca46c489551',1,'Button::Button()']]],
+  ['button_2eh_23',['Button.h',['../Button_8h.html',1,'']]]
 ];

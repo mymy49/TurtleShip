@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Abstract base class for TFT LCD drivers controllable over a communication bus (SPI, I2C, parallel, etc.). </p>
 <p>Any TFT LCD driver that configures and updates a display panel over a communication channel must inherit from <span class="tt"><a class="el" href="classTftLcdDriver.html" title="Abstract base class for TFT LCD drivers controllable over a communication bus (SPI,...">TftLcdDriver</a></span> and implement its pure virtual interface (<span class="tt"><a class="el" href="#aff87a1725974263c48b156657dd05c69" title="Gets the physical pixel resolution of the TFT LCD panel.">getLcdSize()</a></span> and <span class="tt"><a class="el" href="#a7ca83fa5514a0fad4d6bfcae014e16c3" title="Transfers a bitmap (clipped to canvasRect) onto the TFT LCD at bitmapPos.">drawBitmapBase()</a></span>).</p>
 <p>Because <span class="tt"><a class="el" href="classTftLcdDriver.html" title="Abstract base class for TFT LCD drivers controllable over a communication bus (SPI,...">TftLcdDriver</a></span> inherits from <span class="tt">Mutex</span>, multi-threaded user applications can safely serialize concurrent screen updates by calling <span class="tt">lcd.lock()</span> and <span class="tt">lcd.unlock()</span>.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
 Example Usage in User Application</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;bsp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;../bmp/drawing.h&quot;</span></div>

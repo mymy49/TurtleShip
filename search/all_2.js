@@ -1,24 +1,5 @@
 var searchData=
 [
-  ['bitmap_5ft_0',['Bitmap_t',['../structBitmap__t.html',1,'']]],
-  ['bitmap_5ft_1',['bitmap_t',['../structbitmap__t.html',1,'']]],
-  ['bitmap_5ftype_5fargb1555_2',['BITMAP_TYPE_ARGB1555',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a9b61c4e6f446bf1fc867b189f2532d0a',1,'TurtleShipTypes.h']]],
-  ['bitmap_5ftype_5frgb565_3',['BITMAP_TYPE_RGB565',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a7ee8a522c8b87572c72523d91b09d183',1,'TurtleShipTypes.h']]],
-  ['bitmap_5ftype_5frgb888_4',['BITMAP_TYPE_RGB888',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9aab9b3d1cb9fec6c6a0530d8e8aab96fa',1,'TurtleShipTypes.h']]],
-  ['bitmapdrawingcalculator_5',['BitmapDrawingCalculator',['../classBitmapDrawingCalculator.html',1,'BitmapDrawingCalculator'],['../classBitmapDrawingCalculator.html#ae370b2f489e554c0d4b7edae337b6bf4',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(void)'],['../classBitmapDrawingCalculator.html#a690430c106467905641fe532d77a4050',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(Size &amp;canvasSize, Area &amp;canvasDesArea, Area &amp;bitmapSrcArea)']]],
-  ['bitmapdrawingcalculator_2eh_6',['BitmapDrawingCalculator.h',['../BitmapDrawingCalculator_8h.html',1,'']]],
-  ['bitmapfile_5ft_7',['BitmapFile_t',['../structBitmapFile__t.html',1,'BitmapFile_t'],['../TurtleShipTypes_8h.html#ab04a1407a9cf2296019e24c4f1f27202',1,'BitmapFile_t:&#160;TurtleShipTypes.h']]],
-  ['bitmaptype_5ft_8',['bitmapType_t',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9',1,'TurtleShipTypes.h']]],
-  ['blenddot_9',['blendDot',['../classBrush.html#adadee0f1f0b5781bda0142e28c5d5b9b',1,'Brush::blendDot()'],['../classFrameBufferArgb1555LE.html#a30223f68fb02c11a9e6a93d94d507f1a',1,'FrameBufferArgb1555LE::blendDot()'],['../classFrameBufferRgb565BE.html#a756a2619c468642ec2ea3bfc458ac824',1,'FrameBufferRgb565BE::blendDot()'],['../classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367',1,'FrameBufferRgb565LE::blendDot()']]],
-  ['brush_10',['Brush',['../classBrush.html',1,'Brush'],['../classBrush.html#a2e81058b97ce19ef44e5cb3ce71f91c7',1,'Brush::Brush()']]],
-  ['brush_2eh_11',['Brush.h',['../Brush_8h.html',1,'']]],
-  ['brushtftlcdrgb565_12',['BrushTftLcdRgb565',['../classBrushTftLcdRgb565.html',1,'BrushTftLcdRgb565'],['../classBrushTftLcdRgb565.html#a3118f9f653d566ac9e021582e0a494a3',1,'BrushTftLcdRgb565::BrushTftLcdRgb565()']]],
-  ['brushtftlcdrgb565_2eh_13',['BrushTftLcdRgb565.h',['../BrushTftLcdRgb565_8h.html',1,'']]],
-  ['brushtftlcdrgb565be_14',['BrushTftLcdRgb565BE',['../classBrushTftLcdRgb565BE.html',1,'BrushTftLcdRgb565BE'],['../classBrushTftLcdRgb565BE.html#a76fc58fae6ffec343802124e20bbb1f4',1,'BrushTftLcdRgb565BE::BrushTftLcdRgb565BE()']]],
-  ['brushtftlcdrgb565be_2eh_15',['BrushTftLcdRgb565BE.h',['../BrushTftLcdRgb565BE_8h.html',1,'']]],
-  ['brushtftlcdrgb565le_16',['BrushTftLcdRgb565LE',['../classBrushTftLcdRgb565LE.html',1,'BrushTftLcdRgb565LE'],['../classBrushTftLcdRgb565LE.html#a15a40878ae020f727db58d7d5c9dcf75',1,'BrushTftLcdRgb565LE::BrushTftLcdRgb565LE()']]],
-  ['brushtftlcdrgb565le_2eh_17',['BrushTftLcdRgb565LE.h',['../BrushTftLcdRgb565LE_8h.html',1,'']]],
-  ['bug_20list_18',['Bug List',['../bug.html',1,'']]],
-  ['button_19',['Button',['../classButton.html',1,'Button'],['../classButton.html#acf6709ac6520eba8bbaacca46c489551',1,'Button::Button()']]],
-  ['button_2eh_20',['Button.h',['../Button_8h.html',1,'']]]
+  ['3_20direct_20screen_20drawing_0',['3. Direct Screen Drawing',['../index.html#autotoc_md25',1,'']]],
+  ['3_20installation_20project_20setup_1',['3. Installation &amp;amp; Project Setup',['../index.html#autotoc_md17',1,'']]]
 ];
