@@ -32,17 +32,16 @@ var NAVTREE =
       [ "Supported Targets &amp; Tools", "index.html#autotoc_md15", null ]
     ] ],
     [ "3. Installation &amp; Project Setup", "index.html#autotoc_md17", [
-      [ "Cloning with Submodules", "index.html#autotoc_md18", null ],
-      [ "Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM", "index.html#autotoc_md19", null ],
-      [ "Build and Firmware Flashing", "index.html#autotoc_md20", null ]
+      [ "Adding TurtleShip as a Submodule", "index.html#autotoc_md18", null ],
+      [ "Build and Integration", "index.html#autotoc_md19", null ]
     ] ],
-    [ "4. Quick Start &amp; Example Code", "index.html#autotoc_md22", [
-      [ "1. FrameBuffer Allocation (<span class=\"tt\">bsp.cpp</span>)", "index.html#autotoc_md23", null ],
-      [ "2. Off-Screen Rendering &amp; Display Blitting", "index.html#autotoc_md24", null ],
-      [ "3. Direct Screen Drawing", "index.html#autotoc_md25", null ]
+    [ "4. Quick Start &amp; Example Code", "index.html#autotoc_md21", [
+      [ "1. FrameBuffer Allocation (<span class=\"tt\">bsp.cpp</span>)", "index.html#autotoc_md22", null ],
+      [ "2. Off-Screen Rendering &amp; Display Blitting", "index.html#autotoc_md23", null ],
+      [ "3. Direct Screen Drawing", "index.html#autotoc_md24", null ]
     ] ],
-    [ "5. Documentation &amp; References", "index.html#autotoc_md27", null ],
-    [ "6. License &amp; Author", "index.html#autotoc_md29", null ],
+    [ "5. Documentation &amp; References", "index.html#autotoc_md26", null ],
+    [ "6. License &amp; Author", "index.html#autotoc_md28", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],

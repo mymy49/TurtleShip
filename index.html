@@ -149,20 +149,15 @@ Key Highlights</h2>
 Supported Targets &amp; Tools</h2>
 <ul>
 <li><b>Target Microcontrollers &amp; Development Boards</b>:<ul>
-<li>Nuvoton NuMicro® M251 series (e.g., <b>NuMaker-M251KG</b> / Cortex®-M23).</li>
 <li>Any 32-bit MCU supported by the <b>yss OS</b> platform (ARM Cortex-M0+/M3/M4/M7/M23/M33, etc.).</li>
 </ul>
 </li>
 <li><b>Supported Display Interfaces</b>:<ul>
 <li>TFT LCDs via SPI, 8080/6800 parallel interfaces, or RGB interfaces (e.g., ST7789V, ILI9341, ST7735).</li>
-<li>Demonstrations available on the <b>2.8-inch TFT Touch Shield Rev2.1</b> (240x320 ST7789V display).</li>
 </ul>
 </li>
 <li><b>Required Software &amp; Toolchains</b>:<ul>
-<li>Toolchain: ARM GNU Toolchain or CrossWorks for ARM (v5.x or higher).<ul>
-<li><b>Note on CrossWorks for ARM</b>: CrossWorks for ARM does not natively support the Nuvoton M251 series. You must install the custom <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251 Support Package</a> before building M251 projects.</li>
-</ul>
-</li>
+<li>Toolchain: CrossWorks for ARM (v5.x or higher).</li>
 <li>Operating System: <a href="https://github.com/mymy49/yss">yss OS</a> (embedded RTOS &amp; HAL).</li>
 <li>Language: C++11 or higher.</li>
 </ul>
@@ -172,38 +167,22 @@ Supported Targets &amp; Tools</h2>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 3. Installation &amp; Project Setup</h1>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
-Cloning with Submodules</h2>
-<p>To clone a project containing TurtleShip as a submodule: </p><div class="fragment"><div class="line">git clone --recursive https://github.com/mymy49/NuMaker-M251KG_example.git</div>
-</div><!-- fragment --><p>To add TurtleShip as a submodule to your project: </p><div class="fragment"><div class="line">git submodule add https://github.com/mymy49/TurtleShip.git module/TurtleShip</div>
+Adding TurtleShip as a Submodule</h2>
+<p>To add TurtleShip as a submodule to your project: </p><div class="fragment"><div class="line">git submodule add https://github.com/mymy49/TurtleShip.git module/TurtleShip</div>
+</div><!-- fragment --><p>To clone an existing project with submodules: </p><div class="fragment"><div class="line">git clone --recursive &lt;repository-url&gt;</div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
-Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM</h2>
-<p>CrossWorks for ARM does not natively provide device support for Nuvoton NuMicro® M251 microcontrollers in its default package manager. A custom device support package must be installed beforehand:</p>
+Build and Integration</h2>
 <ol type="1">
-<li>Clone or download the <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251</a> repository.</li>
-<li>Open the package project file (<span class="tt">.hzp</span>) in CrossWorks for ARM and build it (<span class="tt">F7</span> or <span class="tt">Build -&gt; Build Project</span>) to generate the package file (<span class="tt">.hzq</span>).</li>
-<li>In CrossWorks for ARM, navigate to <b>Tools -&gt; Packages -&gt; Manually Install Packages...</b> and select the generated <span class="tt">.hzq</span> package file.</li>
-<li>Once installed, M251 target device definitions, CMSIS headers, and project templates will be fully available in CrossWorks for ARM.</li>
+<li>Add the TurtleShip source directory (<span class="tt">TurtleShip/src</span>) and include directory (<span class="tt">TurtleShip/inc</span>) to your project's include and build paths.</li>
+<li>Ensure <b>yss OS</b> is properly initialized and configured.</li>
+<li>Build the application using CrossWorks for ARM.</li>
+<li>Download the firmware binary to your target hardware using your preferred debug probe (J-Link, CMSIS-DAP, etc.).</li>
 </ol>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
-Build and Firmware Flashing</h2>
-<ul>
-<li><b>CrossWorks for ARM</b>:<ol type="1">
-<li>Ensure the <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251</a> package has been installed.</li>
-<li>Open the project solution file (e.g., <span class="tt">Example.hzp</span>).</li>
-<li>Select target configuration (<span class="tt">Example THUMB Release</span> or <span class="tt">Example THUMB Debug</span>).</li>
-<li>Build solution via <span class="tt">F7</span> or <span class="tt">Build -&gt; Build Solution</span>.</li>
-<li>Connect the board via Nu-Link ICE and flash with <span class="tt">Ctrl+D</span> (<span class="tt">Target -&gt; Download</span>).</li>
-</ol>
-</li>
-<li><b>Command Line (pyOCD / OpenOCD)</b>: <div class="fragment"><div class="line"># Flash prebuilt binary using pyocd</div>
-<div class="line">pyocd flash -t m251kg firmware.bin</div>
-</div><!-- fragment --></li>
-</ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 4. Quick Start &amp; Example Code</h1>
 <p>Below is a typical real-world workflow using <span class="tt"><a class="el" href="classFrameBufferRgb565LE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Little-Endian byte order.">FrameBufferRgb565LE</a></span> as an off-screen brush to compose UI elements and blit them to a TFT LCD display under yss OS:</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 1. FrameBuffer Allocation (<span class="tt">bsp.cpp</span>)</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;bsp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="TurtleShip_8h.html">TurtleShip.h</a>&gt;</span></div>
@@ -219,7 +198,7 @@ Build and Firmware Flashing</h2>
 <div class="ttc" id="aTurtleShip_8h_html"><div class="ttname"><a href="TurtleShip_8h.html">TurtleShip.h</a></div><div class="ttdoc">Top-level convenience header for the TurtleShip GUI library.</div></div>
 <div class="ttc" id="aclassFrameBufferRgb565LE_html"><div class="ttname"><a href="classFrameBufferRgb565LE.html">FrameBufferRgb565LE</a></div><div class="ttdoc">Concrete 16-bit RGB565 FrameBuffer storing pixels in Little-Endian byte order.</div><div class="ttdef"><b>Definition</b> FrameBufferRgb565LE.h:62</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="classFrameBuffer.html#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div><div class="ttdoc">Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:100</div></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 2. Off-Screen Rendering &amp; Display Blitting</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;bsp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;font/Ubuntu_20_B.h&gt;</span></div>
@@ -263,7 +242,7 @@ Build and Firmware Flashing</h2>
 <div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the foreground brush color from a Color object and caches its Little-Endian 16-bit code.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:98</div></div>
 <div class="ttc" id="aclassFrameBufferRgb565_html_a0530a030a12308a12675cc8a4a6cc802"><div class="ttname"><a href="classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">FrameBufferRgb565::getBitmap</a></div><div class="ttdeci">bitmap_t getBitmap(void) override</div><div class="ttdoc">Exports a bitmap_t descriptor of type BITMAP_TYPE_RGB565 pointing to mFrameBuffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565.cpp:206</div></div>
 <div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="classFrameBuffer.html#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div><div class="ttdoc">Sets the logical canvas dimensions from a Size object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:52</div></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 3. Direct Screen Drawing</h2>
 <p>Display drivers (such as <span class="tt">Touch_LCD_Shield_for_Arduino_2_8_inch</span> or <span class="tt"><a class="el" href="classBrushTftLcdRgb565LE.html" title="BrushTftLcdRgb565 specialization using Little-Endian 16-bit RGB565 colors (ColorRgb565LE).">BrushTftLcdRgb565LE</a></span>) inherit from <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span>, enabling direct vector rendering onto the screen: </p><div class="fragment"><div class="line">lcd.lock();</div>
 <div class="line"> </div>
@@ -277,7 +256,7 @@ Build and Firmware Flashing</h2>
 <div class="line"> </div>
 <div class="line">lcd.unlock();</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 5. Documentation &amp; References</h1>
 <ul>
 <li><b>Doxygen API Reference</b>: <a href="https://mymy49.github.io/TurtleShip/">https://mymy49.github.io/TurtleShip/</a></li>
@@ -289,7 +268,7 @@ Build and Firmware Flashing</h2>
 </li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 6. License &amp; Author</h1>
 <ul>
 <li><b>Author</b>: Yoon-Ki Hong</li>

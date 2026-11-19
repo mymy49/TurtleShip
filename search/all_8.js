@@ -10,7 +10,7 @@ var searchData=
   ['bitmapfile_5ft_7',['BitmapFile_t',['../structBitmapFile__t.html',1,'BitmapFile_t'],['../TurtleShipTypes_8h.html#ab04a1407a9cf2296019e24c4f1f27202',1,'BitmapFile_t:&#160;TurtleShipTypes.h']]],
   ['bitmaptype_5ft_8',['bitmapType_t',['../TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9',1,'TurtleShipTypes.h']]],
   ['blenddot_9',['blendDot',['../classBrush.html#adadee0f1f0b5781bda0142e28c5d5b9b',1,'Brush::blendDot()'],['../classFrameBufferArgb1555LE.html#a30223f68fb02c11a9e6a93d94d507f1a',1,'FrameBufferArgb1555LE::blendDot()'],['../classFrameBufferRgb565BE.html#a756a2619c468642ec2ea3bfc458ac824',1,'FrameBufferRgb565BE::blendDot()'],['../classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367',1,'FrameBufferRgb565LE::blendDot()']]],
-  ['blitting_10',['2. Off-Screen Rendering &amp;amp; Display Blitting',['../index.html#autotoc_md24',1,'']]],
+  ['blitting_10',['2. Off-Screen Rendering &amp;amp; Display Blitting',['../index.html#autotoc_md23',1,'']]],
   ['brush_11',['Brush',['../classBrush.html',1,'Brush'],['../classBrush.html#a2e81058b97ce19ef44e5cb3ce71f91c7',1,'Brush::Brush()']]],
   ['brush_2eh_12',['Brush.h',['../Brush_8h.html',1,'']]],
   ['brushtftlcdrgb565_13',['BrushTftLcdRgb565',['../classBrushTftLcdRgb565.html',1,'BrushTftLcdRgb565'],['../classBrushTftLcdRgb565.html#a3118f9f653d566ac9e021582e0a494a3',1,'BrushTftLcdRgb565::BrushTftLcdRgb565()']]],
@@ -19,9 +19,9 @@ var searchData=
   ['brushtftlcdrgb565be_2eh_16',['BrushTftLcdRgb565BE.h',['../BrushTftLcdRgb565BE_8h.html',1,'']]],
   ['brushtftlcdrgb565le_17',['BrushTftLcdRgb565LE',['../classBrushTftLcdRgb565LE.html',1,'BrushTftLcdRgb565LE'],['../classBrushTftLcdRgb565LE.html#a15a40878ae020f727db58d7d5c9dcf75',1,'BrushTftLcdRgb565LE::BrushTftLcdRgb565LE()']]],
   ['brushtftlcdrgb565le_2eh_18',['BrushTftLcdRgb565LE.h',['../BrushTftLcdRgb565LE_8h.html',1,'']]],
-  ['bsp_20cpp_19',['1. FrameBuffer Allocation (&lt;span class=&quot;tt&quot;&gt;bsp.cpp&lt;/span&gt;)',['../index.html#autotoc_md23',1,'']]],
+  ['bsp_20cpp_19',['1. FrameBuffer Allocation (&lt;span class=&quot;tt&quot;&gt;bsp.cpp&lt;/span&gt;)',['../index.html#autotoc_md22',1,'']]],
   ['bug_20list_20',['Bug List',['../bug.html',1,'']]],
-  ['build_20and_20firmware_20flashing_21',['Build and Firmware Flashing',['../index.html#autotoc_md20',1,'']]],
+  ['build_20and_20integration_21',['Build and Integration',['../index.html#autotoc_md19',1,'']]],
   ['button_22',['Button',['../classButton.html',1,'Button'],['../classButton.html#acf6709ac6520eba8bbaacca46c489551',1,'Button::Button()']]],
   ['button_2eh_23',['Button.h',['../Button_8h.html',1,'']]]
 ];
