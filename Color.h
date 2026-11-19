@@ -9,6 +9,7 @@
  * @file Color.h
  * @brief Generic RGBA color class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #ifndef YSS_GUI_COLOR__H_
@@ -51,9 +52,16 @@ class Color
 public:
 	/**
 	 * @brief Constructs a black, fully opaque color (`R=0, G=0, B=0, A=0xFF`).
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
 	 * @note `setColorBase()` is invoked from the base constructor, so the base ARGB8888 encoding
 	 *       is executed during base construction.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color(void);
 
@@ -63,16 +71,29 @@ public:
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`: opaque).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF);
 
 	/**
 	 * @brief Copies the RGBA components from another `Color` object and re-encodes `mCode`.
 	 * @param[in] obj Source `Color` object whose 8-bit RGBA channels are copied.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
 	 * @note Only the RGBA components of `obj` are copied; `mCode` is regenerated in this instance's
 	 *       own pixel format via `setColorBase()`.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setColor(Color obj);
 
@@ -82,22 +103,43 @@ public:
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`: opaque).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF);
 
 	/**
 	 * @brief Assignment operator that copies RGBA components from `obj` and re-encodes `mCode`.
 	 * @param[in] obj Source `Color` reference.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void operator=(Color &obj);
 
 	/**
 	 * @brief Returns the pre-computed hardware color code in this object's pixel format.
+	 * @param[in] none
 	 * @return Encoded color code (`0xAARRGGBB` for the base `Color` class, or 16-bit packed RGB565/BGR565
 	 *         values for derived classes).
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual uint32_t getCode(void);
 
@@ -116,8 +158,14 @@ protected:
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
 	 * @note Overridden by derived classes to produce pixel-format-specific color codes.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF);
 };

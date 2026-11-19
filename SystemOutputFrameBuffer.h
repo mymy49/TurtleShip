@@ -9,6 +9,7 @@
  * @file SystemOutputFrameBuffer.h
  * @brief System output frame buffer bridge (`OutputFrameBuffer`) for the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_OUTPUT_FRAME_BUFFER__H_
@@ -41,27 +42,57 @@ class OutputFrameBuffer
 public :
 	/**
 	 * @brief Constructs an `OutputFrameBuffer` instance.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	OutputFrameBuffer(void);
 
 	/**
 	 * @brief Destructor.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	~OutputFrameBuffer(void);
 
 	/**
 	 * @brief Binds the active top-level `Frame` to this output frame buffer.
 	 * @param[in] frame Pointer to the `Frame` instance.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFrame(Frame *frame);
 
 	/**
 	 * @brief Returns a raw byte pointer to the underlying system output frame buffer memory.
+	 * @param[in] none
 	 * @return Pointer to the first byte of the output frame buffer.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint8_t* getFrameBuffer(void);
 
@@ -69,7 +100,14 @@ protected:
 	/**
 	 * @brief Updates a single dirty rectangular region on the output frame buffer.
 	 * @param[in] rect Dirty rectangular area to redraw.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void update(Rectangular rect);
 
@@ -77,13 +115,28 @@ protected:
 	 * @brief Updates both the previous (`before`) and new (`current`) dirty rectangular regions.
 	 * @param[in] before  Previous dirty rectangular area.
 	 * @param[in] current Current dirty rectangular area.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void update(Rectangular before , Rectangular current);
 
 	/**
 	 * @brief Updates the entire output frame buffer from `mFrame`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void update(void);
 

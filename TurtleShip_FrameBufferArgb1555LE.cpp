@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_FrameBufferArgb1555LE.cpp
  * @brief Legacy implementation of the FrameBufferArgb1555LE class (currently disabled via comment block).
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include <config.h>

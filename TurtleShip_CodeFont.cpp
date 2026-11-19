@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_CodeFont.cpp
  * @brief Implementation of the CodeFont class for Flash-resident bitmap font lookup.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -18,6 +20,9 @@
  * @details Stores the pointer to the static `codeFontInfo_t` descriptor (`mInfo`), sets the nominal
  * font height `mSize` from `info->size`, and sets the default space width `mSpaceWidth` to one-third
  * of the font height (`mSize / 3`).
+ * @see CodeFont
+ * @todo None.
+ * @bug None.
  */
 CodeFont::CodeFont(const codeFontInfo_t *info)
 {
@@ -31,6 +36,8 @@ CodeFont::CodeFont(const codeFontInfo_t *info)
  * a linear search over the `mInfo->numOfChar[group]` entries in `mInfo->fontInfo[group]` to find an
  * entry whose `utf8Code` equals `ch`. Returns `&info[i]` on match, or `0` (`nullptr`) if not found.
  * @see Font::getFontInfo()
+ * @todo None.
+ * @bug None.
  */
 Font::fontInfo_t *CodeFont::getFontInfo(uint32_t ch)
 {

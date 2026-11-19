@@ -9,6 +9,7 @@
  * @file TurtleShip.h
  * @brief Top-level convenience header for the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  * @note Includes core geometry (`Area`, `Size`), little-endian RGB565 framebuffer (`FrameBufferRgb565LE`),
  *       and bitmap font (`CodeFont`) headers commonly required by display widgets and applications.
  */

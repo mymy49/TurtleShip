@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_FrameBuffer.cpp
  * @brief Implementation of the FrameBuffer base class for heap-managed off-screen pixel buffers.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "FrameBuffer.h"
@@ -19,6 +21,9 @@
 /**
  * @details Initializes an empty `FrameBuffer` with `mMallocFlag = false`, `mFrameBuffer = nullptr`,
  * and `mMaxPixelCount = 0`.
+ * @see FrameBuffer
+ * @todo None.
+ * @bug None.
  */
 FrameBuffer::FrameBuffer(void)
 {
@@ -48,6 +53,8 @@ FrameBuffer::~FrameBuffer(void)
  * @details Checks whether `size.getWidth() * size.getHeight()` fits within `mMaxPixelCount`.
  * If so, updates `mSize` and returns `true`; otherwise leaves `mSize` unchanged and returns `false`.
  * @see FrameBuffer::malloc()
+ * @todo None.
+ * @bug None.
  */
 bool FrameBuffer::setSize(Size size)
 {
@@ -66,6 +73,8 @@ bool FrameBuffer::setSize(Size size)
  * @details Checks whether `width * height` fits within `mMaxPixelCount`.
  * If so, updates `mSize` via `mSize.setSize(width, height)` and returns `true`; otherwise returns `false`.
  * @see FrameBuffer::malloc()
+ * @todo None.
+ * @bug None.
  */
 bool FrameBuffer::setSize(uint16_t width, uint16_t height)
 {
@@ -83,6 +92,8 @@ bool FrameBuffer::setSize(uint16_t width, uint16_t height)
 /**
  * @details Extracts the `Size` from `area` (`area.getSize()`) and delegates to `setSize(Size)`.
  * @see FrameBuffer::setSize(Size)
+ * @todo None.
+ * @bug None.
  */
 bool FrameBuffer::setSize(Area area)
 {
@@ -96,6 +107,9 @@ bool FrameBuffer::setSize(Area area)
  * -# Frees any previously allocated buffer if `mMallocFlag` is `true`.
  * -# Allocates `maxPixelPoints * getPixelCapacity()` bytes from the L-heap (`lmalloc`) or H-heap (`hmalloc`).
  * -# Updates `mMaxPixelCount` and `mMallocFlag` according to whether the allocation succeeded.
+ * @see FrameBuffer
+ * @todo None.
+ * @bug None.
  */
 void FrameBuffer::malloc(uint32_t maxPixelPoints)
 {
@@ -128,6 +142,9 @@ void FrameBuffer::malloc(uint32_t maxPixelPoints)
 
 /**
  * @details Returns the raw byte pointer `mFrameBuffer`.
+ * @see FrameBuffer
+ * @todo None.
+ * @bug None.
  */
 uint8_t* FrameBuffer::getFrameBuffer(void)
 {
@@ -136,6 +153,9 @@ uint8_t* FrameBuffer::getFrameBuffer(void)
 
 /**
  * @details Returns the maximum pixel capacity `mMaxPixelCount` of the allocated buffer.
+ * @see FrameBuffer
+ * @todo None.
+ * @bug None.
  */
 uint32_t FrameBuffer::getMaxPixelCount(void)
 {
@@ -144,6 +164,9 @@ uint32_t FrameBuffer::getMaxPixelCount(void)
 
 /**
  * @details Returns the current logical canvas dimensions `mSize`.
+ * @see FrameBuffer
+ * @todo None.
+ * @bug None.
  */
 Size FrameBuffer::getSize(void)
 {

@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_TftLcdDriver.cpp
  * @brief Legacy implementation stub for the TftLcdDriver class.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -19,6 +21,9 @@
 
 /**
  * @details Returns `false` by default, indicating standard RGB channel ordering.
+ * @see TftLcdDriver
+ * @todo None.
+ * @bug None.
  */
 bool TftLcdDriver::getReverseRgbOrder(void)
 {
@@ -27,6 +32,9 @@ bool TftLcdDriver::getReverseRgbOrder(void)
 
 /**
  * @details Returns `false` by default, indicating native byte endianness.
+ * @see TftLcdDriver
+ * @todo None.
+ * @bug None.
  */
 bool TftLcdDriver::getReverseEndian(void)
 {

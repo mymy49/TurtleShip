@@ -9,6 +9,7 @@
  * @file ColorRgb888.h
  * @brief 24/32-bit RGB888 color encoding class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #ifndef YSS_GUI_COLOR_RGB888__H_
@@ -29,7 +30,15 @@ class ColorRgb888 : public Color
 public:
 	/**
 	 * @brief Constructs a default `ColorRgb888` object.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	ColorRgb888(void);
 
@@ -39,7 +48,14 @@ public:
 	 * @param[in] g Green component (`0` ~ `255`).
 	 * @param[in] b Blue component (`0` ~ `255`).
 	 * @param[in] a Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	ColorRgb888(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 0xFF);
 
@@ -49,14 +65,28 @@ public:
 	 * @param[in] g Green component (`0` ~ `255`).
 	 * @param[in] b Blue component (`0` ~ `255`).
 	 * @param[in] a Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void setColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 0xFF);
 
 	/**
 	 * @brief Gets the encoded RGB888 color code.
+	 * @param[in] none
 	 * @return 32-bit encoded color code.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getCode(void);
 		

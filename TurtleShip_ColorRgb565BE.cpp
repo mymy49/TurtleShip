@@ -8,12 +8,17 @@
 /**
  * @file TurtleShip_ColorRgb565BE.cpp
  * @brief Implementation of the ColorRgb565BE class for 16-bit Big-Endian 5-6-5 color encoding.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "ColorRgb565BE.h"
 
 /**
  * @details Default constructor. Base class `Color::Color()` initializes the RGBA fields.
+ * @see ColorRgb565BE
+ * @todo None.
+ * @bug None.
  */
 ColorRgb565BE::ColorRgb565BE(void)
 {
@@ -28,6 +33,8 @@ ColorRgb565BE::ColorRgb565BE(void)
  *
  * The resulting 16-bit word is stored in `mCode`.
  * @see Color::getCode()
+ * @todo None.
+ * @bug None.
  */
 void  ColorRgb565BE::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {

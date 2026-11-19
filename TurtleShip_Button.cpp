@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Button.cpp
  * @brief Implementation of the Button widget class.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <yss/instance.h>
@@ -21,6 +23,9 @@
  * @details Allocates `mFrameBuffer`, `mPushedFb`, and `mPulledFb`, initializes event handler pointers
  * and state flags to `nullptr` / `false`, sets the default font color to white (`0xFF, 0xFF, 0xFF`),
  * and sets the default button face background color to medium gray (`0x80, 0x80, 0x80`).
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 Button::Button(void)
 {
@@ -43,6 +48,9 @@ Button::Button(void)
 
 /**
  * @details Frees the heap-allocated `mPushedFb` and `mPulledFb` instances.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 Button::~Button(void)
 {
@@ -62,6 +70,8 @@ Button::~Button(void)
  * -# If both `mText` and a `Font` are configured, centers `mText` on `mPulledFb` and draws it shifted
  *    by `(+2, +2)` pixels on `mPushedFb` to simulate physical button depression.
  * @see Button::paint()
+ * @todo None.
+ * @bug None.
  */
 void Button::makeButtonImage(void)
 {
@@ -139,6 +149,8 @@ void Button::makeButtonImage(void)
  * then copies either `mPushedFb` (when `mState == true`) or `mPulledFb` (when `mState == false`)
  * onto `mFrameBuffer`.
  * @see Button::makeButtonImage()
+ * @todo None.
+ * @bug None.
  */
 void Button::paint(void)
 {
@@ -156,6 +168,9 @@ void Button::paint(void)
 
 /**
  * @details Stores the push callback function pointer in `mPushHandler`.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setPushEventHandler(void (*handler)(void))
 {
@@ -164,6 +179,9 @@ void Button::setPushEventHandler(void (*handler)(void))
 
 /**
  * @details Stores the release callback function pointer in `mUpHandler`.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setUpEventHandler(void (*handler)(void))
 {
@@ -173,6 +191,9 @@ void Button::setUpEventHandler(void (*handler)(void))
 /**
  * @details Updates `mText`, sets `mButtonModifiedFlag = true`, and calls `touch()` so the button
  * image is regenerated on the next paint cycle.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setText(const char *text)
 {
@@ -185,6 +206,9 @@ void Button::setText(const char *text)
  * @details If `mResizeAble` is `true`, reallocates and resizes `mFrameBuffer`, `mPushedFb`, and
  * `mPulledFb` for `size.getWidth() * size.getHeight()` pixels, calls `eventSizeChanged(size)`,
  * and marks the button modified (`mButtonModifiedFlag = true`, `touch()`).
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setSize(Size size)
 {
@@ -207,6 +231,8 @@ void Button::setSize(Size size)
 /**
  * @details Wraps `width` and `height` into a `Size` and delegates to `setSize(Size)`.
  * @see Button::setSize(Size)
+ * @todo None.
+ * @bug None.
  */
 void Button::setSize(uint16_t width, uint16_t height)
 {
@@ -216,6 +242,9 @@ void Button::setSize(uint16_t width, uint16_t height)
 /**
  * @details Sets `mState = true`, repaints and updates the button on screen, and invokes
  * `mPushHandler()` if registered.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 Object *Button::handlerPush(Position pos)
 {
@@ -232,6 +261,9 @@ Object *Button::handlerPush(Position pos)
 /**
  * @details Sets `mState = false`, repaints and updates the button on screen, and invokes
  * `mUpHandler()` if registered.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 Object *Button::handlerUp(void)
 {
@@ -245,6 +277,9 @@ Object *Button::handlerUp(void)
 
 /**
  * @details Attaches `font` to `mFrameBuffer`, `mPushedFb`, and `mPulledFb`.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setFont(Font &font)
 {
@@ -256,6 +291,9 @@ void Button::setFont(Font &font)
 /**
  * @details Sets the background color on `mFrameBuffer`, `mPushedFb`, and `mPulledFb`, marks
  * `mButtonModifiedFlag = true`, and calls `touch()`.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setColor(Color color)
 {
@@ -268,6 +306,9 @@ void Button::setColor(Color color)
 
 /**
  * @details Updates `mFontColor`, marks `mButtonModifiedFlag = true`, and calls `touch()`.
+ * @see Button
+ * @todo None.
+ * @bug None.
  */
 void Button::setFontColor(Color color)
 {

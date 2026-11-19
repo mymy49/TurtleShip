@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_SystemOutputFrameBuffer.cpp
  * @brief Legacy implementation stubs for the OutputFrameBuffer class.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -18,6 +20,9 @@
 
 /**
  * @details Default constructor stub for `OutputFrameBuffer`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 OutputFrameBuffer::OutputFrameBuffer(void)
 {
@@ -27,6 +32,9 @@ OutputFrameBuffer::OutputFrameBuffer(void)
 
 /**
  * @details Destructor stub for `OutputFrameBuffer`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 OutputFrameBuffer::~OutputFrameBuffer(void)
 {
@@ -35,6 +43,9 @@ OutputFrameBuffer::~OutputFrameBuffer(void)
 
 /**
  * @details Partial-area update stub for a single dirty rectangle `rect`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 void OutputFrameBuffer::update(Rectangular rect)
 {
@@ -43,6 +54,9 @@ void OutputFrameBuffer::update(Rectangular rect)
 
 /**
  * @details Partial-area update stub for `before` and `current` dirty rectangles.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 void OutputFrameBuffer::update(Rectangular before, Rectangular current)
 {
@@ -52,6 +66,9 @@ void OutputFrameBuffer::update(Rectangular before, Rectangular current)
 
 /**
  * @details Full-screen update stub for `OutputFrameBuffer`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 void OutputFrameBuffer::update(void)
 {
@@ -60,6 +77,9 @@ void OutputFrameBuffer::update(void)
 
 /**
  * @details Frame binding stub for `OutputFrameBuffer`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 void OutputFrameBuffer::setFrame(Frame *frame)
 {
@@ -68,6 +88,9 @@ void OutputFrameBuffer::setFrame(Frame *frame)
 
 /**
  * @details Frame buffer pointer getter stub for `OutputFrameBuffer`.
+ * @see OutputFrameBuffer
+ * @todo None.
+ * @bug None.
  */
 uint8_t* OutputFrameBuffer::getFrameBuffer(void)
 {

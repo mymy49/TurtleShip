@@ -9,6 +9,7 @@
  * @file Label.h
  * @brief Static text label widget class (`Label`) of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_LABEL__H_
@@ -34,27 +35,57 @@ class Label : public Object
 public:
 	/**
 	 * @brief Constructs a `Label` with black text (`0x00, 0x00, 0x00`) on a white background (`0xFF, 0xFF, 0xFF`).
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Label(void);
 
 	/**
 	 * @brief Clears the label's frame buffer and draws `mText` centered using the configured font.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void paint(void);
 
 	/**
 	 * @brief Sets the null-terminated UTF-8 string to display and marks the label as modified.
 	 * @param[in] text Pointer to the null-terminated text string.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setText(const char *text);
 
 	/**
 	 * @brief Sets the text foreground color from a `Color` object and marks the label as modified.
 	 * @param[in] color Text `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFontColor(Color color);
 
@@ -63,14 +94,28 @@ public:
 	 * @param[in] red   Red intensity (`0` ~ `255`).
 	 * @param[in] green Green intensity (`0` ~ `255`).
 	 * @param[in] blue  Blue intensity (`0` ~ `255`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFontColor(uint8_t red, uint8_t green, uint8_t blue);
 
 	/**
 	 * @brief Sets the background fill color of the label from a `Color` object and marks the label as modified.
 	 * @param[in] color Background `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(Color color);
 	
@@ -79,7 +124,14 @@ public:
 	 * @param[in] red   Red intensity of the background color (`0` ~ `255`).
 	 * @param[in] green Green intensity of the background color (`0` ~ `255`).
 	 * @param[in] blue  Blue intensity of the background color (`0` ~ `255`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue);
 

@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_BrushTftLcdRgb565LE.cpp
  * @brief Implementation of the BrushTftLcdRgb565LE class for Little-Endian RGB565 TFT LCD brushes.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "BrushTftLcdRgb565LE.h"
@@ -18,6 +20,9 @@
 
 /**
  * @details Initializes the brush with `mFb` set to `nullptr`.
+ * @see BrushTftLcdRgb565LE
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565LE::BrushTftLcdRgb565LE(void)
 {
@@ -26,6 +31,9 @@ BrushTftLcdRgb565LE::BrushTftLcdRgb565LE(void)
 
 /**
  * @details Virtual destructor for `BrushTftLcdRgb565LE`.
+ * @see BrushTftLcdRgb565LE
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565LE::~BrushTftLcdRgb565LE(void)
 {
@@ -35,6 +43,9 @@ BrushTftLcdRgb565LE::~BrushTftLcdRgb565LE(void)
 /**
  * @details Stores the address of `obj` into `mFb` so derived LCD drivers can use its pixel buffer
  * for chunked DMA/SPI transfers during rectangular fills.
+ * @see BrushTftLcdRgb565LE
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565LE::setFrameBuffer(FrameBufferRgb565LE &obj)
 {
@@ -45,6 +56,8 @@ void BrushTftLcdRgb565LE::setFrameBuffer(FrameBufferRgb565LE &obj)
  * @details Copies the RGBA components of `color` into `mBrushColor`, encodes the 16-bit Little-Endian
  * RGB565 value via `ColorRgb565LE::setColorBase()`, and caches the result in `mBrushColorCode`.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565LE::setBrushColor(Color color)
 {
@@ -56,6 +69,8 @@ void BrushTftLcdRgb565LE::setBrushColor(Color color)
  * @details Sets `mBrushColor` from the given `red`, `green`, `blue`, and `alpha` values and caches
  * the encoded 16-bit Little-Endian RGB565 value in `mBrushColorCode`.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -65,6 +80,9 @@ void BrushTftLcdRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue
 
 /**
  * @details Returns a copy of `mBrushColor` as a base `Color` object.
+ * @see BrushTftLcdRgb565LE
+ * @todo None.
+ * @bug None.
  */
 Color BrushTftLcdRgb565LE::getBrushColor(void)
 {
@@ -74,6 +92,8 @@ Color BrushTftLcdRgb565LE::getBrushColor(void)
 /**
  * @details Copies the RGBA components of `color` into `mBgColor` and encodes its Little-Endian RGB565 code.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565LE::setBackgroundColor(Color color)
 {
@@ -84,6 +104,8 @@ void BrushTftLcdRgb565LE::setBackgroundColor(Color color)
  * @details Sets `mBgColor` from the given `red`, `green`, `blue`, and `alpha` values and encodes its
  * Little-Endian RGB565 code.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -92,6 +114,9 @@ void BrushTftLcdRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t
 
 /**
  * @details Returns a copy of `mBgColor` as a base `Color` object.
+ * @see BrushTftLcdRgb565LE
+ * @todo None.
+ * @bug None.
  */
 Color BrushTftLcdRgb565LE::getBackgroundColor(void)
 {

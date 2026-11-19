@@ -9,6 +9,7 @@
  * @file FrameBuffer.h
  * @brief Abstract base class for heap-allocated off-screen drawing canvases.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_FRAME_BUFFER__H_
@@ -67,28 +68,57 @@ class FrameBuffer : public Brush
 public:
 	/**
 	 * @brief Constructs an empty `FrameBuffer` with no memory allocated (`mFrameBuffer = nullptr`).
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	FrameBuffer(void);
 
 	/**
 	 * @brief Virtual destructor. Frees `mFrameBuffer` if it was allocated by `malloc()`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~FrameBuffer(void);
 
 	/**
 	 * @brief Returns the number of bytes used to store a single pixel.
+	 * @param[in] none
 	 * @return Bytes per pixel of the concrete pixel format (e.g. `2` for RGB565).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual uint8_t getPixelCapacity(void) = 0;
 
 	/**
 	 * @brief Returns a `bitmap_t` descriptor referencing this frame buffer's memory and current `Size`.
+	 * @param[in] none
 	 * @return `bitmap_t` containing the current width, height, pixel format, and `mFrameBuffer` pointer.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
 	 * @note The returned `bitmap_t` does not copy or own the pixel buffer; it points directly to `mFrameBuffer`.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual bitmap_t getBitmap(void) = 0;
 
@@ -97,7 +127,12 @@ public:
 	 * @param[in] size Requested canvas width and height in pixels.
 	 * @return `true` if `size.getWidth() * size.getHeight() <= mMaxPixelCount`; `false` otherwise (size unchanged).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
 	 * @pre `malloc()` must have been called with sufficient pixel capacity.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	bool setSize(Size size);
 
@@ -107,7 +142,12 @@ public:
 	 * @param[in] height Requested canvas height in pixels.
 	 * @return `true` if `width * height <= mMaxPixelCount`; `false` otherwise (size unchanged).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
 	 * @pre `malloc()` must have been called with sufficient pixel capacity.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	bool setSize(uint16_t width, uint16_t height);
 
@@ -116,40 +156,71 @@ public:
 	 * @param[in] area `Area` whose size is applied (its position is ignored).
 	 * @return `true` if the area's pixel count fits within `mMaxPixelCount`; `false` otherwise.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
 	 * @pre `malloc()` must have been called with sufficient pixel capacity.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	bool setSize(Area area);
 
 	/**
 	 * @brief Returns the current logical canvas dimensions.
+	 * @param[in] none
 	 * @return Current `Size` (width and height in pixels).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Size getSize(void);
 
 	/**
 	 * @brief Allocates (or reallocates) the underlying heap buffer for `maxPixelPoints` pixels.
 	 * @param[in] maxPixelPoints Maximum number of pixels the frame buffer must hold.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
 	 * @note Any previously allocated buffer is freed first. The total byte allocation is
 	 *       `maxPixelPoints * getPixelCapacity()`.
+	 * @pre None.
 	 * @post On success, `mFrameBuffer` points to the allocated block, `mMaxPixelCount` equals
 	 *       `maxPixelPoints`, and `mMallocFlag` is `true`. On failure, `mFrameBuffer` is `nullptr`
 	 *       and `mMallocFlag` is `false`.
+	 * @deprecated None.
 	 */
 	void malloc(uint32_t maxPixelPoints);
 
 	/**
 	 * @brief Returns the raw byte pointer to the allocated pixel buffer.
+	 * @param[in] none
 	 * @return Pointer to the first byte of `mFrameBuffer`, or `nullptr` if not allocated.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint8_t* getFrameBuffer(void);
 
 	/**
 	 * @brief Returns the maximum number of pixels that the currently allocated buffer can hold.
+	 * @param[in] none
 	 * @return Maximum pixel count set by the last successful `malloc()`, or `0` if unallocated.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getMaxPixelCount(void);
 	

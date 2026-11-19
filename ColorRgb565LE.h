@@ -9,6 +9,7 @@
  * @file ColorRgb565LE.h
  * @brief 16-bit RGB565 Little-Endian color encoding class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #ifndef YSS_GUI_COLOR_RGB565LE__H_
@@ -37,7 +38,15 @@ class ColorRgb565LE : public Color
 public:
 	/**
 	 * @brief Constructs a default `ColorRgb565LE` object.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	ColorRgb565LE(void);
 
@@ -47,7 +56,14 @@ public:
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override;
 

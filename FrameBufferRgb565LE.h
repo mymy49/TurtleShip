@@ -9,6 +9,7 @@
  * @file FrameBufferRgb565LE.h
  * @brief Little-Endian 16-bit RGB565 off-screen frame buffer class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_FRAME_BUFFER_RGB565LE__H_
@@ -63,13 +64,29 @@ class FrameBufferRgb565LE : public FrameBufferRgb565
 public :
 	/**
 	 * @brief Constructs a `FrameBufferRgb565LE` instance.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	FrameBufferRgb565LE(void) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Destructor. Frees the pixel buffer if allocated.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	~FrameBufferRgb565LE(void) override __attribute__((optimize("-O1")));
 
@@ -78,14 +95,28 @@ public :
 	 * @param[in] x     X coordinate of the pixel (`0` ~ `width - 1`).
 	 * @param[in] y     Y coordinate of the pixel (`0` ~ `height - 1`).
 	 * @param[in] alpha Blending weight (`0` ~ `255`; values `< 16` are ignored as transparent).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void blendDot(int16_t x, int16_t y, uint8_t alpha) override __attribute__((optimize("-O1")));
 	
 	/**
 	 * @brief Sets the foreground brush color from a `Color` object and caches its Little-Endian 16-bit code.
 	 * @param[in] color New foreground brush color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBrushColor(Color color) override __attribute__((optimize("-O1")));
 
@@ -95,21 +126,42 @@ public :
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Gets the current foreground brush color.
+	 * @param[in] none
 	 * @return Current foreground `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color getBrushColor(void) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Sets the background color from a `Color` object.
 	 * @param[in] color New background color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(Color color) override __attribute__((optimize("-O1")));
 
@@ -119,14 +171,28 @@ public :
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Gets the current background color.
+	 * @param[in] none
 	 * @return Current background `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color getBackgroundColor(void) override __attribute__((optimize("-O1")));
 

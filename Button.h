@@ -9,6 +9,7 @@
  * @file Button.h
  * @brief Interactive 3D beveled push-button widget class (`Button`) of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_BUTTON__H_
@@ -45,13 +46,29 @@ class Button : public Object
 public:
 	/**
 	 * @brief Constructs a `Button` with default gray background (`0x80, 0x80, 0x80`) and white font color.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Button(void);
 
 	/**
 	 * @brief Virtual destructor. Deletes the internal `mPushedFb` and `mPulledFb` frame buffers.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~Button(void);
 
@@ -72,28 +89,56 @@ public:
 	/**
 	 * @brief Sets the button caption text and marks the button image as dirty.
 	 * @param[in] text Null-terminated UTF-8 string pointer (must remain valid while used).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setText(const char *text);
 
 	/**
 	 * @brief Sets the `Font` used to render the button caption on all internal frame buffers.
 	 * @param[in] font Reference to the `Font` object.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFont(Font &font);
 
 	/**
 	 * @brief Sets the button face background color and marks the button image as dirty.
 	 * @param[in] color New button background `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setColor(Color color);
 
 	/**
 	 * @brief Resizes the button and reallocates its composite, pushed, and pulled frame buffers.
 	 * @param[in] size New button `Size` (width and height in pixels).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setSize(Size size);
 
@@ -101,20 +146,42 @@ public:
 	 * @brief Resizes the button from explicit width and height values in pixels.
 	 * @param[in] width  New button width in pixels.
 	 * @param[in] height New button height in pixels.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setSize(uint16_t width, uint16_t height);
 
 	/**
 	 * @brief Sets the color of the button caption text and marks the button image as dirty.
 	 * @param[in] color New caption `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFontColor(Color color);
 
 	/**
 	 * @brief Regenerates cached button images if modified and blits the active state (`mPushedFb` or `mPulledFb`) to `mFrameBuffer`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void paint(void) override;
 
@@ -123,13 +190,26 @@ public:
 	 * @param[in] pos Touch coordinate relative to the button (unused).
 	 * @return `this`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual Object *handlerPush(Position pos) override;
 
 	/**
 	 * @brief Switches the button to the released state (`mState = false`), repaints, updates, and invokes `mUpHandler`.
+	 * @param[in] none
 	 * @return `this`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual Object *handlerUp(void) override;
 
@@ -146,7 +226,15 @@ private :
 
 	/**
 	 * @brief Renders the 3D beveled borders and centered caption text into both `mPushedFb` and `mPulledFb`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void makeButtonImage(void);
 };

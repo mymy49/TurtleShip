@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_FrameBufferRgb565.cpp
  * @brief Implementation of the FrameBufferRgb565 class for 16-bit RGB565 frame buffers.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include <config.h>
@@ -21,6 +23,9 @@
 
 /**
  * @details Default constructor for `FrameBufferRgb565`.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565::FrameBufferRgb565(void)
 {
@@ -30,6 +35,9 @@ FrameBufferRgb565::FrameBufferRgb565(void)
  * @details Frees `mFrameBuffer` if `mMallocFlag` is set.
  * @warning `FrameBuffer::~FrameBuffer()` also checks `mMallocFlag` and frees `mFrameBuffer`;
  *          ensure `mMallocFlag` is cleared or managed carefully if subclass destructors also free it.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565::~FrameBufferRgb565(void)
 {
@@ -43,6 +51,9 @@ FrameBufferRgb565::~FrameBufferRgb565(void)
 
 /**
  * @details Returns `2` bytes per pixel for the 16-bit RGB565 format.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 uint8_t FrameBufferRgb565::getPixelCapacity(void)
 {
@@ -52,6 +63,9 @@ uint8_t FrameBufferRgb565::getPixelCapacity(void)
 /**
  * @details Bounds-checks `(x, y)` against `[0, width - 1]` and `[0, height - 1]`, then writes
  * `mBrushColorCode` into `((uint16_t*)mFrameBuffer)[width * y + x]`.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565::drawDot(int16_t x, int16_t y)
 {
@@ -69,6 +83,9 @@ void FrameBufferRgb565::drawDot(int16_t x, int16_t y)
 /**
  * @details Fills `count` 16-bit half-words (`count * 2` bytes) starting at `&mFrameBuffer[offset]`
  * with `color.getCode()` using the optimized `memsethw()` routine.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565::fillDotArray(uint32_t offset, uint32_t count, Color color)
 {
@@ -77,6 +94,9 @@ void FrameBufferRgb565::fillDotArray(uint32_t offset, uint32_t count, Color colo
 
 /**
  * @details Returns the current logical canvas dimensions `mSize`.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 Size FrameBufferRgb565::getCanvasSize(void)
 {
@@ -110,6 +130,9 @@ void FrameBufferRgb565::drawBitmapBase(Size canvasSize, Area canvasDesArea, Posi
 /**
  * @details Empty implementation of `drawBitmapBase(Position, const bitmap_t)`. Use the clipped overload
  * or draw onto the target LCD directly.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565::drawBitmapBase(Position pos, const bitmap_t bitmap)
 {
@@ -121,6 +144,8 @@ void FrameBufferRgb565::drawBitmapBase(Position pos, const bitmap_t bitmap)
  * `BitmapDrawingCalculator`, then copies each visible scanline (`bwidth * 2` bytes) from `bitmap.data`
  * into `mFrameBuffer` via `memcpy()`.
  * @see BitmapDrawingCalculator::calculate()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565::drawBitmapRgb565(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
 {
@@ -155,6 +180,8 @@ void FrameBufferRgb565::drawBitmapRgb565(Size canvasSize, Area canvasDesArea, Po
  * - If the alpha bit is `1`, converts the 15-bit RGB555 value into 16-bit RGB565 (replicating the
  *   MSB of green into the LSB of the 6-bit green field) and writes it to `*des`.
  * @see BitmapDrawingCalculator::calculate()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565::drawBitmapArgb1555(Size canvasSize, Area canvasDesArea, Position bitmapPos, const bitmap_t bitmap)
 {
@@ -202,6 +229,9 @@ void FrameBufferRgb565::drawBitmapArgb1555(Size canvasSize, Area canvasDesArea, 
 /**
  * @details Constructs and returns a `bitmap_t` structure initialized with `mSize.getWidth()`,
  * `mSize.getHeight()`, `BITMAP_TYPE_RGB565`, and `mFrameBuffer`.
+ * @see FrameBufferRgb565
+ * @todo None.
+ * @bug None.
  */
 bitmap_t FrameBufferRgb565::getBitmap(void)
 {

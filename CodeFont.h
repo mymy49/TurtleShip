@@ -9,6 +9,7 @@
  * @file CodeFont.h
  * @brief ROM/Flash-resident bitmap font class (`CodeFont`) of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_CODE_FONT__H_
@@ -72,8 +73,14 @@ public :
 	/**
 	 * @brief Constructs a `CodeFont` instance bound to a static `codeFontInfo_t` descriptor table.
 	 * @param[in] info Pointer to the static `codeFontInfo_t` structure in Flash/ROM.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
 	 * @post Initializes `mSize` to `info->size` and `mSpaceWidth` to `mSize / 3`.
+	 * @deprecated None.
 	 */
 	CodeFont(const codeFontInfo_t *info);
 
@@ -82,6 +89,12 @@ public :
 	 * @param[in] ch Packed UTF-8 character code.
 	 * @return Pointer to the matching `Font::fontInfo_t` entry, or `nullptr` (`0`) if not found.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual fontInfo_t* getFontInfo(uint32_t ch) override;
 

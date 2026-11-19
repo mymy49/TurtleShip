@@ -9,6 +9,7 @@
  * @file Frame.h
  * @brief Top-level full-screen window container (`Frame`) of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_FRAME__H_
@@ -44,21 +45,43 @@ class Frame : public Container
 public :
 	/**
 	 * @brief Constructs a `Frame` sized to the system TFT LCD resolution and clears its frame buffer.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Frame(void);
 
 	/**
 	 * @brief Virtual destructor. Unregisters this `Frame` from `mPointerDevice` if attached.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~Frame(void);
 
 	/**
 	 * @brief Disabled position setter (`Frame` position is fixed at the screen origin).
 	 * @param[in] pos Ignored.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
 	 * @note Intentionally overrides `Object::setPosition()` as a no-op so the root frame cannot be moved.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setPosition(Position pos);
 
@@ -66,29 +89,56 @@ public :
 	 * @brief Disabled position setter (`Frame` position is fixed at the screen origin).
 	 * @param[in] x Ignored.
 	 * @param[in] y Ignored.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
 	 * @note Intentionally overrides `Object::setPosition()` as a no-op so the root frame cannot be moved.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setPosition(int16_t x, int16_t y);
 
 	/**
 	 * @brief Associates an `OutputFrameBuffer` with this frame and triggers a full `update()`.
 	 * @param[in] outputFrameBuffer Pointer to the `OutputFrameBuffer`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setOutputFrameBuffer(OutputFrameBuffer *outputFrameBuffer);
 
 	/**
 	 * @brief Paints `obj`, adds it to this frame, sets its parent to `this`, and updates its screen region.
 	 * @param[in] obj Reference to the child `Object` to add.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void add(Object &obj);
 
 	/**
 	 * @brief Paints `*obj`, adds it to this frame, sets its parent to `this`, and updates its screen region.
 	 * @param[in] obj Pointer to the child `Object` to add.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void add(Object *obj);
 
@@ -97,6 +147,12 @@ public :
 	 * @param[in] pos Touch coordinate on the frame.
 	 * @return Pointer to the child `Object` that handled the push event, or `nullptr`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerPush(Position pos);
 
@@ -105,32 +161,68 @@ public :
 	 * @param[in] pos Touch coordinate on the frame.
 	 * @return Pointer to the child `Object` that handled the drag event, or `nullptr`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerDrag(Position pos);
 
 	/**
 	 * @brief Routes a touch-up event via `Container::handlerUp()`.
+	 * @param[in] none
 	 * @return Pointer to the `Object` that handled the release event, or `nullptr`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerUp(void);
 
 	/**
 	 * @brief Registers this `Frame` as the active system GUI frame via `system::setSystemFrame(this)`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setAsSystemFrame(void);
 
 	/**
 	 * @brief Repaints all visible children onto `mFrameBuffer` and flushes the entire frame to the system display.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void update(void);
 
 	/**
 	 * @brief Links a `PointerDevice` to this frame so the pointer device is reset if this frame is destroyed.
 	 * @param[in] obj Reference to the `PointerDevice`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setPointerDevice(PointerDevice &obj);
 
@@ -138,6 +230,7 @@ protected:
 	/**
 	 * @brief Composites visible children within `rect` and flushes only `rect` to the system display.
 	 * @param[in] rect Dirty rectangular region to update.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2024
 	 * @warning Parameter currently uses legacy Rectangular type pending future update.
@@ -152,6 +245,7 @@ protected:
 	 * @brief Composites visible children within `before` and `current` and propagates the update.
 	 * @param[in] before  Previous dirty rectangular region.
 	 * @param[in] current Current dirty rectangular region.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2024
 	 * @warning Parameter currently uses legacy Rectangular type pending future update.

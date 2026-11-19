@@ -9,6 +9,7 @@
  * @file FrameBufferRgb565BE.h
  * @brief Big-Endian 16-bit RGB565 off-screen frame buffer class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_FRAME_BUFFER_RGB565BE__H_
@@ -31,13 +32,29 @@ class FrameBufferRgb565BE : public FrameBufferRgb565
 public :
 	/**
 	 * @brief Constructs a `FrameBufferRgb565BE` object.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	FrameBufferRgb565BE(void);
 
 	/**
 	 * @brief Virtual destructor. Frees the frame buffer if allocated.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~FrameBufferRgb565BE(void);
 
@@ -46,35 +63,70 @@ public :
 	 * @param[in] x     X coordinate of the pixel (`0` ~ `width - 1`).
 	 * @param[in] y     Y coordinate of the pixel (`0` ~ `height - 1`).
 	 * @param[in] alpha Blending weight (`0` ~ `255`; values `< 16` are ignored as transparent).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void blendDot(int16_t x, int16_t y, uint8_t alpha) override;
 	
 	/**
 	 * @brief Sets the foreground brush color and caches its Big-Endian 16-bit color code.
 	 * @param[in] color New foreground brush color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void setBrushColor(Color color) override;
 
 	/**
 	 * @brief Gets the current foreground brush color.
+	 * @param[in] none
 	 * @return Current foreground `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual Color getBrushColor(void) override;
 
 	/**
 	 * @brief Sets the background color used by `clear()` and `clearRectangular()`.
 	 * @param[in] color New background color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void setBackgroundColor(Color color) override;
 
 	/**
 	 * @brief Gets the current background color.
+	 * @param[in] none
 	 * @return Current background `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual Color getBackgroundColor(void) override;
 

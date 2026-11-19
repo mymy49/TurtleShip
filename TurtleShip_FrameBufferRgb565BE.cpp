@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_FrameBufferRgb565BE.cpp
  * @brief Implementation of the FrameBufferRgb565BE class for Big-Endian 16-bit RGB565 frame buffers.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include <config.h>
@@ -25,6 +27,9 @@
 
 /**
  * @details Default constructor for `FrameBufferRgb565BE`.
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565BE::FrameBufferRgb565BE(void)
 {
@@ -32,6 +37,9 @@ FrameBufferRgb565BE::FrameBufferRgb565BE(void)
 
 /**
  * @details Frees `mFrameBuffer` if `mMallocFlag` is set.
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565BE::~FrameBufferRgb565BE(void)
 {
@@ -103,6 +111,9 @@ void FrameBufferRgb565BE::blendDot(int16_t x, int16_t y, uint8_t alpha)
 
 /**
  * @details Updates `mBrushColor` from `color` and caches the Big-Endian 16-bit code in `mBrushColorCode`.
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565BE::setBrushColor(Color color)
 {
@@ -112,6 +123,9 @@ void FrameBufferRgb565BE::setBrushColor(Color color)
 
 /**
  * @details Returns the current foreground brush color (`mBrushColor`).
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 Color FrameBufferRgb565BE::getBrushColor(void)
 {
@@ -120,6 +134,9 @@ Color FrameBufferRgb565BE::getBrushColor(void)
 
 /**
  * @details Updates the background color (`mBgColor`) from `color`.
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565BE::setBackgroundColor(Color color)
 {
@@ -128,6 +145,9 @@ void FrameBufferRgb565BE::setBackgroundColor(Color color)
 
 /**
  * @details Returns the current background color (`mBgColor`).
+ * @see FrameBufferRgb565BE
+ * @todo None.
+ * @bug None.
  */
 Color FrameBufferRgb565BE::getBackgroundColor(void)
 {

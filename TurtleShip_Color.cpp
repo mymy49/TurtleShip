@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Color.cpp
  * @brief Implementation of the base Color class methods.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "Color.h"
@@ -15,6 +17,8 @@
 /**
  * @details Initializes the color to opaque black (`R=0x00, G=0x00, B=0x00, A=0xFF`) by calling `setColorBase()`.
  * @see Color::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 Color::Color(void)
 {
@@ -25,6 +29,8 @@ Color::Color(void)
  * @details Initializes the color with the specified `red`, `green`, `blue`, and `alpha` values
  * and encodes `mCode` via `setColorBase()`.
  * @see Color::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 Color::Color(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -35,6 +41,8 @@ Color::Color(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
  * @details Extracts `mRed`, `mGreen`, `mBlue`, and `mAlpha` from `obj` and passes them to
  * `setColorBase()` so `mCode` is updated using the dynamic type's pixel format encoding.
  * @see Color::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void Color::setColor(Color obj)
 {
@@ -45,6 +53,8 @@ void Color::setColor(Color obj)
  * @details Forwards the `red`, `green`, `blue`, and `alpha` channel values to `setColorBase()`
  * to update both the stored channels and the cached `mCode`.
  * @see Color::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void Color::setColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -54,6 +64,8 @@ void Color::setColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 /**
  * @details Copies the RGBA channel values from `obj` and recomputes `mCode` via `setColorBase()`.
  * @see Color::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void Color::operator=(Color &obj)
 {
@@ -64,6 +76,9 @@ void Color::operator=(Color &obj)
  * @details Saves the 8-bit `red`, `green`, `blue`, and `alpha` components into member variables
  * and packs them into `mCode` in 32-bit ARGB8888 layout:
  * `(alpha << 24) | (red << 16) | (green << 8) | blue`.
+ * @see Color
+ * @todo None.
+ * @bug None.
  */
 void Color::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -78,6 +93,9 @@ void Color::setColorBase(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha
 
 /**
  * @details Returns the cached hardware color code (`mCode`) computed by the most recent call to `setColorBase()`.
+ * @see Color
+ * @todo None.
+ * @bug None.
  */
 uint32_t Color::getCode(void)
 {

@@ -9,6 +9,7 @@
  * @file Font.h
  * @brief Abstract base class for bitmap font decoding, glyph lookup, and string metric calculation.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_FONT__H_
@@ -86,7 +87,15 @@ public:
 
 	/**
 	 * @brief Constructs a `Font` object with default metric overrides initialized to zero.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Font(void);
 
@@ -95,48 +104,96 @@ public:
 	 * @param[in] ch Packed UTF-8 character code returned by `getUtf8()`.
 	 * @return Pointer to the matching `fontInfo_t` descriptor, or `nullptr` (`0`) if the glyph is not present.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual fontInfo_t* getFontInfo(uint32_t ch) = 0;
 
 	/**
 	 * @brief Gets the configured horizontal advance width for the ASCII space character (`' '`).
+	 * @param[in] none
 	 * @return Space advance width in pixels (`0` if using the default space width).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint8_t getSpaceWidth(void);
 
 	/**
 	 * @brief Sets a custom horizontal advance width for the ASCII space character (`' '`).
 	 * @param[in] width Space width in pixels (`0` to revert to the default space width).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setSpaceWidth(uint8_t width);
 
 	/**
 	 * @brief Gets the configured minimum horizontal advance width for regular characters.
+	 * @param[in] none
 	 * @return Minimum character advance width in pixels (`0` if proportional glyph widths are used).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint8_t getCharWidth(void);
 
 	/**
 	 * @brief Sets a fixed minimum horizontal advance width for regular characters (useful for tabular numbers).
 	 * @param[in] width Minimum character advance width in pixels (`0` for proportional spacing).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setCharWidth(uint8_t width);
 
 	/**
 	 * @brief Gets the configured horizontal advance width for the period/dot character (`'.'`).
+	 * @param[in] none
 	 * @return Dot advance width in pixels (`0` if using the glyph's natural width).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint8_t getDotWidth(void);
 
 	/**
 	 * @brief Sets a custom horizontal advance width for the period/dot character (`'.'`).
 	 * @param[in] width Dot advance width in pixels (`0` to use the glyph's natural width).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setDotWidth(uint8_t width);
 
@@ -145,13 +202,26 @@ public:
 	 * @param[in] str Null-terminated UTF-8 string to measure.
 	 * @return Total string width in pixels.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint16_t getStringWidth(const char *str);
 
 	/**
 	 * @brief Gets the nominal line height (font size) in pixels.
+	 * @param[in] none
 	 * @return Nominal font height in pixels (`mSize`).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint16_t getStringHeight(void);
 
@@ -161,6 +231,12 @@ public:
 	 * @return Packed 32-bit UTF-8 code (1-byte ASCII in `[7:0]`, 2-byte sequence in `[15:0]`, 3-byte sequence in `[23:0]`),
 	 *         or `0` if an invalid byte (`0x80` ~ `0xBF`) is encountered.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getUtf8(const char **src);
 

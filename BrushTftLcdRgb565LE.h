@@ -9,6 +9,7 @@
  * @file BrushTftLcdRgb565LE.h
  * @brief Little-Endian RGB565 TFT LCD brush class of the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #ifndef YSS_MOD_BRUSH_TFT_LCD_RGB_565LE__H_
@@ -52,28 +53,57 @@ class BrushTftLcdRgb565LE : public BrushTftLcdRgb565
 public :
 	/**
 	 * @brief Constructs a `BrushTftLcdRgb565LE` instance with `mFb` initialized to `nullptr`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	BrushTftLcdRgb565LE(void) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Virtual destructor.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~BrushTftLcdRgb565LE(void) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Associates a working `FrameBufferRgb565LE` used by the LCD driver to accelerate block fills.
 	 * @param[in] obj Reference to the `FrameBufferRgb565LE` object.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
 	 * @note Only the address of `obj` is stored; `obj` must have memory allocated via `malloc()`.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setFrameBuffer(FrameBufferRgb565LE &obj) __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Sets the foreground brush color from a `Color` object and updates the cached 16-bit LE code.
 	 * @param[in] color New foreground brush color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBrushColor(Color color) override __attribute__((optimize("-O1")));
 
@@ -83,21 +113,42 @@ public :
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Gets the current foreground brush color.
+	 * @param[in] none
 	 * @return Current foreground `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color getBrushColor(void) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Sets the background color from a `Color` object.
 	 * @param[in] color New background color.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(Color color) override __attribute__((optimize("-O1")));
 
@@ -107,14 +158,28 @@ public :
 	 * @param[in] green Green component (`0` ~ `255`).
 	 * @param[in] blue  Blue component (`0` ~ `255`).
 	 * @param[in] alpha Alpha component (`0` ~ `255`, default `0xFF`).
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha = 0xFF) override __attribute__((optimize("-O1")));
 
 	/**
 	 * @brief Gets the current background color.
+	 * @param[in] none
 	 * @return Current background `Color` object.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Color getBackgroundColor(void) override __attribute__((optimize("-O1")));
 

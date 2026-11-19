@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_BrushTftLcdRgb565.cpp
  * @brief Implementation of the BrushTftLcdRgb565 base class methods.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "BrushTftLcdRgb565.h"
@@ -18,6 +20,9 @@
 
 /**
  * @details Default constructor for `BrushTftLcdRgb565`.
+ * @see BrushTftLcdRgb565
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565::BrushTftLcdRgb565(void)
 {
@@ -26,6 +31,9 @@ BrushTftLcdRgb565::BrushTftLcdRgb565(void)
 
 /**
  * @details Virtual destructor for `BrushTftLcdRgb565`.
+ * @see BrushTftLcdRgb565
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565::~BrushTftLcdRgb565(void)
 {
@@ -36,6 +44,9 @@ BrushTftLcdRgb565::~BrushTftLcdRgb565(void)
  * @details No-op default implementation of `fillDotArray()` because a direct TFT LCD brush does not
  * own a full-screen RAM frame buffer; hardware LCD subclasses override `fillRectBase()` to push pixel
  * runs directly to the display controller window.
+ * @see BrushTftLcdRgb565
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565::fillDotArray(uint32_t offset, uint32_t count, Color color)
 {
@@ -45,6 +56,9 @@ void BrushTftLcdRgb565::fillDotArray(uint32_t offset, uint32_t count, Color colo
 /**
  * @details Returns a zero-sized `Size{0, 0}` by default; concrete LCD panel subclasses override this
  * to report their actual resolution (e.g. `240 x 320`).
+ * @see BrushTftLcdRgb565
+ * @todo None.
+ * @bug None.
  */
 Size BrushTftLcdRgb565::getCanvasSize(void)
 {
@@ -53,6 +67,9 @@ Size BrushTftLcdRgb565::getCanvasSize(void)
 
 /**
  * @details Returns `2` since each RGB565 pixel occupies 2 bytes (16 bits).
+ * @see BrushTftLcdRgb565
+ * @todo None.
+ * @bug None.
  */
 uint8_t BrushTftLcdRgb565::getPixelCapacity(void)
 {

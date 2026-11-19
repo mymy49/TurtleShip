@@ -9,6 +9,7 @@
  * @file Container.h
  * @brief Composite GUI widget class (`Container`) that manages and renders child `Object` instances.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_CONTAINER__H_
@@ -43,45 +44,92 @@ class Container : public Object
   public:
 	/**
 	 * @brief Constructs an empty `Container` and allocates the initial child pointer array.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Container(void);
 
 	/**
 	 * @brief Virtual destructor. Deletes all child objects and frees the child pointer array.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual ~Container(void);
 
 	/**
 	 * @brief Composites all visible child objects onto this container's `mFrameBuffer` in Z-order.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void paint(void);
 
 	/**
 	 * @brief Expands the capacity of the child pointer array (`mObjArr`) by 512 slots using `lmalloc()`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void increaseObjArr(void);
 
 	/**
 	 * @brief Adds a child `Object` (by reference) to this container, sets its parent to `this`, and updates its area.
 	 * @param[in] obj Reference to the child `Object` to add.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void add(Object &obj);
 
 	/**
 	 * @brief Adds a child `Object` (by pointer) to this container.
 	 * @param[in] obj Pointer to the child `Object` to add.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void add(Object *obj);
 
 	/**
 	 * @brief Repaints all visible children intersecting `rect` and propagates the dirty area to `mParent`.
 	 * @param[in] rect Dirty rectangular area in container-local coordinates.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2024
 	 * @warning Parameter currently uses legacy Rectangular type pending future update.
@@ -96,6 +144,7 @@ class Container : public Object
 	 * @brief Repaints all visible children intersecting `before` and `current` and propagates both areas to `mParent`.
 	 * @param[in] before  Previous dirty rectangular area in container-local coordinates.
 	 * @param[in] current Current dirty rectangular area in container-local coordinates.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2024
 	 * @warning Parameter currently uses legacy Rectangular type pending future update.
@@ -108,7 +157,15 @@ class Container : public Object
 
 	/**
 	 * @brief Repaints the entire container area and propagates the update to `mParent`.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void update(void);
 
@@ -117,6 +174,12 @@ class Container : public Object
 	 * @param[in] pos Touch coordinate in container-local space.
 	 * @return Pointer to the child `Object` that handled the push event, or `nullptr` if no child was hit.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerPush(Position pos);
 
@@ -125,20 +188,40 @@ class Container : public Object
 	 * @param[in] pos Touch coordinate in container-local space.
 	 * @return Pointer to the child `Object` that handled the drag event, or `nullptr` if no child was hit.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerDrag(Position pos);
 
 	/**
 	 * @brief Handles a touch-up event on the container.
+	 * @param[in] none
 	 * @return `nullptr`.
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Object *handlerUp(void);
 
 	/**
 	 * @brief Sets the background fill color of the container's `mFrameBuffer`.
 	 * @param[in] color Background `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void setBackgroundColor(Color color);
 

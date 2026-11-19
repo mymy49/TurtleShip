@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Font.cpp
  * @brief Implementation of the Font base class for UTF-8 decoding and string width calculation.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -16,6 +18,9 @@
 
 /**
  * @details Initializes all font metric fields (`mSpaceWidth`, `mCharWidth`, `mDotWidth`, `mSize`) to `0`.
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 Font::Font(void)
 {
@@ -27,6 +32,9 @@ Font::Font(void)
 
 /**
  * @details Returns the custom space advance width (`mSpaceWidth`).
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 uint8_t Font::getSpaceWidth(void)
 {
@@ -35,6 +43,9 @@ uint8_t Font::getSpaceWidth(void)
 
 /**
  * @details Updates `mSpaceWidth` with the specified pixel width for space characters (`' '`).
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 void Font::setSpaceWidth(uint8_t width)
 {
@@ -43,6 +54,9 @@ void Font::setSpaceWidth(uint8_t width)
 
 /**
  * @details Returns the configured minimum character advance width (`mCharWidth`).
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 uint8_t Font::getCharWidth(void)
 {
@@ -51,6 +65,9 @@ uint8_t Font::getCharWidth(void)
 
 /**
  * @details Updates `mCharWidth` with the specified minimum pixel advance width for characters.
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 void Font::setCharWidth(uint8_t width)
 {
@@ -59,6 +76,9 @@ void Font::setCharWidth(uint8_t width)
 
 /**
  * @details Returns the configured period/dot advance width (`mDotWidth`).
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 uint8_t Font::getDotWidth(void)
 {
@@ -67,6 +87,9 @@ uint8_t Font::getDotWidth(void)
 
 /**
  * @details Updates `mDotWidth` with the specified pixel advance width for the period character (`'.'`).
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 void Font::setDotWidth(uint8_t width)
 {
@@ -80,6 +103,9 @@ void Font::setDotWidth(uint8_t width)
  * - **2-byte sequence (`>= 0xC0`)**: Packs 2 consecutive bytes into bits `[15:8]` and `[7:0]`.
  * - **1-byte ASCII (`< 0x80`)**: Returns the single byte in bits `[7:0]`.
  * - **Continuation/invalid byte (`0x80` ~ `0xBF`)**: Advances `*src` by 1 byte and returns `0`.
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 uint32_t Font::getUtf8(const char **src)
 {
@@ -121,6 +147,8 @@ uint32_t Font::getUtf8(const char **src)
  *   plus 1 pixel if `xpos == 0`) are summed, using `mSpaceWidth` (or 4) for spaces and `mDotWidth`
  *   (or 4) for periods.
  * @see Font::getUtf8(), Font::getFontInfo()
+ * @todo None.
+ * @bug None.
  */
 uint16_t Font::getStringWidth(const char *str)
 {
@@ -189,6 +217,9 @@ uint16_t Font::getStringWidth(const char *str)
 
 /**
  * @details Returns the nominal font size (`mSize`) in pixels.
+ * @see Font
+ * @todo None.
+ * @bug None.
  */
 uint16_t Font::getStringHeight(void)
 {

@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Brush.cpp
  * @brief Implementation of the device-independent 2D drawing algorithms of the Brush class.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include "Brush.h"
@@ -22,6 +24,9 @@
 /**
  * @details Initializes the `Brush` instance with `mFont` set to `nullptr` so text rendering functions
  * safely no-op until a font is attached via `setFont()`.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 Brush::Brush(void)
 {
@@ -36,6 +41,8 @@ Brush::Brush(void)
  * from `y` to `ey`. For each scanline, computes the byte offset `des` in the frame buffer and fills
  * `width` consecutive pixels with `color`.
  * @see Brush::fillDotArray()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, Color color)
 {
@@ -61,6 +68,8 @@ void Brush::fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, 
  * @details Extracts the position and dimensions from `rect` and delegates to `fillRectBase()`
  * using the current foreground brush color (`getBrushColor()`).
  * @see Brush::fillRectBase()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fillRectangular(Area rect)
 {
@@ -74,6 +83,8 @@ void Brush::fillRectangular(Area rect)
  * @details Extracts the position and dimensions from `rect` and delegates to `fillRectBase()`
  * using the current background color (`getBackgroundColor()`).
  * @see Brush::fillRectBase()
+ * @todo None.
+ * @bug None.
  */
 void Brush::clearRectangular(Area rect)
 {
@@ -87,6 +98,8 @@ void Brush::clearRectangular(Area rect)
  * @details Queries the full canvas size via `getCanvasSize()` and fills the entire canvas from `(0, 0)`
  * with the current foreground brush color via `fillRectBase()`.
  * @see Brush::fillRectBase()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fill()
 {
@@ -99,6 +112,8 @@ void Brush::fill()
  * @details Queries the full canvas size via `getCanvasSize()` and fills the entire canvas from `(0, 0)`
  * with the current background color via `fillRectBase()`.
  * @see Brush::fillRectBase()
+ * @todo None.
+ * @bug None.
  */
 void Brush::clear()
 {
@@ -358,6 +373,8 @@ void Brush::drawLine(Position p1, Position p2)
  * @details Draws the three edges of a triangle (`p1` to `p2`, `p2` to `p3`, and `p3` to `p1`)
  * by invoking `drawLine()` three times.
  * @see Brush::drawLine(), Brush::fillTriangle()
+ * @todo None.
+ * @bug None.
  */
 void Brush::drawTriangle(Position p1, Position p2, Position p3)
 {
@@ -370,6 +387,8 @@ void Brush::drawTriangle(Position p1, Position p2, Position p3)
  * @details Draws the four border edges of `rect` clockwise starting from its top-left corner
  * using `drawLine()`.
  * @see Brush::drawLine(), Brush::fillRectangular()
+ * @todo None.
+ * @bug None.
  */
 void Brush::drawRectangular(Area rect)
 {
@@ -566,6 +585,8 @@ void Brush::fillTriangle(Position p1, Position p2, Position p3)
  * @details Fills a quadrangle defined by vertices `(p1, p2, p3, p4)` by splitting it along the
  * diagonal `(p2, p4)` into two triangles `(p1, p2, p4)` and `(p2, p3, p4)` and calling `fillTriangle()`.
  * @see Brush::fillTriangle()
+ * @todo None.
+ * @bug None.
  */
 void Brush::fillQuadrangle(Position p1, Position p2, Position p3, Position p4)
 {
@@ -581,6 +602,8 @@ void Brush::fillQuadrangle(Position p1, Position p2, Position p3, Position p4)
  * fixed minimum character width (`mFont->getCharWidth()`), and adds a 1-pixel leading margin when
  * `fontInfo->xpos == 0`.
  * @see Font::getFontInfo(), Brush::drawString()
+ * @todo None.
+ * @bug None.
  */
 Size Brush::calculateStringArea(const char *str)
 {
@@ -669,6 +692,8 @@ Size Brush::calculateStringArea(const char *str)
  *    and blending it onto the canvas via `blendDot()`.
  * -# Returns the horizontal advance width to the next character cell.
  * @see Brush::blendDot(), Font::getFontInfo()
+ * @todo None.
+ * @bug None.
  */
 uint8_t Brush::drawChar(Position pos, uint32_t utf8)
 {
@@ -767,6 +792,9 @@ uint8_t Brush::drawChar(Position pos, uint32_t utf8)
 
 /**
  * @details Stores the address of `font` in `mFont` for subsequent text measurement and rendering operations.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 void Brush::setFont(Font &font)
 {
@@ -775,6 +803,9 @@ void Brush::setFont(Font &font)
 
 /**
  * @details Returns the pointer to the currently configured `Font` object (`mFont`).
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 Font* Brush::getFont()
 {
@@ -785,6 +816,8 @@ Font* Brush::getFont()
  * @details Sequentially decodes each UTF-8 character from `str` via `mFont->getUtf8()`, draws it at
  * `pos` using `drawChar()`, and advances `pos` horizontally by the returned character width.
  * @see Brush::drawChar(), Font::getUtf8()
+ * @todo None.
+ * @bug None.
  */
 Position Brush::drawString(Position pos, const char *str)
 {
@@ -803,6 +836,8 @@ Position Brush::drawString(Position pos, const char *str)
  * and vertical (`align >> 3`) alignment flags (with a 2-pixel margin from canvas edges for left/right/top/bottom),
  * and then renders each UTF-8 character in `str`.
  * @see Brush::calculateStringArea(), Brush::drawChar()
+ * @todo None.
+ * @bug None.
  */
 Position Brush::drawString(align_t align, const char *str)
 {
@@ -857,6 +892,8 @@ Position Brush::drawString(align_t align, const char *str)
  * @details Forwards the bitmap drawing request to the pure virtual `drawBitmapBase(pos, bitmap)`
  * implemented by the derived canvas or LCD driver class.
  * @see Brush::drawBitmapBase()
+ * @todo None.
+ * @bug None.
  */
 void Brush::drawBitmap(Position pos, const bitmap_t bitmap)
 {
@@ -880,6 +917,9 @@ void Brush::drawBitmap(Area canvasRect, Position bitmapPos, const bitmap_t bitma
  * left columns or top rows.
  *
  * Returns `false` immediately if `src` and `des` do not overlap.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 bool Brush::calculate2BytesPixelDrawingInfo(Area &des, Area &src, uint16_t **frameBuffer)
 {
@@ -947,6 +987,9 @@ bool Brush::calculate2BytesPixelDrawingInfo(Area &des, Area &src, uint16_t **fra
 /**
  * @details Verifies that `canvasDesArea` starts within the valid canvas dimensions (`[0, cw]`, `[0, ch]`)
  * and that `bitmapArea` and `canvasDesArea` overlap on both X and Y axes.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 bool Brush::checkDrawingAble(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
@@ -976,6 +1019,9 @@ bool Brush::checkDrawingAble(Size &canvasSize, Area &canvasDesArea, Area &bitmap
 /**
  * @details Computes the linear pixel offset into the source bitmap buffer when the bitmap's top-left
  * corner `(bx, by)` lies to the left of or above `canvasDesArea` `(cax, cay)`.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 uint32_t Brush::calculateSrcFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
@@ -997,6 +1043,9 @@ uint32_t Brush::calculateSrcFrameBufferOffset(Size &canvasSize, Area &canvasDesA
 /**
  * @details Computes the visible width of `bitmapArea` after clipping its left and right edges
  * against `canvasDesArea`.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 uint16_t Brush::calculateSrcWidth(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
@@ -1018,6 +1067,9 @@ uint16_t Brush::calculateSrcWidth(Size &canvasSize, Area &canvasDesArea, Area &b
 /**
  * @details Computes the linear pixel index (`canvasSize.getWidth() * by + bx`) in the destination
  * canvas frame buffer after clamping negative `bx` and `by` coordinates to `0`.
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 uint32_t Brush::calculateDesFrameBufferOffset(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
@@ -1036,6 +1088,9 @@ uint32_t Brush::calculateDesFrameBufferOffset(Size &canvasSize, Area &canvasDesA
 /**
  * @details Computes the visible height of `bitmapArea` after clipping negative top coordinates (`by < 0`)
  * and bottom coordinates exceeding `canvasDesArea` height (`cah`).
+ * @see Brush
+ * @todo None.
+ * @bug None.
  */
 uint16_t Brush::calculateSrcHeight(Size &canvasSize, Area &canvasDesArea, Area &bitmapArea)
 {
@@ -1060,6 +1115,8 @@ uint16_t Brush::calculateSrcHeight(Size &canvasSize, Area &canvasDesArea, Area &
  * resets `mSrcOffset` to `0`, and caches the current canvas dimensions from `getCanvasSize()` into
  * `mCanvasWidth` and `mCanvasHeight`.
  * @see Brush::calculateValidArea(), Brush::isOutsideCanvas()
+ * @todo None.
+ * @bug None.
  */
 void Brush::setCalculatorSource(Area src)
 {
@@ -1082,6 +1139,8 @@ void Brush::setCalculatorSource(Area src)
  * canvas dimensions (`mCanvasWidth`, `mCanvasHeight`) and accumulates any clipped top/left pixel offset
  * into `mSrcOffset`.
  * @see Brush::setCalculatorSource()
+ * @todo None.
+ * @bug None.
  */
 Area Brush::calculateValidArea()
 {
@@ -1127,6 +1186,8 @@ Area Brush::calculateValidArea()
  * @details Returns `true` if any of the four edges of the source rectangle (`mSrcX`, `mSrcY`,
  * `mSrcX + mSrcWidth`, `mSrcY + mSrcHeight`) lies outside `[0, mCanvasWidth]` or `[0, mCanvasHeight]`.
  * @see Brush::setCalculatorSource(), Brush::calculateValidArea()
+ * @todo None.
+ * @bug None.
  */
 bool Brush::isOutsideCanvas()
 {

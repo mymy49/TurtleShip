@@ -9,6 +9,7 @@
  * @file TftLcdDriver.h
  * @brief Abstract base interface for communication-channel (SPI, I2C, 8080) TFT LCD controller drivers.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_SAC_TFT_LCD_DRIVER__H_
@@ -57,8 +58,15 @@ class TftLcdDriver : public Mutex
 public:
 	/**
 	 * @brief Gets the physical pixel resolution of the TFT LCD panel.
+	 * @param[in] none
 	 * @return Panel `Size` (width and height in pixels).
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual Size getLcdSize(void) = 0;
 
@@ -68,7 +76,14 @@ public:
 	 * @param[in] canvasRect Destination clipping rectangle on the canvas.
 	 * @param[in] bitmapPos  Top-left placement coordinate of the bitmap on the canvas.
 	 * @param[in] bitmap     Bitmap descriptor (`bitmap_t`) to transfer.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	virtual void drawBitmapBase(Size canvasSize, Area canvasRect, Position bitmapPos, const bitmap_t bitmap) = 0;
 };

@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Object.cpp
  * @brief Implementation of the Object base class for GUI widgets.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -20,6 +22,9 @@
 /**
  * @details Initializes an unattached `Object` (`mParent = 0`) that is visible (`mVisibleFlag = true`),
  * resizable (`mResizeAble = true`), and clean (`mModifiedFlag = false`).
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Object::Object(void)
 {
@@ -31,6 +36,9 @@ Object::Object(void)
 
 /**
  * @details Virtual destructor for `Object`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Object::~Object(void)
 {
@@ -81,6 +89,8 @@ Rectangular Object::getRectangular(void)
 /**
  * @details Invalidates the widget's own bounding rectangle `{mPos, mFrameBuffer->getSize()}` on `mParent`.
  * @see Object::update(Rectangular)
+ * @todo None.
+ * @bug None.
  */
 void Object::update(void)
 {
@@ -91,6 +101,8 @@ void Object::update(void)
 /**
  * @details Unpacks `pos.getX()` and `pos.getY()` and delegates to `setPosition(int16_t, int16_t)`.
  * @see Object::setPosition(int16_t, int16_t)
+ * @todo None.
+ * @bug None.
  */
 void Object::setPosition(Position pos)
 {
@@ -101,6 +113,8 @@ void Object::setPosition(Position pos)
  * @details Saves the old position `before = mPos`, updates `mPos` to `{x, y}`, and calls
  * `update({before, size}, {mPos, size})` so both the old and new regions are redrawn by the parent.
  * @see Object::update(Rectangular, Rectangular)
+ * @todo None.
+ * @bug None.
  */
 void Object::setPosition(int16_t x, int16_t y)
 {
@@ -112,6 +126,9 @@ void Object::setPosition(int16_t x, int16_t y)
 
 /**
  * @details Returns the widget's relative position `mPos`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Position Object::getPosition(void)
 {
@@ -123,6 +140,8 @@ Position Object::getPosition(void)
  * updates its logical `size`, triggers `eventSizeChanged(size)`, repaints the widget via `paint()`,
  * and notifies the parent container via `update()`.
  * @see Object::eventSizeChanged(), Object::paint()
+ * @todo None.
+ * @bug None.
  */
 void Object::setSize(Size size)
 {
@@ -141,6 +160,8 @@ void Object::setSize(Size size)
 /**
  * @details Wraps `width` and `height` into a `Size` object and delegates to `setSize(Size)`.
  * @see Object::setSize(Size)
+ * @todo None.
+ * @bug None.
  */
 void Object::setSize(uint16_t width, uint16_t height)
 {
@@ -149,6 +170,9 @@ void Object::setSize(uint16_t width, uint16_t height)
 
 /**
  * @details Updates `mVisibleFlag` to `on` and triggers a parent `update()` for the widget's bounding area.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::setVisible(bool on)
 {
@@ -158,6 +182,9 @@ void Object::setVisible(bool on)
 
 /**
  * @details Returns the current visibility flag (`mVisibleFlag`).
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 bool Object::isVisible(void)
 {
@@ -166,6 +193,9 @@ bool Object::isVisible(void)
 
 /**
  * @details Stores the pointer to the parent `Container` (`mParent = parent`).
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::setParent(Container *parent)
 {
@@ -174,6 +204,9 @@ void Object::setParent(Container *parent)
 
 /**
  * @details Default touch-down handler; ignores `pos` and returns `this`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Object *Object::handlerPush(Position pos)
 {
@@ -183,6 +216,9 @@ Object *Object::handlerPush(Position pos)
 
 /**
  * @details Default touch-drag handler; ignores `pos` and returns `this`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Object *Object::handlerDrag(Position pos)
 {
@@ -192,6 +228,9 @@ Object *Object::handlerDrag(Position pos)
 
 /**
  * @details Default touch-up handler; returns `this`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Object *Object::handlerUp(void)
 {
@@ -200,6 +239,9 @@ Object *Object::handlerUp(void)
 
 /**
  * @details Queries `mParent->getAbsolutePos()` if `mParent` is set; otherwise returns `mPos`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 Position Object::getAbsolutePos(void)
 {
@@ -213,6 +255,9 @@ Position Object::getAbsolutePos(void)
 
 /**
  * @details Returns a pointer to the widget's internal `FrameBuffer` (`mFrameBuffer`).
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 FrameBuffer* Object::getFrameBuffer(void)
 {
@@ -221,6 +266,9 @@ FrameBuffer* Object::getFrameBuffer(void)
 
 /**
  * @details Default no-op hook called when the widget size changes.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::eventSizeChanged(Size size)
 {
@@ -229,6 +277,9 @@ void Object::eventSizeChanged(Size size)
 
 /**
  * @details Forwards `font` to `mFrameBuffer->setFont(font)`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::setFont(Font &font)
 {
@@ -237,6 +288,9 @@ void Object::setFont(Font &font)
 
 /**
  * @details Sets `mModifiedFlag` to `true` to indicate that `paint()` must be called before the next composite.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::touch(void)
 {
@@ -245,6 +299,9 @@ void Object::touch(void)
 
 /**
  * @details Returns `mModifiedFlag`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 bool Object::isModified(void)
 {
@@ -253,6 +310,9 @@ bool Object::isModified(void)
 
 /**
  * @details Resets `mModifiedFlag` to `false`.
+ * @see Object
+ * @todo None.
+ * @bug None.
  */
 void Object::clearModifyFlag(void)
 {

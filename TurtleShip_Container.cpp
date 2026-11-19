@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Container.cpp
  * @brief Implementation of the Container class for managing composite child widgets.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -24,6 +26,8 @@
  * (`mObjArr = 0`, `mMaxObj = 0`, `mNumOfObj = 0`, `mLastEventObj = 0`, `mValidFlag = true`), and calls
  * `increaseObjArr()` to allocate the initial child pointer array.
  * @see Container::increaseObjArr()
+ * @todo None.
+ * @bug None.
  */
 Container::Container()
 {
@@ -40,6 +44,9 @@ Container::Container()
 /**
  * @details Iterates through all `mNumOfObj` registered children and `delete`s each child object,
  * frees the `mObjArr` pointer array from the L-heap (`lfree()`), and marks `mValidFlag = false`.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 Container::~Container()
 {
@@ -57,6 +64,9 @@ Container::~Container()
 /**
  * @details Loops through all `mNumOfObj` child objects in registration order and blits each visible
  * child's bitmap (`obj->getFrameBuffer()->getBitmap()`) at `obj->getPosition()` onto `mFrameBuffer`.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 void Container::paint(void)
 {
@@ -79,6 +89,8 @@ void Container::paint(void)
  * as the parent of `obj` (`obj.setParent(this)`), and triggers a partial `update()` for the child's area.
  * Returns immediately if `mValidFlag` is `false`.
  * @see Container::increaseObjArr(), Container::update(Rectangular)
+ * @todo None.
+ * @bug None.
  */
 void Container::add(Object &obj)
 {
@@ -102,6 +114,8 @@ void Container::add(Object &obj)
 /**
  * @details Dereferences `obj` and forwards to `add(Object &)`.
  * @see Container::add(Object &)
+ * @todo None.
+ * @bug None.
  */
 void Container::add(Object *obj)
 {
@@ -112,6 +126,9 @@ void Container::add(Object *obj)
  * @details Allocates a new `Object*` array with `mMaxObj + 512` entries from the L-heap (`lmalloc()`),
  * copies existing child pointers from `mObjArr`, frees the old array via `lfree()`, and updates
  * `mMaxObj` and `mObjArr`.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 void Container::increaseObjArr(void)
 {
@@ -136,6 +153,8 @@ void Container::increaseObjArr(void)
  * @details Repaints the entire container rectangle `{mPos, mFrameBuffer->getSize()}` by delegating
  * to `update(Rectangular)`.
  * @see Container::update(Rectangular)
+ * @todo None.
+ * @bug None.
  */
 void Container::update(void)
 {
@@ -224,6 +243,9 @@ void Container::update(Rectangular before, Rectangular current)
  * @details Scans `mObjArr` in reverse order (`mNumOfObj - 1` down to `0`) so top-most children are
  * tested first. When a visible child whose bounding box contains `pos` is found, subtracts `objPos`
  * from `pos` and invokes `mObjArr[i]->handlerPush(calculatedPos)`. Returns `nullptr` if no child is hit.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 Object *Container::handlerPush(Position pos)
 {
@@ -259,6 +281,9 @@ Object *Container::handlerPush(Position pos)
  * @details Scans `mObjArr` in reverse order (`mNumOfObj - 1` down to `0`) and forwards the drag
  * event (in child-local coordinates) to the first visible child whose bounding box contains `pos`.
  * Returns `nullptr` if no child is hit.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 Object *Container::handlerDrag(Position pos)
 {
@@ -291,6 +316,9 @@ Object *Container::handlerDrag(Position pos)
 
 /**
  * @details Returns `nullptr` on touch-up at the container level.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 Object *Container::handlerUp(void)
 {
@@ -299,6 +327,9 @@ Object *Container::handlerUp(void)
 
 /**
  * @details Sets the background color on the container's `mFrameBuffer`.
+ * @see Container
+ * @todo None.
+ * @bug None.
  */
 void Container::setBackgroundColor(Color color)
 {

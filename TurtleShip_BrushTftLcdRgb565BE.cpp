@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_BrushTftLcdRgb565BE.cpp
  * @brief Implementation of the BrushTftLcdRgb565BE class for Big-Endian RGB565 TFT LCD brushes.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include "BrushTftLcdRgb565BE.h"
@@ -18,6 +20,9 @@
 
 /**
  * @details Initializes the brush with no working frame buffer attached (`mFb = nullptr`).
+ * @see BrushTftLcdRgb565BE
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565BE::BrushTftLcdRgb565BE(void)
 {
@@ -26,6 +31,9 @@ BrushTftLcdRgb565BE::BrushTftLcdRgb565BE(void)
 
 /**
  * @details Virtual destructor for `BrushTftLcdRgb565BE`.
+ * @see BrushTftLcdRgb565BE
+ * @todo None.
+ * @bug None.
  */
 BrushTftLcdRgb565BE::~BrushTftLcdRgb565BE(void)
 {
@@ -35,6 +43,9 @@ BrushTftLcdRgb565BE::~BrushTftLcdRgb565BE(void)
 /**
  * @details Stores the address of `obj` into `mFb` so the LCD driver can use its allocated memory
  * for block transfers.
+ * @see BrushTftLcdRgb565BE
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565BE::setFrameBuffer(FrameBufferRgb565BE &obj)
 {
@@ -45,6 +56,8 @@ void BrushTftLcdRgb565BE::setFrameBuffer(FrameBufferRgb565BE &obj)
  * @details Updates `mBrushColor` from `color` (which invokes `ColorRgb565BE::setColorBase()`)
  * and caches the resulting 16-bit Big-Endian color code in `mBrushColorCode`.
  * @see ColorRgb565BE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565BE::setBrushColor(Color color)
 {
@@ -54,6 +67,9 @@ void BrushTftLcdRgb565BE::setBrushColor(Color color)
 
 /**
  * @details Returns a copy of `mBrushColor` as a base `Color` object.
+ * @see BrushTftLcdRgb565BE
+ * @todo None.
+ * @bug None.
  */
 Color BrushTftLcdRgb565BE::getBrushColor(void)
 {
@@ -63,6 +79,8 @@ Color BrushTftLcdRgb565BE::getBrushColor(void)
 /**
  * @details Updates `mBgColor` from `color` using `ColorRgb565BE` encoding.
  * @see ColorRgb565BE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void BrushTftLcdRgb565BE::setBackgroundColor(Color color)
 {
@@ -71,6 +89,9 @@ void BrushTftLcdRgb565BE::setBackgroundColor(Color color)
 
 /**
  * @details Returns a copy of `mBgColor` as a base `Color` object.
+ * @see BrushTftLcdRgb565BE
+ * @todo None.
+ * @bug None.
  */
 Color BrushTftLcdRgb565BE::getBackgroundColor(void)
 {

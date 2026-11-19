@@ -9,6 +9,7 @@
  * @file TurtleShipTypes.h
  * @brief Common data types, pixel format enumerations, and bitmap structures for the TurtleShip GUI library.
  * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_GUI_UTIL__H_
@@ -120,7 +121,14 @@ extern "C"
 	 * @param[out] des     Destination buffer pointer where the RGB888 pixel pattern will be written.
 	 * @param[in]  pattern 24-bit RGB888 color pattern to repeat.
 	 * @param[in]  count   Number of pixels to write into the destination buffer.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2015
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	void copyRgb888DotPattern(void *des, uint32_t pattern, uint32_t count);
 }

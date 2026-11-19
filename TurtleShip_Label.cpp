@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Label.cpp
  * @brief Implementation of the Label widget class.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -18,6 +20,9 @@
 /**
  * @details Allocates `mFrameBuffer`, initializes `mText` to `nullptr`, sets the default text brush
  * color to black (`{0x00, 0x00, 0x00}`), and sets the default background color to white (`{0xFF, 0xFF, 0xFF}`).
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 Label::Label(void)
 {
@@ -32,6 +37,8 @@ Label::Label(void)
  * @details Clears `mFrameBuffer` with the background color and, if both `mText` and a `Font` are set,
  * renders `mText` centered (`Brush::ALIGN_CENTER_MID`) inside `mFrameBuffer`.
  * @see Brush::drawString(align_t, const char*)
+ * @todo None.
+ * @bug None.
  */
 void Label::paint(void)
 {
@@ -49,6 +56,9 @@ void Label::paint(void)
 
 /**
  * @details Stores the string pointer `text` in `mText` and marks the widget dirty via `touch()`.
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 void Label::setText(const char *text)
 {
@@ -58,6 +68,9 @@ void Label::setText(const char *text)
 
 /**
  * @details Updates the brush color of `mFrameBuffer` to `color` and marks the widget dirty via `touch()`.
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 void Label::setFontColor(Color color)
 {
@@ -67,6 +80,9 @@ void Label::setFontColor(Color color)
 
 /**
  * @details Updates the brush color of `mFrameBuffer` to `{red, green, blue}` and marks the widget dirty via `touch()`.
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 void Label::setFontColor(uint8_t red, uint8_t green, uint8_t blue)
 {
@@ -76,6 +92,9 @@ void Label::setFontColor(uint8_t red, uint8_t green, uint8_t blue)
 
 /**
  * @details Updates the background color of `mFrameBuffer` to `color` and marks the widget dirty via `touch()`.
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 void Label::setBackgroundColor(Color color)
 {
@@ -85,6 +104,9 @@ void Label::setBackgroundColor(Color color)
 
 /**
  * @details Updates the background color of `mFrameBuffer` to `{red, green, blue}` and marks the widget dirty via `touch()`.
+ * @see Label
+ * @todo None.
+ * @bug None.
  */
 void Label::setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue)
 {

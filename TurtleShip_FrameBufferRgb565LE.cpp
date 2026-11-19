@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_FrameBufferRgb565LE.cpp
  * @brief Implementation of the FrameBufferRgb565LE class for Little-Endian 16-bit RGB565 frame buffers.
+ * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #include <config.h>
@@ -22,6 +24,9 @@
 
 /**
  * @details Default constructor for `FrameBufferRgb565LE`.
+ * @see FrameBufferRgb565LE
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565LE::FrameBufferRgb565LE(void)
 {
@@ -29,6 +34,9 @@ FrameBufferRgb565LE::FrameBufferRgb565LE(void)
 
 /**
  * @details Frees `mFrameBuffer` if `mMallocFlag` is set.
+ * @see FrameBufferRgb565LE
+ * @todo None.
+ * @bug None.
  */
 FrameBufferRgb565LE::~FrameBufferRgb565LE(void)
 {
@@ -94,6 +102,8 @@ void FrameBufferRgb565LE::blendDot(int16_t x, int16_t y, uint8_t alpha)
  * @details Copies the RGBA components of `color` into `mBrushColor` and caches the resulting
  * 16-bit Little-Endian RGB565 code in `mBrushColorCode`.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565LE::setBrushColor(Color color)
 {
@@ -105,6 +115,8 @@ void FrameBufferRgb565LE::setBrushColor(Color color)
  * @details Sets `mBrushColor` from the given `red`, `green`, `blue`, and `alpha` values and caches
  * the resulting 16-bit Little-Endian RGB565 code in `mBrushColorCode`.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -114,6 +126,9 @@ void FrameBufferRgb565LE::setBrushColor(uint8_t red, uint8_t green, uint8_t blue
 
 /**
  * @details Returns a copy of `mBrushColor` as a base `Color` object.
+ * @see FrameBufferRgb565LE
+ * @todo None.
+ * @bug None.
  */
 Color FrameBufferRgb565LE::getBrushColor(void)
 {
@@ -123,6 +138,8 @@ Color FrameBufferRgb565LE::getBrushColor(void)
 /**
  * @details Copies the RGBA components of `color` into `mBgColor` and encodes its 16-bit Little-Endian RGB565 code.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565LE::setBackgroundColor(Color color)
 {
@@ -133,6 +150,8 @@ void FrameBufferRgb565LE::setBackgroundColor(Color color)
  * @details Sets `mBgColor` from the given `red`, `green`, `blue`, and `alpha` values and encodes its
  * 16-bit Little-Endian RGB565 code.
  * @see ColorRgb565LE::setColorBase()
+ * @todo None.
+ * @bug None.
  */
 void FrameBufferRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
 {
@@ -141,6 +160,9 @@ void FrameBufferRgb565LE::setBackgroundColor(uint8_t red, uint8_t green, uint8_t
 
 /**
  * @details Returns a copy of `mBgColor` as a base `Color` object.
+ * @see FrameBufferRgb565LE
+ * @todo None.
+ * @bug None.
  */
 Color FrameBufferRgb565LE::getBackgroundColor(void)
 {

@@ -9,6 +9,7 @@
  * @file BitmapDrawingCalculator.h
  * @brief Clipping and buffer offset calculator for blitting bitmaps onto a target canvas region.
  * @author Yoon-Ki Hong
+ * @date 2025
  */
 
 #ifndef YSS_GUI_BITMAP_DRAWING_CALCULATOR__H_
@@ -53,7 +54,15 @@ class BitmapDrawingCalculator
 public:
 	/**
 	 * @brief Constructs an uninitialized BitmapDrawingCalculator instance.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	BitmapDrawingCalculator(void);
 
@@ -62,71 +71,126 @@ public:
 	 * @param[in] canvasSize    Total width and height of the target canvas in pixels.
 	 * @param[in] canvasDesArea Target clipping rectangle on the canvas where drawing is permitted.
 	 * @param[in] bitmapSrcArea Bounding rectangle of the bitmap placed in canvas coordinates.
+	 * @return none
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	BitmapDrawingCalculator(Size &canvasSize, Area &canvasDesArea, Area &bitmapSrcArea);
 	
 	/**
 	 * @brief Calculates the clipped source and destination rectangles and linear pixel offsets.
+	 * @param[in] none
 	 * @return `true` if the bitmap and destination clipping area overlap within the canvas; `false` if nothing is visible.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
+	 * @pre None.
 	 * @post On returning `true`, trimmed areas and buffer offsets can be queried through the getter methods.
+	 * @deprecated None.
 	 */
 	bool calculate(void);
 
 	/**
 	 * @brief Gets the linear pixel offset from the beginning of the source bitmap buffer to the first visible pixel.
+	 * @param[in] none
 	 * @return Source buffer offset in pixels (multiply by bytes-per-pixel for byte offset).
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getBitmapSrcFrameBufferOffset(void);
 
 	/**
 	 * @brief Gets the linear pixel offset from the beginning of the destination canvas buffer to the first drawn pixel.
+	 * @param[in] none
 	 * @return Destination buffer offset in pixels (multiply by bytes-per-pixel for byte offset).
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getCanvasDesFrameBufferOffset(void);
 
 	/**
 	 * @brief Gets the width of the visible (clipped) portion of the bitmap.
+	 * @param[in] none
 	 * @return Trimmed bitmap width in pixels.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint16_t getTrimedBitmapWidth(void);
 
 	/**
 	 * @brief Gets the height of the visible (clipped) portion of the bitmap.
+	 * @param[in] none
 	 * @return Trimmed bitmap height in pixels.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint16_t getTrimedBitmapHeight(void);
 
 	/**
 	 * @brief Gets a reference to the clipped destination area on the canvas.
+	 * @param[in] none
 	 * @return Reference to the trimmed canvas destination `Area`.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Area &getTrimedCanvasDesArea(void);
 
 	/**
 	 * @brief Gets the total number of pixels in the clipped destination area (`width * height`).
+	 * @param[in] none
 	 * @return Total pixel count of the trimmed canvas destination area.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	uint32_t getTrimedCanvasDesAreaValue(void);
 
 	/**
 	 * @brief Gets a reference to the clipped source bitmap area.
+	 * @param[in] none
 	 * @return Reference to the trimmed bitmap source `Area`.
 	 * @author Yoon-Ki Hong
+	 * @date 2025
+	 * @warning None.
+	 * @note None.
 	 * @pre `calculate()` must have been called and returned `true`.
+	 * @post None.
+	 * @deprecated None.
 	 */
 	Area &getTrimedBitmapSrcArea(void);
 

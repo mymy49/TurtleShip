@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_Frame.cpp
  * @brief Implementation of the Frame class for top-level full-screen GUI windows.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -26,6 +28,9 @@
  * @details Queries the system TFT LCD resolution via `system::getSystemTftLcdSize()`, allocates and
  * sizes `mFrameBuffer` to match the full screen, locks resizing (`mResizeAble = false`), clears the
  * frame buffer, and initializes `mOutputFrameBuffer` and `mPointerDevice` to `nullptr`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 Frame::Frame()
 {
@@ -40,6 +45,9 @@ Frame::Frame()
 
 /**
  * @details Detaches this `Frame` from `mPointerDevice` via `mPointerDevice->resetFrame(this)` if bound.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 Frame::~Frame(void)
 {
@@ -50,6 +58,9 @@ Frame::~Frame(void)
 
 /**
  * @details Intentionally ignores `pos` to prevent changing the position of a top-level `Frame`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::setPosition(Position pos)
 {
@@ -59,6 +70,9 @@ void Frame::setPosition(Position pos)
 
 /**
  * @details Intentionally ignores `x` and `y` to prevent changing the position of a top-level `Frame`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::setPosition(int16_t x, int16_t y)
 {
@@ -70,6 +84,8 @@ void Frame::setPosition(int16_t x, int16_t y)
 /**
  * @details Stores `outputFrameBuffer` in `mOutputFrameBuffer` and triggers a full-frame `update()`.
  * @see Frame::update(void)
+ * @todo None.
+ * @bug None.
  */
 void Frame::setOutputFrameBuffer(OutputFrameBuffer *outputFrameBuffer)
 {
@@ -82,6 +98,9 @@ void Frame::setOutputFrameBuffer(OutputFrameBuffer *outputFrameBuffer)
  * @details Clears the entire frame buffer, repaints any modified child widgets, composites all
  * visible children onto `mFrameBuffer`, and transfers the full bitmap to the display via
  * `system::drawBitmap(this, mPos, mFrameBuffer->getBitmap())`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::update(void)
 {
@@ -180,6 +199,9 @@ void Frame::update(Rectangular before , Rectangular current)
 /**
  * @details Calls `obj.paint()`, appends `obj` to `mObjArr` (expanding via `increaseObjArr()` if needed),
  * sets `obj.setParent(this)`, and updates the child's bounding rectangle (`update(obj.getRectangular())`).
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::add(Object &obj)
 {
@@ -199,6 +221,8 @@ void Frame::add(Object &obj)
 /**
  * @details Dereferences `obj` and delegates to `add(Object &)`.
  * @see Frame::add(Object &)
+ * @todo None.
+ * @bug None.
  */
 void Frame::add(Object *obj)
 {
@@ -208,6 +232,8 @@ void Frame::add(Object *obj)
 /**
  * @details Delegates push event handling to `Container::handlerPush(pos)`.
  * @see Container::handlerPush()
+ * @todo None.
+ * @bug None.
  */
 Object *Frame::handlerPush(Position pos)
 {
@@ -217,6 +243,8 @@ Object *Frame::handlerPush(Position pos)
 /**
  * @details Delegates drag event handling to `Container::handlerDrag(pos)`.
  * @see Container::handlerDrag()
+ * @todo None.
+ * @bug None.
  */
 Object *Frame::handlerDrag(Position pos)
 {
@@ -226,6 +254,8 @@ Object *Frame::handlerDrag(Position pos)
 /**
  * @details Delegates touch-up event handling to `Container::handlerUp()`.
  * @see Container::handlerUp()
+ * @todo None.
+ * @bug None.
  */
 Object *Frame::handlerUp(void)
 {
@@ -234,6 +264,9 @@ Object *Frame::handlerUp(void)
 
 /**
  * @details Registers this `Frame` as the active system frame via `system::setSystemFrame(this)`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::setAsSystemFrame(void)
 {
@@ -242,6 +275,9 @@ void Frame::setAsSystemFrame(void)
 
 /**
  * @details Stores the address of `obj` in `mPointerDevice`.
+ * @see Frame
+ * @todo None.
+ * @bug None.
  */
 void Frame::setPointerDevice(PointerDevice &obj)
 {

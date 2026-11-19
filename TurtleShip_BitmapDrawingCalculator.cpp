@@ -8,6 +8,8 @@
 /**
  * @file TurtleShip_BitmapDrawingCalculator.cpp
  * @brief Implementation of the BitmapDrawingCalculator class for 2D bitmap clipping and offset calculation.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include "BitmapDrawingCalculator.h"
@@ -15,6 +17,9 @@
 /**
  * @details Default constructor. Does not initialize geometry fields; callers must initialize
  * the instance via the parameterized constructor before invoking `calculate()`.
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 BitmapDrawingCalculator::BitmapDrawingCalculator(void)
 {
@@ -24,6 +29,8 @@ BitmapDrawingCalculator::BitmapDrawingCalculator(void)
  * @details Stores the target canvas dimensions, the destination clipping rectangle on the canvas,
  * and the bounding rectangle of the source bitmap in canvas coordinates for subsequent clipping calculations.
  * @see BitmapDrawingCalculator::calculate()
+ * @todo None.
+ * @bug None.
  */
 BitmapDrawingCalculator::BitmapDrawingCalculator(Size &canvasSize, Area &canvasDesArea, Area &bitmapSrcArea)
 {
@@ -52,6 +59,9 @@ BitmapDrawingCalculator::BitmapDrawingCalculator(Size &canvasSize, Area &canvasD
  *    - Otherwise, sets the relative Y coordinate of `mTrimedBitmapSrcArea` and advances
  *      `mDesFrameBufferOffset` by `cw * by` (skipping full canvas rows).
  *    - Clips the bottom edge of whichever area extends further downward.
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 bool BitmapDrawingCalculator::calculate(void)
 {
@@ -190,6 +200,8 @@ bool BitmapDrawingCalculator::calculate(void)
  * @details Returns the linear pixel offset (`mSrcFrameBufferOffset`) into the source bitmap buffer
  * corresponding to the top-left visible pixel after clipping.
  * @see BitmapDrawingCalculator::calculate()
+ * @todo None.
+ * @bug None.
  */
 uint32_t BitmapDrawingCalculator::getBitmapSrcFrameBufferOffset(void)
 {
@@ -200,6 +212,8 @@ uint32_t BitmapDrawingCalculator::getBitmapSrcFrameBufferOffset(void)
  * @details Returns the linear pixel offset (`mDesFrameBufferOffset`) into the destination canvas
  * frame buffer corresponding to the top-left drawn pixel after clipping.
  * @see BitmapDrawingCalculator::calculate()
+ * @todo None.
+ * @bug None.
  */
 uint32_t BitmapDrawingCalculator::getCanvasDesFrameBufferOffset(void)
 {
@@ -208,6 +222,9 @@ uint32_t BitmapDrawingCalculator::getCanvasDesFrameBufferOffset(void)
 
 /**
  * @details Returns the width in pixels of the clipped bitmap region (`mTrimedBitmapSrcArea`).
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 uint16_t BitmapDrawingCalculator::getTrimedBitmapWidth(void)
 {
@@ -216,6 +233,9 @@ uint16_t BitmapDrawingCalculator::getTrimedBitmapWidth(void)
 
 /**
  * @details Returns the height in pixels of the clipped bitmap region (`mTrimedBitmapSrcArea`).
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 uint16_t BitmapDrawingCalculator::getTrimedBitmapHeight(void)
 {
@@ -224,6 +244,9 @@ uint16_t BitmapDrawingCalculator::getTrimedBitmapHeight(void)
 
 /**
  * @details Returns a reference to `mTrimedCanvasDesArea`, representing the clipped destination region on the canvas.
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 Area &BitmapDrawingCalculator::getTrimedCanvasDesArea(void)
 {
@@ -233,6 +256,9 @@ Area &BitmapDrawingCalculator::getTrimedCanvasDesArea(void)
 /**
  * @details Multiplies the width and height of `mTrimedCanvasDesArea` to compute the total number of
  * visible pixels to be drawn.
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 uint32_t BitmapDrawingCalculator::getTrimedCanvasDesAreaValue(void)
 {
@@ -241,6 +267,9 @@ uint32_t BitmapDrawingCalculator::getTrimedCanvasDesAreaValue(void)
 
 /**
  * @details Returns a reference to `mTrimedBitmapSrcArea`, representing the clipped source bitmap region.
+ * @see BitmapDrawingCalculator
+ * @todo None.
+ * @bug None.
  */
 Area &BitmapDrawingCalculator::getTrimedBitmapSrcArea(void)
 {
