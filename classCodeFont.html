@@ -186,7 +186,7 @@ Example Usage in User Application</h3>
 <div class="line">    lcd.drawBitmap({15, 100}, brush.getBitmap());</div>
 <div class="line">    lcd.unlock();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:94</div></div>
+<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:95</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a37b926ccc12fcb901b6c44c811633976" name="a37b926ccc12fcb901b6c44c811633976"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37b926ccc12fcb901b6c44c811633976">&#9670;&#160;</a></span>CodeFont()</h2>
@@ -210,9 +210,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Initializes <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span> to <span class="tt">info-&gt;<a class="el" href="CodeFont_8h.html#ae5dc6ffcd9b7605c7787791e40cc6bb0" title="Nominal font height in pixels.">size</a></span> and <span class="tt"><a class="el" href="classFont.html#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> to <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a> / 3</span>.</dd></dl>
-<p>Stores the pointer to the static <span class="tt"><a class="el" href="structCodeFont_1_1codeFontInfo__t.html" title="Packed master header for a Flash-resident CodeFont asset.">codeFontInfo_t</a></span> descriptor (<span class="tt">mInfo</span>), sets the nominal font height <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span> from <span class="tt">info-&gt;<a class="el" href="CodeFont_8h.html#ae5dc6ffcd9b7605c7787791e40cc6bb0" title="Nominal font height in pixels.">size</a></span>, and sets the default space width <span class="tt"><a class="el" href="classFont.html#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> to one-third of the font height (<span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a> / 3</span>). </p>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Initializes <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span> to <span class="tt">info-&gt;<a class="el" href="CodeFont_8h.html#ae5dc6ffcd9b7605c7787791e40cc6bb0" title="Nominal font height in pixels.">size</a></span> and <span class="tt"><a class="el" href="classFont.html#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> to <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a> / 3</span>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Stores the pointer to the static <span class="tt"><a class="el" href="structCodeFont_1_1codeFontInfo__t.html" title="Packed master header for a Flash-resident CodeFont asset.">codeFontInfo_t</a></span> descriptor (<span class="tt">mInfo</span>), sets the nominal font height <span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span> from <span class="tt">info-&gt;<a class="el" href="CodeFont_8h.html#ae5dc6ffcd9b7605c7787791e40cc6bb0" title="Nominal font height in pixels.">size</a></span>, and sets the default space width <span class="tt"><a class="el" href="classFont.html#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> to one-third of the font height (<span class="tt"><a class="el" href="classFont.html#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a> / 3</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeFont.html" title="Concrete Font implementation backed by C-array glyph tables stored in program memory (Flash/ROM).">CodeFont</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000076">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000076">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -265,8 +273,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the matching <span class="tt"><a class="el" href="structFont_1_1fontInfo__t.html" title="Packed glyph descriptor holding UTF-8 code, bounding metrics, and 4-bit alpha bitmap pointer.">Font::fontInfo_t</a></span> entry, or <span class="tt">nullptr</span> (<span class="tt">0</span>) if not found. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000089">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Selects the glyph group using the lower 3 bits of <span class="tt">ch</span> (<span class="tt">group = ch &amp; 0x7</span>), then performs a linear search over the <span class="tt">mInfo-&gt;<a class="el" href="CodeFont_8h.html#a428a786564f1ff4ad49e1f8a0d6aa47e" title="Number of glyphs stored in each of the 8 hash groups.">numOfChar</a>[group]</span> entries in <span class="tt">mInfo-&gt;<a class="el" href="CodeFont_8h.html#a13299718adfec69630e4d60a9bd01ba6" title="Pointers to the glyph descriptor arrays for each group.">fontInfo</a>[group]</span> to find an entry whose <span class="tt"><a class="el" href="Font_8h.html#aed66476aec578b357eeae7e8039a3aeb" title="Packed 1- to 3-byte UTF-8 character code.">utf8Code</a></span> equals <span class="tt">ch</span>. Returns <span class="tt">&amp;info[i]</span> on match, or <span class="tt">0</span> (<span class="tt">nullptr</span>) if not found. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html#aada7aa8124726b6d79db0519de520014" title="Looks up the glyph descriptor (fontInfo_t) for the given packed UTF-8 character code.">Font::getFontInfo()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000077">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classFont.html#aada7aa8124726b6d79db0519de520014">Font</a>.</p>
 

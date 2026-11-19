@@ -149,7 +149,7 @@ Example Usage</h3>
 <div class="line">uint16_t bheight = bdc.getTrimedBitmapHeight();</div>
 <div class="line">uint16_t *des = &amp;frameBuffer[bdc.getCanvasDesFrameBufferOffset()];</div>
 <div class="line">uint16_t *src = &amp;bitmapData[bdc.getBitmapSrcFrameBufferOffset()];</div>
-<div class="ttc" id="aclassBitmapDrawingCalculator_html_ae370b2f489e554c0d4b7edae337b6bf4"><div class="ttname"><a href="#ae370b2f489e554c0d4b7edae337b6bf4">BitmapDrawingCalculator::BitmapDrawingCalculator</a></div><div class="ttdeci">BitmapDrawingCalculator(void)</div><div class="ttdoc">Constructs an uninitialized BitmapDrawingCalculator instance.</div><div class="ttdef"><b>Definition</b> TurtleShip_BitmapDrawingCalculator.cpp:19</div></div>
+<div class="ttc" id="aclassBitmapDrawingCalculator_html_ae370b2f489e554c0d4b7edae337b6bf4"><div class="ttname"><a href="#ae370b2f489e554c0d4b7edae337b6bf4">BitmapDrawingCalculator::BitmapDrawingCalculator</a></div><div class="ttdeci">BitmapDrawingCalculator(void)</div><div class="ttdoc">Constructs an uninitialized BitmapDrawingCalculator instance.</div><div class="ttdef"><b>Definition</b> TurtleShip_BitmapDrawingCalculator.cpp:24</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae370b2f489e554c0d4b7edae337b6bf4" name="ae370b2f489e554c0d4b7edae337b6bf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae370b2f489e554c0d4b7edae337b6bf4">&#9670;&#160;</a></span>BitmapDrawingCalculator() <span class="overload">[1/2]</span></h2>
@@ -167,8 +167,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Constructs an uninitialized <a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> instance. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Default constructor. Does not initialize geometry fields; callers must initialize the instance via the parameterized constructor before invoking <span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Default constructor. Does not initialize geometry fields; callers must initialize the instance via the parameterized constructor before invoking <span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -205,8 +220,17 @@ Example Usage</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Stores the target canvas dimensions, the destination clipping rectangle on the canvas, and the bounding rectangle of the source bitmap in canvas coordinates for subsequent clipping calculations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">BitmapDrawingCalculator::calculate()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -227,9 +251,20 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Calculates the clipped source and destination rectangles and linear pixel offsets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the bitmap and destination clipping area overlap within the canvas; <span class="tt">false</span> if nothing is visible. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>On returning <span class="tt">true</span>, trimmed areas and buffer offsets can be queried through the getter methods.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>On returning <span class="tt">true</span>, trimmed areas and buffer offsets can be queried through the getter methods. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Computes the intersection between the canvas bounds, <span class="tt">mCanvasDesArea</span>, and <span class="tt">mBitmapSrcArea</span>.</p>
 <p>The algorithm proceeds in four main stages:</p><ol type="1">
 <li><b>Early rejection</b>: Returns <span class="tt">false</span> if the destination area starts beyond the canvas dimensions or if the bitmap rectangle and destination clipping rectangle do not overlap at all.</li>
@@ -243,7 +278,10 @@ Example Usage</h3>
 <li><b>Vertical intersection (Y-axis)</b>:<ul>
 <li>If the bitmap starts above the destination area (<span class="tt">by &lt; cay</span>), advances <span class="tt">mSrcFrameBufferOffset</span> by <span class="tt">(cay - by) * baw</span> (skipping full bitmap rows) and reduces the trimmed bitmap height.</li>
 <li>Otherwise, sets the relative Y coordinate of <span class="tt">mTrimedBitmapSrcArea</span> and advances <span class="tt">mDesFrameBufferOffset</span> by <span class="tt">cw * by</span> (skipping full canvas rows).</li>
-<li>Clips the bottom edge of whichever area extends further downward. </li>
+<li>Clips the bottom edge of whichever area extends further downward. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug</a></b></dt><dd>None. </dd></dl>
+</li>
 </ul>
 </li>
 </ol>
@@ -266,10 +304,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets the linear pixel offset from the beginning of the source bitmap buffer to the first visible pixel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Source buffer offset in pixels (multiply by bytes-per-pixel for byte offset). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Returns the linear pixel offset (<span class="tt">mSrcFrameBufferOffset</span>) into the source bitmap buffer corresponding to the top-left visible pixel after clipping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">BitmapDrawingCalculator::calculate()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -289,10 +340,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets the linear pixel offset from the beginning of the destination canvas buffer to the first drawn pixel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Destination buffer offset in pixels (multiply by bytes-per-pixel for byte offset). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Returns the linear pixel offset (<span class="tt">mDesFrameBufferOffset</span>) into the destination canvas frame buffer corresponding to the top-left drawn pixel after clipping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">BitmapDrawingCalculator::calculate()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -312,10 +376,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets the height of the visible (clipped) portion of the bitmap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Trimmed bitmap height in pixels. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
-<p>Returns the height in pixels of the clipped bitmap region (<span class="tt">mTrimedBitmapSrcArea</span>). </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the height in pixels of the clipped bitmap region (<span class="tt">mTrimedBitmapSrcArea</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000007">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -335,10 +412,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets a reference to the clipped source bitmap area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the trimmed bitmap source <span class="tt">Area</span>. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
-<p>Returns a reference to <span class="tt">mTrimedBitmapSrcArea</span>, representing the clipped source bitmap region. </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns a reference to <span class="tt">mTrimedBitmapSrcArea</span>, representing the clipped source bitmap region. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000010">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -358,10 +448,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets the width of the visible (clipped) portion of the bitmap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Trimmed bitmap width in pixels. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
-<p>Returns the width in pixels of the clipped bitmap region (<span class="tt">mTrimedBitmapSrcArea</span>). </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the width in pixels of the clipped bitmap region (<span class="tt">mTrimedBitmapSrcArea</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -381,10 +484,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets a reference to the clipped destination area on the canvas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the trimmed canvas destination <span class="tt">Area</span>. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
-<p>Returns a reference to <span class="tt">mTrimedCanvasDesArea</span>, representing the clipped destination region on the canvas. </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns a reference to <span class="tt">mTrimedCanvasDesArea</span>, representing the clipped destination region on the canvas. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -404,10 +520,23 @@ Example Usage</h3>
 </div><div class="memdoc">
 
 <p>Gets the total number of pixels in the clipped destination area (<span class="tt"><a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a></span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Total pixel count of the trimmed canvas destination area. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>.</dd></dl>
-<p>Multiplies the width and height of <span class="tt">mTrimedCanvasDesArea</span> to compute the total number of visible pixels to be drawn. </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a2b96b7cb84ff37b4ce3b3d223b8b3211" title="Calculates the clipped source and destination rectangles and linear pixel offsets.">calculate()</a></span> must have been called and returned <span class="tt">true</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Multiplies the width and height of <span class="tt">mTrimedCanvasDesArea</span> to compute the total number of visible pixels to be drawn. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBitmapDrawingCalculator.html" title="Utility class that computes clipped source/destination areas and pixel buffer offsets when drawing a ...">BitmapDrawingCalculator</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>

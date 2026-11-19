@@ -301,8 +301,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a></span> object. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Default constructor for <span class="tt"><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000187">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Default constructor for <span class="tt"><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000151">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -330,8 +345,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Virtual destructor. Frees the frame buffer if allocated. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Frees <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> if <span class="tt"><a class="el" href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000188">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Frees <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> if <span class="tt"><a class="el" href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is set. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000152">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000152">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -377,15 +407,22 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000189">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Blends the foreground brush color with the existing Big-Endian RGB565 pixel at <span class="tt">(x, y)</span>.</p>
 <ol type="1">
 <li>Returns early if <span class="tt">alpha &lt; 16</span> or if <span class="tt">(x, y)</span> is outside the canvas bounds.</li>
 <li>Reads the 16-bit Big-Endian destination pixel and byte-swaps it to native Little-Endian order.</li>
 <li>Extracts the 8-bit expanded Red, Green, and Blue channels of both the destination pixel and the brush color, and linearly interpolates each channel: \( C_{\text{out}} = \lfloor((C_{\text{brush}} - C_{\text{des}}) \times \text{alpha}) / 256\rfloor + C_{\text{des}} \).</li>
 <li>Repacks the blended channels into 16-bit RGB565, byte-swaps back to Big-Endian, and writes to <span class="tt">des[<a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * y + x]</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html#a577d7c373c68edee365a64871c93a2a6" title="Renders a single UTF-8 character at the specified position using the current font and brush color.">Brush::drawChar()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000012">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000153">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -417,9 +454,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the current background color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current background <span class="tt"><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a></span> object. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the current background color (<span class="tt">mBgColor</span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000193">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the current background color (<span class="tt">mBgColor</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000157">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#a155aff1ad546b4c81228b7e2247b469b">Brush</a>.</p>
 
@@ -449,9 +500,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the current foreground brush color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current foreground <span class="tt"><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a></span> object. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the current foreground brush color (<span class="tt">mBrushColor</span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000191">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the current foreground brush color (<span class="tt">mBrushColor</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000155">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#ad3cb12791b326358b6f48ecc76b06f1a">Brush</a>.</p>
 
@@ -487,8 +552,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates the background color (<span class="tt">mBgColor</span>) from <span class="tt">color</span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000192">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates the background color (<span class="tt">mBgColor</span>) from <span class="tt">color</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000156">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#a9bb9e9685630300bb9d86693a7210390">Brush</a>.</p>
 
@@ -524,8 +598,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates <span class="tt">mBrushColor</span> from <span class="tt">color</span> and caches the Big-Endian 16-bit code in <span class="tt"><a class="el" href="classFrameBufferRgb565.html#ad843e1e420446d4a8391b9d0497a3baa" title="Cached 16-bit RGB565 color code for the active foreground brush color.">mBrushColorCode</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000190">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates <span class="tt">mBrushColor</span> from <span class="tt">color</span> and caches the Big-Endian 16-bit code in <span class="tt"><a class="el" href="classFrameBufferRgb565.html#ad843e1e420446d4a8391b9d0497a3baa" title="Cached 16-bit RGB565 color code for the active foreground brush color.">mBrushColorCode</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565BE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Big-Endian byte order.">FrameBufferRgb565BE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000154">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000154">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#aa39491d4cf4de3d358d97505fa743e40">Brush</a>.</p>
 

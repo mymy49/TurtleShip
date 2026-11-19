@@ -242,8 +242,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs an empty <span class="tt"><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a></span> and allocates the initial child pointer array. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000109">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Allocates a new <span class="tt"><a class="el" href="classFrameBufferRgb565LE.html" title="Concrete 16-bit RGB565 FrameBuffer storing pixels in Little-Endian byte order.">FrameBufferRgb565LE</a></span> for the container, initializes child tracking counters (<span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a> = 0</span>, <span class="tt"><a class="el" href="#a4dc00e8ab84a2c6702f9421c3f44dd3c" title="Allocated slot capacity of mObjArr.">mMaxObj</a> = 0</span>, <span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a> = 0</span>, <span class="tt"><a class="el" href="#aa1c88d594395dda58aa28bf6f33d0210" title="Pointer to the child Object that last received an input event.">mLastEventObj</a> = 0</span>, <span class="tt"><a class="el" href="#a47f549697b0d0cb984e82557f68d7cdb" title="true while the container is valid and not yet destroyed.">mValidFlag</a> = true</span>), and calls <span class="tt"><a class="el" href="#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">increaseObjArr()</a></span> to allocate the initial child pointer array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">Container::increaseObjArr()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000093">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -271,8 +286,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Virtual destructor. Deletes all child objects and frees the child pointer array. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Iterates through all <span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a></span> registered children and <span class="tt">delete</span>s each child object, frees the <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> pointer array from the L-heap (<span class="tt">lfree()</span>), and marks <span class="tt"><a class="el" href="#a47f549697b0d0cb984e82557f68d7cdb" title="true while the container is valid and not yet destroyed.">mValidFlag</a> = false</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Iterates through all <span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a></span> registered children and <span class="tt">delete</span>s each child object, frees the <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> pointer array from the L-heap (<span class="tt">lfree()</span>), and marks <span class="tt"><a class="el" href="#a47f549697b0d0cb984e82557f68d7cdb" title="true while the container is valid and not yet destroyed.">mValidFlag</a> = false</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000094">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -299,8 +329,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000113">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Appends <span class="tt">obj</span> to <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> (growing the array via <span class="tt"><a class="el" href="#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">increaseObjArr()</a></span> if full), sets <span class="tt">this</span> as the parent of <span class="tt">obj</span> (<span class="tt">obj.setParent(this)</span>), and triggers a partial <span class="tt"><a class="el" href="#aedde4d6c58b459e7a55863e7bae999cf" title="Repaints the entire container area and propagates the update to mParent.">update()</a></span> for the child's area. Returns immediately if <span class="tt"><a class="el" href="#a47f549697b0d0cb984e82557f68d7cdb" title="true while the container is valid and not yet destroyed.">mValidFlag</a></span> is <span class="tt">false</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">Container::increaseObjArr()</a>, <a class="el" href="#a1030d8d0db8c48d0c57dfd6eee2efc1d" title="Repaints all visible children intersecting rect and propagates the dirty area to mParent.">Container::update(Rectangular)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000096">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -326,8 +365,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000114">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Dereferences <span class="tt">obj</span> and forwards to <span class="tt"><a class="el" href="#ad165dd1b0b4b646ef9f3fe62f72402ad" title="Adds a child Object (by reference) to this container, sets its parent to this, and updates its area.">add</a>(<a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a> &amp;)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ad165dd1b0b4b646ef9f3fe62f72402ad" title="Adds a child Object (by reference) to this container, sets its parent to this, and updates its area.">Container::add(Object &amp;)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000097">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -362,8 +410,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the child <span class="tt"><a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a></span> that handled the drag event, or <span class="tt">nullptr</span> if no child was hit. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Scans <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> in reverse order (<span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a> - 1</span> down to <span class="tt">0</span>) and forwards the drag event (in child-local coordinates) to the first visible child whose bounding box contains <span class="tt">pos</span>. Returns <span class="tt">nullptr</span> if no child is hit. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000119">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Scans <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> in reverse order (<span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a> - 1</span> down to <span class="tt">0</span>) and forwards the drag event (in child-local coordinates) to the first visible child whose bounding box contains <span class="tt">pos</span>. Returns <span class="tt">nullptr</span> if no child is hit. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000103">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classObject.html#ae39f5c39470286e22a821f94b041ddd8">Object</a>.</p>
 
@@ -402,8 +458,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the child <span class="tt"><a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a></span> that handled the push event, or <span class="tt">nullptr</span> if no child was hit. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Scans <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> in reverse order (<span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a> - 1</span> down to <span class="tt">0</span>) so top-most children are tested first. When a visible child whose bounding box contains <span class="tt">pos</span> is found, subtracts <span class="tt">objPos</span> from <span class="tt">pos</span> and invokes <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a>[i]-&gt;handlerPush(calculatedPos)</span>. Returns <span class="tt">nullptr</span> if no child is hit. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000118">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Scans <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> in reverse order (<span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a> - 1</span> down to <span class="tt">0</span>) so top-most children are tested first. When a visible child whose bounding box contains <span class="tt">pos</span> is found, subtracts <span class="tt">objPos</span> from <span class="tt">pos</span> and invokes <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a>[i]-&gt;handlerPush(calculatedPos)</span>. Returns <span class="tt">nullptr</span> if no child is hit. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000102">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classObject.html#a2bafc74f429bdb43037577d83988c1e4">Object</a>.</p>
 
@@ -435,9 +499,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles a touch-up event on the container. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">nullptr</span>. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns <span class="tt">nullptr</span> on touch-up at the container level. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000120">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns <span class="tt">nullptr</span> on touch-up at the container level. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000104">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classObject.html#acced2508e3da19d3a5c999483d49a2f1">Object</a>.</p>
 
@@ -461,8 +539,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Expands the capacity of the child pointer array (<span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span>) by 512 slots using <span class="tt">lmalloc()</span>. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Allocates a new <span class="tt">Object*</span> array with <span class="tt"><a class="el" href="#a4dc00e8ab84a2c6702f9421c3f44dd3c" title="Allocated slot capacity of mObjArr.">mMaxObj</a> + 512</span> entries from the L-heap (<span class="tt">lmalloc()</span>), copies existing child pointers from <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span>, frees the old array via <span class="tt">lfree()</span>, and updates <span class="tt"><a class="el" href="#a4dc00e8ab84a2c6702f9421c3f44dd3c" title="Allocated slot capacity of mObjArr.">mMaxObj</a></span> and <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Allocates a new <span class="tt">Object*</span> array with <span class="tt"><a class="el" href="#a4dc00e8ab84a2c6702f9421c3f44dd3c" title="Allocated slot capacity of mObjArr.">mMaxObj</a> + 512</span> entries from the L-heap (<span class="tt">lmalloc()</span>), copies existing child pointers from <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span>, frees the old array via <span class="tt">lfree()</span>, and updates <span class="tt"><a class="el" href="#a4dc00e8ab84a2c6702f9421c3f44dd3c" title="Allocated slot capacity of mObjArr.">mMaxObj</a></span> and <span class="tt"><a class="el" href="#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000098">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -490,8 +583,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Composites all visible child objects onto this container's <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span> in Z-order. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Loops through all <span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a></span> child objects in registration order and blits each visible child's bitmap (<span class="tt">obj-&gt;<a class="el" href="classObject.html#ace00e4e024e37f44e621a4f67fd66a5c" title="Returns a pointer to the widget&#39;s internal FrameBuffer.">getFrameBuffer()</a>-&gt;getBitmap()</span>) at <span class="tt">obj-&gt;<a class="el" href="classObject.html#ab583b5fa9c8c970e963a94a85ba9fb41" title="Gets the widget&#39;s top-left position relative to its parent container.">getPosition()</a></span> onto <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Loops through all <span class="tt"><a class="el" href="#a4a57241b3127abf28845a9a01c661060" title="Current number of child objects stored in mObjArr.">mNumOfObj</a></span> child objects in registration order and blits each visible child's bitmap (<span class="tt">obj-&gt;<a class="el" href="classObject.html#ace00e4e024e37f44e621a4f67fd66a5c" title="Returns a pointer to the widget&#39;s internal FrameBuffer.">getFrameBuffer()</a>-&gt;getBitmap()</span>) at <span class="tt">obj-&gt;<a class="el" href="classObject.html#ab583b5fa9c8c970e963a94a85ba9fb41" title="Gets the widget&#39;s top-left position relative to its parent container.">getPosition()</a></span> onto <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000095">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classObject.html#a8aad4ed09bba8997657c081ff8283ec7">Object</a>.</p>
 
@@ -519,8 +627,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Sets the background color on the container's <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000121">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Sets the background color on the container's <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000105">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -551,16 +668,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Parameter currently uses legacy Rectangular type pending future update. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Scheduled to update to Area to align with <a class="el" href="classObject.html#aae2888dae9654d9d574a3df55941e17d" title="Requests the parent container to repaint both the previous (before) and new (current) areas.">Object::update(Area, Area)</a>. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> must have an initialized frame buffer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Intersecting modified children in both areas are repainted. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clears both <span class="tt">before</span> and <span class="tt">current</span> rectangles in <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>, repaints any modified children, blits all visible children clipped to <span class="tt">before</span> and <span class="tt">current</span>, and propagates the translated rectangles to <span class="tt">mParent-&gt;update(before, current)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classObject.html#aae2888dae9654d9d574a3df55941e17d" title="Requests the parent container to repaint both the previous (before) and new (current) areas.">Object::update(Area, Area)</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>Update parameter types from legacy Rectangular to Area in future revision. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000007">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo</a></b></dt><dd>Update parameter types from legacy Rectangular to Area in future revision. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000101">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
 
 </div>
 </div>
@@ -586,16 +704,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Parameter currently uses legacy Rectangular type pending future update. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Scheduled to update to Area to align with <a class="el" href="classObject.html#a37926f2eb4ab908a50fb4815900b15b3" title="Requests the parent container to repaint the specified dirty rectangle rect.">Object::update(Area)</a>. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classContainer.html" title="Composite Object capable of holding, painting, updating, and routing touch events to child Object wid...">Container</a> must have an initialized frame buffer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Intersecting modified children are repainted. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000115">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clears <span class="tt">rect</span> in <span class="tt"><a class="el" href="#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span> with the background color, repaints any child whose <span class="tt"><a class="el" href="classObject.html#ae7498d1db4a8d0d684afc6ef18aa0e2b" title="Checks whether the widget is marked as modified (dirty) and needs paint() before compositing.">isModified()</a></span> flag is set, blits all visible children clipped to <span class="tt">rect</span>, and—if <span class="tt"><a class="el" href="classObject.html#afbbaee30bd00592c89c7ba12701b5691" title="Pointer to the parent Container (nullptr if unattached).">mParent</a></span> is set— translates <span class="tt">rect</span> by <span class="tt"><a class="el" href="classObject.html#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a></span> and propagates <span class="tt">mParent-&gt;update(rect)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classObject.html#a37926f2eb4ab908a50fb4815900b15b3" title="Requests the parent container to repaint the specified dirty rectangle rect.">Object::update(Area)</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>Update parameter type from legacy Rectangular to Area in future revision. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo</a></b></dt><dd>Update parameter type from legacy Rectangular to Area in future revision. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000100">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
 
 </div>
 </div>
@@ -623,8 +742,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Repaints the entire container area and propagates the update to <span class="tt"><a class="el" href="classObject.html#afbbaee30bd00592c89c7ba12701b5691" title="Pointer to the parent Container (nullptr if unattached).">mParent</a></span>. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000117">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Repaints the entire container rectangle <span class="tt">{<a class="el" href="classObject.html#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;<a class="el" href="classObject.html#a11bfdfad5853d5d843d1a389f4d47740" title="Returns the current dimensions of the widget.">getSize()</a>}</span> by delegating to <span class="tt"><a class="el" href="#a1030d8d0db8c48d0c57dfd6eee2efc1d" title="Repaints all visible children intersecting rect and propagates the dirty area to mParent.">update(Rectangular)</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1030d8d0db8c48d0c57dfd6eee2efc1d" title="Repaints all visible children intersecting rect and propagates the dirty area to mParent.">Container::update(Rectangular)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000099">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000099">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classObject.html#aaebc03cbdb97e50033af501661cf8efc">Object</a>.</p>
 

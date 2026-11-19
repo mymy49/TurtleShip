@@ -218,8 +218,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a></span> with black text (<span class="tt">0x00, 0x00, 0x00</span>) on a white background (<span class="tt">0xFF, 0xFF, 0xFF</span>). </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Allocates <span class="tt">mFrameBuffer</span>, initializes <span class="tt">mText</span> to <span class="tt">nullptr</span>, sets the default text brush color to black (<span class="tt">{0x00, 0x00, 0x00}</span>), and sets the default background color to white (<span class="tt">{0xFF, 0xFF, 0xFF}</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000203">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Allocates <span class="tt">mFrameBuffer</span>, initializes <span class="tt">mText</span> to <span class="tt">nullptr</span>, sets the default text brush color to black (<span class="tt">{0x00, 0x00, 0x00}</span>), and sets the default background color to white (<span class="tt">{0xFF, 0xFF, 0xFF}</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000167">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -248,8 +263,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Clears the label's frame buffer and draws <span class="tt">mText</span> centered using the configured font. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000204">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clears <span class="tt">mFrameBuffer</span> with the background color and, if both <span class="tt">mText</span> and a <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> are set, renders <span class="tt">mText</span> centered (<span class="tt"><a class="el" href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140" title="Horizontally and vertically centered.">Brush::ALIGN_CENTER_MID</a></span>) inside <span class="tt">mFrameBuffer</span>. </p><dl class="section see"><dt>See also</dt><dd>Brush::drawString(align_t, const char*) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000168">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classObject.html#a8aad4ed09bba8997657c081ff8283ec7">Object</a>.</p>
 
@@ -277,8 +307,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates the background color of <span class="tt">mFrameBuffer</span> to <span class="tt">color</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000208">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates the background color of <span class="tt">mFrameBuffer</span> to <span class="tt">color</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000172">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000172">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -315,8 +354,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates the background color of <span class="tt">mFrameBuffer</span> to <span class="tt">{red, green, blue}</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000209">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates the background color of <span class="tt">mFrameBuffer</span> to <span class="tt">{red, green, blue}</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000173">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000173">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -342,8 +390,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates the brush color of <span class="tt">mFrameBuffer</span> to <span class="tt">color</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000206">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates the brush color of <span class="tt">mFrameBuffer</span> to <span class="tt">color</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000170">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -380,8 +437,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates the brush color of <span class="tt">mFrameBuffer</span> to <span class="tt">{red, green, blue}</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000207">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates the brush color of <span class="tt">mFrameBuffer</span> to <span class="tt">{red, green, blue}</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000171">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000171">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -407,8 +473,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Stores the string pointer <span class="tt">text</span> in <span class="tt">mText</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000205">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Stores the string pointer <span class="tt">text</span> in <span class="tt">mText</span> and marks the widget dirty via <span class="tt"><a class="el" href="classObject.html#a6ee516afb534b633aea0205cdad331e0" title="Marks the widget as modified (mModifiedFlag = true) so it will be repainted on the next update().">touch()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classLabel.html" title="GUI widget that renders a centered single-line UTF-8 text string on a solid background.">Label</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000169">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000169">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>

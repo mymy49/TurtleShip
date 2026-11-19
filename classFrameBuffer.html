@@ -296,16 +296,16 @@ Example Usage in User Application</h3>
 <div class="line">    brush.<a class="code hl_function" href="classBrush.html#aa8c55eba9e265eb64ed407ce43bf1c08">drawString</a>(<a class="code hl_enumvalue" href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a>, <span class="stringliteral">&quot;Powered by yss OS&quot;</span>);</div>
 <div class="line">    lcd.drawBitmap({0, 280}, brush.<a class="code hl_function" href="classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">getBitmap</a>());</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:94</div></div>
-<div class="ttc" id="aclassBrush_html_a593f710fafede8a24656fa09eb3a0c81"><div class="ttname"><a href="classBrush.html#a593f710fafede8a24656fa09eb3a0c81">Brush::setFont</a></div><div class="ttdeci">void setFont(Font &amp;font) __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Attaches a Font object to be used for subsequent character and string rendering.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:771</div></div>
-<div class="ttc" id="aclassBrush_html_aa8c55eba9e265eb64ed407ce43bf1c08"><div class="ttname"><a href="classBrush.html#aa8c55eba9e265eb64ed407ce43bf1c08">Brush::drawString</a></div><div class="ttdeci">Position drawString(Position pos, const char *str) __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Renders a null-terminated UTF-8 string starting at the specified top-left position.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:789</div></div>
-<div class="ttc" id="aclassBrush_html_afe383ec89e49ed52a76d6f14b7179169"><div class="ttname"><a href="classBrush.html#afe383ec89e49ed52a76d6f14b7179169">Brush::clear</a></div><div class="ttdeci">void clear() __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Clears the entire canvas by filling it with the current background color.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:103</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html"><div class="ttname"><a href="classFrameBufferRgb565LE.html">FrameBufferRgb565LE</a></div><div class="ttdoc">Concrete 16-bit RGB565 FrameBuffer storing pixels in Little-Endian byte order.</div><div class="ttdef"><b>Definition</b> FrameBufferRgb565LE.h:62</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a1f5e0f873380c5409598ae9b0429613c"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the background color from a Color object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:127</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the foreground brush color from a Color object and caches its Little-Endian 16-bit code.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:98</div></div>
-<div class="ttc" id="aclassFrameBufferRgb565_html_a0530a030a12308a12675cc8a4a6cc802"><div class="ttname"><a href="classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">FrameBufferRgb565::getBitmap</a></div><div class="ttdeci">bitmap_t getBitmap(void) override</div><div class="ttdoc">Exports a bitmap_t descriptor of type BITMAP_TYPE_RGB565 pointing to mFrameBuffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565.cpp:206</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div><div class="ttdoc">Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:100</div></div>
-<div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div><div class="ttdoc">Sets the logical canvas dimensions from a Size object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:52</div></div>
+<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:95</div></div>
+<div class="ttc" id="aclassBrush_html_a593f710fafede8a24656fa09eb3a0c81"><div class="ttname"><a href="classBrush.html#a593f710fafede8a24656fa09eb3a0c81">Brush::setFont</a></div><div class="ttdeci">void setFont(Font &amp;font) __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Attaches a Font object to be used for subsequent character and string rendering.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:799</div></div>
+<div class="ttc" id="aclassBrush_html_aa8c55eba9e265eb64ed407ce43bf1c08"><div class="ttname"><a href="classBrush.html#aa8c55eba9e265eb64ed407ce43bf1c08">Brush::drawString</a></div><div class="ttdeci">Position drawString(Position pos, const char *str) __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Renders a null-terminated UTF-8 string starting at the specified top-left position.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:822</div></div>
+<div class="ttc" id="aclassBrush_html_afe383ec89e49ed52a76d6f14b7179169"><div class="ttname"><a href="classBrush.html#afe383ec89e49ed52a76d6f14b7179169">Brush::clear</a></div><div class="ttdeci">void clear() __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Clears the entire canvas by filling it with the current background color.</div><div class="ttdef"><b>Definition</b> TurtleShip_Brush.cpp:118</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html"><div class="ttname"><a href="classFrameBufferRgb565LE.html">FrameBufferRgb565LE</a></div><div class="ttdoc">Concrete 16-bit RGB565 FrameBuffer storing pixels in Little-Endian byte order.</div><div class="ttdef"><b>Definition</b> FrameBufferRgb565LE.h:63</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a1f5e0f873380c5409598ae9b0429613c"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the background color from a Color object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:144</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div><div class="ttdoc">Sets the foreground brush color from a Color object and caches its Little-Endian 16-bit code.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565LE.cpp:108</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565_html_a0530a030a12308a12675cc8a4a6cc802"><div class="ttname"><a href="classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">FrameBufferRgb565::getBitmap</a></div><div class="ttdeci">bitmap_t getBitmap(void) override</div><div class="ttdoc">Exports a bitmap_t descriptor of type BITMAP_TYPE_RGB565 pointing to mFrameBuffer.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBufferRgb565.cpp:236</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div><div class="ttdoc">Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:114</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div><div class="ttdoc">Sets the logical canvas dimensions from a Size object.</div><div class="ttdef"><b>Definition</b> TurtleShip_FrameBuffer.cpp:59</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae8c22f1a57448836944ba90e3350ae21" name="ae8c22f1a57448836944ba90e3350ae21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8c22f1a57448836944ba90e3350ae21">&#9670;&#160;</a></span>FrameBuffer()</h2>
@@ -323,8 +323,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Constructs an empty <span class="tt"><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a></span> with no memory allocated (<span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a> = nullptr</span>). </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Initializes an empty <span class="tt"><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a></span> with <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a> = false</span>, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a> = nullptr</span>, and <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a> = 0</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000148">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Initializes an empty <span class="tt"><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a></span> with <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a> = false</span>, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a> = nullptr</span>, and <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a> = 0</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000131">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000131">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -352,10 +367,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Virtual destructor. Frees <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> if it was allocated by <span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span>. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000149">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Frees <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> via <span class="tt">lfree()</span> (when <span class="tt">YSS_L_HEAP_USE</span> is active) or <span class="tt">hfree()</span> if <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">true</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">FrameBuffer::malloc()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000010">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000132">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000132">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -384,9 +412,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns a <span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> descriptor referencing this frame buffer's memory and current <span class="tt">Size</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> containing the current width, height, pixel format, and <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> pointer. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned <span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> does not copy or own the pixel buffer; it points directly to <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000151">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFrameBufferArgb1555.html#a53379acb78d31a1fd19d0e5ba42749ec">FrameBufferArgb1555</a>, and <a class="el" href="classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">FrameBufferRgb565</a>.</p>
 
@@ -408,9 +447,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the raw byte pointer to the allocated pixel buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the first byte of <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>, or <span class="tt">nullptr</span> if not allocated. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the raw byte pointer <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000157">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the raw byte pointer <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000137">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -430,9 +483,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the maximum number of pixels that the currently allocated buffer can hold. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Maximum pixel count set by the last successful <span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span>, or <span class="tt">0</span> if unallocated. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the maximum pixel capacity <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> of the allocated buffer. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000158">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the maximum pixel capacity <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> of the allocated buffer. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000138">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000138">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -460,8 +527,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the number of bytes used to store a single pixel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Bytes per pixel of the concrete pixel format (e.g. <span class="tt">2</span> for RGB565). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000150">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#ac7b9131e9756a5ea38371f598e6f8d89">Brush</a>.</p>
 
@@ -485,9 +564,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the current logical canvas dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current <span class="tt">Size</span> (width and height in pixels). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the current logical canvas dimensions <span class="tt"><a class="el" href="#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000155">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the current logical canvas dimensions <span class="tt"><a class="el" href="#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000139">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000139">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -513,15 +606,23 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Any previously allocated buffer is freed first. The total byte allocation is <span class="tt">maxPixelPoints * <a class="el" href="#a9841f6ee11228b9e6d7f69f4884a2122" title="Returns the number of bytes used to store a single pixel.">getPixelCapacity()</a></span>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>On success, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> points to the allocated block, <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> equals <span class="tt">maxPixelPoints</span>, and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">true</span>. On failure, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> is <span class="tt">nullptr</span> and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">false</span>.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>On success, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> points to the allocated block, <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> equals <span class="tt">maxPixelPoints</span>, and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">true</span>. On failure, <span class="tt"><a class="el" href="#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> is <span class="tt">nullptr</span> and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">false</span>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000156">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Allocates a pixel buffer capable of holding <span class="tt">maxPixelPoints</span> pixels.</p>
 <ol type="1">
 <li>Queries bytes-per-pixel via <span class="tt"><a class="el" href="#a9841f6ee11228b9e6d7f69f4884a2122" title="Returns the number of bytes used to store a single pixel.">getPixelCapacity()</a></span>.</li>
 <li>Frees any previously allocated buffer if <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is <span class="tt">true</span>.</li>
 <li>Allocates <span class="tt">maxPixelPoints * <a class="el" href="#a9841f6ee11228b9e6d7f69f4884a2122" title="Returns the number of bytes used to store a single pixel.">getPixelCapacity()</a></span> bytes from the L-heap (<span class="tt">lmalloc</span>) or H-heap (<span class="tt">hmalloc</span>).</li>
-<li>Updates <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> according to whether the allocation succeeded. </li>
+<li>Updates <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span> and <span class="tt"><a class="el" href="#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> according to whether the allocation succeeded. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBuffer.html" title="Heap-allocated off-screen pixel buffer that can be drawn onto through the Brush interface.">FrameBuffer</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000136">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000136">Bug</a></b></dt><dd>None. </dd></dl>
+</li>
 </ol>
 
 </div>
@@ -550,8 +651,15 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the area's pixel count fits within <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span>; <span class="tt">false</span> otherwise. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000154">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Extracts the <span class="tt">Size</span> from <span class="tt">area</span> (<span class="tt">area.getSize()</span>) and delegates to <span class="tt"><a class="el" href="#ade937180952c604eb7f8d090a273fd17" title="Sets the logical canvas dimensions from a Size object.">setSize(Size)</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ade937180952c604eb7f8d090a273fd17" title="Sets the logical canvas dimensions from a Size object.">FrameBuffer::setSize(Size)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000135">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000135">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -579,8 +687,15 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt">size.getWidth() * size.getHeight() &lt;= <a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span>; <span class="tt">false</span> otherwise (size unchanged). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000152">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Checks whether <span class="tt">size.getWidth() * size.getHeight()</span> fits within <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span>. If so, updates <span class="tt"><a class="el" href="#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span> and returns <span class="tt">true</span>; otherwise leaves <span class="tt"><a class="el" href="#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span> unchanged and returns <span class="tt">false</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">FrameBuffer::malloc()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000133">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000133">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -613,8 +728,15 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt"><a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> &lt;= <a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span>; <span class="tt">false</span> otherwise (size unchanged). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">malloc()</a></span> must have been called with sufficient pixel capacity. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000153">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Checks whether <span class="tt"><a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a></span> fits within <span class="tt"><a class="el" href="#af6548b20049882cd2d2bcafaa9bf89f4" title="Maximum number of pixels that fit into mFrameBuffer.">mMaxPixelCount</a></span>. If so, updates <span class="tt"><a class="el" href="#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span> via <span class="tt">mSize.setSize(width, height)</span> and returns <span class="tt">true</span>; otherwise returns <span class="tt">false</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aae707f75c2670ab1094d7770dd1e26f6" title="Allocates (or reallocates) the underlying heap buffer for maxPixelPoints pixels.">FrameBuffer::malloc()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000134">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000134">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>

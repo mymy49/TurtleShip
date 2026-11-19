@@ -162,8 +162,8 @@ Example Usage in User Application</h3>
 <div class="line">    brush.fillRectangular({2, 2, 26, 14});</div>
 <div class="line">    lcd.drawBitmap(area.getPosition(), brush.getBitmap());</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">RGBA color container with a cached pixel-format-specific hardware color code.</div><div class="ttdef"><b>Definition</b> Color.h:50</div></div>
-<div class="ttc" id="aclassColor_html_ac3556cb28115ecd6e6f14e97532a08d1"><div class="ttname"><a href="#ac3556cb28115ecd6e6f14e97532a08d1">Color::Color</a></div><div class="ttdeci">Color(void)</div><div class="ttdoc">Constructs a black, fully opaque color (R=0, G=0, B=0, A=0xFF).</div><div class="ttdef"><b>Definition</b> TurtleShip_Color.cpp:19</div></div>
+<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">RGBA color container with a cached pixel-format-specific hardware color code.</div><div class="ttdef"><b>Definition</b> Color.h:51</div></div>
+<div class="ttc" id="aclassColor_html_ac3556cb28115ecd6e6f14e97532a08d1"><div class="ttname"><a href="#ac3556cb28115ecd6e6f14e97532a08d1">Color::Color</a></div><div class="ttdeci">Color(void)</div><div class="ttdoc">Constructs a black, fully opaque color (R=0, G=0, B=0, A=0xFF).</div><div class="ttdef"><b>Definition</b> TurtleShip_Color.cpp:23</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac3556cb28115ecd6e6f14e97532a08d1" name="ac3556cb28115ecd6e6f14e97532a08d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3556cb28115ecd6e6f14e97532a08d1">&#9670;&#160;</a></span>Color() <span class="overload">[1/2]</span></h2>
@@ -181,9 +181,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Constructs a black, fully opaque color (<span class="tt">R=0, G=0, B=0, A=0xFF</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd><span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span> is invoked from the base constructor, so the base ARGB8888 encoding is executed during base construction.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span> is invoked from the base constructor, so the base ARGB8888 encoding is executed during base construction. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000090">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Initializes the color to opaque black (<span class="tt">R=0x00, G=0x00, B=0x00, A=0xFF</span>) by calling <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">Color::setColorBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000078">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -226,8 +240,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000091">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Initializes the color with the specified <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">blue</span>, and <span class="tt">alpha</span> values and encodes <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> via <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">Color::setColorBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000079">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -256,9 +279,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the pre-computed hardware color code in this object's pixel format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Encoded color code (<span class="tt">0xAARRGGBB</span> for the base <span class="tt"><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a></span> class, or 16-bit packed RGB565/BGR565 values for derived classes). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the cached hardware color code (<span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span>) computed by the most recent call to <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the cached hardware color code (<span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span>) computed by the most recent call to <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000084">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classColorRgb888.html#abd9860ab6e16783c595358861d6d1d9a">ColorRgb888</a>.</p>
 
@@ -286,8 +323,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Copies the RGBA channel values from <span class="tt">obj</span> and recomputes <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> via <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">Color::setColorBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000082">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -313,9 +359,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Only the RGBA components of <span class="tt">obj</span> are copied; <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> is regenerated in this instance's own pixel format via <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only the RGBA components of <span class="tt">obj</span> are copied; <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> is regenerated in this instance's own pixel format via <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Extracts <span class="tt"><a class="el" href="#ab2f7c9689d1797e4f4e340589a7725c5" title="Red component (0 ~ 255).">mRed</a></span>, <span class="tt"><a class="el" href="#a860c985ea12c507795e432803f0aa37e" title="Green component (0 ~ 255).">mGreen</a></span>, <span class="tt"><a class="el" href="#abf0b7e657bbb39b766b66683711663e4" title="Blue component (0 ~ 255).">mBlue</a></span>, and <span class="tt"><a class="el" href="#a2c816ac57378c0cc62a2c59eaca80720" title="Alpha component (0 ~ 255, 0xFF = opaque).">mAlpha</a></span> from <span class="tt">obj</span> and passes them to <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span> so <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> is updated using the dynamic type's pixel format encoding. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">Color::setColorBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000080">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -358,8 +412,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000093">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Forwards the <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">blue</span>, and <span class="tt">alpha</span> channel values to <span class="tt"><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">setColorBase()</a></span> to update both the stored channels and the cached <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a431d6b7566e3a34fdc27a096eaa7cebf" title="Stores the 8-bit RGBA components and encodes them into mCode.">Color::setColorBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000081">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -410,9 +473,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Overridden by derived classes to produce pixel-format-specific color codes.</dd></dl>
-<p>Saves the 8-bit <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">blue</span>, and <span class="tt">alpha</span> components into member variables and packs them into <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> in 32-bit ARGB8888 layout: <span class="tt">(alpha &lt;&lt; 24) | (red &lt;&lt; 16) | (green &lt;&lt; 8) | blue</span>. </p>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Overridden by derived classes to produce pixel-format-specific color codes. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000096">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Saves the 8-bit <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">blue</span>, and <span class="tt">alpha</span> components into member variables and packs them into <span class="tt"><a class="el" href="#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span> in 32-bit ARGB8888 layout: <span class="tt">(alpha &lt;&lt; 24) | (red &lt;&lt; 16) | (green &lt;&lt; 8) | blue</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000083">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classColorBgr565BE.html#aff2b69f4aab45abac18cc43f400ab4b7">ColorBgr565BE</a>, <a class="el" href="classColorBgr565LE.html#a86cccd62db16f5bcec07199dd151e339">ColorBgr565LE</a>, <a class="el" href="classColorRgb565BE.html#ab4946b8bab759b53b78109806c582b6d">ColorRgb565BE</a>, and <a class="el" href="classColorRgb565LE.html#af02d61e2b13c8f8099f49ab5ce1f52dd">ColorRgb565LE</a>.</p>
 

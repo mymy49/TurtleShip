@@ -174,7 +174,7 @@ Example Usage in User Application</h3>
 <div class="line">    brush.drawString(<a class="code hl_enumvalue" href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a>, <span class="stringliteral">&quot;NuMaker-M251KG V1.1&quot;</span>);</div>
 <div class="line">    lcd.drawBitmap({0, 100}, brush.getBitmap());</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:94</div></div>
+<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:95</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae12d76f0b59747bbf028333c9c7ed560" name="ae12d76f0b59747bbf028333c9c7ed560"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae12d76f0b59747bbf028333c9c7ed560">&#9670;&#160;</a></span>Font()</h2>
@@ -192,8 +192,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> object with default metric overrides initialized to zero. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Initializes all font metric fields (<span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span>, <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span>, <span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span>, <span class="tt"><a class="el" href="#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span>) to <span class="tt">0</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000122">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Initializes all font metric fields (<span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span>, <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span>, <span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span>, <span class="tt"><a class="el" href="#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span>) to <span class="tt">0</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000106">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -231,9 +246,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the configured minimum horizontal advance width for regular characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Minimum character advance width in pixels (<span class="tt">0</span> if proportional glyph widths are used). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the configured minimum character advance width (<span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000126">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the configured minimum character advance width (<span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000109">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -253,9 +282,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the configured horizontal advance width for the period/dot character (<span class="tt">'.'</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Dot advance width in pixels (<span class="tt">0</span> if using the glyph's natural width). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the configured period/dot advance width (<span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000128">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the configured period/dot advance width (<span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000111">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000111">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -291,6 +334,12 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the matching <span class="tt"><a class="el" href="structFont_1_1fontInfo__t.html" title="Packed glyph descriptor holding UTF-8 code, bounding metrics, and 4-bit alpha bitmap pointer.">fontInfo_t</a></span> descriptor, or <span class="tt">nullptr</span> (<span class="tt">0</span>) if the glyph is not present. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000123">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classCodeFont.html#afaa2aa4714c4c7f67dc07f6a8f8fbf1d">CodeFont</a>.</p>
 
@@ -312,9 +361,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the configured horizontal advance width for the ASCII space character (<span class="tt">' '</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Space advance width in pixels (<span class="tt">0</span> if using the default space width). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the custom space advance width (<span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000124">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the custom space advance width (<span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000107">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -334,9 +397,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the nominal line height (font size) in pixels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Nominal font height in pixels (<span class="tt"><a class="el" href="#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span>). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the nominal font size (<span class="tt"><a class="el" href="#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span>) in pixels. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000131">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the nominal font size (<span class="tt"><a class="el" href="#a1fdee95bb34fede2c0155cd364d8e912" title="Nominal font height in pixels.">mSize</a></span>) in pixels. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000115">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -363,11 +440,19 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Total string width in pixels. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000130">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Decodes every UTF-8 character in <span class="tt">str</span> via <span class="tt"><a class="el" href="#a13c465edb3bc112b9eccbe21c95f58ca" title="Decodes the next UTF-8 character from *src and advances the *src pointer past the decoded bytes.">getUtf8()</a></span> and sums the horizontal advance widths of all characters.</p>
 <ul>
 <li>When <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span> is non-zero, each character advances by at least <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span> pixels (or its actual glyph width if wider).</li>
 <li>When <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span> is zero, proportional glyph widths (<span class="tt">fontInfo-&gt;<a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> + (int8_t)fontInfo-&gt;<a class="el" href="Font_8h.html#a1272c8dca7d275d603942aee37db5a6e" title="Horizontal bearing offset in pixels (interpreted as signed int8_t).">xpos</a></span>, plus 1 pixel if <span class="tt"><a class="el" href="Font_8h.html#a1272c8dca7d275d603942aee37db5a6e" title="Horizontal bearing offset in pixels (interpreted as signed int8_t).">xpos</a> == 0</span>) are summed, using <span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> (or 4) for spaces and <span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span> (or 4) for periods. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a13c465edb3bc112b9eccbe21c95f58ca" title="Decodes the next UTF-8 character from *src and advances the *src pointer past the decoded bytes.">Font::getUtf8()</a>, <a class="el" href="#aada7aa8124726b6d79db0519de520014" title="Looks up the glyph descriptor (fontInfo_t) for the given packed UTF-8 character code.">Font::getFontInfo()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000114">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ul>
 
@@ -396,12 +481,21 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Packed 32-bit UTF-8 code (1-byte ASCII in <span class="tt">[7:0]</span>, 2-byte sequence in <span class="tt">[15:0]</span>, 3-byte sequence in <span class="tt">[23:0]</span>), or <span class="tt">0</span> if an invalid byte (<span class="tt">0x80</span> ~ <span class="tt">0xBF</span>) is encountered. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000132">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Inspects the leading byte at <span class="tt">*(*src)</span> to determine the UTF-8 sequence length and packs the raw UTF-8 bytes into a 32-bit unsigned integer:</p><ul>
 <li><b>3-byte sequence (<span class="tt">&gt;= 0xE0</span>)</b>: Packs 3 consecutive bytes into bits <span class="tt">[23:16]</span>, <span class="tt">[15:8]</span>, and <span class="tt">[7:0]</span>.</li>
 <li><b>2-byte sequence (<span class="tt">&gt;= 0xC0</span>)</b>: Packs 2 consecutive bytes into bits <span class="tt">[15:8]</span> and <span class="tt">[7:0]</span>.</li>
 <li><b>1-byte ASCII (<span class="tt">&lt; 0x80</span>)</b>: Returns the single byte in bits <span class="tt">[7:0]</span>.</li>
-<li><b>Continuation/invalid byte (<span class="tt">0x80</span> ~ <span class="tt">0xBF</span>)</b>: Advances <span class="tt">*src</span> by 1 byte and returns <span class="tt">0</span>. </li>
+<li><b>Continuation/invalid byte (<span class="tt">0x80</span> ~ <span class="tt">0xBF</span>)</b>: Advances <span class="tt">*src</span> by 1 byte and returns <span class="tt">0</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000113">Bug</a></b></dt><dd>None. </dd></dl>
+</li>
 </ul>
 
 </div>
@@ -428,8 +522,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span> with the specified minimum pixel advance width for characters. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000127">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates <span class="tt"><a class="el" href="#ad074350ce1ff18f5a25f550970ab4e0e" title="Custom minimum horizontal advance width for characters (0 = proportional).">mCharWidth</a></span> with the specified minimum pixel advance width for characters. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000110">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -455,8 +558,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates <span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span> with the specified pixel advance width for the period character (<span class="tt">'.'</span>). </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000129">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates <span class="tt"><a class="el" href="#a026cb5826dd88ab2eb50c53f225b134e" title="Custom horizontal advance width for &#39;.&#39; (0 = proportional).">mDotWidth</a></span> with the specified pixel advance width for the period character (<span class="tt">'.'</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000112">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -482,8 +594,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Updates <span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> with the specified pixel width for space characters (<span class="tt">' '</span>). </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000125">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Updates <span class="tt"><a class="el" href="#adf69cc813dc645dfa3bde32f7e7db997" title="Custom horizontal advance width for &#39; &#39; (0 = default).">mSpaceWidth</a></span> with the specified pixel width for space characters (<span class="tt">' '</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000108">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>

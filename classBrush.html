@@ -275,7 +275,7 @@ Example Usage in User Application</h3>
 <div class="line"> </div>
 <div class="line">    lcd.unlock();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:94</div></div>
+<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">@ ALIGN_CENTER_MID</div><div class="ttdoc">Horizontally and vertically centered.</div><div class="ttdef"><b>Definition</b> Brush.h:95</div></div>
 </div><!-- fragment --> </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a352e5dbba45bd0b62832876fcfcf9164" name="a352e5dbba45bd0b62832876fcfcf9164"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a352e5dbba45bd0b62832876fcfcf9164">&#9670;&#160;</a></span>align_t</h2>
@@ -331,8 +331,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span> instance with no font attached (<span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a> = nullptr</span>). </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Initializes the <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span> instance with <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span> set to <span class="tt">nullptr</span> so text rendering functions safely no-op until a font is attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Initializes the <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span> instance with <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span> set to <span class="tt">nullptr</span> so text rendering functions safely no-op until a font is attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000011">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -378,8 +393,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Primarily used by <span class="tt"><a class="el" href="#a577d7c373c68edee365a64871c93a2a6" title="Renders a single UTF-8 character at the specified position using the current font and brush color.">drawChar()</a></span> to render 4-bit anti-aliased font glyphs. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFrameBufferArgb1555LE.html#a30223f68fb02c11a9e6a93d94d507f1a">FrameBufferArgb1555LE</a>, <a class="el" href="classFrameBufferRgb565BE.html#a756a2619c468642ec2ea3bfc458ac824">FrameBufferRgb565BE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367">FrameBufferRgb565LE</a>.</p>
 
@@ -427,9 +448,17 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt">src</span> and <span class="tt">des</span> overlap and drawing should proceed; <span class="tt">false</span> otherwise. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clips the source rectangle <span class="tt">src</span> against the destination rectangle <span class="tt">des</span> for a 16-bit (2 bytes per pixel) buffer and advances the source pixel pointer <span class="tt">*frameBuffer</span> by any clipped left columns or top rows.</p>
-<p>Returns <span class="tt">false</span> immediately if <span class="tt">src</span> and <span class="tt">des</span> do not overlap. </p>
+<p>Returns <span class="tt">false</span> immediately if <span class="tt">src</span> and <span class="tt">des</span> do not overlap. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000032">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -475,8 +504,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear offset in pixels from the start of the canvas frame buffer. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Computes the linear pixel index (<span class="tt">canvasSize.getWidth() * by + bx</span>) in the destination canvas frame buffer after clamping negative <span class="tt">bx</span> and <span class="tt">by</span> coordinates to <span class="tt">0</span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Computes the linear pixel index (<span class="tt">canvasSize.getWidth() * by + bx</span>) in the destination canvas frame buffer after clamping negative <span class="tt">bx</span> and <span class="tt">by</span> coordinates to <span class="tt">0</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000036">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -522,8 +559,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear offset in pixels from the start of the bitmap buffer. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Computes the linear pixel offset into the source bitmap buffer when the bitmap's top-left corner <span class="tt">(bx, by)</span> lies to the left of or above <span class="tt">canvasDesArea</span> <span class="tt">(cax, cay)</span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Computes the linear pixel offset into the source bitmap buffer when the bitmap's top-left corner <span class="tt">(bx, by)</span> lies to the left of or above <span class="tt">canvasDesArea</span> <span class="tt">(cax, cay)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000034">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -569,8 +614,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Visible bitmap height in pixels. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Computes the visible height of <span class="tt">bitmapArea</span> after clipping negative top coordinates (<span class="tt">by &lt; 0</span>) and bottom coordinates exceeding <span class="tt">canvasDesArea</span> height (<span class="tt">cah</span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Computes the visible height of <span class="tt">bitmapArea</span> after clipping negative top coordinates (<span class="tt">by &lt; 0</span>) and bottom coordinates exceeding <span class="tt">canvasDesArea</span> height (<span class="tt">cah</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000037">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -616,8 +669,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Visible bitmap width in pixels. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Computes the visible width of <span class="tt">bitmapArea</span> after clipping its left and right edges against <span class="tt">canvasDesArea</span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Computes the visible width of <span class="tt">bitmapArea</span> after clipping its left and right edges against <span class="tt">canvasDesArea</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000035">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -644,9 +705,17 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Bounding <span class="tt">Size</span> in pixels (<span class="tt">0 x 0</span> if no font is set or the string is empty). </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Iterates over each UTF-8 character in <span class="tt">str</span>, queries its glyph metrics from <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span>, and accumulates the total horizontal advance width and maximum vertical height (<span class="tt"><a class="el" href="Font_8h.html#a33dc9e9ff5b9d6fe5ec50582239ff571" title="Vertical bearing offset from the top of the character cell (interpreted as signed int8_t).">ypos</a> + <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a></span>).</p>
 <p>Accounts for custom space width (<span class="tt">mFont-&gt;getSpaceWidth()</span>), custom dot width (<span class="tt">mFont-&gt;getDotWidth()</span>), fixed minimum character width (<span class="tt">mFont-&gt;getCharWidth()</span>), and adds a 1-pixel leading margin when <span class="tt">fontInfo-&gt;<a class="el" href="Font_8h.html#a1272c8dca7d275d603942aee37db5a6e" title="Horizontal bearing offset in pixels (interpreted as signed int8_t).">xpos</a> == 0</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFont.html#aada7aa8124726b6d79db0519de520014" title="Looks up the glyph descriptor (fontInfo_t) for the given packed UTF-8 character code.">Font::getFontInfo()</a>, <a class="el" href="#aa8c55eba9e265eb64ed407ce43bf1c08" title="Renders a null-terminated UTF-8 string starting at the specified top-left position.">Brush::drawString()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000024">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -666,11 +735,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Computes the visible portion of the source area (set by <span class="tt"><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">setCalculatorSource()</a></span>) clipped to the canvas bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Clipped <span class="tt">Area</span> that lies strictly within the canvas. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">setCalculatorSource()</a></span> must be called prior to invoking this method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Updates <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span> with the linear pixel offset to the top-left visible source pixel.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Updates <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span> with the linear pixel offset to the top-left visible source pixel. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clips the source rectangle (<span class="tt"><a class="el" href="#a84468c0504464ea8235b86ffa2755fb5">mSrcX</a></span>, <span class="tt"><a class="el" href="#afaf9668837a3da389805ff2716bedcba">mSrcY</a></span>, <span class="tt"><a class="el" href="#a0a64b9f8907c808eb80daf4cf9117d15" title="Internal state variables for the canvas clipping calculator (setCalculatorSource() / calculateValidAr...">mSrcWidth</a></span>, <span class="tt"><a class="el" href="#a3ac09274b2c085a265924f36107d7f83">mSrcHeight</a></span>) against the cached canvas dimensions (<span class="tt"><a class="el" href="#a8bd598743cb766d691bff52ccd9ba26c">mCanvasWidth</a></span>, <span class="tt"><a class="el" href="#a91693764661a0ce7ca800bd2d2226a88">mCanvasHeight</a></span>) and accumulates any clipped top/left pixel offset into <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">Brush::setCalculatorSource()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000039">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -716,8 +797,16 @@ Example Usage in User Application</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt">canvasDesArea</span> starts within the canvas and overlaps <span class="tt">bitmapArea</span>; <span class="tt">false</span> otherwise. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Verifies that <span class="tt">canvasDesArea</span> starts within the valid canvas dimensions (<span class="tt">[0, cw]</span>, <span class="tt">[0, ch]</span>) and that <span class="tt">bitmapArea</span> and <span class="tt">canvasDesArea</span> overlap on both X and Y axes. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Verifies that <span class="tt">canvasDesArea</span> starts within the valid canvas dimensions (<span class="tt">[0, cw]</span>, <span class="tt">[0, ch]</span>) and that <span class="tt">bitmapArea</span> and <span class="tt">canvasDesArea</span> overlap on both X and Y axes. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000033">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -737,8 +826,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Clears the entire canvas by filling it with the current background color. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Queries the full canvas size via <span class="tt"><a class="el" href="#a0e40fa9c3e49edc6bd94f2007e3f9f24" title="Returns the current drawable dimensions of the canvas.">getCanvasSize()</a></span> and fills the entire canvas from <span class="tt">(0, 0)</span> with the current background color via <span class="tt"><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">fillRectBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">Brush::fillRectBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000016">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -764,8 +868,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Extracts the position and dimensions from <span class="tt">rect</span> and delegates to <span class="tt"><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">fillRectBase()</a></span> using the current background color (<span class="tt"><a class="el" href="#a155aff1ad546b4c81228b7e2247b469b" title="Gets the current background color.">getBackgroundColor()</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">Brush::fillRectBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000014">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -802,10 +915,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Forwards the clipped bitmap drawing request to <span class="tt">drawBitmapBase(getCanvasSize(), canvasRect, bitmapPos, bitmap)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6a5b2d530257363ae3b85abc68728ff" title="Device-specific implementation for blitting a bitmap clipped to a destination area.">Brush::drawBitmapBase()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000031">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -836,8 +956,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Forwards the bitmap drawing request to the pure virtual <span class="tt">drawBitmapBase(pos, bitmap)</span> implemented by the derived canvas or LCD driver class. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6a5b2d530257363ae3b85abc68728ff" title="Device-specific implementation for blitting a bitmap clipped to a destination area.">Brush::drawBitmapBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000030">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -880,8 +1009,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Declared as an overload prototype; use <span class="tt"><a class="el" href="#ac527c251f9680c8f75f344b9f1add589" title="Draws a bitmap image clipped to a specific destination rectangle on the canvas.">drawBitmap(Area, Position, const bitmap_t)</a></span> or <span class="tt"><a class="el" href="#af6a5b2d530257363ae3b85abc68728ff" title="Device-specific implementation for blitting a bitmap clipped to a destination area.">drawBitmapBase()</a></span>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -920,7 +1055,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFrameBufferRgb565.html#a6be84c2795bb028fd356b01a52ed4225">FrameBufferRgb565</a>.</p>
 
@@ -973,7 +1115,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFrameBufferRgb565.html#a1828131633b40014736b15c106a11a88">FrameBufferRgb565</a>.</p>
 
@@ -1008,7 +1157,12 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Horizontal advance width in pixels to the next character position (<span class="tt">0</span> if no font or glyph is available). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Renders a single anti-aliased glyph from <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span> onto the canvas using <span class="tt"><a class="el" href="#adadee0f1f0b5781bda0142e28c5d5b9b" title="Alpha-blends the current brush color with the existing pixel at (x, y).">blendDot()</a></span>.</p>
 <ol type="1">
 <li>Returns <span class="tt">0</span> if no font is set, or returns the space advance width if <span class="tt">utf8 == ' '</span>.</li>
@@ -1016,6 +1170,8 @@ Example Usage in User Application</h3>
 <li>Applies the glyph bearing offsets (<span class="tt"><a class="el" href="Font_8h.html#a1272c8dca7d275d603942aee37db5a6e" title="Horizontal bearing offset in pixels (interpreted as signed int8_t).">xpos</a></span>, <span class="tt"><a class="el" href="Font_8h.html#a33dc9e9ff5b9d6fe5ec50582239ff571" title="Vertical bearing offset from the top of the character cell (interpreted as signed int8_t).">ypos</a></span>), ensuring at least 1 pixel of leading horizontal offset if <span class="tt"><a class="el" href="Font_8h.html#a1272c8dca7d275d603942aee37db5a6e" title="Horizontal bearing offset in pixels (interpreted as signed int8_t).">xpos</a> == 0</span>, and clips the glyph rectangle to the canvas bounds.</li>
 <li>Iterates through the visible pixels of the glyph, expanding each 4-bit alpha value to 8 bits and blending it onto the canvas via <span class="tt"><a class="el" href="#adadee0f1f0b5781bda0142e28c5d5b9b" title="Alpha-blends the current brush color with the existing pixel at (x, y).">blendDot()</a></span>.</li>
 <li>Returns the horizontal advance width to the next character cell. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#adadee0f1f0b5781bda0142e28c5d5b9b" title="Alpha-blends the current brush color with the existing pixel at (x, y).">Brush::blendDot()</a>, <a class="el" href="classFont.html#aada7aa8124726b6d79db0519de520014" title="Looks up the glyph descriptor (fontInfo_t) for the given packed UTF-8 character code.">Font::getFontInfo()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000025">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -1048,12 +1204,18 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Draws the perimeter of a circle centered at <span class="tt">pos</span> with the given <span class="tt">radius</span> using 8-way octant/quadrant symmetry.</p>
 <p>Iterates <span class="tt">x</span> from <span class="tt">0</span> to <span class="tt">radius - 1</span>, calculates the corresponding vertical offset \( y_p = \lfloor\sqrt{r^2 - x^2} + 0.5\rfloor \), and plots 8 symmetric points around <span class="tt">(px, py)</span> using <span class="tt"><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">drawDot()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a5a5998f0d9a90ce845b3353853528a4e" title="Draws a filled circle using the current brush color.">Brush::fillCircle()</a>, <a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">Brush::drawDot()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000018">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1092,7 +1254,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classFrameBufferArgb1555.html#aa2c45f1bdfb4478942145eb8b3b1a347">FrameBufferArgb1555</a>, and <a class="el" href="classFrameBufferRgb565.html#a720c1a4c18c37ffffece5a09e78e655d">FrameBufferRgb565</a>.</p>
 
@@ -1125,11 +1294,18 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Draws a straight line segment from <span class="tt">p1</span> to <span class="tt">p2</span> by stepping along the major axis ( \( \Delta x \) or \( \Delta y \)) and interpolating the minor axis via floating-point slope calculation.</p>
 <p>Handles degenerate single-point lines (<span class="tt">p1 == p2</span>) and all four directional quadrants (<span class="tt">p1x &lt;= p2x &amp;&amp; p1y &lt;= p2y</span>, <span class="tt">p1x &gt;= p2x &amp;&amp; p1y &lt;= p2y</span>, <span class="tt">p1x &lt;= p2x &amp;&amp; p1y &gt;= p2y</span>, and <span class="tt">p1x &gt; p2x &amp;&amp; p1y &gt; p2y</span>), calling <span class="tt"><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">drawDot()</a></span> for each interpolated pixel. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1053c06e690d320c1812d0a3f719cdcc" title="Draws a single pixel at (x, y) using the current brush (foreground) color.">Brush::drawDot()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000019">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1155,8 +1331,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Draws the four border edges of <span class="tt">rect</span> clockwise starting from its top-left corner using <span class="tt"><a class="el" href="#a06c756243de7f586ae84ce0d8aa97a18" title="Draws a straight line between two points using the current brush color.">drawLine()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a06c756243de7f586ae84ce0d8aa97a18" title="Draws a straight line between two points using the current brush color.">Brush::drawLine()</a>, <a class="el" href="#aa4269059863950d85972f8fa7a19961b" title="Fills a rectangular area with the current brush color.">Brush::fillRectangular()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000021">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1189,8 +1374,15 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Final cursor <span class="tt">Position</span> immediately following the last drawn character. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Measures the bounding box of <span class="tt">str</span> via <span class="tt"><a class="el" href="#a9712cf7533f8186b4e0558ab2b51b49b" title="Calculates the bounding Size (width and height) required to render a UTF-8 string with the current fo...">calculateStringArea()</a></span>, computes the starting coordinate <span class="tt">pos</span> within the canvas (<span class="tt"><a class="el" href="#a0e40fa9c3e49edc6bd94f2007e3f9f24" title="Returns the current drawable dimensions of the canvas.">getCanvasSize()</a></span>) according to the horizontal (<span class="tt">align &amp; 0x07</span>) and vertical (<span class="tt">align &gt;&gt; 3</span>) alignment flags (with a 2-pixel margin from canvas edges for left/right/top/bottom), and then renders each UTF-8 character in <span class="tt">str</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9712cf7533f8186b4e0558ab2b51b49b" title="Calculates the bounding Size (width and height) required to render a UTF-8 string with the current fo...">Brush::calculateStringArea()</a>, <a class="el" href="#a577d7c373c68edee365a64871c93a2a6" title="Renders a single UTF-8 character at the specified position using the current font and brush color.">Brush::drawChar()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000029">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1223,8 +1415,15 @@ Example Usage in User Application</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Final cursor <span class="tt">Position</span> immediately following the last drawn character. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>A valid <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> must be attached via <span class="tt"><a class="el" href="#a593f710fafede8a24656fa09eb3a0c81" title="Attaches a Font object to be used for subsequent character and string rendering.">setFont()</a></span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Sequentially decodes each UTF-8 character from <span class="tt">str</span> via <span class="tt">mFont-&gt;getUtf8()</span>, draws it at <span class="tt">pos</span> using <span class="tt"><a class="el" href="#a577d7c373c68edee365a64871c93a2a6" title="Renders a single UTF-8 character at the specified position using the current font and brush color.">drawChar()</a></span>, and advances <span class="tt">pos</span> horizontally by the returned character width. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a577d7c373c68edee365a64871c93a2a6" title="Renders a single UTF-8 character at the specified position using the current font and brush color.">Brush::drawChar()</a>, <a class="el" href="classFont.html#a13c465edb3bc112b9eccbe21c95f58ca" title="Decodes the next UTF-8 character from *src and advances the *src pointer past the decoded bytes.">Font::getUtf8()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000028">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1261,8 +1460,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Draws the three edges of a triangle (<span class="tt">p1</span> to <span class="tt">p2</span>, <span class="tt">p2</span> to <span class="tt">p3</span>, and <span class="tt">p3</span> to <span class="tt">p1</span>) by invoking <span class="tt"><a class="el" href="#a06c756243de7f586ae84ce0d8aa97a18" title="Draws a straight line between two points using the current brush color.">drawLine()</a></span> three times. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a06c756243de7f586ae84ce0d8aa97a18" title="Draws a straight line between two points using the current brush color.">Brush::drawLine()</a>, <a class="el" href="#a15496c69c46980cd3d85d864d96df773" title="Fills the interior of a triangle defined by three vertices with the current brush color.">Brush::fillTriangle()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000020">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1282,8 +1490,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Fills the entire canvas with the current brush (foreground) color. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Queries the full canvas size via <span class="tt"><a class="el" href="#a0e40fa9c3e49edc6bd94f2007e3f9f24" title="Returns the current drawable dimensions of the canvas.">getCanvasSize()</a></span> and fills the entire canvas from <span class="tt">(0, 0)</span> with the current foreground brush color via <span class="tt"><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">fillRectBase()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">Brush::fillRectBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000015">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1314,15 +1537,21 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Nothing is drawn if the radius <span class="tt">radius</span> is less than 3 pixels. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Renders a solid filled circle centered at <span class="tt">pos</span> with the given <span class="tt">radius</span> using horizontal scanline spans.</p>
 <p>For each vertical offset <span class="tt">i</span> from <span class="tt">0</span> to <span class="tt">radius - 1</span>:</p><ol type="1">
 <li>Computes the half-chord length \( \sqrt{r^2 - (i + 1)^2} \) using <span class="tt">pow(..., 0.5f)</span>.</li>
 <li>Determines the left and right X bounds (<span class="tt">sx</span>, <span class="tt">ex</span>) around <span class="tt">px</span> and clamps them to <span class="tt">[0, <a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> - 1]</span>.</li>
 <li>Fills the lower scanline at <span class="tt">y = py + i + 1</span> and the upper symmetric scanline at <span class="tt">y = py - i</span> via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span> if they lie within <span class="tt">[0, <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> - 1]</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a77a94a10e1e08156b736decd5e93ba93" title="Draws the outline of a circle using the current brush color.">Brush::drawCircle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000017">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -1369,7 +1598,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565.html#a563f310becca45b04782059e41a171c5">BrushTftLcdRgb565</a>, <a class="el" href="classFrameBufferArgb1555.html#a40c177fee74466f1cd6624cee06fcdd6">FrameBufferArgb1555</a>, and <a class="el" href="classFrameBufferRgb565.html#a707e044ef368305c6e39cff29240ad20">FrameBufferRgb565</a>.</p>
 
@@ -1414,9 +1650,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Decomposes the quadrangle into two filled triangles: <span class="tt">(p1, p2, p4)</span> and <span class="tt">(p2, p3, p4)</span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Decomposes the quadrangle into two filled triangles: <span class="tt">(p1, p2, p4)</span> and <span class="tt">(p2, p3, p4)</span>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Fills a quadrangle defined by vertices <span class="tt">(p1, p2, p3, p4)</span> by splitting it along the diagonal <span class="tt">(p2, p4)</span> into two triangles <span class="tt">(p1, p2, p4)</span> and <span class="tt">(p2, p3, p4)</span> and calling <span class="tt"><a class="el" href="#a15496c69c46980cd3d85d864d96df773" title="Fills the interior of a triangle defined by three vertices with the current brush color.">fillTriangle()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a15496c69c46980cd3d85d864d96df773" title="Fills the interior of a triangle defined by three vertices with the current brush color.">Brush::fillTriangle()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000023">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1442,8 +1686,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Extracts the position and dimensions from <span class="tt">rect</span> and delegates to <span class="tt"><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">fillRectBase()</a></span> using the current foreground brush color (<span class="tt"><a class="el" href="#ad3cb12791b326358b6f48ecc76b06f1a" title="Gets the current brush (foreground) color.">getBrushColor()</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a583138bfa591428ee80425575ce9c917" title="Fills a rectangular region on the canvas with a specified color using fillDotArray().">Brush::fillRectBase()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000013">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1500,9 +1753,18 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Fills a rectangular region on the canvas row by row using <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span>.</p>
 <p>Queries the canvas dimensions (<span class="tt">cwidth</span>, <span class="tt">cheight</span>) and bytes-per-pixel (<span class="tt">offset</span>), clamps the bottom-right corner (<span class="tt">ex</span>, <span class="tt">ey</span>) to the canvas boundaries, and iterates over each scanline <span class="tt">i</span> from <span class="tt">y</span> to <span class="tt">ey</span>. For each scanline, computes the byte offset <span class="tt">des</span> in the frame buffer and fills <span class="tt"><a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a></span> consecutive pixels with <span class="tt">color</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000012">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1539,14 +1801,21 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Rasterizes a filled triangle by sorting the three vertices and scanning horizontal spans.</p>
 <ol type="1">
 <li>Sorts the vertices so that <span class="tt">p1</span> is at the top (minimum Y) and orders <span class="tt">p2</span>, <span class="tt">p3</span> horizontally.</li>
 <li>Rasterizes the upper sub-triangle from <span class="tt">p1.y</span> down to \( \min(p2.y, p3.y) \) by computing the left and right edge slopes (<span class="tt">slopeL</span>, <span class="tt">slopeR</span>) and filling each scanline span via <span class="tt"><a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">fillDotArray()</a></span>.</li>
 <li>If <span class="tt">p2.y != p3.y</span>, reorders the remaining vertices so <span class="tt">p3</span> is the bottom-most vertex and rasterizes the lower sub-triangle from \( \max(p1.y, p2.y) \) down to <span class="tt">p3.y</span>. <dl class="section see"><dt>See also</dt><dd><a class="el" href="#af94211284b57bca28e065c0bad9ad3d9" title="Draws the wireframe outline of a triangle connecting three vertices.">Brush::drawTriangle()</a>, <a class="el" href="#ad04f81b0c36c8115df540b48a38e48e3" title="Fills a contiguous run of pixels in the canvas buffer with the specified color.">Brush::fillDotArray()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000022">Bug</a></b></dt><dd>None. </dd></dl>
 </li>
 </ol>
 
@@ -1576,8 +1845,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the current background color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current background <span class="tt"><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a></span> object. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565BE.html#a1dd40e7506913a08e3ee51fe748e17e1">BrushTftLcdRgb565BE</a>, <a class="el" href="classBrushTftLcdRgb565LE.html#ade53bde7b229ecb31fba94a351d3e591">BrushTftLcdRgb565LE</a>, <a class="el" href="classFrameBufferArgb1555LE.html#a7fdc85b43ad89ec24796a7d90f9decb0">FrameBufferArgb1555LE</a>, <a class="el" href="classFrameBufferRgb565BE.html#a7ba7dd98e88c529a4094ff64796b88cb">FrameBufferRgb565BE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#a0912655f281de79528ef251528e38c1b">FrameBufferRgb565LE</a>.</p>
 
@@ -1607,8 +1888,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the current brush (foreground) color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current foreground <span class="tt"><a class="el" href="classColor.html" title="RGBA color container with a cached pixel-format-specific hardware color code.">Color</a></span> object. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565BE.html#ad50838d922effb939821b05ad7fee305">BrushTftLcdRgb565BE</a>, <a class="el" href="classBrushTftLcdRgb565LE.html#afae62e9e5b5bfbcb0bb2ca2ca3cb5369">BrushTftLcdRgb565LE</a>, <a class="el" href="classFrameBufferArgb1555LE.html#a19cb5adcf807afd2a11ad0b44be2b1fd">FrameBufferArgb1555LE</a>, <a class="el" href="classFrameBufferRgb565BE.html#a0fe629404c8184a4d5e955c3d3d5f093">FrameBufferRgb565BE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#aa21d34308e57ce79690577b4c4f5c68b">FrameBufferRgb565LE</a>.</p>
 
@@ -1638,8 +1931,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the current drawable dimensions of the canvas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Canvas <span class="tt">Size</span> (width and height in pixels). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565.html#ae03d9d0eb9bfb364050a38f5d8e2c356">BrushTftLcdRgb565</a>, <a class="el" href="classFrameBufferArgb1555.html#a8227265839ab59ce098cf7f0b24dec6e">FrameBufferArgb1555</a>, and <a class="el" href="classFrameBufferRgb565.html#a5273b2eade8df728ac88329806ac7968">FrameBufferRgb565</a>.</p>
 
@@ -1661,9 +1966,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Gets the pointer to the currently attached <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the active <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span>, or <span class="tt">nullptr</span> if no font has been configured. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the pointer to the currently configured <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> object (<span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span>). </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the pointer to the currently configured <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> object (<span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000027">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1691,8 +2010,20 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Returns the storage size of a single pixel in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Bytes per pixel (e.g. <span class="tt">2</span> for RGB565 or ARGB1555). </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565.html#a69e9ec89b157ba2f19c292c183881e77">BrushTftLcdRgb565</a>, <a class="el" href="classFrameBuffer.html#a9841f6ee11228b9e6d7f69f4884a2122">FrameBuffer</a>, <a class="el" href="classFrameBufferArgb1555.html#ad3642df28054e5d800f35fe5dee4024f">FrameBufferArgb1555</a>, and <a class="el" href="classFrameBufferRgb565.html#a3548b88871d8811f88d8d7c9bde24d4f">FrameBufferRgb565</a>.</p>
 
@@ -1714,10 +2045,23 @@ Example Usage in User Application</h3>
 </div><div class="memdoc">
 
 <p>Checks whether any edge of the source area (set by <span class="tt"><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">setCalculatorSource()</a></span>) extends outside the canvas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the source area partially or completely exceeds the canvas boundaries; <span class="tt">false</span> otherwise. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">setCalculatorSource()</a></span> must be called prior to invoking this method.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><span class="tt"><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">setCalculatorSource()</a></span> must be called prior to invoking this method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Returns <span class="tt">true</span> if any of the four edges of the source rectangle (<span class="tt"><a class="el" href="#a84468c0504464ea8235b86ffa2755fb5">mSrcX</a></span>, <span class="tt"><a class="el" href="#afaf9668837a3da389805ff2716bedcba">mSrcY</a></span>, <span class="tt"><a class="el" href="#a84468c0504464ea8235b86ffa2755fb5">mSrcX</a> + <a class="el" href="#a0a64b9f8907c808eb80daf4cf9117d15" title="Internal state variables for the canvas clipping calculator (setCalculatorSource() / calculateValidAr...">mSrcWidth</a></span>, <span class="tt"><a class="el" href="#afaf9668837a3da389805ff2716bedcba">mSrcY</a> + <a class="el" href="#a3ac09274b2c085a265924f36107d7f83">mSrcHeight</a></span>) lies outside <span class="tt">[0, <a class="el" href="#a8bd598743cb766d691bff52ccd9ba26c">mCanvasWidth</a>]</span> or <span class="tt">[0, <a class="el" href="#a91693764661a0ce7ca800bd2d2226a88">mCanvasHeight</a>]</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a428e82f22583beeb1f2c04f7e70d3e7a" title="Initializes the internal clipping calculator with a source area on the canvas.">Brush::setCalculatorSource()</a>, <a class="el" href="#a058b12e2edd684d5d7efdc39192d6d54" title="Computes the visible portion of the source area (set by setCalculatorSource()) clipped to the canvas ...">Brush::calculateValidArea()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000040">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1751,7 +2095,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565BE.html#a47a4c325a5f8da926cb0502d90585f9f">BrushTftLcdRgb565BE</a>, <a class="el" href="classBrushTftLcdRgb565LE.html#a31174cd422dddf36ab6f8bbfccf5ffa7">BrushTftLcdRgb565LE</a>, <a class="el" href="classFrameBufferArgb1555LE.html#a604f4345b04c1f99fdf0eab3781c4949">FrameBufferArgb1555LE</a>, <a class="el" href="classFrameBufferRgb565BE.html#acab0a14386a4fb6de7eaece8c115d419">FrameBufferRgb565BE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE</a>.</p>
 
@@ -1804,7 +2155,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565LE.html#aa03bfb21ae611ff8fa7786b4a6e3ce5b">BrushTftLcdRgb565LE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#aa7afe547b1485261bd11565f58825e0c">FrameBufferRgb565LE</a>.</p>
 
@@ -1840,7 +2198,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565BE.html#a91c75d151f577ac22c7d4be095d487fa">BrushTftLcdRgb565BE</a>, <a class="el" href="classBrushTftLcdRgb565LE.html#a90cfe369d37ed320d6bac66c5da3bc11">BrushTftLcdRgb565LE</a>, <a class="el" href="classFrameBufferArgb1555LE.html#a0dedfe3e26a6226cdb32dc0ab37a0110">FrameBufferArgb1555LE</a>, <a class="el" href="classFrameBufferRgb565BE.html#afb1823b2ce627f68f47d59359fc904c5">FrameBufferRgb565BE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE</a>.</p>
 
@@ -1893,7 +2258,14 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated</a></b></dt><dd>None. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBrushTftLcdRgb565LE.html#a0659c9e664ed679dd453a7d97b6182ae">BrushTftLcdRgb565LE</a>, and <a class="el" href="classFrameBufferRgb565LE.html#af4bf97170f68762a5b98893509bee03a">FrameBufferRgb565LE</a>.</p>
 
@@ -1921,9 +2293,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Caches the source geometry and current canvas dimensions, and resets <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span> to <span class="tt">0</span>.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Caches the source geometry and current canvas dimensions, and resets <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span> to <span class="tt">0</span>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Stores the position and dimensions of <span class="tt">src</span> into <span class="tt"><a class="el" href="#a84468c0504464ea8235b86ffa2755fb5">mSrcX</a></span>, <span class="tt"><a class="el" href="#afaf9668837a3da389805ff2716bedcba">mSrcY</a></span>, <span class="tt"><a class="el" href="#a0a64b9f8907c808eb80daf4cf9117d15" title="Internal state variables for the canvas clipping calculator (setCalculatorSource() / calculateValidAr...">mSrcWidth</a></span>, and <span class="tt"><a class="el" href="#a3ac09274b2c085a265924f36107d7f83">mSrcHeight</a></span>, resets <span class="tt"><a class="el" href="#abe4151ecf148aff0166c2b43dd58d0c2">mSrcOffset</a></span> to <span class="tt">0</span>, and caches the current canvas dimensions from <span class="tt"><a class="el" href="#a0e40fa9c3e49edc6bd94f2007e3f9f24" title="Returns the current drawable dimensions of the canvas.">getCanvasSize()</a></span> into <span class="tt"><a class="el" href="#a8bd598743cb766d691bff52ccd9ba26c">mCanvasWidth</a></span> and <span class="tt"><a class="el" href="#a91693764661a0ce7ca800bd2d2226a88">mCanvasHeight</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a058b12e2edd684d5d7efdc39192d6d54" title="Computes the visible portion of the source area (set by setCalculatorSource()) clipped to the canvas ...">Brush::calculateValidArea()</a>, <a class="el" href="#afd450410c1ca071863ece8fc6ef77ae5" title="Checks whether any edge of the source area (set by setCalculatorSource()) extends outside the canvas.">Brush::isOutsideCanvas()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000038">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -1949,9 +2329,17 @@ Example Usage in User Application</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Only the address of <span class="tt">font</span> is stored; the referenced <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> instance must remain valid throughout its use by this <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span>.</dd></dl>
-<p>Stores the address of <span class="tt">font</span> in <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span> for subsequent text measurement and rendering operations. </p>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Only the address of <span class="tt">font</span> is stored; the referenced <span class="tt"><a class="el" href="classFont.html" title="Abstract base class providing UTF-8 character decoding, glyph metric lookup, and text width/height ca...">Font</a></span> instance must remain valid throughout its use by this <span class="tt"><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a></span>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Stores the address of <span class="tt">font</span> in <span class="tt"><a class="el" href="#aaa2861a05d4a802d2b563f57f660e192" title="Pointer to the active Font used for text rendering (nullptr if not set).">mFont</a></span> for subsequent text measurement and rendering operations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBrush.html" title="Abstract base class providing generic 2D drawing primitives on a pixel canvas.">Brush</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000026">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>

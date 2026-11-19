@@ -169,8 +169,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a default <span class="tt"><a class="el" href="classColorBgr565LE.html" title="Derived Color class that encodes RGBA values into a 16-bit BGR565 Little-Endian color code.">ColorBgr565LE</a></span> object. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Default constructor. Base class <span class="tt"><a class="el" href="classColor.html#ac3556cb28115ecd6e6f14e97532a08d1" title="Constructs a black, fully opaque color (R=0, G=0, B=0, A=0xFF).">Color::Color()</a></span> initializes the RGBA fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Default constructor. Base class <span class="tt"><a class="el" href="classColor.html#ac3556cb28115ecd6e6f14e97532a08d1" title="Constructs a black, fully opaque color (R=0, G=0, B=0, A=0xFF).">Color::Color()</a></span> initializes the RGBA fields. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classColorBgr565LE.html" title="Derived Color class that encodes RGBA values into a 16-bit BGR565 Little-Endian color code.">ColorBgr565LE</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000087">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -222,12 +237,21 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000100">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Stores the 8-bit <span class="tt">red</span>, <span class="tt">green</span>, <span class="tt">blue</span>, and <span class="tt">alpha</span> values and packs the top 5 bits of blue, top 6 bits of green, and top 5 bits of red into a 2-byte array <span class="tt">code[2]</span> in Little-Endian byte order:</p><ul>
 <li><span class="tt">code[0]</span> holds <span class="tt">((<a class="el" href="classColor.html#a860c985ea12c507795e432803f0aa37e" title="Green component (0 ~ 255).">mGreen</a> &amp; 0xFC) &lt;&lt; 3) | (<a class="el" href="classColor.html#ab2f7c9689d1797e4f4e340589a7725c5" title="Red component (0 ~ 255).">mRed</a> &gt;&gt; 3)</span></li>
 <li><span class="tt">code[1]</span> holds <span class="tt">(<a class="el" href="classColor.html#abf0b7e657bbb39b766b66683711663e4" title="Blue component (0 ~ 255).">mBlue</a> &amp; 0xF8) | (<a class="el" href="classColor.html#a860c985ea12c507795e432803f0aa37e" title="Green component (0 ~ 255).">mGreen</a> &gt;&gt; 5)</span></li>
 </ul>
 <p>The resulting 16-bit word is stored in <span class="tt"><a class="el" href="classColor.html#a733978eb2db66fc450c990c8e1f6b163" title="Cached color code encoded in the pixel format of this class.">mCode</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classColor.html#a15d16f4e6ea954db2c1cfaaae3687c22" title="Returns the pre-computed hardware color code in this object&#39;s pixel format.">Color::getCode()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000088">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classColor.html#a431d6b7566e3a34fdc27a096eaa7cebf">Color</a>.</p>
 

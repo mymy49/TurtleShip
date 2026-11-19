@@ -307,8 +307,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a></span> instance. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Default constructor for <span class="tt"><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000176">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Default constructor for <span class="tt"><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000140">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000140">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -336,8 +351,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructor. Frees the pixel buffer if allocated. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Frees <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> if <span class="tt"><a class="el" href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is set. </p><dl class="section warning"><dt>Warning</dt><dd><span class="tt"><a class="el" href="classFrameBuffer.html#a978c98c570bfebd216c0339f74184dbb" title="Virtual destructor. Frees mFrameBuffer if it was allocated by malloc().">FrameBuffer::~FrameBuffer()</a></span> also checks <span class="tt"><a class="el" href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> and frees <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>; ensure <span class="tt"><a class="el" href="classFrameBuffer.html#ad264ad6ff0b1b781117229d387a4f82d" title="true if mFrameBuffer is owned and must be freed on destruction/reallocation.">mMallocFlag</a></span> is cleared or managed carefully if subclass destructors also free it. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000141">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000141">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -377,8 +408,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Empty implementation of <span class="tt"><a class="el" href="#a6be84c2795bb028fd356b01a52ed4225" title="Draws a bitmap at pos onto the RGB565 frame buffer (placeholder override).">drawBitmapBase(Position, const bitmap_t)</a></span>. Use the clipped overload or draw onto the target LCD directly. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000183">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Empty implementation of <span class="tt"><a class="el" href="#a6be84c2795bb028fd356b01a52ed4225" title="Draws a bitmap at pos onto the RGB565 frame buffer (placeholder override).">drawBitmapBase(Position, const bitmap_t)</a></span>. Use the clipped overload or draw onto the target LCD directly. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000147">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000147">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#aa700c87cac8ce1619e56f8bd3b4eb6f3">Brush</a>.</p>
 
@@ -431,10 +471,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000182">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Dispatches the clipped bitmap drawing operation to <span class="tt">drawBitmapRgb565()</span> or <span class="tt">drawBitmapArgb1555()</span> according to <span class="tt">bitmap.type</span>. </p><dl class="section see"><dt>See also</dt><dd>FrameBufferRgb565::drawBitmapRgb565(), FrameBufferRgb565::drawBitmapArgb1555() </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>None. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000011">Bug</a></b></dt><dd>None. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000146">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000146">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#af6a5b2d530257363ae3b85abc68728ff">Brush</a>.</p>
 
@@ -475,8 +522,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Bounds-checks <span class="tt">(x, y)</span> against <span class="tt">[0, <a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> - 1]</span> and <span class="tt">[0, <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> - 1]</span>, then writes <span class="tt"><a class="el" href="#ad843e1e420446d4a8391b9d0497a3baa" title="Cached 16-bit RGB565 color code for the active foreground brush color.">mBrushColorCode</a></span> into <span class="tt">((uint16_t*)<a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a>)[<a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * y + x]</span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000179">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Bounds-checks <span class="tt">(x, y)</span> against <span class="tt">[0, <a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> - 1]</span> and <span class="tt">[0, <a class="el" href="Font_8h.html#adcf201a8aabf55cb352ec05331242594" title="Glyph bitmap height in pixels.">height</a> - 1]</span>, then writes <span class="tt"><a class="el" href="#ad843e1e420446d4a8391b9d0497a3baa" title="Cached 16-bit RGB565 color code for the active foreground brush color.">mBrushColorCode</a></span> into <span class="tt">((uint16_t*)<a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a>)[<a class="el" href="Font_8h.html#a09a2a45f731b02946ff6d3cd15c1a476" title="Glyph bitmap width in pixels.">width</a> * y + x]</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000143">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#a1053c06e690d320c1812d0a3f719cdcc">Brush</a>.</p>
 
@@ -523,8 +579,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Fills <span class="tt">count</span> 16-bit half-words (<span class="tt">count * 2</span> bytes) starting at <span class="tt">&amp;<a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a>[offset]</span> with <span class="tt">color.getCode()</span> using the optimized <span class="tt">memsethw()</span> routine. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000181">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Fills <span class="tt">count</span> 16-bit half-words (<span class="tt">count * 2</span> bytes) starting at <span class="tt">&amp;<a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a>[offset]</span> with <span class="tt">color.getCode()</span> using the optimized <span class="tt">memsethw()</span> routine. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000144">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#ad04f81b0c36c8115df540b48a38e48e3">Brush</a>.</p>
 
@@ -554,9 +619,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exports a <span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> descriptor of type <span class="tt"><a class="el" href="TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a7ee8a522c8b87572c72523d91b09d183" title="16-bit RGB565 format (5-bit Red, 6-bit Green, 5-bit Blue).">BITMAP_TYPE_RGB565</a></span> pointing to <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> descriptor with current <span class="tt"><a class="el" href="classFrameBuffer.html#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span> dimensions and <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span> data pointer. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Constructs and returns a <span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> structure initialized with <span class="tt">mSize.getWidth()</span>, <span class="tt">mSize.getHeight()</span>, <span class="tt"><a class="el" href="TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a7ee8a522c8b87572c72523d91b09d183" title="16-bit RGB565 format (5-bit Red, 6-bit Green, 5-bit Blue).">BITMAP_TYPE_RGB565</a></span>, and <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000180">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Constructs and returns a <span class="tt"><a class="el" href="structbitmap__t.html" title="Standard bitmap descriptor used by Brush, FrameBuffer, and TftLcdDriver drawing APIs.">bitmap_t</a></span> structure initialized with <span class="tt">mSize.getWidth()</span>, <span class="tt">mSize.getHeight()</span>, <span class="tt"><a class="el" href="TurtleShipTypes_8h.html#af04fdcdc56ec79177aca64cbb63bbdc9a7ee8a522c8b87572c72523d91b09d183" title="16-bit RGB565 format (5-bit Red, 6-bit Green, 5-bit Blue).">BITMAP_TYPE_RGB565</a></span>, and <span class="tt"><a class="el" href="classFrameBuffer.html#a8201ebe39b7fd325e8f10dec5d0add7c" title="Pointer to the allocated pixel memory (nullptr if not allocated).">mFrameBuffer</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000150">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classFrameBuffer.html#a306e36727cff7bac78be298d14638fc3">FrameBuffer</a>.</p>
 
@@ -586,9 +665,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current logical canvas dimensions (<span class="tt"><a class="el" href="classFrameBuffer.html#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span>) of this frame buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Canvas <span class="tt">Size</span> in pixels. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns the current logical canvas dimensions <span class="tt"><a class="el" href="classFrameBuffer.html#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span>. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000184">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns the current logical canvas dimensions <span class="tt"><a class="el" href="classFrameBuffer.html#a5ef04ec7305eb65984a0326fe3a909b6" title="Current logical canvas dimensions in pixels.">mSize</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000145">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classBrush.html#a0e40fa9c3e49edc6bd94f2007e3f9f24">Brush</a>.</p>
 
@@ -618,9 +711,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of bytes per pixel for RGB565 (<span class="tt">2</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">2</span>. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Returns <span class="tt">2</span> bytes per pixel for the 16-bit RGB565 format. </p>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000178">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Returns <span class="tt">2</span> bytes per pixel for the 16-bit RGB565 format. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrameBufferRgb565.html" title="Intermediate FrameBuffer class implementing common 16-bit RGB565 pixel operations and bitmap blitting...">FrameBufferRgb565</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000142">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Implements <a class="el" href="classFrameBuffer.html#a9841f6ee11228b9e6d7f69f4884a2122">FrameBuffer</a>.</p>
 

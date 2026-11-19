@@ -267,8 +267,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> sized to the system TFT LCD resolution and clears its frame buffer. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Queries the system TFT LCD resolution via <span class="tt">system::getSystemTftLcdSize()</span>, allocates and sizes <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span> to match the full screen, locks resizing (<span class="tt"><a class="el" href="classObject.html#a9259d1f7acaa44520d2311d1be3b8a28" title="true if setSize() is allowed to resize the widget&#39;s frame buffer.">mResizeAble</a> = false</span>), clears the frame buffer, and initializes <span class="tt">mOutputFrameBuffer</span> and <span class="tt">mPointerDevice</span> to <span class="tt">nullptr</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000133">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Queries the system TFT LCD resolution via <span class="tt">system::getSystemTftLcdSize()</span>, allocates and sizes <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span> to match the full screen, locks resizing (<span class="tt"><a class="el" href="classObject.html#a9259d1f7acaa44520d2311d1be3b8a28" title="true if setSize() is allowed to resize the widget&#39;s frame buffer.">mResizeAble</a> = false</span>), clears the frame buffer, and initializes <span class="tt">mOutputFrameBuffer</span> and <span class="tt">mPointerDevice</span> to <span class="tt">nullptr</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000116">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -296,8 +311,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Virtual destructor. Unregisters this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> from <span class="tt">mPointerDevice</span> if attached. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Detaches this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> from <span class="tt">mPointerDevice</span> via <span class="tt">mPointerDevice-&gt;resetFrame(this)</span> if bound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000134">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Detaches this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> from <span class="tt">mPointerDevice</span> via <span class="tt">mPointerDevice-&gt;resetFrame(this)</span> if bound. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000117">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -324,8 +354,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Calls <span class="tt">obj.paint()</span>, appends <span class="tt">obj</span> to <span class="tt"><a class="el" href="classContainer.html#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> (expanding via <span class="tt"><a class="el" href="classContainer.html#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">increaseObjArr()</a></span> if needed), sets <span class="tt">obj.setParent(this)</span>, and updates the child's bounding rectangle (<span class="tt"><a class="el" href="#ab62cfa96c6fe480ca07d67b30f13030c" title="Repaints all visible children onto mFrameBuffer and flushes the entire frame to the system display.">update</a>(obj.getRectangular())</span>). </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000138">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Calls <span class="tt">obj.paint()</span>, appends <span class="tt">obj</span> to <span class="tt"><a class="el" href="classContainer.html#a8d4c4daa7e6b9c4300e2385f25c5f481" title="Dynamically allocated array of child Object* pointers.">mObjArr</a></span> (expanding via <span class="tt"><a class="el" href="classContainer.html#a28a6dca31e2b047130cd9f687faeb0fa" title="Expands the capacity of the child pointer array (mObjArr) by 512 slots using lmalloc().">increaseObjArr()</a></span> if needed), sets <span class="tt">obj.setParent(this)</span>, and updates the child's bounding rectangle (<span class="tt"><a class="el" href="#ab62cfa96c6fe480ca07d67b30f13030c" title="Repaints all visible children onto mFrameBuffer and flushes the entire frame to the system display.">update</a>(obj.getRectangular())</span>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000124">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -351,8 +390,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000139">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Dereferences <span class="tt">obj</span> and delegates to <span class="tt"><a class="el" href="#abbf3c01a796a6588bea5764f78b30dae" title="Paints obj, adds it to this frame, sets its parent to this, and updates its screen region.">add</a>(<a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a> &amp;)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#abbf3c01a796a6588bea5764f78b30dae" title="Paints obj, adds it to this frame, sets its parent to this, and updates its screen region.">Frame::add(Object &amp;)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000125">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000125">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -387,8 +435,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the child <span class="tt"><a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a></span> that handled the drag event, or <span class="tt">nullptr</span>. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000141">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Delegates drag event handling to <span class="tt">Container::handlerDrag(pos)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html#add66f74022f6c412a085c5d1da2ee007" title="Hit-tests visible children from top to bottom and dispatches a drag event to the first child containi...">Container::handlerDrag()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000127">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000127">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classContainer.html#add66f74022f6c412a085c5d1da2ee007">Container</a>.</p>
 
@@ -425,8 +481,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the child <span class="tt"><a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a></span> that handled the push event, or <span class="tt">nullptr</span>. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000140">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Delegates push event handling to <span class="tt">Container::handlerPush(pos)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html#a469cb8e6928f1a3bb86d50fe6d07f63f" title="Hit-tests visible children from top to bottom and dispatches a push event to the first child containi...">Container::handlerPush()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000126">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000126">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classContainer.html#a469cb8e6928f1a3bb86d50fe6d07f63f">Container</a>.</p>
 
@@ -456,9 +520,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Routes a touch-up event via <span class="tt"><a class="el" href="classContainer.html#a752d2952fa50a2dd27add1f13c9b785b" title="Handles a touch-up event on the container.">Container::handlerUp()</a></span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the <span class="tt"><a class="el" href="classObject.html" title="Abstract base class representing a positionable, sizable, and touch-interactive GUI widget.">Object</a></span> that handled the release event, or <span class="tt">nullptr</span>. </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000142">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Delegates touch-up event handling to <span class="tt"><a class="el" href="classContainer.html#a752d2952fa50a2dd27add1f13c9b785b" title="Handles a touch-up event on the container.">Container::handlerUp()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html#a752d2952fa50a2dd27add1f13c9b785b" title="Handles a touch-up event on the container.">Container::handlerUp()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000128">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000128">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classContainer.html#a752d2952fa50a2dd27add1f13c9b785b">Container</a>.</p>
 
@@ -480,8 +558,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Registers this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> as the active system GUI frame via <span class="tt">system::setSystemFrame(this)</span>. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Registers this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> as the active system frame via <span class="tt">system::setSystemFrame(this)</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000143">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Registers this <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span> as the active system frame via <span class="tt">system::setSystemFrame(this)</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000129">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000129">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -507,8 +600,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000137">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Stores <span class="tt">outputFrameBuffer</span> in <span class="tt">mOutputFrameBuffer</span> and triggers a full-frame <span class="tt"><a class="el" href="#ab62cfa96c6fe480ca07d67b30f13030c" title="Repaints all visible children onto mFrameBuffer and flushes the entire frame to the system display.">update()</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab62cfa96c6fe480ca07d67b30f13030c" title="Repaints all visible children onto mFrameBuffer and flushes the entire frame to the system display.">Frame::update(void)</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000120">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -534,8 +636,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Stores the address of <span class="tt">obj</span> in <span class="tt">mPointerDevice</span>. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000145">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Stores the address of <span class="tt">obj</span> in <span class="tt">mPointerDevice</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000130">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000130">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -566,9 +677,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Intentionally overrides <span class="tt"><a class="el" href="classObject.html#ac8b030a582d1925b6f26e9933a3ffb3e" title="Sets the widget&#39;s position relative to its parent Container and triggers a dirty-region update.">Object::setPosition()</a></span> as a no-op so the root frame cannot be moved.</dd></dl>
-<p>Intentionally ignores <span class="tt">x</span> and <span class="tt">y</span> to prevent changing the position of a top-level <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span>. </p>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Intentionally overrides <span class="tt"><a class="el" href="classObject.html#ac8b030a582d1925b6f26e9933a3ffb3e" title="Sets the widget&#39;s position relative to its parent Container and triggers a dirty-region update.">Object::setPosition()</a></span> as a no-op so the root frame cannot be moved. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000136">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Intentionally ignores <span class="tt">x</span> and <span class="tt">y</span> to prevent changing the position of a top-level <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000119">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -594,9 +713,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Intentionally overrides <span class="tt"><a class="el" href="classObject.html#ac8b030a582d1925b6f26e9933a3ffb3e" title="Sets the widget&#39;s position relative to its parent Container and triggers a dirty-region update.">Object::setPosition()</a></span> as a no-op so the root frame cannot be moved.</dd></dl>
-<p>Intentionally ignores <span class="tt">pos</span> to prevent changing the position of a top-level <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span>. </p>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Intentionally overrides <span class="tt"><a class="el" href="classObject.html#ac8b030a582d1925b6f26e9933a3ffb3e" title="Sets the widget&#39;s position relative to its parent Container and triggers a dirty-region update.">Object::setPosition()</a></span> as a no-op so the root frame cannot be moved. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000135">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Intentionally ignores <span class="tt">pos</span> to prevent changing the position of a top-level <span class="tt"><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a></span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000118">Bug</a></b></dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -635,16 +762,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Parameter currently uses legacy Rectangular type pending future update. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Scheduled to update to Area in an upcoming revision. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> buffer must be allocated. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Flushes dirty rectangles to system output frame buffer. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000147">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clears both <span class="tt">before</span> and <span class="tt">current</span> regions in <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>, repaints modified children, composites visible children clipped to <span class="tt">before</span> and <span class="tt">current</span>, and forwards the update if <span class="tt">mOutputFrameBuffer</span> is set. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html#a35ea74b820f7f19b89223d889c0cc94d" title="Repaints all visible children intersecting before and current and propagates both areas to mParent.">Container::update(Rectangular, Rectangular)</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd>Update parameter types from legacy Rectangular to Area in future revision. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo</a></b></dt><dd>Update parameter types from legacy Rectangular to Area in future revision. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000123">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
 
 </div>
 </div>
@@ -678,16 +806,17 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Parameter currently uses legacy Rectangular type pending future update. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Scheduled to update to Area in an upcoming revision. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> buffer must be allocated. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Flushes dirty rectangle to system output frame buffer. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000146">Deprecated</a></b></dt><dd>None. </dd></dl>
 <p>Clears <span class="tt">rect</span> in <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>, repaints any modified child widgets, composites all visible children clipped to <span class="tt">rect</span>, and transfers the updated region to the display via <span class="tt">system::drawBitmap(this, rect, <a class="el" href="classObject.html#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;getBitmap())</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContainer.html#a1030d8d0db8c48d0c57dfd6eee2efc1d" title="Repaints all visible children intersecting rect and propagates the dirty area to mParent.">Container::update(Rectangular)</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Update parameter type from legacy Rectangular to Area in future revision. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo</a></b></dt><dd>Update parameter type from legacy Rectangular to Area in future revision. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000122">Bug</a></b></dt><dd>Uses legacy Rectangular type pending future update. </dd></dl>
 
 </div>
 </div>
@@ -715,8 +844,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Repaints all visible children onto <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span> and flushes the entire frame to the system display. </p>
-<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong</dd></dl>
-<p>Clears the entire frame buffer, repaints any modified child widgets, composites all visible children onto <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>, and transfers the full bitmap to the display via <span class="tt">system::drawBitmap(this, <a class="el" href="classObject.html#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;getBitmap())</span>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>None. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>None. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000144">Deprecated</a></b></dt><dd>None. </dd></dl>
+<p>Clears the entire frame buffer, repaints any modified child widgets, composites all visible children onto <span class="tt"><a class="el" href="classContainer.html#aa7fe7931e84d7434a6a337d6b91cc882" title="Off-screen frame buffer owned by this container.">mFrameBuffer</a></span>, and transfers the full bitmap to the display via <span class="tt">system::drawBitmap(this, <a class="el" href="classObject.html#af2bf037364ab20eeecb770d322e23a7e" title="Top-left position of the widget relative to mParent.">mPos</a>, mFrameBuffer-&gt;getBitmap())</span>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFrame.html" title="Root full-screen GUI window that composites child Object widgets and flushes updates to the system di...">Frame</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo</a></b></dt><dd>None. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000121">Bug</a></b></dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classContainer.html#aedde4d6c58b459e7a55863e7bae999cf">Container</a>.</p>
 
