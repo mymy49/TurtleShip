@@ -40,14 +40,11 @@ Lightweight, high-performance 2D graphics engine and embedded GUI framework desi
 
 ### Supported Targets & Tools
 - **Target Microcontrollers & Development Boards**:
-  - Nuvoton NuMicro® M251 series (e.g., **NuMaker-M251KG** / Cortex®-M23).
   - Any 32-bit MCU supported by the **yss OS** platform (ARM Cortex-M0+/M3/M4/M7/M23/M33, etc.).
 - **Supported Display Interfaces**:
   - TFT LCDs via SPI, 8080/6800 parallel interfaces, or RGB interfaces (e.g., ST7789V, ILI9341, ST7735).
-  - Demonstrations available on the **2.8-inch TFT Touch Shield Rev2.1** (240x320 ST7789V display).
 - **Required Software & Toolchains**:
-  - Toolchain: ARM GNU Toolchain or CrossWorks for ARM (v5.x or higher).
-    - **Note on CrossWorks for ARM**: CrossWorks for ARM does not natively support the Nuvoton M251 series. You must install the custom [CrossworksForARM_Nuvoton_M251 Support Package](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) before building M251 projects.
+  - Toolchain: CrossWorks for ARM (v5.x or higher).
   - Operating System: [yss OS](https://github.com/mymy49/yss) (embedded RTOS & HAL).
   - Language: C++11 or higher.
 
@@ -55,37 +52,22 @@ Lightweight, high-performance 2D graphics engine and embedded GUI framework desi
 
 ## 3. Installation & Project Setup
 
-### Cloning with Submodules
-To clone a project containing TurtleShip as a submodule:
-```bash
-git clone --recursive https://github.com/mymy49/NuMaker-M251KG_example.git
-```
-
+### Adding TurtleShip as a Submodule
 To add TurtleShip as a submodule to your project:
 ```bash
 git submodule add https://github.com/mymy49/TurtleShip.git module/TurtleShip
 ```
 
-### Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM
-CrossWorks for ARM does not natively provide device support for Nuvoton NuMicro® M251 microcontrollers in its default package manager. A custom device support package must be installed beforehand:
+To clone an existing project with submodules:
+```bash
+git clone --recursive <repository-url>
+```
 
-1. Clone or download the [CrossworksForARM_Nuvoton_M251](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) repository.
-2. Open the package project file (`.hzp`) in CrossWorks for ARM and build it (`F7` or `Build -> Build Project`) to generate the package file (`.hzq`).
-3. In CrossWorks for ARM, navigate to **Tools -> Packages -> Manually Install Packages...** and select the generated `.hzq` package file.
-4. Once installed, M251 target device definitions, CMSIS headers, and project templates will be fully available in CrossWorks for ARM.
-
-### Build and Firmware Flashing
-- **CrossWorks for ARM**:
-  1. Ensure the [CrossworksForARM_Nuvoton_M251](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) package has been installed.
-  2. Open the project solution file (e.g., `Example.hzp`).
-  3. Select target configuration (`Example THUMB Release` or `Example THUMB Debug`).
-  4. Build solution via `F7` or `Build -> Build Solution`.
-  5. Connect the board via Nu-Link ICE and flash with `Ctrl+D` (`Target -> Download`).
-- **Command Line (pyOCD / OpenOCD)**:
-  ```bash
-  # Flash prebuilt binary using pyocd
-  pyocd flash -t m251kg firmware.bin
-  ```
+### Build and Integration
+1. Add the TurtleShip source directory (`TurtleShip/src`) and include directory (`TurtleShip/inc`) to your project's include and build paths.
+2. Ensure **yss OS** is properly initialized and configured.
+3. Build the application using CrossWorks for ARM.
+4. Download the firmware binary to your target hardware using your preferred debug probe (J-Link, CMSIS-DAP, etc.).
 
 ---
 
